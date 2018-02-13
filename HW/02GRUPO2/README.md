@@ -1,4 +1,4 @@
-# CAMARA
+# CUBO
 
 ## Integrantes del equipo de trabajo:
 
