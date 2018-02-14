@@ -4,7 +4,7 @@
 
 ### 1 Nombre1 nombre2 apelido1 apellido2 correo@electronico
 
-### 2 Nombre1 nombre2 apelido1 apellido2 correo@electronico
+### Harold Francisco Campos Patiño (hfcamposp@unal.edu.co)
 
 ### Sergio Andrés Lozano Ávila (sealozanoav@unal.edu.co)
 
