@@ -9,6 +9,7 @@
 ### 3 Daniel Alejandro Barreiro Herrera dabarreiroh@unal.edu.co
 ## Funcion general del sistema:
 - Por medio de la cámara OV2640 se tomara las 6 caras del cubo rubik, con estas imágenes se determinara el color y ubicación de cada una de las piezas del cubo.
+
 ![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/cubeclean.gif)
 
 - Esta información se grabaría en una memoria SD.
