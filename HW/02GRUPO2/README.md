@@ -1,4 +1,5 @@
- # CUBO
+
+# CUBO
 
 ## Integrantes del equipo de trabajo:
 
@@ -14,6 +15,7 @@
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ## Descripción de la caja Funcional  (in/out) SD
+![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/02GRUPO2/03document/bloques.png)
 ## Descripción de la caja Funcional  (in/out) Bluethood
 ## Descripción de la caja Funcional  (in/out) Camara
 ## Descripción de la caja Funcional  (in/out) GPIO
