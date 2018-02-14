@@ -2,39 +2,58 @@
 
 ## Integrantes del equipo de trabajo:
 
-### 1 Nombre1 nombre2 apelido1 apellido2 correo@electronico
+### 1 Lisseth Tatiana Herrera Rosero ltherrerar@unal.edu.co
 
-### 2 Nombre1 nombre2 apelido1 apellido2 correo@electronico
+### 2 Daniel Antonio Clavijo Sierra daclavijos@unal.edu.co
 
-### 3 Nombre1 nombre2 apelido1 apellido2 correo@electronico
+### 3 Daniel Alejandro Barreiro Herrera dabarreiroh@unal.edu.co
+## Funcion general del sistema:
+- Por medio de la cámara OV2640 se tomara las 6 caras del cubo rubik, con estas imágenes se determinara el color y ubicación de cada una de las piezas del cubo.
+![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/cubeclean.gif)
+
+- Esta información se grabaría en una memoria SD.
+
+- La información se enviará por medio de WIFI (MRF24WG0MA-MB) a un computador.
+
+- La información llegará a un computador y se ingresará a el programa Cube explorer 5.13, este programa arrojará un algoritmo (archivo de texto) para resolver el cubo. Se enviaría esta información de regreso a al sistema.
+
+- La información con los movimientos se guardaran en la memoria SD, es decir se almacenará alrededor de 480 bits.
+
+![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/Memoria.PNG)
+
+- Finalmente esta información se enviara a los servo motores que realizarán los movimientos correspondientes.
 
 
-## Descripci�n general del sistema: (tomado del documento de clase)
+ 
+## Descripción de la caja Funcional  (in/out)
 
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+SERVOMOTOR AR-3606HB
+![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/servo.png)
 
-## Descripci�n de la caja Funcional  (in/out)
+CAMARA MOSFET OV2640
+![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/camara.png)
 
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-## Descripci�n funcional:
+WIFI: MRF24WG0MA/MB
 
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/WIFI-diagrama%20bloques.JPG)
 
-## Descripci�n Estructural:
+Micro SD
 
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/Bloqmemory.png)
+## Mapa de memoria:
+WIFI: MRF24WG0MA/MB
+##
+![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/WIFI-mapa%20memoria.JPG)
 
-## Diagrama de Estados:
+Micro SD
 
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/mapamemoria.PNG)
 
-## Arquitectura del perif�rico:
+Servo Motores
 
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/memoriaServo.PNG)
 
-## Diagrama de bloques del perif�rico:
 
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
-## referencias:
+## Cronograma De Trabajo
+![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/cronograma.JPG)
