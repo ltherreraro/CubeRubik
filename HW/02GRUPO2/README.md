@@ -1,4 +1,4 @@
-# CUBO
+ # CUBO
 
 ## Integrantes del equipo de trabajo:
 
@@ -6,15 +6,17 @@
 
 ### 2 David Felipe Nieto dfnietoa@unal.edu.co
 
-### 3 Nombre1 nombre2 apelido1 apellido2 correo@electronico
+### 3 Simeón Daniel Camilo Nuñez Silva scnunezs@unal.edu.co
 
 
 ## Descripción general del sistema: (tomado del documento de clase)
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-## Descripción de la caja Funcional  (in/out)
-
+## Descripción de la caja Funcional  (in/out) SD
+## Descripción de la caja Funcional  (in/out) Bluethood
+## Descripción de la caja Funcional  (in/out) Camara
+## Descripción de la caja Funcional  (in/out) GPIO
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ## Descripción funcional:
