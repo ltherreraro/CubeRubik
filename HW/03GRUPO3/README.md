@@ -2,7 +2,7 @@
 
 ## Integrantes del equipo de trabajo:
 
-### 1 Nombre1 nombre2 apelido1 apellido2 correo@electronico
+### María Camila Teresa Abril Buitrago (mtabrilb@unal.edu.co)
 
 ### Harold Francisco Campos Patiño (hfcamposp@unal.edu.co)
 
