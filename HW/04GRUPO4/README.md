@@ -60,7 +60,7 @@ En el caso del servo motor, el PWM se usa para indicar al dispositivo la posici√
 
 #### Diagrama de Caja Negra
 
-![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/04GRUPO4/Captura%20de%20pantalla%202018-02-13%20a%20la(s)%2011.33.44%20p.m..png)
+<img width="566" alt="screen shot 2018-02-14 at 11 25 53" src="https://user-images.githubusercontent.com/24497588/36215343-db3785e8-1179-11e8-989f-46d800bbf125.png">
 
 #### Mapa de Memoria
 
