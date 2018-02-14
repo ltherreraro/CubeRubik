@@ -2,11 +2,11 @@
 
 ## Integrantes del equipo de trabajo:
 
-### 1 Juan Diego Ocampo M. jdocampom@electronico
+### 1 Juan Diego Ocampo M. jdocampom@unal.edu.co
 
-### 2 Raúl Morales rafmoralesri@electronico
+### 2 Raúl Morales rafmoralesri@unal.edu.co
 
-### 3 Oscar Julian Umaña Benavides ojumanab@electronico
+### 3 Oscar Julian Umaña Benavides ojumanab@unal.edu.co
 
 
 ## Descripción general del sistema: (tomado del documento de clase)
