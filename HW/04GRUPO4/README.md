@@ -16,15 +16,15 @@
 
 <img width="119" alt="screen shot 2018-02-14 at 10 15 09" src="https://user-images.githubusercontent.com/24497588/36211685-f448df64-116f-11e8-8788-0ea0636a70d1.png">
 
-* Referencia propuesta: CMOS OV7670 Camera Module
-* Protocolo de comunicación: I2C
-* Datasheet: web.mit.edu/6.111/www/f2015/tools/OV7670_2006.pdf 
-* Precio: COP 29,000
-* Enlace de compra: www.mactronica.com.co/camara-ov7670-52213866xJM
+* Referencia propuesta: LinkSprite LS-Y201 Serial Port Camera Module
+* Protocolo de comunicación: UART
+* Datasheet: https://www.sparkfun.com/datasheets/Sensors/Imaging/1274419957.pdf 
+* Precio: COP 120,000
+* Enlace de compra: https://www.amazon.com/gp/product/B016PZIP3C
 
 #### Diagrama de Caja Negra
 
-![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/04GRUPO4/03document/Captura%20de%20pantalla%202018-02-14%20a%20la(s)%2012.34.17%20a.m..png)
+<img width="566" alt="screen shot 2018-02-14 at 11 25 53" src="https://user-images.githubusercontent.com/24497588/36215343-db3785e8-1179-11e8-989f-46d800bbf125.png">
 
 #### Mapa de Memoria
 
