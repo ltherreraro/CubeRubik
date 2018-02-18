@@ -66,7 +66,7 @@ En el caso del servo motor, el PWM se usa para indicar al dispositivo la posici√
 
 <img width="225" alt="screen shot 2018-02-14 at 10 35 45" src="https://user-images.githubusercontent.com/24497588/36213092-c96d3818-1173-11e8-8768-28a92ffa6458.png">
 
-## Tarjeta microSD
+## M√≥dulo de Memoria Externa: Tarjeta microSD
 
 ![memoria-micro-sd-adaptador-sandisk-16gb-class-10-80-mbps-d_nq_np_866401-mco25981010567_092017-f](https://user-images.githubusercontent.com/24497588/36212380-cd444398-1171-11e8-97d6-ff779ff8f71b.jpg)
  
