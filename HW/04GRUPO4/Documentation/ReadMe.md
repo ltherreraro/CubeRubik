@@ -1,1 +1,1 @@
-En esta carpeta se consigna toda la documentación del proyecto.
+In this folder all the documentation of the project is consigned.
