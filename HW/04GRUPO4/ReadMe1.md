@@ -10,15 +10,15 @@
 ### 3 Oscar Julian Umaña Benavides ojumanab@unal.edu.co
 
 
-## Descripción general del sistema: (tomado del documento de clase)
+## Descripción general del sistema:
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-## Descripción de la caja Funcional  (in/out)
+## Descripción de la Caja Funcional
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-## Descripción funcional:
+## Descripción Funcional:
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
@@ -30,11 +30,11 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-## Arquitectura del periférico:
+## Arquitectura del Periférico:
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-## Diagrama de bloques del periférico:
+## Diagrama de Bloques del Periférico:
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
