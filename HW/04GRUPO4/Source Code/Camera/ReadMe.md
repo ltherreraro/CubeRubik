@@ -1,6 +1,6 @@
 ## Módulo de Cámara
 
-<img width="119" alt="screen shot 2018-02-14 at 10 15 09" src="https://user-images.githubusercontent.com/24497588/36211685-f448df64-116f-11e8-8788-0ea0636a70d1.png">
+![lsy201 picture](https://user-images.githubusercontent.com/24497588/36355300-125b8d52-14af-11e8-905d-5bcbfc8026aa.jpg)
 
 * Referencia propuesta: LinkSprite LS-Y201 Serial Port Camera Module
 * Protocolo de comunicación: UART
