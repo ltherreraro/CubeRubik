@@ -1,10 +1,5 @@
 # Laser-Cut Rubik's Cube Solving Robot
 
-## Integrantes del equipo de trabajo:
-* Juan Diego Ocampo M. (jdocampom@unal.edu.co).
-* Raúl Felipe Morales R. (rafmoralesri@unal.edu.co).
-* Óscar Julian Umaña B. (ojumanab@unal.edu.co).
-
 ## Especificaciones
 
 * Reconocimiento de color y posición de cada pieza para determinar el estado inicial del cubo.
@@ -14,7 +9,7 @@
 
 ## Módulo de Cámara
 
-<img width="119" alt="screen shot 2018-02-14 at 10 15 09" src="https://user-images.githubusercontent.com/24497588/36211685-f448df64-116f-11e8-8788-0ea0636a70d1.png">
+![lsy201 picture](https://user-images.githubusercontent.com/24497588/36355300-125b8d52-14af-11e8-905d-5bcbfc8026aa.jpg)
 
 * Referencia propuesta: LinkSprite LS-Y201 Serial Port Camera Module
 * Protocolo de comunicación: UART
@@ -44,13 +39,17 @@ El PWM (pulse-width modulation) es la modulación del ancho de un pulso de una s
 
 En el caso del servo motor, el PWM se usa para indicar al dispositivo la posición que en la que debe establecerse. El ángulo de la posicion esta dado por el porcentaje del pulso en alto (Duty Cycle) con respecto al periodo de la señal. Para el caso del servo MG996R, se maneja un periodo de 20ms.
 
-#### Diagrama de Caja Negra
+<img width="559" alt="duty cicle wave form" src="https://user-images.githubusercontent.com/24497588/36355309-3b3593e4-14af-11e8-9017-53658528d377.png">
 
-![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/04GRUPO4/03document/Captura%20de%20pantalla%202018-02-13%20a%20la(s)%2010.14.04%20p.m..png)
+#### Diagrama de Caja Negra
+<img width="523" alt="gpio bb diagram" src="https://user-images.githubusercontent.com/24497588/36355333-8bf055c6-14af-11e8-984e-75421aa79ba2.png">
+
+#### Mapa de Memoria
+<img width="398" alt="gpio memory map" src="https://user-images.githubusercontent.com/24497588/36355409-c2a7a2ee-14b0-11e8-8b8d-f3f65291e9b3.png">
 
 ## Módulo de comunicación inalámbrica por Bluetooth
 
-![61rwnwc8p9l _sy355_](https://user-images.githubusercontent.com/24497588/36212234-69b4b48e-1171-11e8-9338-7e2a4284065d.jpg)
+![hc-06 picture](https://user-images.githubusercontent.com/24497588/36355417-d82ea266-14b0-11e8-8b5f-611d9828ebea.jpg)
 
 * Referencia propuesta: HC-06 Bluetooth Module
 * Protocolo de comunicación: UART
@@ -66,9 +65,9 @@ En el caso del servo motor, el PWM se usa para indicar al dispositivo la posici�
 
 <img width="225" alt="screen shot 2018-02-14 at 10 35 45" src="https://user-images.githubusercontent.com/24497588/36213092-c96d3818-1173-11e8-8768-28a92ffa6458.png">
 
-## Módulo de Memoria Externa: Tarjeta microSD
+## Módulo de Memoria Externa: Tarjeta microSD (SPI)
 
-![memoria-micro-sd-adaptador-sandisk-16gb-class-10-80-mbps-d_nq_np_866401-mco25981010567_092017-f](https://user-images.githubusercontent.com/24497588/36212380-cd444398-1171-11e8-97d6-ff779ff8f71b.jpg)
+![microsd picture](https://user-images.githubusercontent.com/24497588/36355377-4ed86f06-14b0-11e8-89cd-2130b61f5c06.jpg)
  
 * Referencia propuesta: SanDisk Secure Digital Card
 * Protocolo de comunicación: SPI
@@ -78,11 +77,11 @@ En el caso del servo motor, el PWM se usa para indicar al dispositivo la posici�
 
 #### Diagrama de Caja Negra
 
-![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/04GRUPO4/03document/Captura%20de%20pantalla%202018-02-14%20a%20la(s)%2012.02.32%20a.m..png)
+<img width="604" alt="external memory bb diagram" src="https://user-images.githubusercontent.com/24497588/36355386-74ae41a6-14b0-11e8-9da7-3256ca8fdc96.png">
 
 #### Mapa de Memoria
 
-<img width="225" alt="screen shot 2018-02-14 at 10 34 39" src="https://user-images.githubusercontent.com/24497588/36212864-1628a666-1173-11e8-86b5-c521b2043811.png">
+<img width="225" alt="microsd memory map" src="https://user-images.githubusercontent.com/24497588/36355397-8beabb24-14b0-11e8-9ee3-c1df422d7af2.png">
 
 ## Plan de trabajo
 
