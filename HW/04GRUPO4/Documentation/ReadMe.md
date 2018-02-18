@@ -45,7 +45,7 @@
 
 #### Mapa de Memoria
 
-<img width="223" alt="screen shot 2018-02-14 at 10 37 06" src="https://user-images.githubusercontent.com/24497588/36213006-7f1b2d4c-1173-11e8-876f-2cddc3c20777.png">
+<img width="223" alt="screen shot 2018-02-14 at 10 37 06" src="https://github.com/ltherreraro/CubeRubik/blob/master/HW/04GRUPO4/Documentation/Camera/Captura%20de%20pantalla%202018-02-18%20a%20la(s)%202.26.16%20p.m..png">
 
 ## Módulo de Servomotores (PWM)
 
@@ -57,13 +57,26 @@
 * Precio (unidad): COP 23,200
 * Enlace de compra: https://www.ardobot.com/servomotor-mg996r-pi-oneria-metalica.html?___store=english&gclid=EAIaIQobChMI2L2Qytml2QIVEwaGCh2XgQbnEAQYASABEgJPOvD_BwE
 
+* #### PWM
+
 El PWM (pulse-width modulation) es la modulación del ancho de un pulso de una señal. Esto se emplea para el envío de información o para el control de la energía que se envía a un sistema.
 
 En el caso del servo motor, el PWM se usa para indicar al dispositivo la posición que en la que debe establecerse. El ángulo de la posicion esta dado por el porcentaje del pulso en alto (Duty Cycle) con respecto al periodo de la señal. Para el caso del servo MG996R, se maneja un periodo de 20ms.
 
 <img width="559" alt="duty cicle wave form" src="https://user-images.githubusercontent.com/24497588/36355309-3b3593e4-14af-11e8-9017-53658528d377.png">
 
+* #### GPIO
+
+Un GPIO es un pin genérico en un chip, cuyo comportamiento es controlable por el usuario en tiempo de ejecución. Estos pines GPIO no tienen ningún propósito especial definido, y no se utilizan de forma predeterminada. 
+
 #### Diagrama de Caja Negra
+
+* #### PWM
+
+![pwm](https://user-images.githubusercontent.com/24497588/36358032-4d5ced94-14d5-11e8-8527-2f1dcd10c9ad.png)
+
+* #### GPIO
+
 <img width="523" alt="gpio bb diagram" src="https://user-images.githubusercontent.com/24497588/36355333-8bf055c6-14af-11e8-984e-75421aa79ba2.png">
 
 #### Mapa de Memoria
@@ -97,7 +110,7 @@ En el caso del servo motor, el PWM se usa para indicar al dispositivo la posici�
 
 #### Mapa de Memoria
 
-<img width="225" alt="screen shot 2018-02-14 at 10 35 45" src="https://user-images.githubusercontent.com/24497588/36213092-c96d3818-1173-11e8-8768-28a92ffa6458.png">
+![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/04GRUPO4/Documentation/Camera/Captura%20de%20pantalla%202018-02-18%20a%20la(s)%202.26.16%20p.m..png)
 
 ## Módulo de Memoria Externa: Tarjeta microSD (SPI)
 
@@ -109,13 +122,15 @@ En el caso del servo motor, el PWM se usa para indicar al dispositivo la posici�
 * Precio (unidad): COP 31,900
 * Enlace de compra: https://articulo.mercadolibre.com.co/MCO-455873213-memoria-micro-sd-adaptador-sandisk-16gb-class-10-80-mbps-_JM
 
+El protocolo SPI (Serial Peripheral Interface) es un estándar de comunicaciones, usado principalmente para la transferencia de información entre circuitos integrados en equipos electrónicos. Este protocolo es un estándar para controlar casi cualquier dispositivo electrónico digital que acepte comunicación sincrónica.
+
 #### Diagrama de Caja Negra
 
-<img width="604" alt="external memory bb diagram" src="https://user-images.githubusercontent.com/24497588/36355386-74ae41a6-14b0-11e8-9da7-3256ca8fdc96.png">
+![spi](https://user-images.githubusercontent.com/24497588/36358379-8ec4442a-14db-11e8-8161-4b1a95441e2c.png)
 
 #### Mapa de Memoria
 
-<img width="225" alt="microsd memory map" src="https://user-images.githubusercontent.com/24497588/36355397-8beabb24-14b0-11e8-9ee3-c1df422d7af2.png">
+<img width="225" alt="microsd memory map" src="https://github.com/ltherreraro/CubeRubik/blob/master/HW/04GRUPO4/Documentation/External%20Memory/Captura%20de%20pantalla%202018-02-17%20a%20la(s)%2010.16.04%20p.m..png">
 
 ## Plan de trabajo
 
