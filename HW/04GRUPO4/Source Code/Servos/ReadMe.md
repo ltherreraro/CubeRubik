@@ -12,6 +12,10 @@ El PWM (pulse-width modulation) es la modulación del ancho de un pulso de una s
 
 En el caso del servo motor, el PWM se usa para indicar al dispositivo la posición que en la que debe establecerse. El ángulo de la posicion esta dado por el porcentaje del pulso en alto (Duty Cycle) con respecto al periodo de la señal. Para el caso del servo MG996R, se maneja un periodo de 20ms.
 
-#### Diagrama de Caja Negra
+<img width="559" alt="duty cicle wave form" src="https://user-images.githubusercontent.com/24497588/36355309-3b3593e4-14af-11e8-9017-53658528d377.png">
 
-![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/04GRUPO4/03document/Captura%20de%20pantalla%202018-02-13%20a%20la(s)%2010.14.04%20p.m..png)
+#### Diagrama de Caja Negra
+<img width="523" alt="gpio bb diagram" src="https://user-images.githubusercontent.com/24497588/36355333-8bf055c6-14af-11e8-984e-75421aa79ba2.png">
+
+#### Mapa de Memoria
+<img width="398" alt="gpio memory map" src="https://user-images.githubusercontent.com/24497588/36355409-c2a7a2ee-14b0-11e8-8b8d-f3f65291e9b3.png">
