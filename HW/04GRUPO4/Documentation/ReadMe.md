@@ -47,8 +47,6 @@
 
 <img width="223" alt="screen shot 2018-02-14 at 10 37 06" src="https://user-images.githubusercontent.com/24497588/36213006-7f1b2d4c-1173-11e8-876f-2cddc3c20777.png">
 
-#### Diagrama de Caja Negra
-
 ## Módulo de Servomotores (PWM)
 
 ![0002238_towerpro-mg996r-metal-gear-servo-motor](https://user-images.githubusercontent.com/24497588/36211943-a5ea9406-1170-11e8-99f3-9719c79c2da6.jpeg)
