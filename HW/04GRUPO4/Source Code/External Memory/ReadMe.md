@@ -1,6 +1,6 @@
-## Módulo de Memoria Externa: Tarjeta microSD
+## Módulo de Memoria Externa: Tarjeta microSD (SPI)
 
-![memoria-micro-sd-adaptador-sandisk-16gb-class-10-80-mbps-d_nq_np_866401-mco25981010567_092017-f](https://user-images.githubusercontent.com/24497588/36212380-cd444398-1171-11e8-97d6-ff779ff8f71b.jpg)
+![microsd picture](https://user-images.githubusercontent.com/24497588/36355377-4ed86f06-14b0-11e8-89cd-2130b61f5c06.jpg)
  
 * Referencia propuesta: SanDisk Secure Digital Card
 * Protocolo de comunicación: SPI
@@ -10,8 +10,12 @@
 
 #### Diagrama de Caja Negra
 
-![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/04GRUPO4/03document/Captura%20de%20pantalla%202018-02-14%20a%20la(s)%2012.02.32%20a.m..png)
+<img width="604" alt="external memory bb diagram" src="https://user-images.githubusercontent.com/24497588/36355386-74ae41a6-14b0-11e8-9da7-3256ca8fdc96.png">
 
 #### Mapa de Memoria
 
-<img width="225" alt="screen shot 2018-02-14 at 10 34 39" src="https://user-images.githubusercontent.com/24497588/36212864-1628a666-1173-11e8-86b5-c521b2043811.png">
+<img width="225" alt="microsd memory map" src="https://user-images.githubusercontent.com/24497588/36355397-8beabb24-14b0-11e8-9ee3-c1df422d7af2.png">
+
+## Plan de trabajo
+
+<img width="388" alt="screen shot 2018-02-14 at 09 55 03" src="https://user-images.githubusercontent.com/24497588/36210762-48fe1b44-116d-11e8-9d69-b52aefed66e6.png">
