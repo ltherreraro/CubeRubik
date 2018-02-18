@@ -1,6 +1,6 @@
 ## Módulo de comunicación inalámbrica por Bluetooth
 
-![61rwnwc8p9l _sy355_](https://user-images.githubusercontent.com/24497588/36212234-69b4b48e-1171-11e8-9338-7e2a4284065d.jpg)
+![hc-06 picture](https://user-images.githubusercontent.com/24497588/36355417-d82ea266-14b0-11e8-8b5f-611d9828ebea.jpg)
 
 * Referencia propuesta: HC-06 Bluetooth Module
 * Protocolo de comunicación: UART
@@ -10,7 +10,19 @@
 
 #### Diagrama de Caja Negra
 
-<img width="566" alt="screen shot 2018-02-14 at 11 25 53" src="https://user-images.githubusercontent.com/24497588/36215343-db3785e8-1179-11e8-989f-46d800bbf125.png">
+![uart bb rev1](https://user-images.githubusercontent.com/24497588/36355493-14328448-14b2-11e8-9052-7f08852c1674.png)
+
+#### Descripción Funcional
+
+![tx flow](https://user-images.githubusercontent.com/24497588/36355572-2ec609aa-14b3-11e8-9d65-a4eca2a05919.png)
+
+![rx flow](https://user-images.githubusercontent.com/24497588/36355573-36d75220-14b3-11e8-97a7-9ded3299ca49.png)
+
+#### Descripción Estructural
+
+![rx structural](https://user-images.githubusercontent.com/24497588/36355589-7d342ca2-14b3-11e8-9924-e701ccb19739.png)
+
+![tx structural](https://user-images.githubusercontent.com/24497588/36355590-7e09aa76-14b3-11e8-86a3-72c4ea375a7a.png)
 
 #### Mapa de Memoria
 
