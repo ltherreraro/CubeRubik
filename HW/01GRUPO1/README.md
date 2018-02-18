@@ -37,7 +37,7 @@ CAMARA MOSFET OV2640
 
 WIFI: MRF24WG0MA/MB
 
-![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/WIFI-diagrama%20bloques.JPG)
+![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/Bloques%20Wifi.JPG)
 
 Micro SD
 
@@ -45,7 +45,7 @@ Micro SD
 ## Mapa de memoria:
 WIFI: MRF24WG0MA/MB
 ##
-![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/WIFI-mapa%20memoria.JPG)
+![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/MapaMemoria%20WIFI.JPG)
 
 Micro SD
 
