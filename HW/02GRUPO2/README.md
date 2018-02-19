@@ -18,6 +18,9 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/02GRUPO2/03document/bloques.png)
 ## Descripción de la caja Funcional  (in/out) Bluethood
 ## Descripción de la caja Funcional  (in/out) Camara
+![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/02GRUPO2/03document/bloques_OV7670.png)
+![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/02GRUPO2/03document/bloques_LS-Y201.png)
+
 ## Descripción de la caja Funcional  (in/out) GPIO
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
