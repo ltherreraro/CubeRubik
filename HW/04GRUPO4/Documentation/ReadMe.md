@@ -8,62 +8,71 @@
 * Comunicación inalámbrica para indicar los estados del robot.
 
 ## Módulo de Cámara
-
 ![lsy201 picture](https://user-images.githubusercontent.com/24497588/36355300-125b8d52-14af-11e8-905d-5bcbfc8026aa.jpg)
-
 * Referencia propuesta: LinkSprite LS-Y201 Serial Port Camera Module
 * Protocolo de comunicación: UART
 * Datasheet: https://www.sparkfun.com/datasheets/Sensors/Imaging/1274419957.pdf 
 * Precio: COP 120,000
 * Enlace de compra: https://www.amazon.com/gp/product/B016PZIP3C
 
-#### Diagrama de Caja Negra
+### UART
+
+* #### Diagrama de Caja Negra
 
 ![uart bb rev1](https://user-images.githubusercontent.com/24497588/36355493-14328448-14b2-11e8-9052-7f08852c1674.png)
 
-#### Descripción Funcional
+* #### Descripción Funcional
 
-* #### UART
+_UART Tx:_
 
 ![tx flow](https://user-images.githubusercontent.com/24497588/36355572-2ec609aa-14b3-11e8-9d65-a4eca2a05919.png)
 
+_UART Rx:_
+
 ![rx flow](https://user-images.githubusercontent.com/24497588/36355573-36d75220-14b3-11e8-97a7-9ded3299ca49.png)
 
-* #### LSY-201 JPEG Camera Module
+* #### Descripción Estructural
 
-![lsy-201 initialisation](https://user-images.githubusercontent.com/24497588/36355575-3aa82730-14b3-11e8-93bf-a688afc41a3a.png)
-
-![lsy-201 picture taking process](https://user-images.githubusercontent.com/24497588/36355576-3daba056-14b3-11e8-9459-bea21a07c0cc.png)
-
-<img width="516" alt="communication protocol" src="https://user-images.githubusercontent.com/24497588/36355577-412dd370-14b3-11e8-97fb-d3131a82b9e5.png">
-
-#### Descripción Estructural
-
-![rx structural](https://user-images.githubusercontent.com/24497588/36355589-7d342ca2-14b3-11e8-9924-e701ccb19739.png)
+_UART Tx:_
 
 ![tx structural](https://user-images.githubusercontent.com/24497588/36355590-7e09aa76-14b3-11e8-86a3-72c4ea375a7a.png)
 
-#### Mapa de Memoria
+_UART Rx:_
 
-<img width="223" alt="screen shot 2018-02-14 at 10 37 06" src="https://github.com/ltherreraro/CubeRubik/blob/master/HW/04GRUPO4/Documentation/Camera/Captura%20de%20pantalla%202018-02-18%20a%20la(s)%202.26.16%20p.m..png">
+![rx structural](https://user-images.githubusercontent.com/24497588/36355589-7d342ca2-14b3-11e8-9924-e701ccb19739.png)
 
-## Módulo de Servomotores (PWM)
+### LSY-201 JPEG Camera Module
+
+* #### Diagrama de Caja Negra
+![ls-y201 black box](https://user-images.githubusercontent.com/24497588/36459493-f6fd54ee-1681-11e8-8716-6e743a2c79df.jpg)
+
+* #### Descripción Funcional
+
+_Camera Initialisation:_
+
+![lsy-201 initialisation](https://user-images.githubusercontent.com/24497588/36355575-3aa82730-14b3-11e8-93bf-a688afc41a3a.png)
+
+_Capture a JPEG Picture:_
+
+![lsy-201 picture taking process](https://user-images.githubusercontent.com/24497588/36355576-3daba056-14b3-11e8-9459-bea21a07c0cc.png)
+
+_Communication Protocol:_
+
+![communication protocol](https://user-images.githubusercontent.com/24497588/36459078-24f3e8ce-1680-11e8-9ab2-d2290c35b15f.png)
+
+* #### Mapa de Memoria
+
+<img width="468" alt="lsy-201 uart memory map" src="https://user-images.githubusercontent.com/24497588/36459617-748c40dc-1682-11e8-9f60-ba5594217568.png">
+
+## Módulo de Servomotores (GPIO)
 
 ![0002238_towerpro-mg996r-metal-gear-servo-motor](https://user-images.githubusercontent.com/24497588/36211943-a5ea9406-1170-11e8-99f3-9719c79c2da6.jpeg)
 
 * Referencia propuesta: MG996R
-* Protocolo de comunicación: PWM
+* Protocolo de comunicación: GPIO
 * Datasheet: www.electronicoscaldas.com/datasheet/MG996R_Tower-Pro.pdf
 * Precio (unidad): COP 23,200
 * Enlace de compra: https://www.ardobot.com/servomotor-mg996r-pi-oneria-metalica.html?___store=english&gclid=EAIaIQobChMI2L2Qytml2QIVEwaGCh2XgQbnEAQYASABEgJPOvD_BwE
-
-* #### PWM
-
-El PWM (pulse-width modulation) es la modulación del ancho de un pulso de una señal. Esto se emplea para el envío de información o para el control de la energía que se envía a un sistema.
-
-En el caso del servo motor, el PWM se usa para indicar al dispositivo la posición que en la que debe establecerse. El ángulo de la posicion esta dado por el porcentaje del pulso en alto (Duty Cycle) con respecto al periodo de la señal. Para el caso del servo MG996R, se maneja un periodo de 20ms.
-
-<img width="559" alt="duty cicle wave form" src="https://user-images.githubusercontent.com/24497588/36355309-3b3593e4-14af-11e8-9017-53658528d377.png">
 
 * #### GPIO
 
@@ -71,16 +80,13 @@ Un GPIO es un pin genérico en un chip, cuyo comportamiento es controlable por e
 
 #### Diagrama de Caja Negra
 
-* #### PWM
-
-![pwm](https://user-images.githubusercontent.com/24497588/36358032-4d5ced94-14d5-11e8-8527-2f1dcd10c9ad.png)
-
 * #### GPIO
 
 <img width="523" alt="gpio bb diagram" src="https://user-images.githubusercontent.com/24497588/36355333-8bf055c6-14af-11e8-984e-75421aa79ba2.png">
 
-#### Mapa de Memoria
-<img width="398" alt="gpio memory map" src="https://user-images.githubusercontent.com/24497588/36355409-c2a7a2ee-14b0-11e8-8b8d-f3f65291e9b3.png">
+* #### Mapa de Memoria
+
+<img width="471" alt="gpio memory map" src="https://user-images.githubusercontent.com/24497588/36460471-86256cb6-1686-11e8-822c-3262ed8e0b9c.png">
 
 ## Módulo de comunicación inalámbrica por Bluetooth
 
@@ -92,45 +98,55 @@ Un GPIO es un pin genérico en un chip, cuyo comportamiento es controlable por e
 * Precio: COP 15,000
 * Enlace de compra: https://articulo.mercadolibre.com.co/MCO-453222494-modulo-bluetooth-hc-06-arduino-_JM
 
-#### Diagrama de Caja Negra
+* #### Diagrama de Caja Negra
 
 ![uart bb rev1](https://user-images.githubusercontent.com/24497588/36355493-14328448-14b2-11e8-9052-7f08852c1674.png)
 
-#### Descripción Funcional
+* #### Descripción Funcional
+
+_UART Tx:_
 
 ![tx flow](https://user-images.githubusercontent.com/24497588/36355572-2ec609aa-14b3-11e8-9d65-a4eca2a05919.png)
 
+_UART Rx:_
+
 ![rx flow](https://user-images.githubusercontent.com/24497588/36355573-36d75220-14b3-11e8-97a7-9ded3299ca49.png)
 
-#### Descripción Estructural
+* #### Descripción Estructural
 
-![rx structural](https://user-images.githubusercontent.com/24497588/36355589-7d342ca2-14b3-11e8-9924-e701ccb19739.png)
+_UART Tx:_
 
 ![tx structural](https://user-images.githubusercontent.com/24497588/36355590-7e09aa76-14b3-11e8-86a3-72c4ea375a7a.png)
 
+_UART Rx:_
+
+![rx structural](https://user-images.githubusercontent.com/24497588/36355589-7d342ca2-14b3-11e8-9924-e701ccb19739.png)
+
 #### Mapa de Memoria
 
-![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/04GRUPO4/Documentation/Camera/Captura%20de%20pantalla%202018-02-18%20a%20la(s)%202.26.16%20p.m..png)
+<img width="469" alt="uart memory map" src="https://user-images.githubusercontent.com/24497588/36460470-84bf567a-1686-11e8-8673-ab715d459e97.png">
 
-## Módulo de Memoria Externa: Tarjeta microSD (SPI)
+## Módulo de Memoria: SSD Interna Nexys4 (SPI)
 
-![microsd picture](https://user-images.githubusercontent.com/24497588/36355377-4ed86f06-14b0-11e8-89cd-2130b61f5c06.jpg)
- 
-* Referencia propuesta: SanDisk Secure Digital Card
+* Referencia propuesta: -----
 * Protocolo de comunicación: SPI
-* Datasheet: www.convict.lu/pdf/ProdManualSDCardv1.9.pdf
-* Precio (unidad): COP 31,900
-* Enlace de compra: https://articulo.mercadolibre.com.co/MCO-455873213-memoria-micro-sd-adaptador-sandisk-16gb-class-10-80-mbps-_JM
+* Datasheet: -----
 
 El protocolo SPI (Serial Peripheral Interface) es un estándar de comunicaciones, usado principalmente para la transferencia de información entre circuitos integrados en equipos electrónicos. Este protocolo es un estándar para controlar casi cualquier dispositivo electrónico digital que acepte comunicación sincrónica.
 
 #### Diagrama de Caja Negra
 
+_Protocolo SPI:_
+
 ![spi](https://user-images.githubusercontent.com/24497588/36358379-8ec4442a-14db-11e8-8161-4b1a95441e2c.png)
+
+_SSD Interna Nexys4:_
+
+![artix7ssd-spi black box](https://user-images.githubusercontent.com/24497588/36460811-2cf81466-1688-11e8-98d8-7b795eb11f6c.png)
 
 #### Mapa de Memoria
 
-<img width="225" alt="microsd memory map" src="https://github.com/ltherreraro/CubeRubik/blob/master/HW/04GRUPO4/Documentation/External%20Memory/Captura%20de%20pantalla%202018-02-17%20a%20la(s)%2010.16.04%20p.m..png">
+<img width="469" alt="artix 7 internal ssd memory map" src="https://user-images.githubusercontent.com/24497588/36461037-8439f6c6-1689-11e8-9340-78e8ccb97526.png">
 
 ## Plan de trabajo
 
