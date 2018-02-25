@@ -1,6 +1,6 @@
 module div_freq #
 (
-              parameter   fi     = 50000000,  
+              parameter   fi     = 50000000 
 )
 (
 	input clk,
@@ -10,7 +10,7 @@ module div_freq #
 
 
 reg [31:0] fs;
-initial fs=100/T
+initial fs=100/T;
 reg [31:0] count;
 initial count<= fi/fs;
 
