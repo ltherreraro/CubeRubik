@@ -9,9 +9,9 @@ always #1 clk = ~clk;
 
 initial begin
 #40;
-T=40; 
+T=50; 
 #40;
-D=10;   
+D=20;   
 end
 
 
