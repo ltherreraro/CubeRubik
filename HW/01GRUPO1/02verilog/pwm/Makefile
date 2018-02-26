@@ -1,4 +1,4 @@
-DESIGN          = pwm
+DESIGN          = peripheral_pwm
 PINS            = $(DESIGN).ucf
 DEVICE          = XC7A100T-1CSG324
 BGFLAGS         =  -g TdoPin:PULLNONE -g DonePin:PULLUP \
@@ -12,7 +12,7 @@ IVERILOG        = iverilog
 
 
 
-SRC             = $(DESIGN).v 
+SRC             = $(DESIGN).v pwm.v 
 
 SIM_SRC = $(DESIGN)_TB.v          \
 
