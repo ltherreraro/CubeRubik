@@ -40,11 +40,11 @@ case (addr)
 4'h40:begin s = (cs && wr) ? 6'b010001 : 6'b000000 ;end //T6		64	S=17
 4'h44:begin s = (cs && wr) ? 6'b010010 : 6'b000000 ;end //D6		68	S=18
 4'h48:begin s = (cs && wr) ? 6'b010011 : 6'b000000 ;end //E6enable	72	S=19
-4'h5C:begin s = (cs && wr) ? 6'b010100 : 6'b000000 ;end //T6		76	S=20
+4'h4C:begin s = (cs && wr) ? 6'b010100 : 6'b000000 ;end //T6		76	S=20
 4'h50:begin s = (cs && wr) ? 6'b010101 : 6'b000000 ;end //D6		80	S=21
 4'h54:begin s = (cs && wr) ? 6'b010110 : 6'b000000 ;end //E7enable	84	S=22
 4'h58:begin s = (cs && wr) ? 6'b010111 : 6'b000000 ;end //T7		88	S=23
-4'h6c:begin s = (cs && wr) ? 6'b011000 : 6'b000000 ;end //D7		92	S=24
+4'h5c:begin s = (cs && wr) ? 6'b011000 : 6'b000000 ;end //D7		92	S=24
 default:begin s=6'b000000 ; end
 endcase
 end//-----------------address_decoder--------------------
