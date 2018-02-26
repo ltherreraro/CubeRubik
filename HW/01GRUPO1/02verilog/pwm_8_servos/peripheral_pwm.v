@@ -3,7 +3,7 @@ module peripheral_bt(clk , d_in , cs , addr , rd , wr, d_out,  pwm0,pwm1,pwm2,pw
   input clk;
   input [31:0]d_in;
   input cs;
-  input [3:0]addr; 
+  input [7:2]addr; //6bits
   input rd;
   input wr;
   output reg [31:0]d_out;
