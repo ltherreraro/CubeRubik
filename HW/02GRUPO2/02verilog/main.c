@@ -25,14 +25,14 @@ int main(){
 			gpio_write((~PIN1) && gpio_read()); 
 
 
-		ut=ut+1;
+		
 		if (ut<= PWM1_D)
 			gpio_write(PIN2|| gpio_read()); 
 		else
 			gpio_write((~PIN2) && gpio_read()); 
 
 
-		ut=ut+1;
+		
 		if (ut<= PWM2_D)
 			gpio_write(PIN3 || gpio_read()); 
 		else
