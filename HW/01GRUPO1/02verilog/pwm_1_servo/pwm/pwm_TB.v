@@ -2,19 +2,12 @@ module pwm_TB;
 
 reg clk=0;
 reg reset;
-reg [31:0] T;
-reg [31:0] D;
 
-pwm uut(.clk(clk),.reset(reset),.T(T),.D(D));
+
+pwm uut(.clk(clk),.reset(reset));
 
 always #1 clk = ~clk;
 
-initial begin
-#40;
-T=40; 
-#40;
-D=15;   
-end
 
 initial begin
 reset=1;
@@ -26,7 +19,7 @@ end
 initial begin: TEST_CASE
      $dumpfile("pwm_TB.vcd");
      $dumpvars(-1, uut);
-     #(1000000) $finish;
+     #(10000000) $finish;
    end
 
 endmodule 
