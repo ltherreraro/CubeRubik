@@ -1,7 +1,12 @@
-module pwm ( 	input 		clk, 
+module pwm #(
+parameter T=1000000,
+parameter D=30000
+)
+
+( 	input 		clk, 
 		output  reg	pwm,
-		input [31:0] 	T,
-		input [31:0] 	D, 
+		//input [31:0] 	T,
+		//input [31:0] 	D, 
 		input 		reset, 
 		output reg 	ledres
 );
