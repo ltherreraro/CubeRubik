@@ -45,7 +45,7 @@ case (addr)
 8'h54:begin s = (cs && wr) ? 6'b010110 : 6'b000000 ;end //E7enable	84	S=22
 8'h58:begin s = (cs && wr) ? 6'b010111 : 6'b000000 ;end //T7		88	S=23
 8'h5c:begin s = (cs && wr) ? 6'b011000 : 6'b000000 ;end //D7		92	S=24
-8'h0:begin s = (cs && rd)  ? 6'b000111 : 6'b000000 ;end //E0enable 	0	S=1
+8'h60: begin s = (cs && rd) ? 6'b000010 : 6'b000000 ;end //E0enable 	0	S=2
 
 default:begin s=6'b000000 ; end
 endcase
@@ -161,7 +161,7 @@ end
 
 always @(negedge clk) begin//-----------------------mux:  Saber en que esta el sistema
 case (s)
-6'b000111: d_out[0]= E0;	
+6'b000010: d_out[31:0]= E0;	
 
 default: d_out=0;
 endcase

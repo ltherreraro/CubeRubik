@@ -16,8 +16,10 @@ initial begin
 #10;
  d_in = 16'd20; addr = 8'h4; cs=1; rd=0; wr=1;
 #10;
- d_in = 16'd2; addr = 8'h8; cs=1; rd=0; wr=1;
-	
+ d_in = 16'd3; addr = 8'h8; cs=1; rd=0; wr=1;
+#20;
+ d_in = 16'd2; addr = 8'h0; cs=1; rd=1; wr=0;	
+
 end
 
 
