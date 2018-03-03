@@ -64,23 +64,35 @@ _Communication Protocol:_
 
 <img width="468" alt="lsy-201 uart memory map" src="https://user-images.githubusercontent.com/24497588/36459617-748c40dc-1682-11e8-9f60-ba5594217568.png">
 
-## Módulo de Servomotores (GPIO)
+## Módulo de Servomotores (PWM/GPIO)
 
 ![0002238_towerpro-mg996r-metal-gear-servo-motor](https://user-images.githubusercontent.com/24497588/36211943-a5ea9406-1170-11e8-99f3-9719c79c2da6.jpeg)
 
 * Referencia propuesta: MG996R
-* Protocolo de comunicación: GPIO
+* Protocolo de comunicación: PWM/GPIO
 * Datasheet: www.electronicoscaldas.com/datasheet/MG996R_Tower-Pro.pdf
 * Precio (unidad): COP 23,200
 * Enlace de compra: https://www.ardobot.com/servomotor-mg996r-pi-oneria-metalica.html?___store=english&gclid=EAIaIQobChMI2L2Qytml2QIVEwaGCh2XgQbnEAQYASABEgJPOvD_BwE
 
-* #### GPIO
+ #### PWM
+
+Es una técnica que consiste en variar el ancho de pulso de una señal cuadrada de tensión con el objetivo de controlar la cantidad de potencia administrada a los componentes o elementos electrónicos conectados. 
+
+![pwm](https://user-images.githubusercontent.com/24497588/36634356-4c36d664-1971-11e8-9213-10e0203d5ebb.png)
+
+* #### Diagrama de Caja Negra
+
+![pwm black box](https://user-images.githubusercontent.com/24497588/36823111-784f9212-1cc9-11e8-8b20-4bb997e51f76.png)
+
+* #### Mapa de Memoria
+
+<img width="465" alt="pwm memory map" src="https://user-images.githubusercontent.com/24497588/36823834-176d6e34-1ccd-11e8-9797-b5231fd75bdb.png">
+
+ #### GPIO
 
 Un GPIO es un pin genérico en un chip, cuyo comportamiento es controlable por el usuario en tiempo de ejecución. Estos pines GPIO no tienen ningún propósito especial definido, y no se utilizan de forma predeterminada. 
 
-#### Diagrama de Caja Negra
-
-* #### GPIO
+* #### Diagrama de Caja Negra
 
 <img width="523" alt="gpio bb diagram" src="https://user-images.githubusercontent.com/24497588/36355333-8bf055c6-14af-11e8-984e-75421aa79ba2.png">
 
@@ -128,15 +140,17 @@ _UART Rx:_
 
 ## Módulo de Memoria: SSD Interna Nexys4 (SPI)
 
-* Referencia propuesta: -----
+* Referencia propuesta: S25FL032S
 * Protocolo de comunicación: SPI
-* Datasheet: -----
+* Datasheet: https://github.com/ltherreraro/CubeRubik/blob/master/HW/04GRUPO4/Documentation/External%20Memory/002-00650_S25FL032P_32-Mbit_3.0_V_Flash_Memory_Dat-933047.pdf
 
 El protocolo SPI (Serial Peripheral Interface) es un estándar de comunicaciones, usado principalmente para la transferencia de información entre circuitos integrados en equipos electrónicos. Este protocolo es un estándar para controlar casi cualquier dispositivo electrónico digital que acepte comunicación sincrónica.
 
 #### Diagrama de Caja Negra
 
 _Protocolo SPI:_
+
+![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/04GRUPO4/Documentation/External%20Memory/Time%20diagram.png)
 
 ![spi](https://user-images.githubusercontent.com/24497588/36358379-8ec4442a-14db-11e8-8161-4b1a95441e2c.png)
 
