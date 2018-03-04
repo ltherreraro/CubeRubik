@@ -297,15 +297,6 @@ end
 end
 
 
-
-//always @(negedge clk) begin//-----------------------mux:  Saber en que esta el sistema
-//case (s)
-//6'b000010: d_out[31:0]= E0;	
-
-//default: d_out=0;
-//endcase
-//end//----------------------------------------------mux_4*/
-
-								
+		
 
 endmodule

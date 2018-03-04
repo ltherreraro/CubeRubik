@@ -19,7 +19,7 @@ end
 initial begin: TEST_CASE
      $dumpfile("contador_TB.vcd");
      $dumpvars(-1, uut);
-     #(10000000) $finish;
+     #(1000000) $finish;
    end
 
 endmodule 
