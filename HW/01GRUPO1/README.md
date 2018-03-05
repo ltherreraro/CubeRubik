@@ -18,6 +18,7 @@
 
 - La información llegará a un computador y se ingresará a el programa Cube explorer 5.13, este programa arrojará un algoritmo (archivo de texto) para resolver el cubo. Se enviaría esta información de regreso a al sistema.
 
+
 - La información con los movimientos se guardaran en la memoria SD, es decir se almacenará alrededor de 480 bits.
 
 ![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/Memoria.PNG)
@@ -55,6 +56,15 @@ Servo Motores
 
 ![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/memoriaServo.PNG)
 
+## Diagramas de bloques
+PWM
+![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/bloqueservos.jpg)
+
+Cámara
+![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/Funcionalcamara.png)
+
+SD
+![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/bloquesd.JPG)
 
 ## Cronograma De Trabajo
 ![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/cronograma.JPG)
