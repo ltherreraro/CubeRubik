@@ -58,12 +58,15 @@ Servo Motores
 
 ## Diagramas de bloques
 PWM
+
 ![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/bloqueservos.jpg)
 
 Cámara
+
 ![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/Funcionalcamara.png)
 
 SD
+
 ![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/bloquesd.JPG)
 
 ## Cronograma De Trabajo
