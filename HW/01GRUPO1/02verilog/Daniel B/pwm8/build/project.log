@@ -1,0 +1,79 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "project.src"
+Input Format                       : mixed
+
+---- Target Parameters
+Target Device                      : XC7A100T-1CSG324
+Output File Name                   : "project.ngc"
+Output Format                      : NGC
+
+---- Source Options
+Top Module Name                    : ppwm
+
+---- General Options
+Optimization Goal                  : Area
+Optimization Effort                : 1
+RTL Output                         : yes
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/ekativa-project/Desktop/pwm8/ppwm.v" into library work
+Parsing module <ppwm>.
+WARNING:HDLCompiler:751 - "/home/ekativa-project/Desktop/pwm8/ppwm.v" Line 6: Redeclaration of ansi port wr is not allowed
+Analyzing Verilog file "/home/ekativa-project/Desktop/pwm8/pwm.v" into library work
+Parsing module <pwm>.
+Analyzing Verilog file "/home/ekativa-project/Desktop/pwm8/addr.v" into library work
+Parsing module <addr>.
+Analyzing Verilog file "/home/ekativa-project/Desktop/pwm8/contador.v" into library work
+Parsing module <contador>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <ppwm>.
+ERROR:HDLCompiler:329 - "/home/ekativa-project/Desktop/pwm8/addr.v" Line 19: Target <done> of concurrent assignment or output port connection should be a net type.
+Module ppwm remains a blackbox, due to errors in its contents
+WARNING:HDLCompiler:1499 - "/home/ekativa-project/Desktop/pwm8/ppwm.v" Line 1: Empty module <ppwm> remains a black box.
+--> 
+
+
+Total memory usage is 341712 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
