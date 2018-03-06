@@ -1,4 +1,4 @@
-module addr (clk , d_in , cs , addr , rd , wr, d_out,  pwm0, pwm1, pwm2 , pwm3 , pwm4, pwm5, pwm6, pwm7);
+module addr (clk , d_in , cs , addr , rd , wr, d_out,  pwm0, pwm1/*, pwm2 , pwm3 , pwm4, pwm5, pwm6, pwm7*/);
   
   input clk;
   input [31:0]d_in;
@@ -7,7 +7,7 @@ module addr (clk , d_in , cs , addr , rd , wr, d_out,  pwm0, pwm1, pwm2 , pwm3 ,
   input rd;
   input wr;
   output reg [31:0]d_out;
-  output pwm0, pwm1, pwm2, pwm3, pwm4, pwm5, pwm6, pwm7;
+  output pwm0, pwm1/*, pwm2, pwm3, pwm4, pwm5, pwm6, pwm7*/;
 
 //------------------------------------ regs and wires-------------------------------
 

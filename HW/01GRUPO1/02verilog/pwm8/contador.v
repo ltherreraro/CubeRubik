@@ -15,11 +15,14 @@ reg e;
 reg [31:0] t;
 reg [31:0] d;
 initial e<=1;
-initial d<=2000000;
-initial t<=230000;
+initial t<=2000000;
+initial d<=230000;
 initial d1<=0;
 initial d2<=4;
 initial d3<=8;
+initial d4<=0;
+initial d5<=4;
+initial d6<=8;
 reg [8:0] count;
 initial count <=0;
 
@@ -28,7 +31,7 @@ always @(posedge  clk)
 begin
 	if (enable) 
 	begin
-		if(count<12)
+		if(count<24)
 		begin
 			adr<=d3;
 			cs<=1;
@@ -50,7 +53,7 @@ begin
 					cs<=1;
 					wr<=1;
 					rd<=0;
-					d_in<=d;
+					d_in<=e;
 					count<=count+1;
 					if(count<12)
 					begin
@@ -58,7 +61,7 @@ begin
 						cs<=1;
 						wr<=1;
 						rd<=0;
-						d_in<=t;
+						d_in<=d;
 						count<=count+1;
 						if(count<8)
 							begin
@@ -66,7 +69,7 @@ begin
 								cs<=1;
 								wr<=1;
 								rd<=0;
-								d_in<=e;
+								d_in<=t;
 								count<=count+1;
 							if(count<4)
 								begin
