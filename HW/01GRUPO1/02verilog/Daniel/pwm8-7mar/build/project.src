@@ -1,0 +1,4 @@
+verilog work ../ppwm.v
+verilog work ../pwm.v
+verilog work ../addr.v
+verilog work ../contador.v
