@@ -1,0 +1,31 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Mar 12 17:30:49 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "E3" LEVEL 1;
+COMP "leden" LOCATE = SITE "T6" LEVEL 1;
+COMP "dout<0>" LOCATE = SITE "B13" LEVEL 1;
+COMP "dout<1>" LOCATE = SITE "F14" LEVEL 1;
+COMP "dout<2>" LOCATE = SITE "D17" LEVEL 1;
+COMP "enabled" LOCATE = SITE "R6" LEVEL 1;
+COMP "dout<3>" LOCATE = SITE "E17" LEVEL 1;
+COMP "dout<4>" LOCATE = SITE "G13" LEVEL 1;
+COMP "rs1" LOCATE = SITE "R7" LEVEL 1;
+COMP "dout<5>" LOCATE = SITE "C17" LEVEL 1;
+COMP "dout<6>" LOCATE = SITE "D18" LEVEL 1;
+COMP "dout<7>" LOCATE = SITE "E18" LEVEL 1;
+COMP "rs" LOCATE = SITE "U8" LEVEL 1;
+COMP "empty" LOCATE = SITE "R2" LEVEL 1;
+COMP "l0" LOCATE = SITE "V9" LEVEL 1;
+COMP "l1" LOCATE = SITE "R8" LEVEL 1;
+COMP "vsync" LOCATE = SITE "P15" LEVEL 1;
+COMP "href" LOCATE = SITE "G14" LEVEL 1;
+COMP "reset" LOCATE = SITE "U9" LEVEL 1;
+COMP "full" LOCATE = SITE "P2" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "ucc/count1_7" BEL "ucc/count1_6" BEL "ucc/count1_5"
+        BEL "ucc/count1_4" BEL "ucc/count1_3" BEL "ucc/count1_2" BEL
+        "ucc/count1_1" BEL "ucc/count1_0" BEL "ucc/count_0" BEL "ucc/clkout"
+        BEL "ucc/led" BEL "ucc/clkout1" BEL "ucc/led1" BEL "clk_BUFGP/BUFG";
+SCHEMATIC END;
+

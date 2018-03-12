@@ -1,0 +1,627 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "project.src"
+Input Format                       : mixed
+
+---- Target Parameters
+Target Device                      : XC7A100T-1CSG324
+Output File Name                   : "project.ngc"
+Output Format                      : NGC
+
+---- Source Options
+Top Module Name                    : fifo
+
+---- General Options
+Optimization Goal                  : Area
+Optimization Effort                : 1
+RTL Output                         : yes
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/lisseth/Escritorio/FIFO/fifo.v" into library work
+Parsing module <fifo>.
+Analyzing Verilog file "/home/lisseth/Escritorio/FIFO/div_freq.v" into library work
+Parsing module <div_freq>.
+Analyzing Verilog file "/home/lisseth/Escritorio/FIFO/datos.v" into library work
+Parsing module <datos>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "/home/lisseth/Escritorio/FIFO/fifo.v" Line 20: Port clkout2 is not connected to this instance
+
+Elaborating module <fifo>.
+
+Elaborating module <datos>.
+WARNING:HDLCompiler:413 - "/home/lisseth/Escritorio/FIFO/datos.v" Line 26: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "/home/lisseth/Escritorio/FIFO/datos.v" Line 35: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "/home/lisseth/Escritorio/FIFO/datos.v" Line 45: Result of 9-bit expression is truncated to fit in 8-bit target.
+
+Elaborating module <div_freq>.
+WARNING:HDLCompiler:413 - "/home/lisseth/Escritorio/FIFO/fifo.v" Line 70: Result of 15-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:413 - "/home/lisseth/Escritorio/FIFO/fifo.v" Line 71: Result of 15-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:552 - "/home/lisseth/Escritorio/FIFO/fifo.v" Line 20: Input port reset2 is not connected on this instance
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <fifo>.
+    Related source file is "/home/lisseth/Escritorio/FIFO/fifo.v".
+        abits = 14
+        dbits = 8
+WARNING:Xst:2898 - Port 'reset2', unconnected in block instance 'ucc', is tied to GND.
+INFO:Xst:3210 - "/home/lisseth/Escritorio/FIFO/fifo.v" line 20: Output port <clkout2> of the instance <ucc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/lisseth/Escritorio/FIFO/fifo.v" line 20: Output port <led2> of the instance <ucc> is unconnected or connected to loadless signal.
+    Found 16384x8-bit dual-port RAM <Mram_regarray> for signal <regarray>.
+    Found 1-bit register for signal <empty>.
+    Found 14-bit register for signal <wr_reg>.
+    Found 14-bit register for signal <rd_reg>.
+    Found 1-bit register for signal <full>.
+    Found 8-bit register for signal <dout>.
+    Found 14-bit adder for signal <wr_succ> created at line 70.
+    Found 14-bit adder for signal <rd_succ> created at line 71.
+    Found 14-bit comparator not equal for signal <rd_reg[13]_wr_reg[13]_equal_11_o> created at line 86
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  38 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <fifo> synthesized.
+
+Synthesizing Unit <datos>.
+    Related source file is "/home/lisseth/Escritorio/FIFO/datos.v".
+    Found 8-bit register for signal <d_in>.
+    Found 8-bit register for signal <count>.
+    Found 1-bit register for signal <leden>.
+    Found 8-bit adder for signal <count[7]_GND_2_o_add_10_OUT> created at line 45.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  17 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <datos> synthesized.
+
+Synthesizing Unit <div_freq>.
+    Related source file is "/home/lisseth/Escritorio/FIFO/div_freq.v".
+        fi = 50000000
+        fs = 36000000
+        fi1 = 50000000
+        fs1 = 360000
+        fi2 = 50000000
+        fs2 = 36000
+    Found 1-bit register for signal <clkout>.
+    Found 32-bit register for signal <count>.
+    Found 1-bit register for signal <led1>.
+    Found 1-bit register for signal <clkout1>.
+    Found 32-bit register for signal <count1>.
+    Found 1-bit register for signal <led>.
+    Found 32-bit subtractor for signal <count[31]_GND_3_o_sub_3_OUT> created at line 40.
+    Found 32-bit subtractor for signal <count1[31]_GND_3_o_sub_9_OUT> created at line 61.
+    WARNING:Xst:2404 -  FFs/Latches <led2<0:0>> (without init value) have a constant value of 0 in block <div_freq>.
+    WARNING:Xst:2404 -  FFs/Latches <count2<31:11>> (without init value) have a constant value of 0 in block <div_freq>.
+    WARNING:Xst:2404 -  FFs/Latches <count2<11:11>> (without init value) have a constant value of 1 in block <div_freq>.
+    WARNING:Xst:2404 -  FFs/Latches <count2<11:11>> (without init value) have a constant value of 0 in block <div_freq>.
+    WARNING:Xst:2404 -  FFs/Latches <count2<11:11>> (without init value) have a constant value of 1 in block <div_freq>.
+    WARNING:Xst:2404 -  FFs/Latches <count2<11:11>> (without init value) have a constant value of 0 in block <div_freq>.
+    WARNING:Xst:2404 -  FFs/Latches <count2<11:10>> (without init value) have a constant value of 1 in block <div_freq>.
+    WARNING:Xst:2404 -  FFs/Latches <count2<10:10>> (without init value) have a constant value of 0 in block <div_freq>.
+    WARNING:Xst:2404 -  FFs/Latches <count2<10:9>> (without init value) have a constant value of 1 in block <div_freq>.
+    WARNING:Xst:2404 -  FFs/Latches <count2<9:8>> (without init value) have a constant value of 0 in block <div_freq>.
+    WARNING:Xst:2404 -  FFs/Latches <clkout2<0:0>> (without init value) have a constant value of 0 in block <div_freq>.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  68 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <div_freq> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16384x8-bit dual-port RAM                             : 1
+# Adders/Subtractors                                   : 5
+ 14-bit adder                                          : 2
+ 32-bit subtractor                                     : 2
+ 8-bit adder                                           : 1
+# Registers                                            : 14
+ 1-bit register                                        : 7
+ 14-bit register                                       : 2
+ 32-bit register                                       : 2
+ 8-bit register                                        : 3
+# Comparators                                          : 1
+ 14-bit comparator not equal                           : 1
+# Multiplexers                                         : 5
+ 32-bit 2-to-1 multiplexer                             : 4
+ 8-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <datos>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <datos> synthesized (advanced).
+
+Synthesizing (advanced) Unit <fifo>.
+The following registers are absorbed into counter <wr_reg>: 1 register on signal <wr_reg>.
+The following registers are absorbed into counter <rd_reg>: 1 register on signal <rd_reg>.
+INFO:Xst:3226 - The RAM <Mram_regarray> will be implemented as a BLOCK RAM, absorbing the following register(s): <out>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16384-word x 8-bit                  |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clock>         | rise     |
+    |     weA            | connected to signal <wr_en>         | high     |
+    |     addrA          | connected to signal <wr_reg>        |          |
+    |     diA            | connected to signal <din>           |          |
+    -----------------------------------------------------------------------
+    | optimization       | area                                |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 16384-word x 8-bit                  |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <clock>         | rise     |
+    |     enB            | connected to signal <rd>            | high     |
+    |     addrB          | connected to signal <rd_reg>        |          |
+    |     doB            | connected to signal <dout>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | area                                |          |
+    -----------------------------------------------------------------------
+Unit <fifo> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16384x8-bit dual-port block RAM                       : 1
+# Adders/Subtractors                                   : 4
+ 14-bit adder                                          : 2
+ 32-bit subtractor                                     : 2
+# Counters                                             : 3
+ 14-bit up counter                                     : 2
+ 8-bit up counter                                      : 1
+# Registers                                            : 79
+ Flip-Flops                                            : 79
+# Comparators                                          : 1
+ 14-bit comparator not equal                           : 1
+# Multiplexers                                         : 4
+ 32-bit 2-to-1 multiplexer                             : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch d_in_3 hinder the constant cleaning in the block datos.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <d_in_0> has a constant value of 0 in block <datos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d_in_4> has a constant value of 0 in block <datos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d_in_5> has a constant value of 0 in block <datos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d_in_6> has a constant value of 0 in block <datos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <d_in_7> has a constant value of 0 in block <datos>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <fifo> ...
+
+Optimizing unit <div_freq> ...
+
+Optimizing unit <datos> ...
+INFO:Xst:2399 - RAMs <Mram_regarray4>, <Mram_regarray3> are equivalent, second RAM is removed
+WARNING:Xst:1293 - FF/Latch <ucc/count_25> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count_24> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count_23> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count_22> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count_21> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count_20> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count_19> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count_18> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count_17> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count_16> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count_15> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count_14> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count_13> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count_12> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count_11> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count_10> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count_9> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count_8> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count_7> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count_6> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count_5> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count_4> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count_3> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count_2> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count_1> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dt/count_7> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dt/count_6> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dt/count_5> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dt/count_4> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dt/count_3> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count1_31> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count1_30> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count1_29> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count1_28> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count1_27> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count1_26> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count1_25> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count1_24> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count1_23> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count1_22> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count1_21> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count1_20> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count1_19> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count1_18> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count1_17> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count1_16> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count1_15> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count1_14> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count1_13> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count1_12> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count1_11> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count1_10> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count1_9> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count1_8> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count_31> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count_30> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count_29> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count_28> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count_27> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ucc/count_26> has a constant value of 0 in block <fifo>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block fifo, actual ratio is 0.
+FlipFlop empty_reg has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop full_reg has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop dt/leden has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 53
+ Flip-Flops                                            : 53
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : project.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 238
+#      GND                         : 1
+#      INV                         : 17
+#      LUT1                        : 56
+#      LUT2                        : 3
+#      LUT3                        : 11
+#      LUT4                        : 5
+#      LUT5                        : 1
+#      LUT6                        : 9
+#      MUXCY                       : 66
+#      VCC                         : 1
+#      XORCY                       : 68
+# FlipFlops/Latches                : 53
+#      FD                          : 11
+#      FDCE                        : 30
+#      FDE                         : 3
+#      FDP                         : 2
+#      FDRE                        : 5
+#      FDS                         : 2
+# RAMS                             : 3
+#      RAMB36E1                    : 3
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 19
+#      IBUF                        : 6
+#      OBUF                        : 13
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              48  out of  126800     0%  
+ Number of Slice LUTs:                  102  out of  63400     0%  
+    Number used as Logic:               102  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    105
+   Number with an unused Flip Flop:      57  out of    105    54%  
+   Number with an unused LUT:             3  out of    105     2%  
+   Number of fully used LUT-FF pairs:    45  out of    105    42%  
+   Number of unique control sets:        10
+
+IO Utilization: 
+ Number of IOs:                          20
+ Number of bonded IOBs:                  20  out of    210     9%  
+    IOB Flip Flops/Latches:               5
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                3  out of    135     2%  
+    Number using Block RAM only:          3
+ Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+ucc/clkout                         | BUFG                   | 43    |
+clk                                | BUFGP                  | 13    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 4.487ns (Maximum Frequency: 222.854MHz)
+   Minimum input arrival time before clock: 3.229ns
+   Maximum output required time after clock: 0.877ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ucc/clkout'
+  Clock period: 4.487ns (frequency: 222.854MHz)
+  Total number of paths / destination ports: 726 / 76
+-------------------------------------------------------------------------
+Delay:               4.487ns (Levels of Logic = 15)
+  Source:            rd_reg_0 (FF)
+  Destination:       empty_reg (FF)
+  Source Clock:      ucc/clkout rising
+  Destination Clock: ucc/clkout rising
+
+  Data Path: rd_reg_0 to empty_reg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.478   0.426  rd_reg_0 (rd_reg_0)
+     INV:I->O              1   0.146   0.000  Madd_rd_succ_lut<0>_INV_0 (Madd_rd_succ_lut<0>)
+     MUXCY:S->O            1   0.472   0.000  Madd_rd_succ_cy<0> (Madd_rd_succ_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_rd_succ_cy<1> (Madd_rd_succ_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_rd_succ_cy<2> (Madd_rd_succ_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_rd_succ_cy<3> (Madd_rd_succ_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_rd_succ_cy<4> (Madd_rd_succ_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_rd_succ_cy<5> (Madd_rd_succ_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_rd_succ_cy<6> (Madd_rd_succ_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_rd_succ_cy<7> (Madd_rd_succ_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_rd_succ_cy<8> (Madd_rd_succ_cy<8>)
+     XORCY:CI->O           1   0.510   0.716  Madd_rd_succ_xor<9> (rd_succ<9>)
+     LUT6:I3->O            1   0.124   0.000  Mcompar__n0060_lut<3> (Mcompar__n0060_lut<3>)
+     MUXCY:S->O            1   0.472   0.000  Mcompar__n0060_cy<3> (Mcompar__n0060_cy<3>)
+     MUXCY:CI->O           1   0.334   0.421  Mcompar__n0060_cy<4> (_n0060)
+     LUT6:I5->O            2   0.124   0.000  empty_reg_rstpot (empty_reg_rstpot)
+     FDP:D                     0.030          empty_reg
+    ----------------------------------------
+    Total                      4.487ns (2.924ns logic, 1.563ns route)
+                                       (65.2% logic, 34.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.057ns (frequency: 327.172MHz)
+  Total number of paths / destination ports: 113 / 13
+-------------------------------------------------------------------------
+Delay:               3.057ns (Levels of Logic = 10)
+  Source:            ucc/count1_0 (FF)
+  Destination:       ucc/count1_7 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: ucc/count1_0 to ucc/count1_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.478   0.427  ucc/count1_0 (ucc/count1_0)
+     LUT1:I0->O            1   0.124   0.000  ucc/Msub_count1[31]_GND_3_o_sub_9_OUT_cy<0>_rt (ucc/Msub_count1[31]_GND_3_o_sub_9_OUT_cy<0>_rt)
+     MUXCY:S->O            1   0.472   0.000  ucc/Msub_count1[31]_GND_3_o_sub_9_OUT_cy<0> (ucc/Msub_count1[31]_GND_3_o_sub_9_OUT_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  ucc/Msub_count1[31]_GND_3_o_sub_9_OUT_cy<1> (ucc/Msub_count1[31]_GND_3_o_sub_9_OUT_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  ucc/Msub_count1[31]_GND_3_o_sub_9_OUT_cy<2> (ucc/Msub_count1[31]_GND_3_o_sub_9_OUT_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  ucc/Msub_count1[31]_GND_3_o_sub_9_OUT_cy<3> (ucc/Msub_count1[31]_GND_3_o_sub_9_OUT_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  ucc/Msub_count1[31]_GND_3_o_sub_9_OUT_cy<4> (ucc/Msub_count1[31]_GND_3_o_sub_9_OUT_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  ucc/Msub_count1[31]_GND_3_o_sub_9_OUT_cy<5> (ucc/Msub_count1[31]_GND_3_o_sub_9_OUT_cy<5>)
+     MUXCY:CI->O           0   0.029   0.000  ucc/Msub_count1[31]_GND_3_o_sub_9_OUT_cy<6> (ucc/Msub_count1[31]_GND_3_o_sub_9_OUT_cy<6>)
+     XORCY:CI->O           1   0.510   0.716  ucc/Msub_count1[31]_GND_3_o_sub_9_OUT_xor<7> (ucc/count1[31]_GND_3_o_sub_9_OUT<7>)
+     LUT3:I0->O            1   0.124   0.000  ucc/Mmux_GND_3_o_count1[31]_mux_10_OUT301 (ucc/GND_3_o_count1[31]_mux_10_OUT<7>)
+     FD:D                      0.030          ucc/count1_7
+    ----------------------------------------
+    Total                      3.057ns (1.914ns logic, 1.143ns route)
+                                       (62.6% logic, 37.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ucc/clkout'
+  Total number of paths / destination ports: 115 / 77
+-------------------------------------------------------------------------
+Offset:              3.229ns (Levels of Logic = 4)
+  Source:            vsync (PAD)
+  Destination:       full_reg (FF)
+  Destination Clock: ucc/clkout rising
+
+  Data Path: vsync to full_reg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   0.001   0.952  vsync_IBUF (vsync_IBUF)
+     LUT5:I0->O            1   0.124   0.939  _n0106_inv1 (_n0106_inv1)
+     LUT6:I0->O            1   0.124   0.421  _n0106_inv2 (_n0106_inv2)
+     LUT6:I5->O            2   0.124   0.405  _n0106_inv5 (_n0106_inv)
+     FDCE:CE                   0.139          full_reg
+    ----------------------------------------
+    Total                      3.229ns (0.512ns logic, 2.717ns route)
+                                       (15.9% logic, 84.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 13 / 13
+-------------------------------------------------------------------------
+Offset:              1.498ns (Levels of Logic = 2)
+  Source:            rs1 (PAD)
+  Destination:       ucc/clkout1 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rs1 to ucc/clkout1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            10   0.001   0.458  rs1_IBUF (rs1_IBUF)
+     INV:I->O              1   0.146   0.399  ucc/reset1_inv1_INV_0 (ucc/reset1_inv)
+     FDRE:R                    0.494          ucc/clkout1
+    ----------------------------------------
+    Total                      1.498ns (0.641ns logic, 0.857ns route)
+                                       (42.8% logic, 57.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ucc/clkout'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              0.877ns (Levels of Logic = 1)
+  Source:            empty_reg_1 (FF)
+  Destination:       empty (PAD)
+  Source Clock:      ucc/clkout rising
+
+  Data Path: empty_reg_1 to empty
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              1   0.478   0.399  empty_reg_1 (empty_reg_1)
+     OBUF:I->O                 0.000          empty_OBUF (empty)
+    ----------------------------------------
+    Total                      0.877ns (0.478ns logic, 0.399ns route)
+                                       (54.5% logic, 45.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              0.877ns (Levels of Logic = 1)
+  Source:            ucc/led (FF)
+  Destination:       l0 (PAD)
+  Source Clock:      clk rising
+
+  Data Path: ucc/led to l0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.478   0.399  ucc/led (ucc/led)
+     OBUF:I->O                 0.000          l0_OBUF (l0)
+    ----------------------------------------
+    Total                      0.877ns (0.478ns logic, 0.399ns route)
+                                       (54.5% logic, 45.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.057|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ucc/clkout
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.523|         |         |         |
+ucc/clkout     |    4.487|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 25.00 secs
+Total CPU time to Xst completion: 24.33 secs
+ 
+--> 
+
+
+Total memory usage is 505960 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   85 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+
