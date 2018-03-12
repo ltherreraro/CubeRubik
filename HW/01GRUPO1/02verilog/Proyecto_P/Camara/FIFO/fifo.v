@@ -1,23 +1,22 @@
-module fifo # (parameter abits = 14, dbits = 8)(
+module fifo # (parameter abits = 14, dbits = 9)(
     input clk,
     input reset,
-   input href,
-   input vsync,
+   // input href,
+   // input vsync,
  // input [dbits-1:0] din,
     output empty,
     output full,
   output [dbits-1:0] dout,
-	input rs,rs1,//rs2,
-	output l0,l1,//l2,
-	//input rd,
-	input enabled,
-	output leden
+	input rs,rs1,rs2,
+	output l0,l1,l2,
+	input rd,
+	input enable
     );
 wire [dbits-1:0]din;
-wire clock,rd;
+wire clock,href,vsync;
 
-datos dt(.clock(clock),.d_in(din),. enable(enabled),.leden(leden));
-div_freq ucc (.clk(clk), .clkout(clock),.clkout1(rd)/*,.clkout2(vsync)*/,.reset(rs), .reset1(rs1)/*, .reset2(rs2)*/, .led(l0), .led1(l1)/*, .led2(l2)*/);
+datos dt(.clock(clock),.d_in(din),. enable(enable));
+div_freq ucc (.clk(clk), .clkout(clock),.clkout1(href),.clkout2(vsync),.reset(rs), .reset1(rs1), .reset2(rs2), .led(l0), .led1(l1), .led2(l2));
 
 wire wr;
 reg [dbits-1:0] out;

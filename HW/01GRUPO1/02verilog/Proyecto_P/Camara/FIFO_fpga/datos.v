@@ -1,18 +1,21 @@
-module datos (clock,d_in, enable);
+module datos (clock,d_in, enable,leden);
 
 input clock;
-output reg [8:0] d_in;
+output reg [7:0] d_in;
 input enable;
-reg [8:0] count;
+reg [7:0] count;
+output reg leden;
 
 initial count<=0; 
 initial d_in<=0;
+initial leden<=0;
 always @(posedge  clock)
 begin
 
 	if (enable)
 
 	begin
+	leden<=1;
 
 		if (count==2)
 		begin
