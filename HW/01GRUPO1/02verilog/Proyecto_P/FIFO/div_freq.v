@@ -2,11 +2,13 @@ module div_freq #(
               parameter   fi     = 50000000,        //<- fFPGA/2=fi  
               parameter   fs	 = 36000000    ,    //<- flckout=fs
 parameter   fi1     = 50000000,        //<- fFPGA/2=fi  
-              parameter   fs1	 = 50000  ,      //<- flckout=fs
+              parameter   fs1	 = 360000  ,      //<- flckout=fs
 parameter   fi2     = 50000000,        //<- fFPGA/2=fi  
-              parameter   fs2	 = 33000       //<- flckout=fs
+              parameter   fs2	 = 36000       //<- flckout=fs
   )(input clk, output reg clkout,output reg clkout1,output reg clkout2,input reset, input reset1, input reset2, output reg led, output reg led1, output reg led2);
 
+
+//clkout1(href),.clkout2(vsync)
 
 initial clkout=0;
 initial clkout1=0;

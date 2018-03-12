@@ -12,7 +12,7 @@ IVERILOG        = iverilog
 
 
 
-SRC             = $(DESIGN).v div_freq.v#agregar el resto de modulos $(DESIGN).v div_freq.v etc
+SRC             = $(DESIGN).v div_freq.v datos.v#agregar el resto de modulos $(DESIGN).v div_freq.v etc
 
 SIM_SRC = $(DESIGN)_TB.v          \
 
