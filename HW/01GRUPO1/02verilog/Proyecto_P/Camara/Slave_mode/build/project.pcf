@@ -1,0 +1,18 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Mar 12 20:16:04 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "led" LOCATE = SITE "V9" LEVEL 1;
+COMP "xvclk" LOCATE = SITE "B13" LEVEL 1;
+COMP "resetb" LOCATE = SITE "D17" LEVEL 1;
+COMP "pwdn" LOCATE = SITE "F14" LEVEL 1;
+COMP "reset" LOCATE = SITE "U9" LEVEL 1;
+COMP "led1" LOCATE = SITE "T8" LEVEL 1;
+COMP "clk" LOCATE = SITE "E3" LEVEL 1;
+COMP "enable" LOCATE = SITE "U8" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "div/led" BEL "div/count_1" BEL "div/clkout" BEL
+        "div/count_0" BEL "clk_BUFGP/BUFG" BEL "div/clkout_1";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

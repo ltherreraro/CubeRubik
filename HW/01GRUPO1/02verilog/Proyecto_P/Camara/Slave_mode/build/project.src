@@ -1,0 +1,3 @@
+verilog work ../slave_mode.v
+verilog work ../div_freq.v
+verilog work ../slave.v
