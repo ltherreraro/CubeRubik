@@ -1,3 +1,1 @@
 verilog work ../fifo.v
-verilog work ../div_freq.v
-verilog work ../datos.v

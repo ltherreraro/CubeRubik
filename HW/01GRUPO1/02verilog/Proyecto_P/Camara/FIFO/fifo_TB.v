@@ -5,123 +5,71 @@ module fifo_TB;
 
 parameter tck              = 3;       // clock period in ns
 //----------------------------------------------------------------------------
-//----------------------------------------------------------------------------
-reg rs,rs1,rs2;
 reg clk;
 reg rst;
-reg rd;
-/*reg [1:0] data_in;*/
-reg enable;
+
+reg rd,href,vsync;
+reg [8:0] data_in;
+
 //----------------------------------------------------------------------------
 // Device Under Test 
 //------------------------------------------------------------------
 
-fifo  uut(.reset(rst),.clk(clk)/*,.din(data_in)*/,.rs(rs),.rs1(rs1),.rs2(rs2),.rd(rd),.enable(enable));
-
+fifo  uut(.reset(rst),.clock(clk),.rd(rd),.href(href),.vsync(vsync),.din(data_in));
 
 /* Clocking device */
 initial begin
-	
 	clk <= 0;
 	rst <=1;
-#2;
-	rst<=0;
-	rs1 <=1;
-rs <=1;
-rs2 <=1;
-enable <=1;
-rd<=0;
 	#(2*tck) rst=0;
-#10000;
-enable<=0;
-#10000;
-
-rs1 <=0;
-rs2 <=0;
-rd=0; 	 
-#2000;
-rd=1;
-#2000;
-rd=0;
-#2000;
-rd=1;
-#2000;
-rd=0;
-#2000;
-rd=1;
-#2000;
-rd=0;
-#2000;
-rd=1;
-#2000;
-rd=0;	
+	rd <=0;
+	href<=0;
+	vsync<=0;
 end
 
 always #(tck/2) clk <= ~clk;
 
+always #(tck)
+begin
+href<=~href;#30;
+end
 
-/*initial begin
+always #(tck)
+begin
+vsync<=~vsync;#300;
+end
+
+initial begin
 #4;
-data_in=1; #200; 
+data_in="h"; #2;
+data_in="o"; #2;
+data_in="l"; #2;
+data_in="a"; #2;
+data_in=" "; #2;
+data_in="m"; #2;
+data_in="u"; #2;
+data_in="n"; #2;
+data_in="d"; #2;
+data_in="o"; #2; 
+data_in="."; #2;
+data_in="2"; #2;
+data_in="3"; #2;
+data_in="4"; #2; 
+data_in="5"; #2; 
+data_in="6"; #2; 
+data_in="7"; #2; 
+data_in="8"; #2; 
+data_in="9"; #2; 
+data_in="0"; #2;
 
-data_in=1;  #200; 
-data_in=1;   #200; 
-data_in=1;  #200; 
-data_in=1;   #200; 
-data_in=1;  #200; 
-data_in=1;   #200; 
-
-data_in=0;  #200; 
-data_in=0;   #200; 
-data_in=0;   #200; 
-data_in=0;   #200; 
-data_in=0; #200; 
-
-data_in=1;   #200; 
-data_in=1;   #200; 
-data_in=1;   #200; 
-data_in=1;  #200; 
-data_in=1;  #200; 
-rs2=0;
-rs1=0;
-rd <= ~rd;#200; 
-rd <= ~rd;#200; 
-rd <= ~rd;#200; 
-rd <= ~rd;#200; 
-rd <= ~rd;#200; 
-rd <= ~rd;#200; 
-rd <= ~rd;#200; 
-rd <= ~rd;#200; 
-rd <= ~rd;#200;
-rd <= ~rd;#200; 
-rd <= ~rd;#200; 
-rd <= ~rd;#200; 
-rd <= ~rd;#200; 
-rd <= ~rd;#200; 
-rd <= ~rd;#200; 
-rd <= ~rd;#200; 
-rd <= ~rd;#200; 
-rd <= ~rd;#200;
-rd <= ~rd;#200; 
-rd <= ~rd;#200; 
-rd <= ~rd;#200; 
-rd <= ~rd;#200; 
-rd <= ~rd;#200; 
-rd <= ~rd;#200; 
-rd <= ~rd;#200; 
-rd <= ~rd;#200; 
-rd <= ~rd;#200;
-rd <= ~rd;#200; 
-rd <= ~rd;#200; 
-rd <= ~rd;#200; 
-rd <= ~rd;#200; 
-rd <= ~rd;#200; 
-rd <= ~rd;#200; 
-rd <= ~rd;#200; 
-rd <= ~rd;#200; 
-rd <= ~rd;#200;    
-
-end*/
+rd=0; #2;
+rd=1; #2;
+rd=0; #2;
+rd=1; #2;
+rd=0; #2;
+rd=1; #2;
+rd=0; #2;
+end
 
 initial begin: TEST_CASE
      $dumpfile("fifo_TB.vcd");
