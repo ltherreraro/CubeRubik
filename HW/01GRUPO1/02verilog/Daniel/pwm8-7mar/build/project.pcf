@@ -1,0 +1,73 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Mar 07 14:24:21 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "pwm0" LOCATE = SITE "B13" LEVEL 1;
+COMP "pwm1" LOCATE = SITE "F14" LEVEL 1;
+COMP "pwm2" LOCATE = SITE "D17" LEVEL 1;
+COMP "pwm3" LOCATE = SITE "E17" LEVEL 1;
+COMP "pwm4" LOCATE = SITE "G13" LEVEL 1;
+COMP "pwm5" LOCATE = SITE "C17" LEVEL 1;
+COMP "pwm6" LOCATE = SITE "D18" LEVEL 1;
+COMP "pwm7" LOCATE = SITE "E18" LEVEL 1;
+COMP "clk" LOCATE = SITE "E3" LEVEL 1;
+COMP "enable" LOCATE = SITE "U9" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "add/D1_20" BEL "add/D1_17" BEL "add/D1_16" BEL
+        "add/D1_0" BEL "add/D0_20" BEL "add/D0_17" BEL "add/D0_16" BEL
+        "add/D0_0" BEL "add/T0_20" BEL "add/T0_17" BEL "add/T0_16" BEL
+        "add/T0_0" BEL "add/T1_20" BEL "add/T1_17" BEL "add/T1_16" BEL
+        "add/T1_0" BEL "add/pw/countD1_31" BEL "add/pw/countD1_30" BEL
+        "add/pw/countD1_29" BEL "add/pw/countD1_28" BEL "add/pw/countD1_27"
+        BEL "add/pw/countD1_26" BEL "add/pw/countD1_25" BEL
+        "add/pw/countD1_24" BEL "add/pw/countD1_23" BEL "add/pw/countD1_22"
+        BEL "add/pw/countD1_21" BEL "add/pw/countD1_20" BEL
+        "add/pw/countD1_19" BEL "add/pw/countD1_18" BEL "add/pw/countD1_17"
+        BEL "add/pw/countD1_16" BEL "add/pw/countD1_15" BEL
+        "add/pw/countD1_14" BEL "add/pw/countD1_13" BEL "add/pw/countD1_12"
+        BEL "add/pw/countD1_11" BEL "add/pw/countD1_10" BEL "add/pw/countD1_9"
+        BEL "add/pw/countD1_8" BEL "add/pw/countD1_7" BEL "add/pw/countD1_6"
+        BEL "add/pw/countD1_5" BEL "add/pw/countD1_4" BEL "add/pw/countD1_3"
+        BEL "add/pw/countD1_2" BEL "add/pw/countD1_1" BEL "add/pw/countD1_0"
+        BEL "add/pw/countD_31" BEL "add/pw/countD_30" BEL "add/pw/countD_29"
+        BEL "add/pw/countD_28" BEL "add/pw/countD_27" BEL "add/pw/countD_26"
+        BEL "add/pw/countD_25" BEL "add/pw/countD_24" BEL "add/pw/countD_23"
+        BEL "add/pw/countD_22" BEL "add/pw/countD_21" BEL "add/pw/countD_20"
+        BEL "add/pw/countD_19" BEL "add/pw/countD_18" BEL "add/pw/countD_17"
+        BEL "add/pw/countD_16" BEL "add/pw/countD_15" BEL "add/pw/countD_14"
+        BEL "add/pw/countD_13" BEL "add/pw/countD_12" BEL "add/pw/countD_11"
+        BEL "add/pw/countD_10" BEL "add/pw/countD_9" BEL "add/pw/countD_8" BEL
+        "add/pw/countD_7" BEL "add/pw/countD_6" BEL "add/pw/countD_5" BEL
+        "add/pw/countD_4" BEL "add/pw/countD_3" BEL "add/pw/countD_2" BEL
+        "add/pw/countD_1" BEL "add/pw/countD_0" BEL "add/pw/countT1_31" BEL
+        "add/pw/countT1_30" BEL "add/pw/countT1_29" BEL "add/pw/countT1_28"
+        BEL "add/pw/countT1_27" BEL "add/pw/countT1_26" BEL
+        "add/pw/countT1_25" BEL "add/pw/countT1_24" BEL "add/pw/countT1_23"
+        BEL "add/pw/countT1_22" BEL "add/pw/countT1_21" BEL
+        "add/pw/countT1_20" BEL "add/pw/countT1_19" BEL "add/pw/countT1_18"
+        BEL "add/pw/countT1_17" BEL "add/pw/countT1_16" BEL
+        "add/pw/countT1_15" BEL "add/pw/countT1_14" BEL "add/pw/countT1_13"
+        BEL "add/pw/countT1_12" BEL "add/pw/countT1_11" BEL
+        "add/pw/countT1_10" BEL "add/pw/countT1_9" BEL "add/pw/countT1_8" BEL
+        "add/pw/countT1_7" BEL "add/pw/countT1_6" BEL "add/pw/countT1_5" BEL
+        "add/pw/countT1_4" BEL "add/pw/countT1_3" BEL "add/pw/countT1_2" BEL
+        "add/pw/countT1_1" BEL "add/pw/countT1_0" BEL "add/pw/countT_31" BEL
+        "add/pw/countT_30" BEL "add/pw/countT_29" BEL "add/pw/countT_28" BEL
+        "add/pw/countT_27" BEL "add/pw/countT_26" BEL "add/pw/countT_25" BEL
+        "add/pw/countT_24" BEL "add/pw/countT_23" BEL "add/pw/countT_22" BEL
+        "add/pw/countT_21" BEL "add/pw/countT_20" BEL "add/pw/countT_19" BEL
+        "add/pw/countT_18" BEL "add/pw/countT_17" BEL "add/pw/countT_16" BEL
+        "add/pw/countT_15" BEL "add/pw/countT_14" BEL "add/pw/countT_13" BEL
+        "add/pw/countT_12" BEL "add/pw/countT_11" BEL "add/pw/countT_10" BEL
+        "add/pw/countT_9" BEL "add/pw/countT_8" BEL "add/pw/countT_7" BEL
+        "add/pw/countT_6" BEL "add/pw/countT_5" BEL "add/pw/countT_4" BEL
+        "add/pw/countT_3" BEL "add/pw/countT_2" BEL "add/pw/countT_1" BEL
+        "add/pw/countT_0" BEL "con/count_4" BEL "con/count_3" BEL
+        "con/count_2" BEL "con/count_1" BEL "con/count_0" BEL "con/d_in_15"
+        BEL "con/d_in_7" BEL "con/d_in_4" BEL "con/adr_4" BEL "con/adr_2" BEL
+        "add/E1" BEL "add/E0" BEL "con/adr_3" BEL "add/pw/pwm0" BEL
+        "add/pw/pwm1" BEL "clk_BUFGP/BUFG" BEL "add/pw/pwm0_1" BEL
+        "add/pw/pwm1_1";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

@@ -1,0 +1,7 @@
+INFILE=/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/build/project_r.ncd
+OUTFILE=/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/build/project_r.bit
+FAMILY=Artix7
+PART=xc7a100t-1csg324
+WORKINGDIR=/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/build
+LICENSE=WebPack
+USER_INFO=211378749_0_0_358

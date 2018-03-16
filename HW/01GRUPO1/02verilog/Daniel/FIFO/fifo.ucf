@@ -1,0 +1,40 @@
+## Clock signal
+NET "clk"   LOC = "E3"	| IOSTANDARD = "LVCMOS33";					#Bank = 35, Pin name = IO_L12P_T1_MRCC_35,					Sch name = CLK100MHZ
+NET "clk" TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 100 MHz HIGH 50%; 
+ 
+	
+NET "reset"			LOC = "U9"	| IOSTANDARD = "LVCMOS33";		#Bank = 34, Pin name = IO_L21P_T3_DQS_34, Sch name = SW0
+
+
+## LEDs
+NET "empty"			LOC = "V9"	| IOSTANDARD = "LVCMOS33";	#Bank = 34, Pin name = IO_L21N_T3_DQS_34,	Sch name = LED1
+NET "full"			LOC = "R8"	| IOSTANDARD = "LVCMOS33";	#Bank = 34, Pin name = IO_L24P_T3_34,	Sch name = LED2
+			
+
+## Pmod Header JA
+NET "din<0>"			LOC = "B13"	| IOSTANDARD = "LVCMOS33";#Bank = 15, Pin name = IO_L1N_T0_AD0N_15,	Sch name = JA1
+NET "din<1>"			LOC = "F14"	| IOSTANDARD = "LVCMOS33";#Bank = 15, Pin name = IO_L5N_T0_AD9N_15,	Sch name = JA2
+NET "din<2>"			LOC = "D17"	| IOSTANDARD = "LVCMOS33";#Bank = 15, Pin name = IO_L16N_T2_A27_15,	Sch name = JA3
+NET "din<3>"			LOC = "E17"	| IOSTANDARD = "LVCMOS33";#Bank = 15, Pin name = IO_L16P_T2_A28_15,Sch name = JA4
+NET "din<4>"			LOC = "G13"	| IOSTANDARD = "LVCMOS33";#Bank = 15, Pin name = IO_0_15,		Sch name = JA7
+NET "din<5>"			LOC = "C17"	| IOSTANDARD = "LVCMOS33";#Bank = 15, Pin name = IO_L20N_T3_A19_15,	Sch name = JA8
+NET "din<6>"			LOC = "D18"	| IOSTANDARD = "LVCMOS33";#Bank = 15, Pin name = IO_L21N_T3_A17_15,	Sch name = JA9
+NET "din<7>"			LOC = "E18"	| IOSTANDARD = "LVCMOS33";	#Bank = 15, Pin name = IO_L21P_T3_DQS_15,Sch name = JA10
+
+## Pmod Header JB
+NET "dout<0>"			LOC = "G14"	| IOSTANDARD = "LVCMOS33";#Bank = 15, Pin name = IO_L15N_T2_DQS_ADV_B_15,	Sch name = JB1
+NET "dout<1>"			LOC = "P15"	| IOSTANDARD = "LVCMOS33";#Bank = 14, Pin name = IO_L13P_T2_MRCC_14,		Sch name = JB2
+NET "dout<2>"			LOC = "V11"	| IOSTANDARD = "LVCMOS33";#Bank = 14, Pin name = IO_L21N_T3_DQS_A06_D22_14,Sch name = JB3
+NET "dout<3>"			LOC = "V15"	| IOSTANDARD = "LVCMOS33";#Bank = CONFIG, Pin name = IO_L16P_T2_CSI_B_14,	Sch name = JB4
+NET "dout<4>"			LOC = "K16"	| IOSTANDARD = "LVCMOS33";#Bank = 15, Pin name = IO_25_15,		Sch name = JB7
+NET "dout<5>"			LOC = "R16"	| IOSTANDARD = "LVCMOS33";#Bank = CONFIG, Pin name = IO_L15P_T2_DQS_RWR_B_14,	Sch name = JB8
+NET "dout<6>"			LOC = "T9"  | IOSTANDARD = "LVCMOS33";	#Bank = 14, Pin name = IO_L24P_T3_A01_D17_14,			Sch name = JB9
+NET "dout<7>"			LOC = "U11"	| IOSTANDARD = "LVCMOS33";	#Bank = 14, Pin name = IO_L19N_T3_A09_D25_VREF_14,	Sch name = JB10 
+
+## Pmod Header JC
+NET "clock"			LOC = "K2"	| IOSTANDARD = "LVCMOS33";	#Bank = 35, Pin name = IO_L23P_T3_35,		Sch name = JC1
+NET "href"			LOC = "E7"	| IOSTANDARD = "LVCMOS33";	#Bank = 35, Pin name = IO_L6P_T0_35,		Sch name = JC2
+NET "vsync"			LOC = "J3"	| IOSTANDARD = "LVCMOS33";	#Bank = 35, Pin name = IO_L22P_T3_35,		Sch name = JC3
+NET "rd"			LOC = "J4"	| IOSTANDARD = "LVCMOS33";	#Bank = 35, Pin name = IO_L21P_T3_DQS_35,Sch name = JC4
+

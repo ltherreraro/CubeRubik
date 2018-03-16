@@ -47,13 +47,1075 @@ RTL Output                         : yes
 =========================================================================
 
 
-User Interruption
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/ppwm.v" into library work
+Parsing module <ppwm>.
+Analyzing Verilog file "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/pwm.v" into library work
+Parsing module <pwm>.
+Analyzing Verilog file "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/addr.v" into library work
+Parsing module <addr>.
+Analyzing Verilog file "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/contador.v" into library work
+Parsing module <contador>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <ppwm>.
+
+Elaborating module <addr>.
+
+Elaborating module <pwm>.
+WARNING:HDLCompiler:413 - "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/addr.v" Line 100: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/addr.v" Line 112: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/addr.v" Line 124: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/addr.v" Line 136: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/addr.v" Line 148: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/addr.v" Line 160: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/addr.v" Line 172: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/addr.v" Line 184: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:1127 - "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/ppwm.v" Line 12: Assignment to d_out ignored, since the identifier is never used
+
+Elaborating module <contador>.
+WARNING:HDLCompiler:872 - "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/contador.v" Line 21: Using initial value of e since it is never assigned
+WARNING:HDLCompiler:872 - "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/contador.v" Line 22: Using initial value of d since it is never assigned
+WARNING:HDLCompiler:872 - "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/contador.v" Line 23: Using initial value of t since it is never assigned
+WARNING:HDLCompiler:872 - "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/contador.v" Line 24: Using initial value of d1 since it is never assigned
+WARNING:HDLCompiler:872 - "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/contador.v" Line 25: Using initial value of d2 since it is never assigned
+WARNING:HDLCompiler:872 - "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/contador.v" Line 26: Using initial value of d3 since it is never assigned
+WARNING:HDLCompiler:872 - "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/contador.v" Line 27: Using initial value of d4 since it is never assigned
+WARNING:HDLCompiler:872 - "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/contador.v" Line 28: Using initial value of d5 since it is never assigned
+WARNING:HDLCompiler:872 - "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/contador.v" Line 29: Using initial value of d6 since it is never assigned
+WARNING:HDLCompiler:413 - "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/contador.v" Line 45: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/contador.v" Line 53: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/contador.v" Line 61: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/contador.v" Line 69: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/contador.v" Line 77: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/contador.v" Line 85: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:189 - "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/ppwm.v" Line 14: Size mismatch in connection of port <adr>. Formal port size is 32-bit while actual signal size is 8-bit.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ppwm>.
+    Related source file is "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/ppwm.v".
+INFO:Xst:3210 - "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/ppwm.v" line 12: Output port <d_out> of the instance <add> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <ppwm> synthesized.
+
+Synthesizing Unit <addr>.
+    Related source file is "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/addr.v".
+    Found 1-bit register for signal <E0>.
+    Found 32-bit register for signal <T0>.
+    Found 32-bit register for signal <D0>.
+    Found 1-bit register for signal <E1>.
+    Found 32-bit register for signal <T1>.
+    Found 32-bit register for signal <D1>.
+    Found 1-bit register for signal <E2>.
+    Found 32-bit register for signal <T2>.
+    Found 32-bit register for signal <D2>.
+    Found 1-bit register for signal <E3>.
+    Found 32-bit register for signal <T3>.
+    Found 32-bit register for signal <D3>.
+    Found 1-bit register for signal <E4>.
+    Found 32-bit register for signal <T4>.
+    Found 32-bit register for signal <D4>.
+    Found 1-bit register for signal <E5>.
+    Found 32-bit register for signal <T5>.
+    Found 32-bit register for signal <D5>.
+    Found 1-bit register for signal <E6>.
+    Found 32-bit register for signal <T6>.
+    Found 32-bit register for signal <D6>.
+    Found 1-bit register for signal <E7>.
+    Found 32-bit register for signal <T7>.
+    Found 32-bit register for signal <D7>.
+    Found 32-bit register for signal <d_out>.
+    Found 7-bit 25-to-1 multiplexer for signal <_n1003> created at line 26.
+    Found 7-bit 25-to-1 multiplexer for signal <_n1080> created at line 58.
+WARNING:Xst:737 - Found 1-bit latch for signal <s<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <s<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <s<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <s<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <s<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <s<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <s<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred 552 D-type flip-flop(s).
+	inferred   7 Latch(s).
+	inferred  34 Multiplexer(s).
+Unit <addr> synthesized.
+
+Synthesizing Unit <pwm>.
+    Related source file is "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/pwm.v".
+WARNING:Xst:647 - Input <T2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <T3> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <T4> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <T5> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <T6> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <T7> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <D2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <D3> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <D4> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <D5> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <D6> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <D7> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <E2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <E3> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <E4> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <E5> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <E6> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <E7> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2935 - Signal 'pwm2', unconnected in block 'pwm', is tied to its initial value (0).
+WARNING:Xst:2935 - Signal 'pwm3', unconnected in block 'pwm', is tied to its initial value (0).
+WARNING:Xst:2935 - Signal 'pwm4', unconnected in block 'pwm', is tied to its initial value (0).
+WARNING:Xst:2935 - Signal 'pwm5', unconnected in block 'pwm', is tied to its initial value (0).
+WARNING:Xst:2935 - Signal 'pwm6', unconnected in block 'pwm', is tied to its initial value (0).
+WARNING:Xst:2935 - Signal 'pwm7', unconnected in block 'pwm', is tied to its initial value (0).
+    Found 32-bit register for signal <countT>.
+    Found 32-bit register for signal <countD>.
+    Found 1-bit register for signal <pwm1>.
+    Found 32-bit register for signal <countT1>.
+    Found 32-bit register for signal <countD1>.
+    Found 1-bit register for signal <pwm0>.
+    Found 32-bit adder for signal <countT[31]_GND_3_o_add_2_OUT> created at line 48.
+    Found 32-bit adder for signal <countD[31]_GND_3_o_add_6_OUT> created at line 59.
+    Found 32-bit adder for signal <countT1[31]_GND_3_o_add_12_OUT> created at line 80.
+    Found 32-bit adder for signal <countD1[31]_GND_3_o_add_16_OUT> created at line 91.
+    Found 32-bit comparator equal for signal <countT[31]_T0[31]_equal_2_o> created at line 39
+    Found 32-bit comparator equal for signal <countD[31]_D0[31]_equal_6_o> created at line 52
+    Found 32-bit comparator equal for signal <countT1[31]_T1[31]_equal_12_o> created at line 71
+    Found 32-bit comparator equal for signal <countD1[31]_D1[31]_equal_16_o> created at line 84
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred 130 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+Unit <pwm> synthesized.
+
+Synthesizing Unit <contador>.
+    Related source file is "/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Daniel/pwm8-7mar/contador.v".
+    Found 1-bit register for signal <rd>.
+    Found 32-bit register for signal <d_in>.
+    Found 9-bit register for signal <count>.
+    Found 32-bit register for signal <adr>.
+    Found 9-bit adder for signal <count[8]_GND_11_o_add_2_OUT> created at line 45.
+    Found 9-bit comparator greater for signal <count[8]_GND_11_o_LessThan_2_o> created at line 38
+    Found 9-bit comparator greater for signal <count[8]_GND_11_o_LessThan_4_o> created at line 46
+    Found 9-bit comparator greater for signal <count[8]_GND_11_o_LessThan_6_o> created at line 54
+    Found 9-bit comparator greater for signal <count[8]_GND_11_o_LessThan_8_o> created at line 62
+    Found 9-bit comparator greater for signal <count[8]_GND_11_o_LessThan_10_o> created at line 70
+    Found 9-bit comparator greater for signal <count[8]_GND_11_o_LessThan_12_o> created at line 78
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  74 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred   5 Multiplexer(s).
+Unit <contador> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 5
+ 32-bit adder                                          : 4
+ 9-bit adder                                           : 1
+# Registers                                            : 35
+ 1-bit register                                        : 11
+ 32-bit register                                       : 23
+ 9-bit register                                        : 1
+# Latches                                              : 7
+ 1-bit latch                                           : 7
+# Comparators                                          : 10
+ 32-bit comparator equal                               : 4
+ 9-bit comparator greater                              : 6
+# Multiplexers                                         : 39
+ 1-bit 2-to-1 multiplexer                              : 7
+ 32-bit 2-to-1 multiplexer                             : 28
+ 7-bit 2-to-1 multiplexer                              : 2
+ 7-bit 25-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <rd> (without init value) has a constant value of 0 in block <con>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <adr_8> of sequential type is unconnected in block <con>.
+WARNING:Xst:2677 - Node <adr_9> of sequential type is unconnected in block <con>.
+WARNING:Xst:2677 - Node <adr_10> of sequential type is unconnected in block <con>.
+WARNING:Xst:2677 - Node <adr_11> of sequential type is unconnected in block <con>.
+WARNING:Xst:2677 - Node <adr_12> of sequential type is unconnected in block <con>.
+WARNING:Xst:2677 - Node <adr_13> of sequential type is unconnected in block <con>.
+WARNING:Xst:2677 - Node <adr_14> of sequential type is unconnected in block <con>.
+WARNING:Xst:2677 - Node <adr_15> of sequential type is unconnected in block <con>.
+WARNING:Xst:2677 - Node <adr_16> of sequential type is unconnected in block <con>.
+WARNING:Xst:2677 - Node <adr_17> of sequential type is unconnected in block <con>.
+WARNING:Xst:2677 - Node <adr_18> of sequential type is unconnected in block <con>.
+WARNING:Xst:2677 - Node <adr_19> of sequential type is unconnected in block <con>.
+WARNING:Xst:2677 - Node <adr_20> of sequential type is unconnected in block <con>.
+WARNING:Xst:2677 - Node <adr_21> of sequential type is unconnected in block <con>.
+WARNING:Xst:2677 - Node <adr_22> of sequential type is unconnected in block <con>.
+WARNING:Xst:2677 - Node <adr_23> of sequential type is unconnected in block <con>.
+WARNING:Xst:2677 - Node <adr_24> of sequential type is unconnected in block <con>.
+WARNING:Xst:2677 - Node <adr_25> of sequential type is unconnected in block <con>.
+WARNING:Xst:2677 - Node <adr_26> of sequential type is unconnected in block <con>.
+WARNING:Xst:2677 - Node <adr_27> of sequential type is unconnected in block <con>.
+WARNING:Xst:2677 - Node <adr_28> of sequential type is unconnected in block <con>.
+WARNING:Xst:2677 - Node <adr_29> of sequential type is unconnected in block <con>.
+WARNING:Xst:2677 - Node <adr_30> of sequential type is unconnected in block <con>.
+WARNING:Xst:2677 - Node <adr_31> of sequential type is unconnected in block <con>.
+WARNING:Xst:1294 - Latch <s_5> is equivalent to a wire in block <add>.
+WARNING:Xst:1294 - Latch <s_2> is equivalent to a wire in block <add>.
+WARNING:Xst:1294 - Latch <s_4> is equivalent to a wire in block <add>.
+WARNING:Xst:1294 - Latch <s_3> is equivalent to a wire in block <add>.
+WARNING:Xst:1294 - Latch <s_6> is equivalent to a wire in block <add>.
+WARNING:Xst:1294 - Latch <s_1> is equivalent to a wire in block <add>.
+WARNING:Xst:1294 - Latch <s_0> is equivalent to a wire in block <add>.
+
+Synthesizing (advanced) Unit <contador>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <contador> synthesized (advanced).
+
+Synthesizing (advanced) Unit <pwm>.
+The following registers are absorbed into counter <countT>: 1 register on signal <countT>.
+The following registers are absorbed into counter <countT1>: 1 register on signal <countT1>.
+The following registers are absorbed into counter <countD>: 1 register on signal <countD>.
+The following registers are absorbed into counter <countD1>: 1 register on signal <countD1>.
+Unit <pwm> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 5
+ 32-bit up counter                                     : 4
+ 9-bit up counter                                      : 1
+# Registers                                            : 619
+ Flip-Flops                                            : 619
+# Comparators                                          : 10
+ 32-bit comparator equal                               : 4
+ 9-bit comparator greater                              : 6
+# Multiplexers                                         : 194
+ 1-bit 2-to-1 multiplexer                              : 167
+ 32-bit 2-to-1 multiplexer                             : 23
+ 7-bit 2-to-1 multiplexer                              : 2
+ 7-bit 25-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <rd> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_5> (without init value) has a constant value of 0 in block <addr>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_6> (without init value) has a constant value of 0 in block <addr>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <adr_27> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_28> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_29> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_30> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_31> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_1> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_2> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_3> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_8> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_11> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_12> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_13> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_14> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_21> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_22> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_23> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_24> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_25> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_26> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_27> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_28> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_29> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_30> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_31> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_0> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_1> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_5> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_6> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_7> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_8> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_9> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_10> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_11> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_12> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_13> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_14> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_15> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_16> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_17> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_18> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_19> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_20> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_21> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_22> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_23> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_24> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_25> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_26> (without init value) has a constant value of 0 in block <contador>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <d_in_7> in Unit <contador> is equivalent to the following 4 FFs/Latches, which will be removed : <d_in_10> <d_in_18> <d_in_19> <d_in_20> 
+INFO:Xst:2261 - The FF/Latch <d_in_15> in Unit <contador> is equivalent to the following FF/Latch, which will be removed : <d_in_17> 
+INFO:Xst:2261 - The FF/Latch <d_in_4> in Unit <contador> is equivalent to the following 4 FFs/Latches, which will be removed : <d_in_5> <d_in_6> <d_in_9> <d_in_16> 
+
+Optimizing unit <ppwm> ...
+
+Optimizing unit <addr> ...
+
+Optimizing unit <pwm> ...
+
+Optimizing unit <contador> ...
+WARNING:Xst:1710 - FF/Latch <add/s_4> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T0_1> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T0_2> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T0_3> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T0_8> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T0_11> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T0_12> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T0_13> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T0_14> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T0_21> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T0_22> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T0_23> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T0_24> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T0_25> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T0_26> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T0_27> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T0_28> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T0_29> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T0_30> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T0_31> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T1_1> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T1_2> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T1_3> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T1_8> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T1_11> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T1_12> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T1_13> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T1_14> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T1_21> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T1_22> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T1_23> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T1_24> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T1_25> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T1_26> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T1_27> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T1_28> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T1_29> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T1_30> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/T1_31> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D1_1> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D1_2> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D1_3> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D1_8> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D1_11> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D1_12> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D1_13> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D1_14> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D1_21> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D1_22> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D1_23> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D1_24> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D1_25> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D1_26> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D1_27> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D1_28> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D1_29> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D1_30> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D1_31> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D0_1> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D0_2> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D0_3> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D0_8> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D0_11> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D0_12> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D0_13> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D0_14> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D0_21> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D0_22> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D0_23> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D0_24> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D0_25> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D0_26> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D0_27> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D0_28> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D0_29> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D0_30> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <add/D0_31> (without init value) has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <add/d_out_31> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/d_out_30> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/d_out_29> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/d_out_28> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/d_out_27> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/d_out_26> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/d_out_25> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/d_out_24> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/d_out_23> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/d_out_22> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/d_out_21> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/d_out_20> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/d_out_19> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/d_out_18> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/d_out_17> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/d_out_16> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/d_out_15> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/d_out_14> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/d_out_13> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/d_out_12> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/d_out_11> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/d_out_10> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/d_out_9> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/d_out_8> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/d_out_7> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/d_out_6> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/d_out_5> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/d_out_4> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/d_out_3> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/d_out_2> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/d_out_1> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/d_out_0> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/E7> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/E6> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/E5> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/E4> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/E3> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/E2> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D7_31> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D7_30> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D7_29> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D7_28> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D7_27> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D7_26> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D7_25> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D7_24> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D7_23> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D7_22> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D7_21> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D7_20> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D7_19> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D7_18> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D7_17> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D7_16> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D7_15> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D7_14> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D7_13> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D7_12> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D7_11> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D7_10> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D7_9> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D7_8> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D7_7> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D7_6> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D7_5> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D7_4> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D7_3> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D7_2> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D7_1> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D7_0> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T7_31> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T7_30> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T7_29> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T7_28> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T7_27> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T7_26> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T7_25> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T7_24> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T7_23> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T7_22> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T7_21> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T7_20> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T7_19> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T7_18> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T7_17> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T7_16> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T7_15> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T7_14> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T7_13> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T7_12> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T7_11> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T7_10> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T7_9> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T7_8> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T7_7> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T7_6> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T7_5> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T7_4> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T7_3> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T7_2> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T7_1> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T7_0> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D6_31> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D6_30> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D6_29> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D6_28> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D6_27> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D6_26> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D6_25> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D6_24> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D6_23> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D6_22> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D6_21> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D6_20> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D6_19> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D6_18> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D6_17> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D6_16> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D6_15> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D6_14> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D6_13> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D6_12> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D6_11> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D6_10> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D6_9> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D6_8> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D6_7> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D6_6> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D6_5> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D6_4> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D6_3> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D6_2> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D6_1> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D6_0> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T6_31> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T6_30> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T6_29> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T6_28> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T6_27> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T6_26> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T6_25> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T6_24> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T6_23> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T6_22> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T6_21> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T6_20> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T6_19> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T6_18> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T6_17> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T6_16> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T6_15> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T6_14> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T6_13> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T6_12> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T6_11> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T6_10> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T6_9> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T6_8> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T6_7> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T6_6> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T6_5> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T6_4> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T6_3> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T6_2> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T6_1> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T6_0> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D5_31> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D5_30> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D5_29> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D5_28> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D5_27> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D5_26> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D5_25> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D5_24> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D5_23> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D5_22> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D5_21> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D5_20> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D5_19> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D5_18> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D5_17> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D5_16> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D5_15> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D5_14> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D5_13> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D5_12> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D5_11> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D5_10> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D5_9> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D5_8> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D5_7> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D5_6> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D5_5> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D5_4> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D5_3> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D5_2> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D5_1> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D5_0> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T5_31> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T5_30> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T5_29> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T5_28> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T5_27> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T5_26> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T5_25> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T5_24> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T5_23> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T5_22> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T5_21> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T5_20> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T5_19> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T5_18> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T5_17> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T5_16> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T5_15> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T5_14> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T5_13> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T5_12> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T5_11> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T5_10> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T5_9> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T5_8> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T5_7> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T5_6> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T5_5> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T5_4> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T5_3> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T5_2> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T5_1> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T5_0> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D4_31> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D4_30> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D4_29> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D4_28> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D4_27> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D4_26> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D4_25> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D4_24> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D4_23> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D4_22> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D4_21> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D4_20> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D4_19> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D4_18> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D4_17> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D4_16> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D4_15> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D4_14> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D4_13> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D4_12> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D4_11> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D4_10> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D4_9> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D4_8> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D4_7> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D4_6> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D4_5> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D4_4> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D4_3> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D4_2> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D4_1> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D4_0> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T4_31> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T4_30> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T4_29> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T4_28> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T4_27> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T4_26> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T4_25> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T4_24> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T4_23> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T4_22> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T4_21> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T4_20> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T4_19> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T4_18> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T4_17> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T4_16> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T4_15> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T4_14> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T4_13> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T4_12> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T4_11> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T4_10> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T4_9> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T4_8> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T4_7> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T4_6> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T4_5> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T4_4> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T4_3> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T4_2> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T4_1> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T4_0> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D3_31> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D3_30> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D3_29> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D3_28> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D3_27> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D3_26> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D3_25> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D3_24> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D3_23> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D3_22> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D3_21> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D3_20> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D3_19> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D3_18> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D3_17> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D3_16> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D3_15> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D3_14> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D3_13> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D3_12> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D3_11> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D3_10> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D3_9> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D3_8> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D3_7> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D3_6> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D3_5> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D3_4> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D3_3> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D3_2> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D3_1> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D3_0> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T3_31> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T3_30> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T3_29> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T3_28> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T3_27> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T3_26> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T3_25> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T3_24> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T3_23> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T3_22> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T3_21> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T3_20> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T3_19> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T3_18> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T3_17> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T3_16> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T3_15> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T3_14> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T3_13> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T3_12> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T3_11> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T3_10> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T3_9> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T3_8> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T3_7> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T3_6> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T3_5> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T3_4> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T3_3> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T3_2> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T3_1> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T3_0> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D2_31> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D2_30> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D2_29> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D2_28> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D2_27> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D2_26> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D2_25> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D2_24> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D2_23> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D2_22> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D2_21> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D2_20> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D2_19> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D2_18> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D2_17> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D2_16> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D2_15> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D2_14> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D2_13> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D2_12> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D2_11> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D2_10> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D2_9> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D2_8> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D2_7> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D2_6> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D2_5> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D2_4> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D2_3> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D2_2> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D2_1> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/D2_0> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T2_31> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T2_30> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T2_29> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T2_28> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T2_27> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T2_26> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T2_25> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T2_24> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T2_23> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T2_22> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T2_21> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T2_20> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T2_19> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T2_18> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T2_17> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T2_16> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T2_15> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T2_14> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T2_13> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T2_12> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T2_11> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T2_10> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T2_9> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T2_8> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T2_7> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T2_6> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T2_5> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T2_4> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T2_3> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T2_2> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T2_1> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:2677 - Node <add/T2_0> of sequential type is unconnected in block <ppwm>.
+WARNING:Xst:1294 - Latch <add/s_0> is equivalent to a wire in block <ppwm>.
+WARNING:Xst:1294 - Latch <add/s_1> is equivalent to a wire in block <ppwm>.
+WARNING:Xst:1294 - Latch <add/s_2> is equivalent to a wire in block <ppwm>.
+WARNING:Xst:1294 - Latch <add/s_3> is equivalent to a wire in block <ppwm>.
+WARNING:Xst:1293 - FF/Latch <con/count_8> has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <con/count_7> has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <con/count_6> has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <con/count_5> has a constant value of 0 in block <ppwm>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:3203 - The FF/Latch <con/d_in_15> in Unit <ppwm> is the opposite to the following FF/Latch, which will be removed : <con/d_in_0> 
+INFO:Xst:2261 - The FF/Latch <add/D1_17> in Unit <ppwm> is equivalent to the following FF/Latch, which will be removed : <add/D1_15> 
+INFO:Xst:2261 - The FF/Latch <add/D1_16> in Unit <ppwm> is equivalent to the following 4 FFs/Latches, which will be removed : <add/D1_9> <add/D1_6> <add/D1_5> <add/D1_4> 
+INFO:Xst:2261 - The FF/Latch <add/T0_20> in Unit <ppwm> is equivalent to the following 4 FFs/Latches, which will be removed : <add/T0_19> <add/T0_18> <add/T0_10> <add/T0_7> 
+INFO:Xst:2261 - The FF/Latch <add/T0_17> in Unit <ppwm> is equivalent to the following FF/Latch, which will be removed : <add/T0_15> 
+INFO:Xst:2261 - The FF/Latch <add/T0_16> in Unit <ppwm> is equivalent to the following 4 FFs/Latches, which will be removed : <add/T0_9> <add/T0_6> <add/T0_5> <add/T0_4> 
+INFO:Xst:2261 - The FF/Latch <add/T1_20> in Unit <ppwm> is equivalent to the following 4 FFs/Latches, which will be removed : <add/T1_19> <add/T1_18> <add/T1_10> <add/T1_7> 
+INFO:Xst:2261 - The FF/Latch <add/T1_17> in Unit <ppwm> is equivalent to the following FF/Latch, which will be removed : <add/T1_15> 
+INFO:Xst:2261 - The FF/Latch <add/D0_20> in Unit <ppwm> is equivalent to the following 4 FFs/Latches, which will be removed : <add/D0_19> <add/D0_18> <add/D0_10> <add/D0_7> 
+INFO:Xst:2261 - The FF/Latch <add/T1_16> in Unit <ppwm> is equivalent to the following 4 FFs/Latches, which will be removed : <add/T1_9> <add/T1_6> <add/T1_5> <add/T1_4> 
+INFO:Xst:2261 - The FF/Latch <add/D0_17> in Unit <ppwm> is equivalent to the following FF/Latch, which will be removed : <add/D0_15> 
+INFO:Xst:2261 - The FF/Latch <add/D0_16> in Unit <ppwm> is equivalent to the following 4 FFs/Latches, which will be removed : <add/D0_9> <add/D0_6> <add/D0_5> <add/D0_4> 
+INFO:Xst:2261 - The FF/Latch <add/D1_20> in Unit <ppwm> is equivalent to the following 4 FFs/Latches, which will be removed : <add/D1_19> <add/D1_18> <add/D1_10> <add/D1_7> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block ppwm, actual ratio is 0.
+FlipFlop add/pw/pwm0 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop add/pw/pwm1 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 161
+ Flip-Flops                                            : 161
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : project.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 509
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 128
+#      LUT2                        : 8
+#      LUT3                        : 29
+#      LUT4                        : 16
+#      LUT5                        : 7
+#      LUT6                        : 8
+#      MUXCY                       : 172
+#      VCC                         : 1
+#      XORCY                       : 133
+# FlipFlops/Latches                : 161
+#      FD                          : 5
+#      FD_1                        : 2
+#      FDE_1                       : 16
+#      FDRE                        : 136
+#      FDSE                        : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 9
+#      IBUF                        : 1
+#      OBUF                        : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             159  out of  126800     0%  
+ Number of Slice LUTs:                  202  out of  63400     0%  
+    Number used as Logic:               202  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    210
+   Number with an unused Flip Flop:      51  out of    210    24%  
+   Number with an unused LUT:             8  out of    210     3%  
+   Number of fully used LUT-FF pairs:   151  out of    210    71%  
+   Number of unique control sets:        12
+
+IO Utilization: 
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of    210     4%  
+    IOB Flip Flops/Latches:               2
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 161   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 7.531ns (Maximum Frequency: 132.783MHz)
+   Minimum input arrival time before clock: 1.820ns
+   Maximum output required time after clock: 0.877ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 7.531ns (frequency: 132.783MHz)
+  Total number of paths / destination ports: 8223 / 448
+-------------------------------------------------------------------------
+Delay:               3.766ns (Levels of Logic = 11)
+  Source:            add/D1_20 (FF)
+  Destination:       add/pw/countD1_31 (FF)
+  Source Clock:      clk falling
+  Destination Clock: clk rising
+
+  Data Path: add/D1_20 to add/pw/countD1_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            3   0.484   0.550  add/D1_20 (add/D1_20)
+     LUT6:I4->O            1   0.124   0.000  add/pw/Mcompar_countD1[31]_D1[31]_equal_16_o_lut<2> (add/pw/Mcompar_countD1[31]_D1[31]_equal_16_o_lut<2>)
+     MUXCY:S->O            1   0.472   0.000  add/pw/Mcompar_countD1[31]_D1[31]_equal_16_o_cy<2> (add/pw/Mcompar_countD1[31]_D1[31]_equal_16_o_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  add/pw/Mcompar_countD1[31]_D1[31]_equal_16_o_cy<3> (add/pw/Mcompar_countD1[31]_D1[31]_equal_16_o_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  add/pw/Mcompar_countD1[31]_D1[31]_equal_16_o_cy<4> (add/pw/Mcompar_countD1[31]_D1[31]_equal_16_o_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  add/pw/Mcompar_countD1[31]_D1[31]_equal_16_o_cy<5> (add/pw/Mcompar_countD1[31]_D1[31]_equal_16_o_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  add/pw/Mcompar_countD1[31]_D1[31]_equal_16_o_cy<6> (add/pw/Mcompar_countD1[31]_D1[31]_equal_16_o_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  add/pw/Mcompar_countD1[31]_D1[31]_equal_16_o_cy<7> (add/pw/Mcompar_countD1[31]_D1[31]_equal_16_o_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  add/pw/Mcompar_countD1[31]_D1[31]_equal_16_o_cy<8> (add/pw/Mcompar_countD1[31]_D1[31]_equal_16_o_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  add/pw/Mcompar_countD1[31]_D1[31]_equal_16_o_cy<9> (add/pw/Mcompar_countD1[31]_D1[31]_equal_16_o_cy<9>)
+     MUXCY:CI->O           2   0.334   0.427  add/pw/Mcompar_countD1[31]_D1[31]_equal_16_o_cy<10> (add/pw/countD1[31]_D1[31]_equal_16_o)
+     LUT3:I2->O           32   0.124   0.552  add/pw/_n00891 (add/pw/_n0089)
+     FDRE:R                    0.494          add/pw/countD1_0
+    ----------------------------------------
+    Total                      3.766ns (2.237ns logic, 1.529ns route)
+                                       (59.4% logic, 40.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 21 / 21
+-------------------------------------------------------------------------
+Offset:              1.820ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       con/count_4 (FF)
+  Destination Clock: clk rising
+
+  Data Path: enable to con/count_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            10   0.001   0.775  enable_IBUF (enable_IBUF)
+     LUT3:I0->O            5   0.124   0.426  con/_n00701 (con/_n0070)
+     FDRE:R                    0.494          con/count_0
+    ----------------------------------------
+    Total                      1.820ns (0.619ns logic, 1.201ns route)
+                                       (34.0% logic, 66.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              0.877ns (Levels of Logic = 1)
+  Source:            add/pw/pwm0_1 (FF)
+  Destination:       pwm0 (PAD)
+  Source Clock:      clk rising
+
+  Data Path: add/pw/pwm0_1 to pwm0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.478   0.399  add/pw/pwm0_1 (add/pw/pwm0_1)
+     OBUF:I->O                 0.000          pwm0_OBUF (pwm0)
+    ----------------------------------------
+    Total                      0.877ns (0.478ns logic, 0.399ns route)
+                                       (54.5% logic, 45.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.135|    3.766|    1.916|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 70.00 secs
+Total CPU time to Xst completion: 63.17 secs
+ 
 --> 
 
 
-Total memory usage is 129232 kilobytes
+Total memory usage is 202792 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
-Number of infos    :    0 (   0 filtered)
+Number of warnings :  646 (   0 filtered)
+Number of infos    :   17 (   0 filtered)
 
