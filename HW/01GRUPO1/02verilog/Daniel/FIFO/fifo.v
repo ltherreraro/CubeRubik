@@ -27,7 +27,7 @@ assign wr_en = wr & ~full; //only write if write signal is high and fifo is not 
 //always block for write operation
 always @ (posedge pclk)
  begin
-  if(wr_en)
+  //if(wr)
    regarray[wr_reg] <= din;  //at wr_reg location of regarray store what is given at din
  
  end
@@ -35,7 +35,7 @@ always @ (posedge pclk)
 //always block for read operation
 always @ (posedge rd)
  begin
-  if(rd2)
+ // if(rd2)
    out <= regarray[rd_reg];
  end
   

@@ -1,0 +1,6 @@
+Found 1 device(s)
+
+Device: Nexys4
+    Product Name:   Digilent Nexys4
+    User Name:      Nexys4
+    Serial Number:  210274593187

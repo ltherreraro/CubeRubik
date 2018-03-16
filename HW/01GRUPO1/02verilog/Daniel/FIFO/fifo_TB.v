@@ -3,7 +3,7 @@
 
 module fifo_TB;
 
-parameter tck              = 3;       // clock period in ns
+parameter tck              = 2;       // clock period in ns
 //----------------------------------------------------------------------------
 reg clk;
 reg rst;

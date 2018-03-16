@@ -1,0 +1,5 @@
+Initializing scan chain...
+Found Device ID: 13631093
+
+Found 1 device(s):
+    Device 0: XC7A100T
