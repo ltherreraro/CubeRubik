@@ -1,0 +1,2 @@
+verilog work ../peripheralpwm.v
+verilog work ../pwm.v
