@@ -55,11 +55,7 @@ begin
 			begin            				//ciclo lectura
 				ack<=1;
 				 	case(wb_adr_i[3:2]) 
-						2'b00:
-						begin  
-						    	wb_dat_o[31:22]<=dout;
-						    	
-					 	end
+						2'b00:wb_dat_o[31:22]<=dout;
 				  		default: wb_dat_o <= 32'b0; 
 				 	endcase
 			end
@@ -69,7 +65,7 @@ begin
 			begin  
 			   	ack <= 1;                          	//ciclo escritura
 				     	case(wb_adr_i[3:2])
-					     2'b01: rd   <= wb_dat_i[1:0];
+					     	2'b01: rd   <= wb_dat_i[1:0];
 					endcase
 			end
      	end        
