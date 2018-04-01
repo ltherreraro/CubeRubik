@@ -1,7 +1,7 @@
 module wb_camara(clk, rst, xclk, href, vsync, pclk,/* sio_c, sio_d, pwdn, reset, strobe,*/ wb_adr_i, wb_dat_i, wb_we_i, wb_cyc_i, wb_stb_i,wb_sel_i, wb_dat_o, wb_ack_o);
 
 parameter wb_dat_width = 32;
-parameter wb_adr_width = 32; // 2^32 bytes addressable
+parameter wb_adr_width = 32; // 2^32 bytes 
 
 //Señales Fpga   
 input 				clk;
