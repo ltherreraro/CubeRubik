@@ -1,0 +1,1080 @@
+Release 14.7 - xst P.20131013 (lin)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "project.src"
+Input Format                       : mixed
+
+---- Target Parameters
+Target Device                      : XC7A100T-1CSG324
+Output File Name                   : "project.ngc"
+Output Format                      : NGC
+
+---- Source Options
+Top Module Name                    : wb_motores
+
+---- General Options
+Optimization Goal                  : Area
+Optimization Effort                : 1
+RTL Output                         : yes
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/daniel/Vídeos/hoy abril 1/pwm8wb/wb_motores.v" into library wor
+Parsing module <wb_motores>.
+Analyzing Verilog file "/home/daniel/Vídeos/hoy abril 1/pwm8wb/periferico_pwm.v" into library wor
+Parsing module <periferico_pwm>.
+Analyzing Verilog file "/home/daniel/Vídeos/hoy abril 1/pwm8wb/pwm.v" into library wor
+Parsing module <pwm>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <wb_motores>.
+
+Elaborating module <periferico_pwm>.
+
+Elaborating module <pwm>.
+WARNING:HDLCompiler:413 - "/home/daniel/V  deos/hoy abril 1/pwm8wb/periferico_pwm.v" Line 28: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/daniel/V  deos/hoy abril 1/pwm8wb/periferico_pwm.v" Line 40: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/daniel/V  deos/hoy abril 1/pwm8wb/periferico_pwm.v" Line 52: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/daniel/V  deos/hoy abril 1/pwm8wb/periferico_pwm.v" Line 64: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/daniel/V  deos/hoy abril 1/pwm8wb/periferico_pwm.v" Line 76: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/daniel/V  deos/hoy abril 1/pwm8wb/periferico_pwm.v" Line 88: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/daniel/V  deos/hoy abril 1/pwm8wb/periferico_pwm.v" Line 100: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/daniel/V  deos/hoy abril 1/pwm8wb/periferico_pwm.v" Line 112: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:189 - "/home/daniel/V  deos/hoy abril 1/pwm8wb/wb_motores.v" Line 42: Size mismatch in connection of port <d_out>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "/home/daniel/V  deos/hoy abril 1/pwm8wb/wb_motores.v" Line 42: Assignment to d_out ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "/home/daniel/V  deos/hoy abril 1/pwm8wb/wb_motores.v" Line 71: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/daniel/V  deos/hoy abril 1/pwm8wb/wb_motores.v" Line 73: Result of 2-bit expression is truncated to fit in 1-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <wb_motores>.
+    Related source file is "/home/daniel/Vídeos/hoy abril 1/pwm8wb/wb_motores.v"
+        wb_dat_width = 32
+        wb_adr_width = 32
+WARNING:Xst:647 - Input <wb_adr_i<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <wb_adr_i<31:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <wb_dat_i<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <wb_sel_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "/home/daniel/Vídeos/hoy abril 1/pwm8wb/wb_motores.v" line 42: Output port <d_out> of the instance <pwm_p> is unconnected or connected to loadless signal
+WARNING:Xst:653 - Signal <dout> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 32-bit register for signal <wb_dat_o>.
+    Found 1-bit register for signal <rd>.
+    Found 8-bit register for signal <addr>.
+    Found 1-bit register for signal <wr>.
+    Found 32-bit register for signal <d_in>.
+    Found 1-bit register for signal <wb_ack_o>.
+    Summary:
+	inferred  43 D-type flip-flop(s).
+Unit <wb_motores> synthesized.
+
+Synthesizing Unit <periferico_pwm>.
+    Related source file is "/home/daniel/Vídeos/hoy abril 1/pwm8wb/periferico_pwm.v"
+    Found 32-bit register for signal <T0>.
+    Found 32-bit register for signal <D0>.
+    Found 1-bit register for signal <E1>.
+    Found 32-bit register for signal <T1>.
+    Found 32-bit register for signal <D1>.
+    Found 1-bit register for signal <E2>.
+    Found 32-bit register for signal <T2>.
+    Found 32-bit register for signal <D2>.
+    Found 1-bit register for signal <E3>.
+    Found 32-bit register for signal <T3>.
+    Found 32-bit register for signal <D3>.
+    Found 1-bit register for signal <E4>.
+    Found 32-bit register for signal <T4>.
+    Found 32-bit register for signal <D4>.
+    Found 1-bit register for signal <E5>.
+    Found 32-bit register for signal <T5>.
+    Found 32-bit register for signal <D5>.
+    Found 1-bit register for signal <E6>.
+    Found 32-bit register for signal <T6>.
+    Found 32-bit register for signal <D6>.
+    Found 1-bit register for signal <E7>.
+    Found 32-bit register for signal <T7>.
+    Found 32-bit register for signal <D7>.
+    Found 32-bit register for signal <d_out>.
+    Found 1-bit register for signal <E0>.
+    Summary:
+	inferred 552 D-type flip-flop(s).
+	inferred  23 Multiplexer(s).
+Unit <periferico_pwm> synthesized.
+
+Synthesizing Unit <pwm>.
+    Related source file is "/home/daniel/Vídeos/hoy abril 1/pwm8wb/pwm.v"
+    Found 32-bit register for signal <countT>.
+    Found 32-bit register for signal <countD>.
+    Found 1-bit register for signal <pwm1>.
+    Found 32-bit register for signal <countT1>.
+    Found 32-bit register for signal <countD1>.
+    Found 1-bit register for signal <pwm2>.
+    Found 32-bit register for signal <countT2>.
+    Found 32-bit register for signal <countD2>.
+    Found 1-bit register for signal <pwm3>.
+    Found 32-bit register for signal <countT3>.
+    Found 32-bit register for signal <countD3>.
+    Found 1-bit register for signal <pwm4>.
+    Found 32-bit register for signal <countT4>.
+    Found 32-bit register for signal <countD4>.
+    Found 1-bit register for signal <pwm5>.
+    Found 32-bit register for signal <countT5>.
+    Found 32-bit register for signal <countD5>.
+    Found 1-bit register for signal <pwm6>.
+    Found 32-bit register for signal <countT6>.
+    Found 32-bit register for signal <countD6>.
+    Found 1-bit register for signal <pwm7>.
+    Found 32-bit register for signal <countT7>.
+    Found 32-bit register for signal <countD7>.
+    Found 1-bit register for signal <pwm0>.
+    Found 32-bit adder for signal <countT[31]_GND_3_o_add_2_OUT> created at line 81.
+    Found 32-bit adder for signal <countD[31]_GND_3_o_add_6_OUT> created at line 92.
+    Found 32-bit adder for signal <countT1[31]_GND_3_o_add_12_OUT> created at line 113.
+    Found 32-bit adder for signal <countD1[31]_GND_3_o_add_16_OUT> created at line 124.
+    Found 32-bit adder for signal <countT2[31]_GND_3_o_add_22_OUT> created at line 146.
+    Found 32-bit adder for signal <countD2[31]_GND_3_o_add_26_OUT> created at line 157.
+    Found 32-bit adder for signal <countT3[31]_GND_3_o_add_32_OUT> created at line 179.
+    Found 32-bit adder for signal <countD3[31]_GND_3_o_add_36_OUT> created at line 190.
+    Found 32-bit adder for signal <countT4[31]_GND_3_o_add_42_OUT> created at line 212.
+    Found 32-bit adder for signal <countD4[31]_GND_3_o_add_46_OUT> created at line 223.
+    Found 32-bit adder for signal <countT5[31]_GND_3_o_add_52_OUT> created at line 245.
+    Found 32-bit adder for signal <countD5[31]_GND_3_o_add_56_OUT> created at line 256.
+    Found 32-bit adder for signal <countT6[31]_GND_3_o_add_62_OUT> created at line 278.
+    Found 32-bit adder for signal <countD6[31]_GND_3_o_add_66_OUT> created at line 289.
+    Found 32-bit adder for signal <countT7[31]_GND_3_o_add_72_OUT> created at line 311.
+    Found 32-bit adder for signal <countD7[31]_GND_3_o_add_76_OUT> created at line 322.
+    Found 32-bit comparator equal for signal <countT[31]_T0[31]_equal_2_o> created at line 72
+    Found 32-bit comparator equal for signal <countD[31]_D0[31]_equal_6_o> created at line 85
+    Found 32-bit comparator equal for signal <countT1[31]_T1[31]_equal_12_o> created at line 104
+    Found 32-bit comparator equal for signal <countD1[31]_D1[31]_equal_16_o> created at line 117
+    Found 32-bit comparator equal for signal <countT2[31]_T2[31]_equal_22_o> created at line 137
+    Found 32-bit comparator equal for signal <countD2[31]_D2[31]_equal_26_o> created at line 150
+    Found 32-bit comparator equal for signal <countT3[31]_T3[31]_equal_32_o> created at line 170
+    Found 32-bit comparator equal for signal <countD3[31]_D3[31]_equal_36_o> created at line 183
+    Found 32-bit comparator equal for signal <countT4[31]_T4[31]_equal_42_o> created at line 203
+    Found 32-bit comparator equal for signal <countD4[31]_D4[31]_equal_46_o> created at line 216
+    Found 32-bit comparator equal for signal <countT5[31]_T5[31]_equal_52_o> created at line 236
+    Found 32-bit comparator equal for signal <countD5[31]_D5[31]_equal_56_o> created at line 249
+    Found 32-bit comparator equal for signal <countT6[31]_T6[31]_equal_62_o> created at line 269
+    Found 32-bit comparator equal for signal <countD6[31]_D6[31]_equal_66_o> created at line 282
+    Found 32-bit comparator equal for signal <countT7[31]_T7[31]_equal_72_o> created at line 302
+    Found 32-bit comparator equal for signal <countD7[31]_D7[31]_equal_76_o> created at line 315
+    Summary:
+	inferred  16 Adder/Subtractor(s).
+	inferred 520 D-type flip-flop(s).
+	inferred  16 Comparator(s).
+Unit <pwm> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 16
+ 32-bit adder                                          : 16
+# Registers                                            : 54
+ 1-bit register                                        : 19
+ 32-bit register                                       : 34
+ 8-bit register                                        : 1
+# Comparators                                          : 16
+ 32-bit comparator equal                               : 16
+# Multiplexers                                         : 23
+ 32-bit 2-to-1 multiplexer                             : 23
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <D4_31> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D4_30> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D4_29> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D4_28> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D4_27> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D4_26> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D4_25> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D4_24> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D4_23> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D4_22> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D4_21> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D4_20> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D4_19> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D4_18> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D4_17> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D4_16> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D4_15> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D4_14> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D4_13> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D4_12> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D4_11> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D4_10> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D4_9> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D4_8> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D4_7> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D4_6> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D4_5> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D4_4> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D4_3> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D4_2> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T5_31> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T5_30> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T5_29> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T5_28> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T5_27> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T5_26> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T5_25> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T5_24> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T5_23> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T5_22> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T5_21> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T5_20> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T5_19> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T5_18> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T5_17> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T5_16> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T5_15> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T5_14> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T5_13> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T5_12> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T5_11> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T5_10> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T5_9> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T5_8> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T5_7> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T5_6> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T5_5> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T5_4> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T5_3> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T5_2> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D3_31> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D3_30> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D3_29> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D3_28> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D3_27> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D3_26> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D3_25> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D3_24> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D3_23> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D3_22> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D3_21> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D3_20> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D3_19> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D3_18> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D3_17> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D3_16> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D3_15> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D3_14> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D3_13> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D3_12> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D3_11> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D3_10> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D3_9> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D3_8> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D3_7> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D3_6> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D3_5> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D3_4> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D3_3> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D3_2> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D5_31> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D5_30> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D5_29> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D5_28> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D5_27> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D5_26> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D5_25> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D5_24> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D5_23> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D5_22> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D5_21> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D5_20> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D5_19> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D5_18> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D5_17> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D5_16> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D5_15> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D5_14> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D5_13> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D5_12> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D5_11> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D5_10> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D5_9> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D5_8> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D5_7> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D5_6> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D5_5> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D5_4> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D5_3> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D5_2> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D6_31> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D6_30> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D6_29> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D6_28> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D6_27> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D6_26> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D6_25> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D6_24> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D6_23> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D6_22> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D6_21> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D6_20> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D6_19> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D6_18> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D6_17> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D6_16> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D6_15> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D6_14> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D6_13> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D6_12> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D6_11> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D6_10> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D6_9> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D6_8> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D6_7> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D6_6> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D6_5> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D6_4> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D6_3> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D6_2> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D7_31> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D7_30> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D7_29> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D7_28> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D7_27> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D7_26> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D7_25> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D7_24> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D7_23> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D7_22> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D7_21> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D7_20> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D7_19> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D7_18> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D7_17> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D7_16> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D7_15> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D7_14> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D7_13> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D7_12> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D7_11> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D7_10> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D7_9> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D7_8> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D7_7> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D7_6> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D7_5> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D7_4> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D7_3> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D7_2> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T7_31> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T7_30> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T7_29> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T7_28> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T7_27> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T7_26> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T7_25> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T7_24> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T7_23> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T7_22> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T7_21> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T7_20> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T7_19> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T7_18> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T7_17> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T7_16> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T7_15> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T7_14> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T7_13> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T7_12> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T7_11> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T7_10> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T7_9> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T7_8> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T7_7> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T7_6> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T7_5> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T7_4> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T7_3> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T7_2> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T6_31> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T6_30> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T6_29> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T6_28> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T6_27> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T6_26> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T6_25> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T6_24> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T6_23> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T6_22> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T6_21> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T6_20> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T6_19> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T6_18> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T6_17> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T6_16> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T6_15> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T6_14> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T6_13> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T6_12> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T6_11> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T6_10> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T6_9> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T6_8> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T6_7> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T6_6> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T6_5> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T6_4> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T6_3> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T6_2> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D0_31> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D0_30> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D0_29> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D0_28> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D0_27> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D0_26> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D0_25> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D0_24> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D0_23> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D0_22> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D0_21> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D0_20> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D0_19> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D0_18> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D0_17> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D0_16> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D0_15> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D0_14> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D0_13> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D0_12> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D0_11> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D0_10> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D0_9> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D0_8> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D0_7> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D0_6> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D0_5> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D0_4> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D0_3> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D0_2> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D2_31> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D2_30> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D2_29> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D2_28> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D2_27> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D2_26> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D2_25> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D2_24> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D2_23> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D2_22> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D2_21> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D2_20> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D2_19> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D2_18> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D2_17> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D2_16> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D2_15> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D2_14> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D2_13> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D2_12> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D2_11> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D2_10> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D2_9> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D2_8> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D2_7> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D2_6> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D2_5> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D2_4> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D2_3> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D2_2> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T1_31> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T1_30> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T1_29> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T1_28> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T1_27> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T1_26> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T1_25> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T1_24> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T1_23> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T1_22> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T1_21> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T1_20> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T1_19> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T1_18> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T1_17> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T1_16> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T1_15> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T1_14> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T1_13> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T1_12> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T1_11> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T1_10> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T1_9> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T1_8> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T1_7> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T1_6> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T1_5> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T1_4> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T1_3> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T1_2> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T0_31> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T0_30> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T0_29> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T0_28> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T0_27> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T0_26> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T0_25> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T0_24> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T0_23> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T0_22> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T0_21> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T0_20> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T0_19> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T0_18> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T0_17> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T0_16> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T0_15> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T0_14> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T0_13> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T0_12> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T0_11> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T0_10> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T0_9> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T0_8> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T0_7> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T0_6> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T0_5> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T0_4> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T0_3> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T0_2> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T4_31> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T4_30> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T4_29> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T4_28> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T4_27> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T4_26> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T4_25> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T4_24> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T4_23> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T4_22> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T4_21> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T4_20> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T4_19> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T4_18> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T4_17> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T4_16> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T4_15> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T4_14> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T4_13> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T4_12> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T4_11> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T4_10> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T4_9> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T4_8> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T4_7> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T4_6> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T4_5> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T4_4> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T4_3> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T4_2> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T3_31> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T3_30> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T3_29> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T3_28> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T3_27> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T3_26> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T3_25> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T3_24> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T3_23> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T3_22> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T3_21> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T3_20> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T3_19> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T3_18> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T3_17> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T3_16> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T3_15> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T3_14> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T3_13> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T3_12> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T3_11> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T3_10> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T3_9> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T3_8> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T3_7> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T3_6> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T3_5> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T3_4> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T3_3> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T3_2> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D1_31> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D1_30> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D1_29> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D1_28> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D1_27> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D1_26> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D1_25> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D1_24> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D1_23> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D1_22> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D1_21> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D1_20> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D1_19> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D1_18> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D1_17> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D1_16> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D1_15> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D1_14> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D1_13> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D1_12> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D1_11> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D1_10> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D1_9> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D1_8> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D1_7> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D1_6> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D1_5> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D1_4> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D1_3> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <D1_2> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T2_31> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T2_30> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T2_29> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T2_28> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T2_27> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T2_26> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T2_25> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T2_24> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T2_23> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T2_22> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T2_21> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T2_20> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T2_19> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T2_18> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T2_17> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T2_2> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T2_3> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T2_4> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T2_5> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T2_6> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T2_7> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T2_8> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T2_9> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T2_10> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T2_11> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T2_12> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T2_13> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T2_14> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T2_15> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <T2_16> (without init value) has a constant value of 0 in block <pwm_p>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_17> (without init value) has a constant value of 0 in block <wb_motores>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_18> (without init value) has a constant value of 0 in block <wb_motores>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_19> (without init value) has a constant value of 0 in block <wb_motores>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_20> (without init value) has a constant value of 0 in block <wb_motores>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_21> (without init value) has a constant value of 0 in block <wb_motores>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_22> (without init value) has a constant value of 0 in block <wb_motores>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_23> (without init value) has a constant value of 0 in block <wb_motores>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_24> (without init value) has a constant value of 0 in block <wb_motores>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_25> (without init value) has a constant value of 0 in block <wb_motores>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_26> (without init value) has a constant value of 0 in block <wb_motores>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_27> (without init value) has a constant value of 0 in block <wb_motores>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_28> (without init value) has a constant value of 0 in block <wb_motores>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_29> (without init value) has a constant value of 0 in block <wb_motores>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_30> (without init value) has a constant value of 0 in block <wb_motores>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_31> (without init value) has a constant value of 0 in block <wb_motores>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_16> (without init value) has a constant value of 0 in block <wb_motores>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_15> (without init value) has a constant value of 0 in block <wb_motores>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_14> (without init value) has a constant value of 0 in block <wb_motores>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_13> (without init value) has a constant value of 0 in block <wb_motores>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_12> (without init value) has a constant value of 0 in block <wb_motores>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_11> (without init value) has a constant value of 0 in block <wb_motores>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_10> (without init value) has a constant value of 0 in block <wb_motores>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_9> (without init value) has a constant value of 0 in block <wb_motores>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_8> (without init value) has a constant value of 0 in block <wb_motores>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_7> (without init value) has a constant value of 0 in block <wb_motores>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_6> (without init value) has a constant value of 0 in block <wb_motores>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_5> (without init value) has a constant value of 0 in block <wb_motores>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_4> (without init value) has a constant value of 0 in block <wb_motores>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_3> (without init value) has a constant value of 0 in block <wb_motores>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_in_2> (without init value) has a constant value of 0 in block <wb_motores>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2404 -  FFs/Latches <d_in<31:2>> (without init value) have a constant value of 0 in block <wb_motores>.
+
+Synthesizing (advanced) Unit <pwm>.
+The following registers are absorbed into counter <countT>: 1 register on signal <countT>.
+The following registers are absorbed into counter <countD>: 1 register on signal <countD>.
+The following registers are absorbed into counter <countT1>: 1 register on signal <countT1>.
+The following registers are absorbed into counter <countD1>: 1 register on signal <countD1>.
+The following registers are absorbed into counter <countT2>: 1 register on signal <countT2>.
+The following registers are absorbed into counter <countD2>: 1 register on signal <countD2>.
+The following registers are absorbed into counter <countD3>: 1 register on signal <countD3>.
+The following registers are absorbed into counter <countT3>: 1 register on signal <countT3>.
+The following registers are absorbed into counter <countT4>: 1 register on signal <countT4>.
+The following registers are absorbed into counter <countD4>: 1 register on signal <countD4>.
+The following registers are absorbed into counter <countT5>: 1 register on signal <countT5>.
+The following registers are absorbed into counter <countD5>: 1 register on signal <countD5>.
+The following registers are absorbed into counter <countT6>: 1 register on signal <countT6>.
+The following registers are absorbed into counter <countT7>: 1 register on signal <countT7>.
+The following registers are absorbed into counter <countD6>: 1 register on signal <countD6>.
+The following registers are absorbed into counter <countD7>: 1 register on signal <countD7>.
+Unit <pwm> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 16
+ 32-bit up counter                                     : 16
+# Registers                                            : 573
+ Flip-Flops                                            : 573
+# Comparators                                          : 16
+ 32-bit comparator equal                               : 16
+# Multiplexers                                         : 147
+ 1-bit 2-to-1 multiplexer                              : 128
+ 32-bit 2-to-1 multiplexer                             : 19
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <D4_2> in Unit <periferico_pwm> is equivalent to the following 29 FFs/Latches, which will be removed : <D4_3> <D4_4> <D4_5> <D4_6> <D4_7> <D4_8> <D4_9> <D4_10> <D4_11> <D4_12> <D4_13> <D4_14> <D4_15> <D4_16> <D4_17> <D4_18> <D4_19> <D4_20> <D4_21> <D4_22> <D4_23> <D4_24> <D4_25> <D4_26> <D4_27> <D4_28> <D4_29> <D4_30> <D4_31> 
+INFO:Xst:2261 - The FF/Latch <D3_2> in Unit <periferico_pwm> is equivalent to the following 29 FFs/Latches, which will be removed : <D3_3> <D3_4> <D3_5> <D3_6> <D3_7> <D3_8> <D3_9> <D3_10> <D3_11> <D3_12> <D3_13> <D3_14> <D3_15> <D3_16> <D3_17> <D3_18> <D3_19> <D3_20> <D3_21> <D3_22> <D3_23> <D3_24> <D3_25> <D3_26> <D3_27> <D3_28> <D3_29> <D3_30> <D3_31> 
+INFO:Xst:2261 - The FF/Latch <D0_2> in Unit <periferico_pwm> is equivalent to the following 29 FFs/Latches, which will be removed : <D0_3> <D0_4> <D0_5> <D0_6> <D0_7> <D0_8> <D0_9> <D0_10> <D0_11> <D0_12> <D0_13> <D0_14> <D0_15> <D0_16> <D0_17> <D0_18> <D0_19> <D0_20> <D0_21> <D0_22> <D0_23> <D0_24> <D0_25> <D0_26> <D0_27> <D0_28> <D0_29> <D0_30> <D0_31> 
+INFO:Xst:2261 - The FF/Latch <D6_2> in Unit <periferico_pwm> is equivalent to the following 29 FFs/Latches, which will be removed : <D6_3> <D6_4> <D6_5> <D6_6> <D6_7> <D6_8> <D6_9> <D6_10> <D6_11> <D6_12> <D6_13> <D6_14> <D6_15> <D6_16> <D6_17> <D6_18> <D6_19> <D6_20> <D6_21> <D6_22> <D6_23> <D6_24> <D6_25> <D6_26> <D6_27> <D6_28> <D6_29> <D6_30> <D6_31> 
+INFO:Xst:2261 - The FF/Latch <D2_2> in Unit <periferico_pwm> is equivalent to the following 29 FFs/Latches, which will be removed : <D2_3> <D2_4> <D2_5> <D2_6> <D2_7> <D2_8> <D2_9> <D2_10> <D2_11> <D2_12> <D2_13> <D2_14> <D2_15> <D2_16> <D2_17> <D2_18> <D2_19> <D2_20> <D2_21> <D2_22> <D2_23> <D2_24> <D2_25> <D2_26> <D2_27> <D2_28> <D2_29> <D2_30> <D2_31> 
+INFO:Xst:2261 - The FF/Latch <T0_2> in Unit <periferico_pwm> is equivalent to the following 29 FFs/Latches, which will be removed : <T0_3> <T0_4> <T0_5> <T0_6> <T0_7> <T0_8> <T0_9> <T0_10> <T0_11> <T0_12> <T0_13> <T0_14> <T0_15> <T0_16> <T0_17> <T0_18> <T0_19> <T0_20> <T0_21> <T0_22> <T0_23> <T0_24> <T0_25> <T0_26> <T0_27> <T0_28> <T0_29> <T0_30> <T0_31> 
+INFO:Xst:2261 - The FF/Latch <T7_2> in Unit <periferico_pwm> is equivalent to the following 29 FFs/Latches, which will be removed : <T7_3> <T7_4> <T7_5> <T7_6> <T7_7> <T7_8> <T7_9> <T7_10> <T7_11> <T7_12> <T7_13> <T7_14> <T7_15> <T7_16> <T7_17> <T7_18> <T7_19> <T7_20> <T7_21> <T7_22> <T7_23> <T7_24> <T7_25> <T7_26> <T7_27> <T7_28> <T7_29> <T7_30> <T7_31> 
+INFO:Xst:2261 - The FF/Latch <T1_2> in Unit <periferico_pwm> is equivalent to the following 29 FFs/Latches, which will be removed : <T1_3> <T1_4> <T1_5> <T1_6> <T1_7> <T1_8> <T1_9> <T1_10> <T1_11> <T1_12> <T1_13> <T1_14> <T1_15> <T1_16> <T1_17> <T1_18> <T1_19> <T1_20> <T1_21> <T1_22> <T1_23> <T1_24> <T1_25> <T1_26> <T1_27> <T1_28> <T1_29> <T1_30> <T1_31> 
+INFO:Xst:2261 - The FF/Latch <D1_2> in Unit <periferico_pwm> is equivalent to the following 29 FFs/Latches, which will be removed : <D1_3> <D1_4> <D1_5> <D1_6> <D1_7> <D1_8> <D1_9> <D1_10> <D1_11> <D1_12> <D1_13> <D1_14> <D1_15> <D1_16> <D1_17> <D1_18> <D1_19> <D1_20> <D1_21> <D1_22> <D1_23> <D1_24> <D1_25> <D1_26> <D1_27> <D1_28> <D1_29> <D1_30> <D1_31> 
+INFO:Xst:2261 - The FF/Latch <D5_2> in Unit <periferico_pwm> is equivalent to the following 29 FFs/Latches, which will be removed : <D5_3> <D5_4> <D5_5> <D5_6> <D5_7> <D5_8> <D5_9> <D5_10> <D5_11> <D5_12> <D5_13> <D5_14> <D5_15> <D5_16> <D5_17> <D5_18> <D5_19> <D5_20> <D5_21> <D5_22> <D5_23> <D5_24> <D5_25> <D5_26> <D5_27> <D5_28> <D5_29> <D5_30> <D5_31> 
+INFO:Xst:2261 - The FF/Latch <T6_2> in Unit <periferico_pwm> is equivalent to the following 29 FFs/Latches, which will be removed : <T6_3> <T6_4> <T6_5> <T6_6> <T6_7> <T6_8> <T6_9> <T6_10> <T6_11> <T6_12> <T6_13> <T6_14> <T6_15> <T6_16> <T6_17> <T6_18> <T6_19> <T6_20> <T6_21> <T6_22> <T6_23> <T6_24> <T6_25> <T6_26> <T6_27> <T6_28> <T6_29> <T6_30> <T6_31> 
+INFO:Xst:2261 - The FF/Latch <T2_2> in Unit <periferico_pwm> is equivalent to the following 29 FFs/Latches, which will be removed : <T2_3> <T2_4> <T2_5> <T2_6> <T2_7> <T2_8> <T2_9> <T2_10> <T2_11> <T2_12> <T2_13> <T2_14> <T2_15> <T2_16> <T2_17> <T2_18> <T2_19> <T2_20> <T2_21> <T2_22> <T2_23> <T2_24> <T2_25> <T2_26> <T2_27> <T2_28> <T2_29> <T2_30> <T2_31> 
+INFO:Xst:2261 - The FF/Latch <T4_2> in Unit <periferico_pwm> is equivalent to the following 29 FFs/Latches, which will be removed : <T4_3> <T4_4> <T4_5> <T4_6> <T4_7> <T4_8> <T4_9> <T4_10> <T4_11> <T4_12> <T4_13> <T4_14> <T4_15> <T4_16> <T4_17> <T4_18> <T4_19> <T4_20> <T4_21> <T4_22> <T4_23> <T4_24> <T4_25> <T4_26> <T4_27> <T4_28> <T4_29> <T4_30> <T4_31> 
+INFO:Xst:2261 - The FF/Latch <D7_2> in Unit <periferico_pwm> is equivalent to the following 29 FFs/Latches, which will be removed : <D7_3> <D7_4> <D7_5> <D7_6> <D7_7> <D7_8> <D7_9> <D7_10> <D7_11> <D7_12> <D7_13> <D7_14> <D7_15> <D7_16> <D7_17> <D7_18> <D7_19> <D7_20> <D7_21> <D7_22> <D7_23> <D7_24> <D7_25> <D7_26> <D7_27> <D7_28> <D7_29> <D7_30> <D7_31> 
+INFO:Xst:2261 - The FF/Latch <T3_2> in Unit <periferico_pwm> is equivalent to the following 29 FFs/Latches, which will be removed : <T3_3> <T3_4> <T3_5> <T3_6> <T3_7> <T3_8> <T3_9> <T3_10> <T3_11> <T3_12> <T3_13> <T3_14> <T3_15> <T3_16> <T3_17> <T3_18> <T3_19> <T3_20> <T3_21> <T3_22> <T3_23> <T3_24> <T3_25> <T3_26> <T3_27> <T3_28> <T3_29> <T3_30> <T3_31> 
+INFO:Xst:2261 - The FF/Latch <T5_2> in Unit <periferico_pwm> is equivalent to the following 29 FFs/Latches, which will be removed : <T5_3> <T5_4> <T5_5> <T5_6> <T5_7> <T5_8> <T5_9> <T5_10> <T5_11> <T5_12> <T5_13> <T5_14> <T5_15> <T5_16> <T5_17> <T5_18> <T5_19> <T5_20> <T5_21> <T5_22> <T5_23> <T5_24> <T5_25> <T5_26> <T5_27> <T5_28> <T5_29> <T5_30> <T5_31> 
+WARNING:Xst:1710 - FF/Latch <T0_2> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D0_2> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <T1_2> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D1_2> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <T3_2> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <T2_2> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D2_2> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D4_2> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D3_2> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <T4_2> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <T6_2> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <T5_2> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D5_2> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D7_2> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D6_2> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <T7_2> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d_out_31> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_30> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_29> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_28> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_27> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_26> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_25> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_24> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_23> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_22> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_21> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_20> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_19> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_18> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_17> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_16> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_15> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_14> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_13> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_12> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_11> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_10> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_9> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_8> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_7> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_6> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_5> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_4> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_3> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_out_2> (without init value) has a constant value of 0 in block <periferico_pwm>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <wb_motores> ...
+
+Optimizing unit <periferico_pwm> ...
+
+Optimizing unit <pwm> ...
+WARNING:Xst:2677 - Node <pwm_p/d_out_1> of sequential type is unconnected in block <wb_motores>.
+WARNING:Xst:2677 - Node <pwm_p/d_out_0> of sequential type is unconnected in block <wb_motores>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block wb_motores, actual ratio is 1.
+FlipFlop wb_ack_o has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop pwm_p/pw/pwm0 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop pwm_p/pw/pwm1 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop pwm_p/pw/pwm2 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop pwm_p/pw/pwm3 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop pwm_p/pw/pwm4 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop pwm_p/pw/pwm5 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop pwm_p/pw/pwm6 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop pwm_p/pw/pwm7 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 582
+ Flip-Flops                                            : 582
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : project.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1947
+#      GND                         : 1
+#      INV                         : 16
+#      LUT1                        : 496
+#      LUT2                        : 32
+#      LUT3                        : 163
+#      LUT4                        : 9
+#      LUT5                        : 1
+#      LUT6                        : 44
+#      MUXCY                       : 672
+#      VCC                         : 1
+#      XORCY                       : 512
+# FlipFlops/Latches                : 582
+#      FD                          : 20
+#      FD_1                        : 8
+#      FDE                         : 10
+#      FDE_1                       : 32
+#      FDRE                        : 512
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 88
+#      IBUF                        : 15
+#      OBUF                        : 73
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             567  out of  126800     0%  
+ Number of Slice LUTs:                  761  out of  63400     1%  
+    Number used as Logic:               761  out of  63400     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    784
+   Number with an unused Flip Flop:     217  out of    784    27%  
+   Number with an unused LUT:            23  out of    784     2%  
+   Number of fully used LUT-FF pairs:   544  out of    784    69%  
+   Number of unique control sets:        35
+
+IO Utilization: 
+ Number of IOs:                         143
+ Number of bonded IOBs:                  89  out of    210    42%  
+    IOB Flip Flops/Latches:              15
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 582   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 7.620ns (Maximum Frequency: 131.232MHz)
+   Minimum input arrival time before clock: 2.102ns
+   Maximum output required time after clock: 0.877ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 7.620ns (frequency: 131.232MHz)
+  Total number of paths / destination ports: 28976 / 1638
+-------------------------------------------------------------------------
+Delay:               3.810ns (Levels of Logic = 13)
+  Source:            pwm_p/D7_1 (FF)
+  Destination:       pwm_p/pw/countD7_31 (FF)
+  Source Clock:      clk falling
+  Destination Clock: clk rising
+
+  Data Path: pwm_p/D7_1 to pwm_p/pw/countD7_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            1   0.484   0.536  pwm_p/D7_1 (pwm_p/D7_1)
+     LUT6:I4->O            1   0.124   0.000  pwm_p/pw/Mcompar_countD7[31]_D7[31]_equal_76_o_lut<0> (pwm_p/pw/Mcompar_countD7[31]_D7[31]_equal_76_o_lut<0>)
+     MUXCY:S->O            1   0.472   0.000  pwm_p/pw/Mcompar_countD7[31]_D7[31]_equal_76_o_cy<0> (pwm_p/pw/Mcompar_countD7[31]_D7[31]_equal_76_o_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  pwm_p/pw/Mcompar_countD7[31]_D7[31]_equal_76_o_cy<1> (pwm_p/pw/Mcompar_countD7[31]_D7[31]_equal_76_o_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  pwm_p/pw/Mcompar_countD7[31]_D7[31]_equal_76_o_cy<2> (pwm_p/pw/Mcompar_countD7[31]_D7[31]_equal_76_o_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  pwm_p/pw/Mcompar_countD7[31]_D7[31]_equal_76_o_cy<3> (pwm_p/pw/Mcompar_countD7[31]_D7[31]_equal_76_o_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  pwm_p/pw/Mcompar_countD7[31]_D7[31]_equal_76_o_cy<4> (pwm_p/pw/Mcompar_countD7[31]_D7[31]_equal_76_o_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  pwm_p/pw/Mcompar_countD7[31]_D7[31]_equal_76_o_cy<5> (pwm_p/pw/Mcompar_countD7[31]_D7[31]_equal_76_o_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  pwm_p/pw/Mcompar_countD7[31]_D7[31]_equal_76_o_cy<6> (pwm_p/pw/Mcompar_countD7[31]_D7[31]_equal_76_o_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  pwm_p/pw/Mcompar_countD7[31]_D7[31]_equal_76_o_cy<7> (pwm_p/pw/Mcompar_countD7[31]_D7[31]_equal_76_o_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  pwm_p/pw/Mcompar_countD7[31]_D7[31]_equal_76_o_cy<8> (pwm_p/pw/Mcompar_countD7[31]_D7[31]_equal_76_o_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  pwm_p/pw/Mcompar_countD7[31]_D7[31]_equal_76_o_cy<9> (pwm_p/pw/Mcompar_countD7[31]_D7[31]_equal_76_o_cy<9>)
+     MUXCY:CI->O           2   0.334   0.427  pwm_p/pw/Mcompar_countD7[31]_D7[31]_equal_76_o_cy<10> (pwm_p/pw/countD7[31]_D7[31]_equal_76_o)
+     LUT3:I2->O           32   0.124   0.552  pwm_p/pw/_n03111 (pwm_p/pw/_n0311)
+     FDRE:R                    0.494          pwm_p/pw/countD7_0
+    ----------------------------------------
+    Total                      3.810ns (2.296ns logic, 1.515ns route)
+                                       (60.2% logic, 39.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 102 / 24
+-------------------------------------------------------------------------
+Offset:              2.102ns (Levels of Logic = 4)
+  Source:            wb_cyc_i (PAD)
+  Destination:       rd (FF)
+  Destination Clock: clk rising
+
+  Data Path: wb_cyc_i to rd
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.001   0.542  wb_cyc_i_IBUF (wb_cyc_i_IBUF)
+     LUT3:I1->O            4   0.124   0.441  wb_rd_wb_ack_o_AND_7_o11 (wb_rd_wb_ack_o_AND_7_o1)
+     LUT6:I5->O            1   0.124   0.716  _n0097_inv1 (_n0097_inv)
+     LUT3:I0->O            1   0.124   0.000  wr_rstpot (wr_rstpot)
+     FD:D                      0.030          wr
+    ----------------------------------------
+    Total                      2.102ns (0.403ns logic, 1.699ns route)
+                                       (19.2% logic, 80.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Offset:              0.877ns (Levels of Logic = 1)
+  Source:            wb_ack_o_1 (FF)
+  Destination:       wb_ack_o (PAD)
+  Source Clock:      clk rising
+
+  Data Path: wb_ack_o_1 to wb_ack_o
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.478   0.399  wb_ack_o_1 (wb_ack_o_1)
+     OBUF:I->O                 0.000          wb_ack_o_OBUF (wb_ack_o)
+    ----------------------------------------
+    Total                      0.877ns (0.478ns logic, 0.399ns route)
+                                       (54.5% logic, 45.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.193|    3.810|    3.088|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 78.00 secs
+Total CPU time to Xst completion: 71.24 secs
+ 
+--> 
+
+
+Total memory usage is 203196 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  576 (   0 filtered)
+Number of infos    :   17 (   0 filtered)
+
