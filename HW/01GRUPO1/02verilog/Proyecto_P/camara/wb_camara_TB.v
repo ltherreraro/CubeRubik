@@ -19,7 +19,7 @@ always #1 clk = ~clk;
 initial begin
 rst=1;
 wb_dat_i=2'b01;
-wb_adr_i=4;
+wb_adr_i[3:2]=2'b01;
 #40
 rst=0;
 #10
