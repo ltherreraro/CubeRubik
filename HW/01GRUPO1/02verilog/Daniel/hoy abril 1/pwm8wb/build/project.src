@@ -1,0 +1,3 @@
+verilog work ../wb_motores.v
+verilog work ../periferico_pwm.v
+verilog work ../pwm.v
