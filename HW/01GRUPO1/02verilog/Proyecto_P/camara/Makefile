@@ -1,4 +1,4 @@
-DESIGN          = camara
+DESIGN          = wb_camara
 PINS            = $(DESIGN).ucf
 DEVICE          = XC7A100T-1CSG324
 BGFLAGS         =  -g TdoPin:PULLNONE -g DonePin:PULLUP \
@@ -12,7 +12,7 @@ IVERILOG        = iverilog
 
 
 
-SRC             = $(DESIGN).v  fifo.v  div_freq.v
+SRC             = $(DESIGN).v  
 
 SIM_SRC = $(DESIGN)_TB.v          \
 
