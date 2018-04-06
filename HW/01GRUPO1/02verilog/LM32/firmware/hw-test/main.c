@@ -102,22 +102,24 @@ pwm_addr(ae7);pwm_din(on);
 
 int main(){
 
-pwm_sel(0, 1000000, 30000);
-nsleep(3);
-pwm_sel(1, 50, 20);
-nsleep(3);
-pwm_sel(2, 100, 30);
-nsleep(3);
-pwm_sel(3, 200, 30);
-nsleep(3);
-pwm_sel(4, 50, 10);
-nsleep(3);
-pwm_sel(5, 30, 20);
-nsleep(3);
-pwm_sel(6, 40, 10);
-nsleep(3);
-pwm_sel(7, 50, 10);
-
+pwm_sel(0, 1000000, 200000);
+pwm_sel(1, 1000000, 130000);
+nsleep(3000000);
+pwm_sel(0, 1000000, 35000);
+pwm_sel(1, 1000000, 35000);
+nsleep(3000000);
+pwm_sel(0, 1000000, 200000);
+pwm_sel(1, 1000000, 130000);
+nsleep(3000000);
+pwm_sel(0, 1000000, 35000);
+pwm_sel(1, 1000000, 35000);
+nsleep(3000000);
+pwm_sel(0, 1000000, 200000);
+pwm_sel(1, 1000000, 130000);
+nsleep(3000000);
+pwm_sel(0, 1000000, 35000);
+pwm_sel(1, 1000000, 35000);
+nsleep(3000000); 
 
  	
 }
