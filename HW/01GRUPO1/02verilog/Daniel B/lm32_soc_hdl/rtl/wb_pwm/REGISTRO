@@ -1,0 +1,38 @@
+//---------------------------------------------------------------------------
+// Wishbone UART 
+//
+// Register Description:
+//
+//    0x00   en0
+//    0x04   period0
+//    0x08   duty0
+
+//    0x0C   en1
+//    0x10   period1
+//    0x14   duty1
+
+//    0x18   en2
+//    0x1C   period2
+//    0x20   duty2
+
+//    0x24   en3
+//    0x28   period3
+//    0x2C   duty3
+
+//    0x30   en4
+//    0x34   period4
+//    0x38   duty4
+
+//    0x3C   en5
+//    0x40   period5
+//    0x44   duty5
+
+//    0x48   en6
+//    0x4C   period6
+//    0x50   duty6
+
+//    0x54   en7
+//    0x58   period7
+//    0x5C   duty7
+//
+//--------------------------------------------------------------------
