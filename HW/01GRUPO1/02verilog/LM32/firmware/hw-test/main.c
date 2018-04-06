@@ -102,7 +102,7 @@ pwm_addr(ae7);pwm_din(on);
 
 int main(){
 
-pwm_sel(0, 30, 10);
+pwm_sel(0, 1000000, 30000);
 nsleep(3);
 pwm_sel(1, 50, 20);
 nsleep(3);

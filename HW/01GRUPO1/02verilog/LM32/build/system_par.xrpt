@@ -5,34 +5,34 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="par" timeStamp="Thu Apr  5 21:30:43 2018">
+  <application stringID="par" timeStamp="Fri Apr  6 10:44:08 2018">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
-          <item stringID="variable" value="PATH"/>
-          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/ISE//bin/lin64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64:/opt/lm32/bin"/>
+          <item stringID="variable" value="LD_LIBRARY_PATH"/>
+          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/ISE//lib/lin64:/usr/lib/i386i-linux-gnu/"/>
         </row>
         <row stringID="row" value="1">
-          <item stringID="variable" value="XILINX"/>
-          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/ISE/"/>
+          <item stringID="variable" value="PATH"/>
+          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/ISE//bin/lin64:/home/lisseth/bin:/home/lisseth/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/rtems-4.11/bin/:/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64:/opt/lm32/bin"/>
         </row>
         <row stringID="row" value="2">
-          <item stringID="variable" value="LD_LIBRARY_PATH"/>
-          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/ISE//lib/lin64"/>
+          <item stringID="variable" value="XILINX"/>
+          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/ISE/"/>
         </row>
       </table>
       <item stringID="User_EnvOs" value="OS Information">
         <item stringID="User_EnvOsname" value="Ubuntu"/>
-        <item stringID="User_EnvOsrelease" value="Ubuntu 17.04"/>
+        <item stringID="User_EnvOsrelease" value="Ubuntu 16.04.4 LTS"/>
       </item>
-      <item stringID="User_EnvHost" value="lisseth-300-1220la"/>
+      <item stringID="User_EnvHost" value="lisseth-HP-Laptop-14-bw0xx"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
         <row stringID="row" value="0">
-          <item stringID="arch" value="AMD Athlon(tm) II X2 235e Processor"/>
+          <item stringID="arch" value="AMD A9-9420 RADEON R5, 5 COMPUTE CORES 2C+3G"/>
           <item stringID="speed" value="2700.000 MHz"/>
         </row>
       </table>
@@ -45,12 +45,12 @@
     </task>
     <task stringID="PAR_PAR">
       <section stringID="PAR_DESIGN_SUMMARY">
-        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="1 mins 1 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="57 secs "/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="49 secs "/>
+        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="50 secs "/>
         <item dataType="int" stringID="PAR_UNROUTES" value="0"/>
         <item dataType="float" stringID="PAR_TIMING_SCORE" value="0.000000"/>
-        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="1 mins 3 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="58 secs "/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="51 secs "/>
+        <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="51 secs "/>
       </section>
     </task>
     <task stringID="PAR_par">
@@ -2196,34 +2196,34 @@
     </task>
   </application>
 
-  <application stringID="Par" timeStamp="Thu Apr  5 21:30:46 2018">
+  <application stringID="Par" timeStamp="Fri Apr  6 10:44:10 2018">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
-          <item stringID="variable" value="PATH"/>
-          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/ISE//bin/lin64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64:/opt/lm32/bin"/>
+          <item stringID="variable" value="LD_LIBRARY_PATH"/>
+          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/ISE//lib/lin64:/usr/lib/i386i-linux-gnu/"/>
         </row>
         <row stringID="row" value="1">
-          <item stringID="variable" value="XILINX"/>
-          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/ISE/"/>
+          <item stringID="variable" value="PATH"/>
+          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/ISE//bin/lin64:/home/lisseth/bin:/home/lisseth/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/rtems-4.11/bin/:/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64:/opt/lm32/bin"/>
         </row>
         <row stringID="row" value="2">
-          <item stringID="variable" value="LD_LIBRARY_PATH"/>
-          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/ISE//lib/lin64"/>
+          <item stringID="variable" value="XILINX"/>
+          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/ISE/"/>
         </row>
       </table>
       <item stringID="User_EnvOs" value="OS Information">
         <item stringID="User_EnvOsname" value="Ubuntu"/>
-        <item stringID="User_EnvOsrelease" value="Ubuntu 17.04"/>
+        <item stringID="User_EnvOsrelease" value="Ubuntu 16.04.4 LTS"/>
       </item>
-      <item stringID="User_EnvHost" value="lisseth-300-1220la"/>
+      <item stringID="User_EnvHost" value="lisseth-HP-Laptop-14-bw0xx"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
         <row stringID="row" value="0">
-          <item stringID="arch" value="AMD Athlon(tm) II X2 235e Processor"/>
+          <item stringID="arch" value="AMD A9-9420 RADEON R5, 5 COMPUTE CORES 2C+3G"/>
           <item stringID="speed" value="2700.000 MHz"/>
         </row>
       </table>

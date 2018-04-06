@@ -1,7 +1,7 @@
-INFILE=/home/lisseth/Escritorio/lm32-gpio/build/system-routed.ncd
-OUTFILE=/home/lisseth/Escritorio/lm32-gpio/build/system.bit
+INFILE=/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/build/system-routed.ncd
+OUTFILE=/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/build/system.bit
 FAMILY=Artix7
 PART=xc7a100t-1csg324
-WORKINGDIR=/home/lisseth/Escritorio/lm32-gpio/build
+WORKINGDIR=/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/build
 LICENSE=WebPack
 USER_INFO=211378749_0_0_358
