@@ -19,20 +19,22 @@ module conbus_arb(
 	input sys_clk,
 	input sys_rst,
 	
-	input [6:0] req,
-	output [6:0] gnt
+	input [9:0] req,
+	output [9:0] gnt
 );
 
-parameter [6:0] grant0 = 7'b0000001,
-                grant1 = 7'b0000010,
-                grant2 = 7'b0000100,
-                grant3 = 7'b0001000,
-                grant4 = 7'b0010000,
-                grant5 = 7'b0100000,
-                grant6 = 7'b1000000;
+parameter [9:0] grant0 = 9'b000000001,
+                grant1 = 9'b000000010,
+                grant2 = 9'b000000100,
+                grant3 = 9'b000001000,
+                grant4 = 9'b000010000,
+                grant5 = 9'b000100000,
+                grant6 = 9'b001000000,
+		grant7 = 9'b010000000,
+		grant8 = 9'b100000000;
 
-reg [6:0] state;
-reg [6:0] next_state;
+reg [9:0] state;
+reg [9:0] next_state;
 
 assign gnt = state;
 
@@ -54,6 +56,9 @@ always @(*) begin
 				else if(req[4]) next_state = grant4;
 				else if(req[5]) next_state = grant5;
 				else if(req[6]) next_state = grant6;
+				else if(req[7]) next_state = grant7;
+				else if(req[8]) next_state = grant8;
+					
 			end
 		end
 		grant1: begin
@@ -63,6 +68,8 @@ always @(*) begin
 				else if(req[4]) next_state = grant4;
 				else if(req[5]) next_state = grant5;
 				else if(req[6]) next_state = grant6;
+				else if(req[7]) next_state = grant7;
+				else if(req[8]) next_state = grant8;
 				else if(req[0]) next_state = grant0;
 			end
 		end
@@ -72,6 +79,8 @@ always @(*) begin
 				else if(req[4]) next_state = grant4;
 				else if(req[5]) next_state = grant5;
 				else if(req[6]) next_state = grant6;
+				else if(req[7]) next_state = grant7;
+				else if(req[8]) next_state = grant8;
 				else if(req[0]) next_state = grant0;
 				else if(req[1]) next_state = grant1;
 			end
@@ -81,6 +90,8 @@ always @(*) begin
 				     if(req[4]) next_state = grant4;
 				else if(req[5]) next_state = grant5;
 				else if(req[6]) next_state = grant6;
+				else if(req[7]) next_state = grant7;
+				else if(req[8]) next_state = grant8;
 				else if(req[0]) next_state = grant0;
 				else if(req[1]) next_state = grant1;
 				else if(req[2]) next_state = grant2;
@@ -90,6 +101,8 @@ always @(*) begin
 			if(~req[4]) begin
 				     if(req[5]) next_state = grant5;
 				else if(req[6]) next_state = grant6;
+				else if(req[7]) next_state = grant7;
+				else if(req[8]) next_state = grant8;
 				else if(req[0]) next_state = grant0;
 				else if(req[1]) next_state = grant1;
 				else if(req[2]) next_state = grant2;
@@ -99,6 +112,8 @@ always @(*) begin
 		grant5: begin
 			if(~req[5]) begin
 				     if(req[6]) next_state = grant6;
+				else if(req[7]) next_state = grant7;
+				else if(req[8]) next_state = grant8;
 				else if(req[0]) next_state = grant0;
 				else if(req[1]) next_state = grant1;
 				else if(req[2]) next_state = grant2;
@@ -108,12 +123,38 @@ always @(*) begin
 		end
 		grant6: begin
 			if(~req[6]) begin
+				     if(req[7]) next_state = grant0;
+				else if(req[8]) next_state = grant1;
+				else if(req[0]) next_state = grant2;
+				else if(req[1]) next_state = grant3;
+				else if(req[2]) next_state = grant4;
+				else if(req[3]) next_state = grant5;
+				else if(req[4]) next_state = grant7;
+				else if(req[5]) next_state = grant8;
+			end
+		end
+		grant7: begin
+			if(~req[7]) begin
+				     if(req[8]) next_state = grant0;
+				else if(req[0]) next_state = grant1;
+				else if(req[1]) next_state = grant2;
+				else if(req[2]) next_state = grant3;
+				else if(req[3]) next_state = grant4;
+				else if(req[4]) next_state = grant5;
+				else if(req[5]) next_state = grant6;
+				else if(req[6]) next_state = grant8;
+			end
+		end
+		grant8: begin
+			if(~req[8]) begin
 				     if(req[0]) next_state = grant0;
 				else if(req[1]) next_state = grant1;
 				else if(req[2]) next_state = grant2;
 				else if(req[3]) next_state = grant3;
 				else if(req[4]) next_state = grant4;
 				else if(req[5]) next_state = grant5;
+				else if(req[7]) next_state = grant7;
+				else if(req[8]) next_state = grant8;
 			end
 		end
 	endcase

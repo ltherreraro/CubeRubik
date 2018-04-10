@@ -17,30 +17,6 @@ lm0/Mram_registers135/SPO</arg>
 To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">gpio0_io&lt;7&gt;</arg> connected to top level port <arg fmt="%s" index="2">gpio0_io&lt;7&gt;</arg> has been removed.
-</msg>
-
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">gpio0_io&lt;6&gt;</arg> connected to top level port <arg fmt="%s" index="2">gpio0_io&lt;6&gt;</arg> has been removed.
-</msg>
-
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">gpio0_io&lt;5&gt;</arg> connected to top level port <arg fmt="%s" index="2">gpio0_io&lt;5&gt;</arg> has been removed.
-</msg>
-
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">gpio0_io&lt;4&gt;</arg> connected to top level port <arg fmt="%s" index="2">gpio0_io&lt;4&gt;</arg> has been removed.
-</msg>
-
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">gpio0_io&lt;3&gt;</arg> connected to top level port <arg fmt="%s" index="2">gpio0_io&lt;3&gt;</arg> has been removed.
-</msg>
-
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">gpio0_io&lt;2&gt;</arg> connected to top level port <arg fmt="%s" index="2">gpio0_io&lt;2&gt;</arg> has been removed.
-</msg>
-
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">gpio0_io&lt;1&gt;</arg> connected to top level port <arg fmt="%s" index="2">gpio0_io&lt;1&gt;</arg> has been removed.
-</msg>
-
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">gpio0_io&lt;0&gt;</arg> connected to top level port <arg fmt="%s" index="2">gpio0_io&lt;0&gt;</arg> has been removed.
-</msg>
-
 <msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">i2c_sda</arg> connected to top level port <arg fmt="%s" index="2">i2c_sda</arg> has been removed.
 </msg>
 
