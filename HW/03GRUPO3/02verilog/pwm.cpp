@@ -22,8 +22,8 @@ if (dir == 'L'){
 dind=230;
 }
 
-uint32_t e=0;      uint32_t at=4;      uint32_t ad=8;
-uint32_t e1=12;    uint32_t at1=16;    uint32_t ad1=20;
+uint32_t ae=0;      uint32_t at=4;      uint32_t ad=8;
+uint32_t ae1=12;    uint32_t at1=16;    uint32_t ad1=20;
 uint32_t ae2=24;    uint32_t at2=28;    uint32_t ad2=32;
 uint32_t ae3=36;    uint32_t at3=40;    uint32_t ad3=44;
 uint32_t ae4=48;    uint32_t at4=52;    uint32_t ad4=56;
