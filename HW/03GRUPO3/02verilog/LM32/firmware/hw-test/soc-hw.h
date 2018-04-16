@@ -1,3 +1,10 @@
+#ifdef _cplusplus
+extern "C" {
+#endif
+
+
+
+
 #ifndef SPIKEHW_H
 #define SPIKEHW_H
 
@@ -175,3 +182,10 @@ extern uint32_t *sram0;
 extern pwm_t *pwm; 
 
 #endif // SPIKEHW_H
+
+
+#ifdef _cplusplus
+}
+#endif
+
+
