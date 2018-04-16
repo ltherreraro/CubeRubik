@@ -2,4 +2,6 @@ djtgcfg enum
 djtgcfg init -d Nexys4
 djtgcfg prog -d Nexys4 -i 0 -f microfono.bit
 djtgcfg prog -d Nexys4 -i 0 -f system.bit
+
+
 make -C ../../tools/srec2vram/ clean all
