@@ -142,11 +142,11 @@ OUTPUT(image elf32-lm32)
  .debug_line    0x0000000000000000      0x280 main.o
  .debug_line    0x0000000000000280      0x491 soc-hw.o
 
-.debug_str      0x0000000000000000      0x2f0
- .debug_str     0x0000000000000000      0x19a main.o
-                                        0x1bd (tamaño antes de la relajación)
- .debug_str     0x000000000000019a      0x156 soc-hw.o
-                                        0x2ff (tamaño antes de la relajación)
+.debug_str      0x0000000000000000      0x2f9
+ .debug_str     0x0000000000000000      0x1a3 main.o
+                                        0x1c6 (tamaño antes de la relajación)
+ .debug_str     0x00000000000001a3      0x156 soc-hw.o
+                                        0x308 (tamaño antes de la relajación)
 
 .comment        0x0000000000000000       0x11
  .comment       0x0000000000000000       0x11 main.o
