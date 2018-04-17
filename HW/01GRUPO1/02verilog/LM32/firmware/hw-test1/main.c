@@ -10,17 +10,17 @@ uint8_t R=0;
 uint8_t W=1;
 uint32_t on=1;
 uint32_t off=0;
-uint32_t dint=1000000;
+uint32_t dint=100;
 uint32_t dind;
 
 if (letra == 'R'){
-dind=35000;
+dind=35;
 }
 if (letra == 'C'){
-dind=130000;
+dind=130;
 }
 if (letra == 'L'){
-dind=230000;
+dind=230;
 }
 
 uint32_t ae=0;uint32_t at=4;uint32_t ad=8;

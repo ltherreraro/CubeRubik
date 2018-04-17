@@ -132,6 +132,7 @@ OUTPUT(image elf32-lm32)
  .debug_aranges
                 0x00000000       0x28 main.o
  .debug_aranges
+<<<<<<< HEAD
                 0x00000028       0x20 soc-hw.o
 
 .debug_ranges   0x00000000       0x30
@@ -152,3 +153,25 @@ OUTPUT(image elf32-lm32)
  .comment       0x00000000       0x11 main.o
                                  0x12 (tamaño antes de la relajación)
  .comment       0x00000011       0x12 soc-hw.o
+=======
+                0x0000000000000028       0x20 soc-hw.o
+
+.debug_ranges   0x0000000000000000       0x30
+ .debug_ranges  0x0000000000000000       0x18 main.o
+ .debug_ranges  0x0000000000000018       0x18 soc-hw.o
+
+.debug_line     0x0000000000000000      0x711
+ .debug_line    0x0000000000000000      0x280 main.o
+ .debug_line    0x0000000000000280      0x491 soc-hw.o
+
+.debug_str      0x0000000000000000      0x2f9
+ .debug_str     0x0000000000000000      0x1a3 main.o
+                                        0x1c6 (tamaño antes de la relajación)
+ .debug_str     0x00000000000001a3      0x156 soc-hw.o
+                                        0x308 (tamaño antes de la relajación)
+
+.comment        0x0000000000000000       0x11
+ .comment       0x0000000000000000       0x11 main.o
+                                         0x12 (tamaño antes de la relajación)
+ .comment       0x0000000000000011       0x12 soc-hw.o
+>>>>>>> 3e5ec32cdf0a9253b6d16e5da26c1853136434ce
