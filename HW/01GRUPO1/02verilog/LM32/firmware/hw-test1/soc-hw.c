@@ -25,30 +25,6 @@ void pwm_din(uint32_t vd_in){
 pwm -> d_in = vd_in;
 }
 
-/*
-void pwm_wr (int pwm_sel, int T, int D ){
-	if (pwm_sel==0) {
-		pwm -> addr = 0x00;
-		pwm -> wr = 1;
-		pwm -> rd = 0;
-		pwm -> d_in = 1;
-		msleep(5);
-		pwm -> addr = 0x04;
-		pwm -> wr = 1;
-		pwm -> rd = 0;
-		pwm -> d_in = T;
-		msleep(5);
-		pwm -> addr = 0x08;
-		pwm -> wr = 1;
-		pwm -> rd = 0;
-		pwm -> d_in = D;
-		}
-	else{
-		pwm -> rd = 1;}
-		
-}
-*/
-
 
 /***************************************************************************
  * GPIO
@@ -226,3 +202,4 @@ void i2c_write(char addrDev, char addrReg, char dat)
 
 }
 char i2c_getchar();
+

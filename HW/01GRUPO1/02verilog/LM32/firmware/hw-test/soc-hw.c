@@ -25,6 +25,7 @@ void pwm_din(uint32_t vd_in){
 pwm -> d_in = vd_in;
 }
 
+
 /*
 void pwm_wr (int pwm_sel, int T, int D ){
 	if (pwm_sel==0) {

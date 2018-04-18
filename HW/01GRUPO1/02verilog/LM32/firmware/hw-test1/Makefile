@@ -1,4 +1,5 @@
-LM32_CC=lm32-elf-gcc
+LM32_CC=lm32-elf-g++
+LM32_CC1=lm32-elf-gcc
 LM32_LD=lm32-elf-ld
 LM32_OBJCOPY=lm32-elf-objcopy
 LM32_OBJDUMP=lm32-elf-objdump
@@ -23,8 +24,11 @@ main.o: main.c
 soc-hw.o: soc-hw.c
 	$(LM32_CC) $(CFLAGS) -c soc-hw.c
 
-image: crt0ram.o main.o soc-hw.o 
-	$(LM32_LD) $(LDFLAGS) -Map image.map -N -o image crt0ram.o main.o soc-hw.o
+pwm.o: pwm.cpp
+	$(LM32_CC) $(CFLAGS) -c pwm.cpp
+
+image: crt0ram.o main.o soc-hw.o pwm.o
+	$(LM32_LD) $(LDFLAGS) -Map image.map -N -o image crt0ram.o main.o soc-hw.o pwm.o
 
 image.lst: image
 	$(LM32_OBJDUMP) -h -S $< > $@
