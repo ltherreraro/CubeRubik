@@ -18,7 +18,7 @@ Guión del enlazador y mapa de memoria
                 0x0000000000001000                _RAM_SIZE = 0x1000
                 0x0000000000001000                _RAM_END = (_RAM_START + _RAM_SIZE)
 
-.text           0x0000000000000000      0x5c0
+.text           0x0000000000000000      0xc2c
                 0x0000000000000000                _ftext = .
  *(.text .stub .text.* .gnu.linkonce.t.*)
  .text          0x0000000000000000      0x208 crt0ram.o
@@ -31,132 +31,137 @@ Guión del enlazador y mapa de memoria
                 0x000000000000016c                halt
                 0x00000000000001f8                get_sp
                 0x0000000000000200                get_gp
- .text          0x0000000000000208       0x4c main.o
+ .text          0x0000000000000208        0x0 main.o
+ .text.startup  0x0000000000000208       0x28 main.o
                 0x0000000000000208                main
- .text          0x0000000000000254      0x36c soc-hw.o
-                0x0000000000000254                isr_null
-                0x0000000000000258                tic_isr
-                0x0000000000000284                pwm_read
-                0x0000000000000298                pwm_rd
-                0x00000000000002b0                pwm_addr
-                0x00000000000002c4                pwm_wr
-                0x00000000000002dc                pwm_din
-                0x00000000000002f0                gpio_config_dir
-                0x0000000000000304                gpio_write
-                0x0000000000000318                gpio_read
-                0x000000000000032c                irq_handler
-                0x0000000000000390                isr_init
-                0x00000000000003b4                isr_register
-                0x00000000000003cc                isr_unregister
-                0x00000000000003ec                msleep
-                0x0000000000000428                nsleep
-                0x0000000000000458                tic_init
-                0x000000000000049c                uart_init
-                0x00000000000004a0                uart_getchar
-                0x00000000000004c4                uart_putchar
-                0x00000000000004e8                uart_putstr
-                0x000000000000051c                i2c_init
-                0x0000000000000540                i2c_write
-                0x00000000000005c0                _etext = .
+ .text          0x0000000000000230      0x348 soc-hw.o
+                0x0000000000000230                tic_isr
+                0x0000000000000264                isr_null
+                0x0000000000000268                gpio_config_dir
+                0x0000000000000280                gpio_write
+                0x0000000000000298                gpio_read
+                0x00000000000002b0                irq_handler
+                0x000000000000030c                isr_init
+                0x0000000000000338                isr_register
+                0x0000000000000354                isr_unregister
+                0x000000000000037c                msleep
+                0x00000000000003b8                nsleep
+                0x00000000000003ec                tic_init
+                0x0000000000000440                uart_init
+                0x0000000000000444                uart_getchar
+                0x000000000000046c                uart_putchar
+                0x0000000000000494                uart_putstr
+                0x00000000000004cc                i2c_init
+                0x00000000000004f4                i2c_write
+ .text          0x0000000000000578      0x6b4 clase_pwm.o
+                0x0000000000000578                clase_pwm::pwm_setMov(int, int)
+                0x0000000000000bac                clase_pwm::pwm_read()
+                0x0000000000000bc4                clase_pwm::pwm_rd(unsigned char)
+                0x0000000000000be0                clase_pwm::pwm_addr(unsigned int)
+                0x0000000000000bf8                clase_pwm::pwm_wr(unsigned char)
+                0x0000000000000c14                clase_pwm::pwm_din(unsigned int)
+                0x0000000000000c2c                _etext = .
 
-.rodata         0x00000000000005c0        0x4
-                0x00000000000005c0                . = ALIGN (0x4)
-                0x00000000000005c0                _frodata = .
+.rodata         0x0000000000000c2c       0x70
+                0x0000000000000c2c                . = ALIGN (0x4)
+                0x0000000000000c2c                _frodata = .
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata.cst4   0x00000000000005c0        0x4 soc-hw.o
+ .rodata.cst4   0x0000000000000c2c       0x58 soc-hw.o
+ .rodata.cst4   0x0000000000000c84       0x18 clase_pwm.o
  *(.rodata1)
-                0x00000000000005c4                _erodata = .
+                0x0000000000000c9c                _erodata = .
 
-.data           0x00000000000005c4       0x18
-                0x00000000000005c4                . = ALIGN (0x4)
-                0x00000000000005c4                _fdata = .
+.data           0x0000000000000c9c       0x18
+                0x0000000000000c9c                . = ALIGN (0x4)
+                0x0000000000000c9c                _fdata = .
  *(.data .data.* .gnu.linkonce.d.*)
- .data          0x00000000000005c4        0x0 crt0ram.o
- .data          0x00000000000005c4        0x0 main.o
- .data          0x00000000000005c4       0x18 soc-hw.o
-                0x00000000000005c4                uart0
-                0x00000000000005c8                timer0
-                0x00000000000005cc                gpio0
-                0x00000000000005d0                spi0
-                0x00000000000005d4                i2c0
-                0x00000000000005d8                pwm
+ .data          0x0000000000000c9c        0x0 crt0ram.o
+ .data          0x0000000000000c9c        0x0 main.o
+ .data          0x0000000000000c9c       0x18 soc-hw.o
+                0x0000000000000c9c                pwm
+                0x0000000000000ca0                i2c0
+                0x0000000000000ca4                spi0
+                0x0000000000000ca8                gpio0
+                0x0000000000000cac                timer0
+                0x0000000000000cb0                uart0
+ .data          0x0000000000000cb4        0x0 clase_pwm.o
  *(.data1)
-                0x00000000000005e0                _gp = ALIGN (0x10)
+                0x0000000000000cc0                _gp = ALIGN (0x10)
  *(.sdata .sdata.* .gnu.linkonce.s.*)
-                0x00000000000005dc                _edata = .
+                0x0000000000000cb4                _edata = .
 
-.bss            0x00000000000005dc       0x84
-                0x00000000000005dc                . = ALIGN (0x4)
-                0x00000000000005dc                _fbss = .
+.bss            0x0000000000000cb4       0x84
+                0x0000000000000cb4                . = ALIGN (0x4)
+                0x0000000000000cb4                _fbss = .
  *(.dynsbss)
  *(.sbss .sbss.* .gnu.linkonce.sb.*)
  *(.scommon)
  *(.dynbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x00000000000005dc        0x0 crt0ram.o
- .bss           0x00000000000005dc        0x0 main.o
- .bss           0x00000000000005dc        0x0 soc-hw.o
+ .bss           0x0000000000000cb4        0x0 crt0ram.o
+ .bss           0x0000000000000cb4        0x0 main.o
+ .bss           0x0000000000000cb4        0x0 soc-hw.o
+ .bss           0x0000000000000cb4        0x0 clase_pwm.o
  *(COMMON)
- COMMON         0x00000000000005dc       0x84 soc-hw.o
-                0x00000000000005dc                isr_table
-                0x000000000000065c                tic_msec
-                0x0000000000000660                _ebss = .
-                0x0000000000000660                _end = .
-                0x0000000000000ffc                PROVIDE (_fstack, ((ORIGIN (ram) + 0x1000) - 0x4))
+ COMMON         0x0000000000000cb4       0x84 soc-hw.o
+                0x0000000000000cb4                isr_table
+                0x0000000000000d34                tic_msec
+                0x0000000000000d38                _ebss = .
+                0x0000000000000d38                _end = .
+                0x0000000000000ffc                PROVIDE (_fstack = ((ORIGIN (ram) + LENGTH (ram)) - 0x4))
 LOAD crt0ram.o
 LOAD main.o
 LOAD soc-hw.o
+LOAD clase_pwm.o
 OUTPUT(image elf32-lm32)
 
-.debug_abbrev   0x0000000000000000      0x21c
- .debug_abbrev  0x0000000000000000       0x3f main.o
- .debug_abbrev  0x000000000000003f      0x1dd soc-hw.o
+.debug_frame    0x0000000000000000      0x1f0
+ .debug_frame   0x0000000000000000       0x34 main.o
+ .debug_frame   0x0000000000000034      0x148 soc-hw.o
+ .debug_frame   0x000000000000017c       0x74 clase_pwm.o
 
-.debug_info     0x0000000000000000      0x790
- .debug_info    0x0000000000000000       0x60 main.o
- .debug_info    0x0000000000000060      0x730 soc-hw.o
+.debug_info     0x0000000000000000     0x25ac
+ .debug_info    0x0000000000000000      0x2f6 main.o
+ .debug_info    0x00000000000002f6      0x5de soc-hw.o
+ .debug_info    0x00000000000008d4     0x1cd8 clase_pwm.o
 
-.debug_line     0x0000000000000000      0x4a9
- .debug_line    0x0000000000000000       0x76 main.o
- .debug_line    0x0000000000000076      0x433 soc-hw.o
+.debug_abbrev   0x0000000000000000      0x5ec
+ .debug_abbrev  0x0000000000000000      0x149 main.o
+ .debug_abbrev  0x0000000000000149      0x244 soc-hw.o
+ .debug_abbrev  0x000000000000038d      0x25f clase_pwm.o
 
-.debug_frame    0x0000000000000000      0x1a0
- .debug_frame   0x0000000000000000       0x20 main.o
- .debug_frame   0x0000000000000020      0x180 soc-hw.o
-
-.debug_pubnames
-                0x0000000000000000      0x1c6
- .debug_pubnames
-                0x0000000000000000       0x1b main.o
- .debug_pubnames
-                0x000000000000001b      0x1ab soc-hw.o
-
-.debug_pubtypes
-                0x0000000000000000       0x8b
- .debug_pubtypes
-                0x0000000000000000       0x12 main.o
- .debug_pubtypes
-                0x0000000000000012       0x79 soc-hw.o
-
-.debug_aranges  0x0000000000000000       0x40
+.debug_aranges  0x0000000000000000       0x60
  .debug_aranges
                 0x0000000000000000       0x20 main.o
  .debug_aranges
                 0x0000000000000020       0x20 soc-hw.o
+ .debug_aranges
+                0x0000000000000040       0x20 clase_pwm.o
 
-.debug_str      0x0000000000000000      0x267
- .debug_str     0x0000000000000000       0x72 main.o
-                                         0x8b (tamaño antes de la relajación)
- .debug_str     0x0000000000000072      0x1f5 soc-hw.o
-                                        0x288 (tamaño antes de la relajación)
+.debug_ranges   0x0000000000000000      0x310
+ .debug_ranges  0x0000000000000000       0x10 main.o
+ .debug_ranges  0x0000000000000010       0x18 soc-hw.o
+ .debug_ranges  0x0000000000000028      0x2e8 clase_pwm.o
+
+.debug_line     0x0000000000000000      0xc61
+ .debug_line    0x0000000000000000       0x65 main.o
+ .debug_line    0x0000000000000065      0x3f9 soc-hw.o
+ .debug_line    0x000000000000045e      0x803 clase_pwm.o
+
+.debug_str      0x0000000000000000      0x425
+ .debug_str     0x0000000000000000      0x239 main.o
+                                        0x278 (tamaño antes de la relajación)
+ .debug_str     0x0000000000000239      0x1c3 soc-hw.o
+                                        0x2ca (tamaño antes de la relajación)
+ .debug_str     0x00000000000003fc       0x29 clase_pwm.o
+                                        0x295 (tamaño antes de la relajación)
 
 .comment        0x0000000000000000       0x11
  .comment       0x0000000000000000       0x11 main.o
                                          0x12 (tamaño antes de la relajación)
- .comment       0x0000000000000000       0x12 soc-hw.o
+ .comment       0x0000000000000011       0x12 soc-hw.o
+ .comment       0x0000000000000011       0x12 clase_pwm.o
 
-.debug_loc      0x0000000000000000      0x10f
- .debug_loc     0x0000000000000000      0x10f soc-hw.o
-
-.debug_ranges   0x0000000000000000       0x18
- .debug_ranges  0x0000000000000000       0x18 soc-hw.o
+.debug_loc      0x0000000000000000     0x1ecb
+ .debug_loc     0x0000000000000000      0x15e soc-hw.o
+ .debug_loc     0x000000000000015e     0x1d6d clase_pwm.o

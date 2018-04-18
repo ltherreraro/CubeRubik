@@ -1,17 +1,17 @@
-#include "pwm.h"
+
 #include "soc-hw.h"
 
 
 int main(){
 
-	/*	pwm_wr(1);
+		pwm_wr(1);
         pwm_addr(04);
         pwm_din(2);
         pwm_addr(8);
         pwm_din(4);
 	    pwm_addr(00);
         pwm_din(1);
-	*/
+
 }
 
 
