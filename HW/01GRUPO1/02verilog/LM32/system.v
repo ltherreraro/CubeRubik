@@ -9,7 +9,7 @@ module system
 //	parameter   bootram_file     = "../firmware/cain_loader/image.ram",
 //	parameter   bootram_file     = "../firmware/arch_examples/image.ram",
 //	parameter   bootram_file     = "../firmware/boot0-serial/image.ram",
-	parameter   bootram_file     = "../firmware/hw-test1/image.ram",
+	parameter   bootram_file     = "../firmware/proyecto/image.ram",
 	parameter   clk_freq         = 100000000,
 	parameter   uart_baud_rate   = 115200
 ) (
@@ -206,16 +206,13 @@ wb_motores pwm (.clk(clk),
 		.pwm7(pwm7));
 
 conbus #(
-	.s_addr_w(4),
-	.s0_addr(4'b0000),	// bram     0x00000000 
-	.s1_addr(4'b0010),	// uart0    0x20000000 
-	.s2_addr(4'b0011),	// timer    0x30000000 
-	.s3_addr(4'b0100),  	// pwm      0x40000000 
-	.s4_addr(4'b0101),	// spi      0x50000000 
-	.s5_addr(4'b0110),	// i2c      0x60000000 
-	.s6_addr(4'b0111),	// gpio    0x70000000 
-	.s7_addr(4'b1000),	// xxxx     0x80000000 
-	.s8_addr(4'b1001)	// xxx      0x90000000 
+	.s_addr_w(3),
+	.s0_addr(3'b000),	// bram     0x00000000 
+	.s1_addr(3'b010),	// uart0    0x20000000 
+	.s2_addr(3'b011),	// timer    0x30000000 
+	.s3_addr(3'b100),   // pwm     0x40000000 
+	.s4_addr(3'b101),	// spi      0x50000000 
+	.s5_addr(3'b110)	// i2c      0x60000000 
 ) conbus0(
 	.sys_clk( clk ),
 	.sys_rst( ~rst ),
@@ -292,37 +289,7 @@ conbus #(
 	.s5_we_o(   i2c0_we    ),
 	.s5_cyc_o(  i2c0_cyc   ),
 	.s5_stb_o(  i2c0_stb   ),
-	.s5_ack_i(  i2c0_ack   ),
-	
-		// Slave6
-	.s6_dat_i(  gpio0_dat_r),
-	.s6_dat_o(  gpio0_dat_w),
-	.s6_adr_o(  gpio0_adr  ),
-	.s6_sel_o(  gpio0_sel  ),
-	.s6_we_o(   gpio0_we   ),
-	.s6_cyc_o(  gpio0_cyc  ),
-	.s6_stb_o(  gpio0_stb  ),
-	.s6_ack_i(  gpio0_ack  ),
-
-	// Slave7
-	.s7_dat_i(  gnd32      ),
-	/*.s7_dat_o(  gnd32      ),
-	.s7_adr_o(  gnd32      ),
-	.s7_sel_o(  gnd4       ),
-	.s7_we_o(   gnd        ),
-	.s7_cyc_o(  gnd        ),
-	.s7_stb_o(  gnd        ),*/
-	.s7_ack_i(  gnd        ),
-
-		// Slave8
-	.s8_dat_i(  gnd32      ),
-	/*.s8_dat_o(  gnd32      ),
-	.s8_adr_o(  gnd32      ),
-	.s8_sel_o(  gnd4       ),
-	.s8_we_o(   gnd        ),
-	.s8_cyc_o(  gnd        ),
-	.s8_stb_o(  gnd        ),*/
-	.s8_ack_i(  gnd        )
+	.s5_ack_i(  i2c0_ack   )
 	
 );
 
