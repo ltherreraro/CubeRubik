@@ -1,1 +1,1 @@
-main.o: main.c soc-hw.h
+main.o: main.c clase_pwm.h soc-hw.h

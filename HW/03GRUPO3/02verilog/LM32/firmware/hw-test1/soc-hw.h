@@ -1,3 +1,9 @@
+#ifdef _cplusplus
+extern "C" {
+#endif
+
+
+
 #ifndef SPIKEHW_H
 #define SPIKEHW_H
 
@@ -61,13 +67,6 @@ typedef struct {
    volatile uint32_t d_in;
   
 } pwm_t;
-uint32_t pwm_read();
-void pwm_rd(uint8_t vrd);
-void pwm_addr(uint32_t vaddr);
-void pwm_wr(uint8_t vwr);
-void pwm_din(uint32_t vd_in);
-
-
 
 
 //void pwm_wr (int pwm_sel, int T, int D );
@@ -142,9 +141,6 @@ char spi_getchar();
 
 
 /***************************************************************************
-
-
-/***************************************************************************
  * I2C0
  */
 #define I2C_TIP 0x02
@@ -174,4 +170,10 @@ extern gpio_t   *gpio0;
 extern uint32_t *sram0; 
 extern pwm_t *pwm; 
 
+
 #endif // SPIKEHW_H
+
+#ifdef _cplusplus
+}
+#endif
+

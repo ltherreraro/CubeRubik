@@ -13,22 +13,6 @@ void tic_isr();
 /**************************************************************************
  *PWM
  */
-uint32_t pwm_read(){	//escribe en el pin
-	return pwm -> d_out;
-}
-void pwm_rd(uint8_t vrd){
-pwm -> rd = vrd;
-}
-void pwm_addr(uint32_t vaddr){
-pwm -> addr = vaddr;
-}
-void pwm_wr(uint8_t vwr){
-pwm -> wr = vwr;
-}
-void pwm_din(uint32_t vd_in){
-pwm -> d_in = vd_in;
-}
-
 /***************************************************************************
  * GPIO
  */
