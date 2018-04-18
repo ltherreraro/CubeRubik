@@ -1,0 +1,174 @@
+
+Configuración de la Memoria
+
+Nombre           Origen             Longitud           Atributos
+ram              0x0000000000000000 0x0000000000001000
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Guión del enlazador y mapa de memoria
+
+                0x0000000000000000                __DYNAMIC = 0x0
+                0x0000000000000000                _RAM_START = 0x0
+                0x0000000000001000                _RAM_SIZE = 0x1000
+                0x0000000000001000                _RAM_END = (_RAM_START + _RAM_SIZE)
+
+.text           0x0000000000000000      0x7b4
+                0x0000000000000000                _ftext = .
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000000000000      0x1e8 crt0ram.o
+                0x0000000000000000                _start
+                0x0000000000000120                irq_enable
+                0x000000000000012c                irq_disable
+                0x0000000000000138                irq_set_mask
+                0x0000000000000140                irq_get_mask
+                0x0000000000000148                jump
+                0x000000000000014c                halt
+                0x00000000000001d8                get_sp
+                0x00000000000001e0                get_gp
+ .text          0x00000000000001e8        0x0 main.o
+ .text.startup  0x00000000000001e8       0xc4 main.o
+                0x00000000000001e8                main
+ .text          0x00000000000002ac      0x3c4 soc-hw.o
+                0x00000000000002ac                tic_isr()
+                0x00000000000002e0                isr_null()
+                0x00000000000002e4                pwm_read()
+                0x00000000000002fc                pwm_rd(unsigned char)
+                0x0000000000000318                pwm_addr(unsigned int)
+                0x0000000000000330                pwm_wr(unsigned char)
+                0x000000000000034c                pwm_din(unsigned int)
+                0x0000000000000364                gpio_config_dir(unsigned int)
+                0x000000000000037c                gpio_write(unsigned int)
+                0x0000000000000394                gpio_read()
+                0x00000000000003ac                irq_handler(unsigned int)
+                0x0000000000000408                isr_init()
+                0x0000000000000434                isr_register(int, void (*)())
+                0x0000000000000450                isr_unregister(int)
+                0x0000000000000478                msleep(unsigned int)
+                0x00000000000004b0                nsleep(unsigned int)
+                0x00000000000004e4                tic_init()
+                0x0000000000000538                uart_init()
+                0x000000000000053c                uart_getchar()
+                0x0000000000000564                uart_putchar(char)
+                0x000000000000058c                uart_putstr(char*)
+                0x00000000000005c4                i2c_init()
+                0x00000000000005ec                i2c_write(char, char, char)
+ .text          0x0000000000000670      0x110 pwm.o
+                0x0000000000000670                pwm::pwm_sel(int, int, bool)
+                0x0000000000000750                pwm::brazo(int)
+ .text          0x0000000000000780       0x34 timer.o
+                0x0000000000000780                timer::nsleep(int)
+                0x00000000000007b4                _etext = .
+
+.rodata         0x00000000000007b4       0x70
+                0x00000000000007b4                . = ALIGN (0x4)
+                0x00000000000007b4                _frodata = .
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.cst4   0x00000000000007b4       0x6c soc-hw.o
+ .rodata.cst4   0x0000000000000820        0x4 timer.o
+ *(.rodata1)
+                0x0000000000000824                _erodata = .
+
+.data           0x0000000000000824       0x18
+                0x0000000000000824                . = ALIGN (0x4)
+                0x0000000000000824                _fdata = .
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000000000000824        0x0 crt0ram.o
+ .data          0x0000000000000824        0x0 main.o
+ .data          0x0000000000000824       0x18 soc-hw.o
+                0x0000000000000824                pwm
+                0x0000000000000828                i2c0
+                0x000000000000082c                spi0
+                0x0000000000000830                gpio0
+                0x0000000000000834                timer0
+                0x0000000000000838                uart0
+ .data          0x000000000000083c        0x0 pwm.o
+ .data          0x000000000000083c        0x0 timer.o
+ *(.data1)
+                0x0000000000000840                _gp = ALIGN (0x10)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+                0x000000000000083c                _edata = .
+
+.bss            0x000000000000083c       0x84
+                0x000000000000083c                . = ALIGN (0x4)
+                0x000000000000083c                _fbss = .
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ *(.scommon)
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x000000000000083c        0x0 crt0ram.o
+ .bss           0x000000000000083c        0x0 main.o
+ .bss           0x000000000000083c       0x84 soc-hw.o
+                0x000000000000083c                tic_msec
+                0x0000000000000840                isr_table
+ .bss           0x00000000000008c0        0x0 pwm.o
+ .bss           0x00000000000008c0        0x0 timer.o
+ *(COMMON)
+                0x00000000000008c0                _ebss = .
+                0x00000000000008c0                _end = .
+                0x0000000000000ffc                PROVIDE (_fstack = ((ORIGIN (ram) + LENGTH (ram)) - 0x4))
+LOAD crt0ram.o
+LOAD main.o
+LOAD soc-hw.o
+LOAD pwm.o
+LOAD timer.o
+OUTPUT(image elf32-lm32)
+
+.debug_frame    0x0000000000000000      0x23c
+ .debug_frame   0x0000000000000000       0x34 main.o
+ .debug_frame   0x0000000000000034      0x198 soc-hw.o
+ .debug_frame   0x00000000000001cc       0x4c pwm.o
+ .debug_frame   0x0000000000000218       0x24 timer.o
+
+.debug_info     0x0000000000000000      0xfd3
+ .debug_info    0x0000000000000000      0x249 main.o
+ .debug_info    0x0000000000000249      0x6ff soc-hw.o
+ .debug_info    0x0000000000000948      0x42d pwm.o
+ .debug_info    0x0000000000000d75      0x25e timer.o
+
+.debug_abbrev   0x0000000000000000      0x60a
+ .debug_abbrev  0x0000000000000000      0x11a main.o
+ .debug_abbrev  0x000000000000011a      0x23a soc-hw.o
+ .debug_abbrev  0x0000000000000354      0x1a2 pwm.o
+ .debug_abbrev  0x00000000000004f6      0x114 timer.o
+
+.debug_aranges  0x0000000000000000       0x80
+ .debug_aranges
+                0x0000000000000000       0x20 main.o
+ .debug_aranges
+                0x0000000000000020       0x20 soc-hw.o
+ .debug_aranges
+                0x0000000000000040       0x20 pwm.o
+ .debug_aranges
+                0x0000000000000060       0x20 timer.o
+
+.debug_ranges   0x0000000000000000       0x28
+ .debug_ranges  0x0000000000000000       0x10 main.o
+ .debug_ranges  0x0000000000000010       0x18 soc-hw.o
+
+.debug_line     0x0000000000000000      0x6b3
+ .debug_line    0x0000000000000000       0x96 main.o
+ .debug_line    0x0000000000000096      0x43d soc-hw.o
+ .debug_line    0x00000000000004d3      0x14c pwm.o
+ .debug_line    0x000000000000061f       0x94 timer.o
+
+.debug_str      0x0000000000000000      0x4c7
+ .debug_str     0x0000000000000000      0x13b main.o
+ .debug_str     0x000000000000013b      0x36b soc-hw.o
+                                        0x492 (tamaño antes de la relajación)
+ .debug_str     0x00000000000004a6       0x17 pwm.o
+                                        0x245 (tamaño antes de la relajación)
+ .debug_str     0x00000000000004bd        0xa timer.o
+                                        0x1dd (tamaño antes de la relajación)
+
+.comment        0x0000000000000000       0x11
+ .comment       0x0000000000000000       0x11 main.o
+                                         0x12 (tamaño antes de la relajación)
+ .comment       0x0000000000000011       0x12 soc-hw.o
+ .comment       0x0000000000000011       0x12 pwm.o
+ .comment       0x0000000000000011       0x12 timer.o
+
+.debug_loc      0x0000000000000000      0x348
+ .debug_loc     0x0000000000000000      0x15e soc-hw.o
+ .debug_loc     0x000000000000015e      0x195 pwm.o
+ .debug_loc     0x00000000000002f3       0x55 timer.o
