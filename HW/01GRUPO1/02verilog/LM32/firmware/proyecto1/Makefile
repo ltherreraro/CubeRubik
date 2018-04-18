@@ -26,11 +26,14 @@ soc-hw.o: soc-hw.c
 pwm.o: pwm.cpp
 	$(LM32_CC) $(CFLAGS) -c pwm.cpp
 
+uart.o: uart.cpp
+	$(LM32_CC) $(CFLAGS) -c uart.cpp
+
 timer.o: timer.cpp
 	$(LM32_CC) $(CFLAGS) -c timer.cpp
 
-image: crt0ram.o main.o soc-hw.o pwm.o timer.o
-	$(LM32_LD) $(LDFLAGS) -Map image.map -N -o image crt0ram.o main.o soc-hw.o pwm.o timer.o
+image: crt0ram.o main.o soc-hw.o pwm.o timer.o uart.o
+	$(LM32_LD) $(LDFLAGS) -Map image.map -N -o image crt0ram.o main.o soc-hw.o pwm.o timer.o uart.o
 
 image.lst: image
 	$(LM32_OBJDUMP) -h -S $< > $@

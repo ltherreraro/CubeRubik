@@ -22,7 +22,7 @@ wire       led;
 //----------------------------------------------------------------------------
 // UART STUFF (testbench uart, simulating a comm. partner)
 //----------------------------------------------------------------------------
-wire         uart_rxd;
+reg         uart_rxd;
 wire         uart_txd;
 
 //----------------------------------------------------------------------------
@@ -45,6 +45,36 @@ system #(
 /* Clocking device */
 initial         clk <= 0;
 always #(tck/2) clk <= ~clk;
+
+/*initial
+begin
+uart_txd<=1;
+#4;*/
+initial
+begin
+#tck;
+uart_rxd<=1'b1;
+#tck;
+uart_rxd<=1'b0;
+#tck;
+uart_rxd<=1'b1;
+#tck;
+uart_rxd<=1'b1;
+
+#tck;
+uart_rxd<=1'b0;
+#tck;
+uart_rxd<=1'b1;
+#tck;
+#tck;
+uart_rxd<=1'b1;
+
+#tck;
+uart_rxd<=1'b0;
+#tck;
+uart_rxd<=1'b1;
+#tck;
+end
 
 /* Simulation setup */
 initial begin

@@ -12,7 +12,7 @@ Guión del enlazador y mapa de memoria
                 0x0000000000001000                _RAM_SIZE = 0x1000
                 0x0000000000001000                _RAM_END = (_RAM_START + _RAM_SIZE)
 
-.text           0x0000000000000000      0x7b4
+.text           0x0000000000000000      0x7f0
                 0x0000000000000000                _ftext = .
  *(.text .stub .text.* .gnu.linkonce.t.*)
  .text          0x0000000000000000      0x1e8 crt0ram.o
@@ -26,113 +26,128 @@ Guión del enlazador y mapa de memoria
                 0x00000000000001d8                get_sp
                 0x00000000000001e0                get_gp
  .text          0x00000000000001e8        0x0 main.o
- .text.startup  0x00000000000001e8       0xc4 main.o
+ .text.startup  0x00000000000001e8      0x100 main.o
                 0x00000000000001e8                main
- .text          0x00000000000002ac      0x3c4 soc-hw.o
-                0x00000000000002ac                tic_isr()
-                0x00000000000002e0                isr_null()
-                0x00000000000002e4                pwm_read()
-                0x00000000000002fc                pwm_rd(unsigned char)
-                0x0000000000000318                pwm_addr(unsigned int)
-                0x0000000000000330                pwm_wr(unsigned char)
-                0x000000000000034c                pwm_din(unsigned int)
-                0x0000000000000364                gpio_config_dir(unsigned int)
-                0x000000000000037c                gpio_write(unsigned int)
-                0x0000000000000394                gpio_read()
-                0x00000000000003ac                irq_handler(unsigned int)
-                0x0000000000000408                isr_init()
-                0x0000000000000434                isr_register(int, void (*)())
-                0x0000000000000450                isr_unregister(int)
-                0x0000000000000478                msleep(unsigned int)
-                0x00000000000004b0                nsleep(unsigned int)
-                0x00000000000004e4                tic_init()
-                0x0000000000000538                uart_init()
-                0x000000000000053c                uart_getchar()
-                0x0000000000000564                uart_putchar(char)
-                0x000000000000058c                uart_putstr(char*)
-                0x00000000000005c4                i2c_init()
-                0x00000000000005ec                i2c_write(char, char, char)
- .text          0x0000000000000670      0x110 pwm.o
-                0x0000000000000670                pwm::pwm_sel(int, int, bool)
-                0x0000000000000750                pwm::brazo(int)
- .text          0x0000000000000780       0x34 timer.o
-                0x0000000000000780                timer::nsleep(int)
-                0x00000000000007b4                _etext = .
+ .text          0x00000000000002e8      0x338 soc-hw.o
+                0x00000000000002e8                isr_null()
+                0x00000000000002ec                tic_isr()
+                0x0000000000000320                pwm_read()
+                0x0000000000000338                pwm_rd(unsigned char)
+                0x0000000000000354                pwm_addr(unsigned int)
+                0x000000000000036c                pwm_wr(unsigned char)
+                0x0000000000000388                pwm_din(unsigned int)
+                0x00000000000003a0                gpio_config_dir(unsigned int)
+                0x00000000000003b8                gpio_write(unsigned int)
+                0x00000000000003d0                gpio_read()
+                0x00000000000003e8                irq_handler(unsigned int)
+                0x0000000000000444                isr_init()
+                0x0000000000000470                isr_register(int, void (*)())
+                0x000000000000048c                isr_unregister(int)
+                0x00000000000004b4                msleep(unsigned int)
+                0x00000000000004ec                nsleep(unsigned int)
+                0x0000000000000520                tic_init()
+                0x0000000000000574                i2c_init()
+                0x000000000000059c                i2c_write(char, char, char)
+ .text          0x0000000000000620      0x110 pwm.o
+                0x0000000000000620                pwm::pwm_sel(int, int, bool)
+                0x0000000000000700                pwm::brazo(int)
+ .text          0x0000000000000730       0x34 timer.o
+                0x0000000000000730                timer::nsleep(int)
+ .text          0x0000000000000764       0x8c uart.o
+                0x0000000000000764                uart::uart_init()
+                0x0000000000000768                uart::uart_getchar()
+                0x0000000000000790                uart::uart_putchar(char)
+                0x00000000000007b8                uart::uart_putstr(char*)
+                0x00000000000007f0                _etext = .
 
-.rodata         0x00000000000007b4       0x70
-                0x00000000000007b4                . = ALIGN (0x4)
-                0x00000000000007b4                _frodata = .
+.rodata         0x00000000000007f0       0x70
+                0x00000000000007f0                . = ALIGN (0x4)
+                0x00000000000007f0                _frodata = .
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata.cst4   0x00000000000007b4       0x6c soc-hw.o
- .rodata.cst4   0x0000000000000820        0x4 timer.o
+ .rodata.cst4   0x00000000000007f0       0x60 soc-hw.o
+ .rodata.cst4   0x0000000000000850        0x4 timer.o
+ .rodata.cst4   0x0000000000000854        0xc uart.o
  *(.rodata1)
-                0x0000000000000824                _erodata = .
+                0x0000000000000860                _erodata = .
 
-.data           0x0000000000000824       0x18
-                0x0000000000000824                . = ALIGN (0x4)
-                0x0000000000000824                _fdata = .
+.data           0x0000000000000860       0x18
+                0x0000000000000860                . = ALIGN (0x4)
+                0x0000000000000860                _fdata = .
  *(.data .data.* .gnu.linkonce.d.*)
- .data          0x0000000000000824        0x0 crt0ram.o
- .data          0x0000000000000824        0x0 main.o
- .data          0x0000000000000824       0x18 soc-hw.o
-                0x0000000000000824                pwm
-                0x0000000000000828                i2c0
-                0x000000000000082c                spi0
-                0x0000000000000830                gpio0
-                0x0000000000000834                timer0
-                0x0000000000000838                uart0
- .data          0x000000000000083c        0x0 pwm.o
- .data          0x000000000000083c        0x0 timer.o
+ .data          0x0000000000000860        0x0 crt0ram.o
+ .data          0x0000000000000860        0x0 main.o
+ .data          0x0000000000000860       0x18 soc-hw.o
+                0x0000000000000860                pwm
+                0x0000000000000864                i2c0
+                0x0000000000000868                spi0
+                0x000000000000086c                gpio0
+                0x0000000000000870                timer0
+                0x0000000000000874                uart0
+ .data          0x0000000000000878        0x0 pwm.o
+ .data          0x0000000000000878        0x0 timer.o
+ .data          0x0000000000000878        0x0 uart.o
  *(.data1)
-                0x0000000000000840                _gp = ALIGN (0x10)
+                0x0000000000000880                _gp = ALIGN (0x10)
  *(.sdata .sdata.* .gnu.linkonce.s.*)
-                0x000000000000083c                _edata = .
+                0x0000000000000878                _edata = .
 
-.bss            0x000000000000083c       0x84
-                0x000000000000083c                . = ALIGN (0x4)
-                0x000000000000083c                _fbss = .
+.bss            0x0000000000000878       0x84
+                0x0000000000000878                . = ALIGN (0x4)
+                0x0000000000000878                _fbss = .
  *(.dynsbss)
  *(.sbss .sbss.* .gnu.linkonce.sb.*)
  *(.scommon)
  *(.dynbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x000000000000083c        0x0 crt0ram.o
- .bss           0x000000000000083c        0x0 main.o
- .bss           0x000000000000083c       0x84 soc-hw.o
-                0x000000000000083c                tic_msec
-                0x0000000000000840                isr_table
- .bss           0x00000000000008c0        0x0 pwm.o
- .bss           0x00000000000008c0        0x0 timer.o
+ .bss           0x0000000000000878        0x0 crt0ram.o
+ .bss           0x0000000000000878        0x0 main.o
+ .bss           0x0000000000000878       0x84 soc-hw.o
+                0x0000000000000878                tic_msec
+                0x000000000000087c                isr_table
+ .bss           0x00000000000008fc        0x0 pwm.o
+ .bss           0x00000000000008fc        0x0 timer.o
+ .bss           0x00000000000008fc        0x0 uart.o
  *(COMMON)
-                0x00000000000008c0                _ebss = .
-                0x00000000000008c0                _end = .
+                0x00000000000008fc                _ebss = .
+                0x00000000000008fc                _end = .
                 0x0000000000000ffc                PROVIDE (_fstack = ((ORIGIN (ram) + LENGTH (ram)) - 0x4))
 LOAD crt0ram.o
 LOAD main.o
 LOAD soc-hw.o
 LOAD pwm.o
 LOAD timer.o
+LOAD uart.o
 OUTPUT(image elf32-lm32)
 
-.debug_frame    0x0000000000000000      0x23c
- .debug_frame   0x0000000000000000       0x34 main.o
- .debug_frame   0x0000000000000034      0x198 soc-hw.o
- .debug_frame   0x00000000000001cc       0x4c pwm.o
- .debug_frame   0x0000000000000218       0x24 timer.o
+.debug_frame    0x0000000000000000      0x254
+ .debug_frame   0x0000000000000000       0x38 main.o
+ .debug_frame   0x0000000000000038      0x158 soc-hw.o
+ .debug_frame   0x0000000000000190       0x4c pwm.o
+ .debug_frame   0x00000000000001dc       0x24 timer.o
+ .debug_frame   0x0000000000000200       0x54 uart.o
 
-.debug_info     0x0000000000000000      0xfd3
- .debug_info    0x0000000000000000      0x249 main.o
- .debug_info    0x0000000000000249      0x6ff soc-hw.o
- .debug_info    0x0000000000000948      0x42d pwm.o
- .debug_info    0x0000000000000d75      0x25e timer.o
+.debug_info     0x0000000000000000     0x134f
+ .debug_info    0x0000000000000000      0x2f3 main.o
+ .debug_info    0x00000000000002f3      0x649 soc-hw.o
+ .debug_info    0x000000000000093c      0x42d pwm.o
+ .debug_info    0x0000000000000d69      0x25e timer.o
+ .debug_info    0x0000000000000fc7      0x388 uart.o
 
-.debug_abbrev   0x0000000000000000      0x60a
- .debug_abbrev  0x0000000000000000      0x11a main.o
- .debug_abbrev  0x000000000000011a      0x23a soc-hw.o
- .debug_abbrev  0x0000000000000354      0x1a2 pwm.o
- .debug_abbrev  0x00000000000004f6      0x114 timer.o
+.debug_abbrev   0x0000000000000000      0x757
+ .debug_abbrev  0x0000000000000000      0x117 main.o
+ .debug_abbrev  0x0000000000000117      0x1cf soc-hw.o
+ .debug_abbrev  0x00000000000002e6      0x1a2 pwm.o
+ .debug_abbrev  0x0000000000000488      0x114 timer.o
+ .debug_abbrev  0x000000000000059c      0x1bb uart.o
 
-.debug_aranges  0x0000000000000000       0x80
+.debug_loc      0x0000000000000000      0x41a
+ .debug_loc     0x0000000000000000       0x6f main.o
+ .debug_loc     0x000000000000006f      0x13d soc-hw.o
+ .debug_loc     0x00000000000001ac      0x195 pwm.o
+ .debug_loc     0x0000000000000341       0x55 timer.o
+ .debug_loc     0x0000000000000396       0x84 uart.o
+
+.debug_aranges  0x0000000000000000       0xa0
  .debug_aranges
                 0x0000000000000000       0x20 main.o
  .debug_aranges
@@ -141,25 +156,31 @@ OUTPUT(image elf32-lm32)
                 0x0000000000000040       0x20 pwm.o
  .debug_aranges
                 0x0000000000000060       0x20 timer.o
+ .debug_aranges
+                0x0000000000000080       0x20 uart.o
 
 .debug_ranges   0x0000000000000000       0x28
  .debug_ranges  0x0000000000000000       0x10 main.o
  .debug_ranges  0x0000000000000010       0x18 soc-hw.o
 
-.debug_line     0x0000000000000000      0x6b3
- .debug_line    0x0000000000000000       0x96 main.o
- .debug_line    0x0000000000000096      0x43d soc-hw.o
- .debug_line    0x00000000000004d3      0x14c pwm.o
- .debug_line    0x000000000000061f       0x94 timer.o
+.debug_line     0x0000000000000000      0x740
+ .debug_line    0x0000000000000000       0xc9 main.o
+ .debug_line    0x00000000000000c9      0x3b5 soc-hw.o
+ .debug_line    0x000000000000047e      0x14c pwm.o
+ .debug_line    0x00000000000005ca       0x94 timer.o
+ .debug_line    0x000000000000065e       0xe2 uart.o
 
-.debug_str      0x0000000000000000      0x4c7
- .debug_str     0x0000000000000000      0x13b main.o
- .debug_str     0x000000000000013b      0x36b soc-hw.o
-                                        0x492 (tamaño antes de la relajación)
- .debug_str     0x00000000000004a6       0x17 pwm.o
-                                        0x245 (tamaño antes de la relajación)
- .debug_str     0x00000000000004bd        0xa timer.o
-                                        0x1dd (tamaño antes de la relajación)
+.debug_str      0x0000000000000000      0x4f5
+ .debug_str     0x0000000000000000      0x1af main.o
+                                        0x1c1 (tamaño antes de la relajación)
+ .debug_str     0x00000000000001af      0x303 soc-hw.o
+                                        0x41b (tamaño antes de la relajación)
+ .debug_str     0x00000000000004b2       0x17 pwm.o
+                                        0x242 (tamaño antes de la relajación)
+ .debug_str     0x00000000000004c9       0x23 timer.o
+                                        0x1da (tamaño antes de la relajación)
+ .debug_str     0x00000000000004ec        0x9 uart.o
+                                        0x24e (tamaño antes de la relajación)
 
 .comment        0x0000000000000000       0x11
  .comment       0x0000000000000000       0x11 main.o
@@ -167,8 +188,4 @@ OUTPUT(image elf32-lm32)
  .comment       0x0000000000000011       0x12 soc-hw.o
  .comment       0x0000000000000011       0x12 pwm.o
  .comment       0x0000000000000011       0x12 timer.o
-
-.debug_loc      0x0000000000000000      0x348
- .debug_loc     0x0000000000000000      0x15e soc-hw.o
- .debug_loc     0x000000000000015e      0x195 pwm.o
- .debug_loc     0x00000000000002f3       0x55 timer.o
+ .comment       0x0000000000000011       0x12 uart.o

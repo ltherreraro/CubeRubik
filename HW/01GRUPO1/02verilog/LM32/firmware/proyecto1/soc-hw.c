@@ -159,7 +159,7 @@ void tic_init()
 
 /***************************************************************************
  * UART Functions
- */
+ 
 void uart_init()
 {
 	//uart0->ier = 0x00;  // Interrupt Enable Register
@@ -191,7 +191,7 @@ void uart_putstr(char *str)
 	}
 }
 
-
+*/
 /***************************************************************************
  * I2C Functions
  */
