@@ -33,6 +33,11 @@ void uart::uart_putstr(char *str)
 	}
 }
 
+int uart::uart_getint()
+{   
+	while (! (uart0->ucr & UART_DR)) ;
+	return uart0->rxtx;
+}
 
 
 

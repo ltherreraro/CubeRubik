@@ -10,6 +10,7 @@ pwm motor;
 uart captura;
 char l;
 char letra [8];
+int letr [8];
 /*
 char a='0xFF';
 char b='F';
@@ -23,20 +24,23 @@ captura.uart_putchar(d);
 */
 
 l=captura.uart_getchar();
+//captura.uart_putchar(l);
+
+//for(int i=0; i<8; i++)
+//{
+//letra[i]=captura.uart_getchar();
+//letr[i]=captura.uart_getint();
+//}
+
+if (l==' '/*&& letra[2]==' '&&letra[3]==' '&&letra[4]==' '*/)
+{
 captura.uart_putchar(l);
+//motor.pwm_sel(0, 2, true);
 
-for(int i=0; i<8; i++)
-{
-letra[i]=captura.uart_getchar();
-}
-
-if (letra[1]=='F' && letra[2]=='F'&&letra[3]=='F'&&letra[4]=='F')
-{
-
-motor.pwm_sel(motor.brazo(1), 4, true);
-motor.pwm_sel(motor.brazo(2), 4, true);
-motor.pwm_sel(motor.brazo(3), 4, true);
-motor.pwm_sel(motor.brazo(4), 4, true);
+//motor.pwm_sel(motor.brazo(1), 4, true);
+//motor.pwm_sel(motor.brazo(2), 4, true);
+//motor.pwm_sel(motor.brazo(3), 4, true);
+//motor.pwm_sel(motor.brazo(4), 4, true);
 
 }
 
