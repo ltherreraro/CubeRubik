@@ -5,163 +5,163 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 208: Port <arg fmt="%s" index="1">m0_cti_i</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 208: Port <arg fmt="%s" index="1">m0_cti_i</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 389: Port <arg fmt="%s" index="1">spi_cs</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 389: Port <arg fmt="%s" index="1">spi_cs</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 412: Port <arg fmt="%s" index="1">arst_i</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 412: Port <arg fmt="%s" index="1">arst_i</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/wb_pwm/periferico_pwm.v" Line 28: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/wb_pwm/periferico_pwm.v" Line 28: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/wb_pwm/periferico_pwm.v" Line 40: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/wb_pwm/periferico_pwm.v" Line 40: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/wb_pwm/periferico_pwm.v" Line 52: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/wb_pwm/periferico_pwm.v" Line 52: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/wb_pwm/periferico_pwm.v" Line 64: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/wb_pwm/periferico_pwm.v" Line 64: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/wb_pwm/periferico_pwm.v" Line 76: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/wb_pwm/periferico_pwm.v" Line 76: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/wb_pwm/periferico_pwm.v" Line 88: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/wb_pwm/periferico_pwm.v" Line 88: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/wb_pwm/periferico_pwm.v" Line 100: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/wb_pwm/periferico_pwm.v" Line 100: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/wb_pwm/periferico_pwm.v" Line 112: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/wb_pwm/periferico_pwm.v" Line 112: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/wb_pwm/wb_motores.v" Line 65: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/wb_pwm/wb_motores.v" Line 65: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/wb_pwm/wb_motores.v" Line 76: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/wb_pwm/wb_motores.v" Line 76: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/wb_pwm/wb_motores.v" Line 77: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/wb_pwm/wb_motores.v" Line 77: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/wb_pwm/wb_motores.v" Line 78: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/wb_pwm/wb_motores.v" Line 78: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 288: Assignment to <arg fmt="%s" index="1">i2c0_sel</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 288: Assignment to <arg fmt="%s" index="1">i2c0_sel</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/lm32/lm32_cpu.v" Line 461: Assignment to <arg fmt="%s" index="1">pc_x</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/lm32/lm32_cpu.v" Line 461: Assignment to <arg fmt="%s" index="1">pc_x</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/lm32/lm32_simtrace.v" Line 20: Empty module &lt;<arg fmt="%s" index="1">lm32_simtrace</arg>&gt; remains a black box.
+<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/lm32/lm32_simtrace.v" Line 20: Empty module &lt;<arg fmt="%s" index="1">lm32_simtrace</arg>&gt; remains a black box.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/lm32/lm32_decoder.v" Line 559: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">30</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/lm32/lm32_decoder.v" Line 559: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">30</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/lm32/lm32_cpu.v" Line 1138: Assignment to <arg fmt="%s" index="1">x_result_sel_logic_x</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/lm32/lm32_cpu.v" Line 1138: Assignment to <arg fmt="%s" index="1">x_result_sel_logic_x</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 313: Assignment to <arg fmt="%s" index="1">lm32i_cti</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 313: Assignment to <arg fmt="%s" index="1">lm32i_cti</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 314: Assignment to <arg fmt="%s" index="1">lm32i_lock</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 314: Assignment to <arg fmt="%s" index="1">lm32i_lock</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 315: Assignment to <arg fmt="%s" index="1">lm32i_bte</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 315: Assignment to <arg fmt="%s" index="1">lm32i_bte</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 327: Assignment to <arg fmt="%s" index="1">lm32d_cti</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 327: Assignment to <arg fmt="%s" index="1">lm32d_cti</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 328: Assignment to <arg fmt="%s" index="1">lm32d_lock</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 328: Assignment to <arg fmt="%s" index="1">lm32d_lock</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 329: Assignment to <arg fmt="%s" index="1">lm32d_bte</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 329: Assignment to <arg fmt="%s" index="1">lm32d_bte</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/lac/uart.v" Line 39: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/lac/uart.v" Line 39: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/lac/uart.v" Line 88: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/lac/uart.v" Line 88: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/lac/uart.v" Line 91: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/lac/uart.v" Line 91: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/lac/uart.v" Line 135: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/lac/uart.v" Line 135: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/lac/uart.v" Line 138: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/lac/uart.v" Line 138: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/wb_spi/wb_spi.v" Line 57: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/wb_spi/wb_spi.v" Line 57: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/wb_spi/wb_spi.v" Line 63: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/wb_spi/wb_spi.v" Line 63: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1308" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/wb_i2c/i2c_master_byte_ctrl.v" Line 228: Found full_case directive in module <arg fmt="%s" index="1">i2c_master_byte_ctrl</arg>. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+<msg type="warning" file="HDLCompiler" num="1308" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/wb_i2c/i2c_master_byte_ctrl.v" Line 228: Found full_case directive in module <arg fmt="%s" index="1">i2c_master_byte_ctrl</arg>. Use of full_case directives may cause differences between RTL and post-synthesis simulation
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1308" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/wb_i2c/i2c_master_bit_ctrl.v" Line 360: Found full_case directive in module <arg fmt="%s" index="1">i2c_master_bit_ctrl</arg>. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+<msg type="warning" file="HDLCompiler" num="1308" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/wb_i2c/i2c_master_bit_ctrl.v" Line 360: Found full_case directive in module <arg fmt="%s" index="1">i2c_master_bit_ctrl</arg>. Use of full_case directives may cause differences between RTL and post-synthesis simulation
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 416: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">wb_adr_i</arg>&gt;. Formal port size is <arg fmt="%d" index="2">3</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 416: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">wb_adr_i</arg>&gt;. Formal port size is <arg fmt="%d" index="2">3</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 417: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">wb_dat_i</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 417: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">wb_dat_i</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 418: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">wb_dat_o</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 418: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">wb_dat_o</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 460: Assignment to <arg fmt="%s" index="1">gpio0_dat_r</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 460: Assignment to <arg fmt="%s" index="1">gpio0_dat_r</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 464: Assignment to <arg fmt="%s" index="1">gpio0_ack</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 464: Assignment to <arg fmt="%s" index="1">gpio0_ack</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 65: Net &lt;<arg fmt="%s" index="1">gpio0_adr[31]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 65: Net &lt;<arg fmt="%s" index="1">gpio0_adr[31]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 85: Net &lt;<arg fmt="%s" index="1">gpio0_dat_w[31]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 85: Net &lt;<arg fmt="%s" index="1">gpio0_dat_w[31]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 113: Net &lt;<arg fmt="%s" index="1">gpio0_we</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 113: Net &lt;<arg fmt="%s" index="1">gpio0_we</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 126: Net &lt;<arg fmt="%s" index="1">gpio0_cyc</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 126: Net &lt;<arg fmt="%s" index="1">gpio0_cyc</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 139: Net &lt;<arg fmt="%s" index="1">gpio0_stb</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 139: Net &lt;<arg fmt="%s" index="1">gpio0_stb</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 158: Net &lt;<arg fmt="%s" index="1">lm32i_rty</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 158: Net &lt;<arg fmt="%s" index="1">lm32i_rty</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 159: Net &lt;<arg fmt="%s" index="1">lm32d_rty</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 159: Net &lt;<arg fmt="%s" index="1">lm32d_rty</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 161: Net &lt;<arg fmt="%s" index="1">lm32i_err</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 161: Net &lt;<arg fmt="%s" index="1">lm32i_err</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 162: Net &lt;<arg fmt="%s" index="1">lm32d_err</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 162: Net &lt;<arg fmt="%s" index="1">lm32d_err</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 179: Net &lt;<arg fmt="%s" index="1">gpio0_intr</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 179: Net &lt;<arg fmt="%s" index="1">gpio0_intr</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="552" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 216: Input port <arg fmt="%s" index="1">m0_cti_i[2]</arg> is not connected on this instance
+<msg type="warning" file="HDLCompiler" num="552" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 216: Input port <arg fmt="%s" index="1">m0_cti_i[2]</arg> is not connected on this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="552" delta="new" >"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 412: Input port <arg fmt="%s" index="1">arst_i</arg> is not connected on this instance
+<msg type="warning" file="HDLCompiler" num="552" delta="new" >"/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v" Line 412: Input port <arg fmt="%s" index="1">arst_i</arg> is not connected on this instance
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/lm32/lm32_cpu.v</arg>&quot; line <arg fmt="%d" index="2">483</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">simtrace</arg>&gt; of block &lt;<arg fmt="%s" index="4">lm32_simtrace</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">lm32_cpu</arg>&gt;. Underlying logic will be removed.
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/lm32/lm32_cpu.v</arg>&quot; line <arg fmt="%d" index="2">483</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">simtrace</arg>&gt; of block &lt;<arg fmt="%s" index="4">lm32_simtrace</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">lm32_cpu</arg>&gt;. Underlying logic will be removed.
 </msg>
 
 <msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">m0_cti_i</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">conbus0</arg>&apos;, is tied to GND.
@@ -173,55 +173,55 @@
 <msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">arst_i</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">i2c0</arg>&apos;, is tied to GND.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">216</arg>: Output port &lt;<arg fmt="%s" index="3">s0_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">216</arg>: Output port &lt;<arg fmt="%s" index="3">s0_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">216</arg>: Output port &lt;<arg fmt="%s" index="3">s1_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">216</arg>: Output port &lt;<arg fmt="%s" index="3">s1_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">216</arg>: Output port &lt;<arg fmt="%s" index="3">s2_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">216</arg>: Output port &lt;<arg fmt="%s" index="3">s2_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">216</arg>: Output port &lt;<arg fmt="%s" index="3">s3_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">216</arg>: Output port &lt;<arg fmt="%s" index="3">s3_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">216</arg>: Output port &lt;<arg fmt="%s" index="3">s4_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">216</arg>: Output port &lt;<arg fmt="%s" index="3">s4_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">216</arg>: Output port &lt;<arg fmt="%s" index="3">s5_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">216</arg>: Output port &lt;<arg fmt="%s" index="3">s5_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">216</arg>: Output port &lt;<arg fmt="%s" index="3">s5_sel_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">216</arg>: Output port &lt;<arg fmt="%s" index="3">s5_sel_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">300</arg>: Output port &lt;<arg fmt="%s" index="3">I_CTI_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">300</arg>: Output port &lt;<arg fmt="%s" index="3">I_CTI_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">300</arg>: Output port &lt;<arg fmt="%s" index="3">I_BTE_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">300</arg>: Output port &lt;<arg fmt="%s" index="3">I_BTE_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">300</arg>: Output port &lt;<arg fmt="%s" index="3">D_CTI_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">300</arg>: Output port &lt;<arg fmt="%s" index="3">D_CTI_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">300</arg>: Output port &lt;<arg fmt="%s" index="3">D_BTE_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">300</arg>: Output port &lt;<arg fmt="%s" index="3">D_BTE_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">300</arg>: Output port &lt;<arg fmt="%s" index="3">I_LOCK_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">300</arg>: Output port &lt;<arg fmt="%s" index="3">I_LOCK_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">300</arg>: Output port &lt;<arg fmt="%s" index="3">D_LOCK_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">300</arg>: Output port &lt;<arg fmt="%s" index="3">D_LOCK_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">389</arg>: Output port &lt;<arg fmt="%s" index="3">spi_cs</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">spi0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">389</arg>: Output port &lt;<arg fmt="%s" index="3">spi_cs</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">spi0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">412</arg>: Output port &lt;<arg fmt="%s" index="3">wb_inta_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">i2c0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">412</arg>: Output port &lt;<arg fmt="%s" index="3">wb_inta_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">i2c0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">454</arg>: Output port &lt;<arg fmt="%s" index="3">wb_dat_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gpio0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">454</arg>: Output port &lt;<arg fmt="%s" index="3">wb_dat_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gpio0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">454</arg>: Output port &lt;<arg fmt="%s" index="3">wb_ack_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gpio0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/system.v</arg>&quot; line <arg fmt="%s" index="2">454</arg>: Output port &lt;<arg fmt="%s" index="3">wb_ack_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gpio0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">gpio0_adr</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
@@ -260,10 +260,10 @@
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wb_sel_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/lm32/lm32_cpu.v</arg>&quot; line <arg fmt="%s" index="2">436</arg>: Output port &lt;<arg fmt="%s" index="3">pc_x</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">instruction_unit</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/lm32/lm32_cpu.v</arg>&quot; line <arg fmt="%s" index="2">436</arg>: Output port &lt;<arg fmt="%s" index="3">pc_x</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">instruction_unit</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/lm32/lm32_cpu.v</arg>&quot; line <arg fmt="%s" index="2">495</arg>: Output port &lt;<arg fmt="%s" index="3">x_result_sel_logic</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">decoder</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/20abril/CubeRubik/HW/01GRUPO1/02verilog/LM32/rtl/lm32/lm32_cpu.v</arg>&quot; line <arg fmt="%s" index="2">495</arg>: Output port &lt;<arg fmt="%s" index="3">x_result_sel_logic</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">decoder</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">valid_f</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1522,13 +1522,7 @@
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">uart0/uart0/enable16_counter_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">uart0/uart0/enable16_counter_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">uart0/uart0/enable16_counter_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">uart0/uart0/enable16_counter_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">lm0/multiplier/muliplicand_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;lm0/operand_0_x_10&gt; </arg>

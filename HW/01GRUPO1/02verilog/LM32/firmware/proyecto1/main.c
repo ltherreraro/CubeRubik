@@ -4,45 +4,96 @@
 #include "uart.h"
 
 
-int main(){
-
-pwm motor;
-uart captura;
-char l;
-char letra [8];
-int letr [8];
-/*
-char a='0xFF';
-char b='F';
-char c='F';
-char d='0';
-
-captura.uart_putchar('F');
-captura.uart_putchar('b');
-captura.uart_putchar(c);
-captura.uart_putchar(d);
-*/
-
-l=captura.uart_getchar();
-//captura.uart_putchar(l);
-
-//for(int i=0; i<8; i++)
-//{
-//letra[i]=captura.uart_getchar();
-//letr[i]=captura.uart_getint();
-//}
-
-if (l==' '/*&& letra[2]==' '&&letra[3]==' '&&letra[4]==' '*/)
+int main()
 {
-captura.uart_putchar(l);
-//motor.pwm_sel(0, 2, true);
 
-//motor.pwm_sel(motor.brazo(1), 4, true);
-//motor.pwm_sel(motor.brazo(2), 4, true);
-//motor.pwm_sel(motor.brazo(3), 4, true);
-//motor.pwm_sel(motor.brazo(4), 4, true);
+   while(1)
+   {
+	char com;
+	char lista[4];
+	int i=0;
+	uart comando;
+	pwm motor;
+	timer tiempo;
 
-}
+		com=comando.uart_getchar();
+		comando.uart_putchar(com);
+		lista[i]=com;
+		
+	
+	if(com=0xFF)
+	{
+		lista[i]=com;
+		i=i+1;			
+	}
+	if(com=0xF0)
+	{
+		lista[i]=com;
+		i=0;			
+	}
+	if(com=0xFE)
+	{
+		lista[i]=com;
+		i=i+1;			
+	}
+	if(com=0x10)
+	{
+		lista[i]=com;
+		i=i+1;			
+	}
+	if(com=0x11)
+	{
+		lista[i]=com;
+		i=i+1;			
+	}
+	if(com=0x12)
+	{
+		lista[i]=com;
+		i=i+1;			
+	}
+	if(com=0x13)
+	{
+		lista[i]=com;
+		i=i+1;			
+	}
+	if(com=0x14)
+	{
+		lista[i]=com;
+		i=i+1;			
+	}
+	if(com=0x01)
+	{
+		lista[i]=com;
+		i=i+1;			
+	}
+
+	if(com=0x02)
+	{
+		lista[i]=com;
+		i=i+1;			
+	}
+
+	if(com=0x03)
+	{
+		lista[i]=com;
+		i=i+1;			
+	}
+
+	if(com=0x04)
+	{
+		lista[i]=com;
+		i=i+1;			
+	}
+	if((lista[0]==0xFF)&&(lista[0]==0xFE))
+	{
+		motor.pwm_sel(motor.brazo(1), 4, true);
+		motor.pwm_sel(motor.brazo(2), 4, true);
+		motor.pwm_sel(motor.brazo(3), 4, true);
+		motor.pwm_sel(motor.brazo(4), 4, true);
+
+	} 
+
+   }
 
 
 }

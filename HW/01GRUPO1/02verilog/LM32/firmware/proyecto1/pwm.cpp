@@ -34,46 +34,6 @@ d=e+8;
 t=e+4;
 }
 
-/*
-switch (c)
-{
-	case 1:
-	dind=35;
-	e=b*12;
-	d=e+8;
-	t=e+4;
-	break;
-	case 2:
-	dind=130;
-	e=b*12;
-	d=e+8;
-	t=e+4;
-	break;
-	case 3:
-	dind=230;
-	e=b*12;
-	d=e+8;
-	t=e+4;
-	break;
-	case 4:
-	dind=35;
-	e=b*12;
-	d=e+8;
-	t=e+4;
-	break;
-	case 5:
-	dind=230;
-	e=b*12;
-	d=e+8;
-	t=e+4;
-	break;
-}
-*/
-/*
-int e [8]={0, 12, 24, 36, 48, 60, 72, 84};
-int t [8]={4, 16, 28, 40, 52, 64, 76, 88};
-int d [8]={8, 20, 32, 44, 56, 68, 80, 92};
-*/
 pwm_wr(Wr); pwm_rd(Rd);
 pwm_addr(t); pwm_din(dint);
 
