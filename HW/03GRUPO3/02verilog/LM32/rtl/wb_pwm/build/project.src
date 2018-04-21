@@ -1,0 +1,8 @@
+verilog work ../pwm_top.v
+verilog work ../pwm_servo0.v
+verilog work ../pwm_servo1.v
+verilog work ../pwm_servo2.v
+verilog work ../pwm_servo3.v
+verilog work ../pwm_servo4.v
+verilog work ../pwm_servo5.v
+verilog work ../pwm_servo6.v

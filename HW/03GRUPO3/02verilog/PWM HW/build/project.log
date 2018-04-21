@@ -1,0 +1,413 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "project.src"
+Input Format                       : mixed
+
+---- Target Parameters
+Target Device                      : xc7a100t-1csg324
+Output File Name                   : "project.ngc"
+Output Format                      : NGC
+
+---- Source Options
+Top Module Name                    : pwm_servos
+
+---- General Options
+Optimization Goal                  : Area
+Optimization Effort                : 1
+RTL Output                         : yes
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/camila/Documentos/proy.digII/PWM HW/pwm_servos.v" into library work
+Parsing module <pwm_servos>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <pwm_servos>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <pwm_servos>.
+    Related source file is "/home/camila/Documentos/proy.digII/PWM HW/pwm_servos.v".
+        t = 2000000
+    Found 1-bit register for signal <pwm>.
+    Found 32-bit register for signal <cnt_d>.
+    Found 32-bit register for signal <cnt_t>.
+    Found 32-bit register for signal <d>.
+    Found 32-bit subtractor for signal <GND_1_o_d[31]_sub_7_OUT> created at line 53.
+    Found 32-bit adder for signal <cnt_d[31]_GND_1_o_add_5_OUT> created at line 49.
+    Found 32-bit adder for signal <cnt_t[31]_GND_1_o_add_8_OUT> created at line 54.
+    Found 32-bit comparator greater for signal <cnt_d[31]_d[31]_LessThan_5_o> created at line 48
+    Found 32-bit comparator greater for signal <cnt_t[31]_GND_1_o_LessThan_8_o> created at line 53
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  97 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <pwm_servos> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
+ 32-bit subtractor                                     : 1
+# Registers                                            : 4
+ 1-bit register                                        : 1
+ 32-bit register                                       : 3
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 2
+# Multiplexers                                         : 4
+ 32-bit 2-to-1 multiplexer                             : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <pwm_servos>.
+The following registers are absorbed into counter <cnt_d>: 1 register on signal <cnt_d>.
+Unit <pwm_servos> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 1
+ 32-bit subtractor                                     : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 65
+ Flip-Flops                                            : 65
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 2
+# Multiplexers                                         : 3
+ 32-bit 2-to-1 multiplexer                             : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <d_31> (without init value) has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_30> (without init value) has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_29> (without init value) has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_28> (without init value) has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_27> (without init value) has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_26> (without init value) has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_25> (without init value) has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_24> (without init value) has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_23> (without init value) has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_22> (without init value) has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_21> (without init value) has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_20> (without init value) has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_19> (without init value) has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_18> (without init value) has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_15> (without init value) has a constant value of 1 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_10> (without init value) has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_9> (without init value) has a constant value of 1 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_6> (without init value) has a constant value of 1 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_4> (without init value) has a constant value of 1 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_3> (without init value) has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_2> (without init value) has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_1> (without init value) has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_0> (without init value) has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <d_7> in Unit <pwm_servos> is equivalent to the following 3 FFs/Latches, which will be removed : <d_11> <d_12> <d_13> 
+INFO:Xst:2261 - The FF/Latch <d_8> in Unit <pwm_servos> is equivalent to the following FF/Latch, which will be removed : <d_14> 
+INFO:Xst:2261 - The FF/Latch <d_5> in Unit <pwm_servos> is equivalent to the following FF/Latch, which will be removed : <d_17> 
+
+Optimizing unit <pwm_servos> ...
+WARNING:Xst:1293 - FF/Latch <cnt_d_31> has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_d_30> has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_d_29> has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_d_28> has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_d_27> has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_d_26> has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_d_25> has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_d_24> has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_d_23> has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_d_22> has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_d_21> has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_d_20> has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_d_19> has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_d_18> has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_t_31> has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_t_30> has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_t_29> has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_t_28> has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_t_27> has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_t_26> has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_t_25> has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_t_24> has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_t_23> has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_t_22> has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_t_21> has a constant value of 0 in block <pwm_servos>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block pwm_servos, actual ratio is 0.
+FlipFlop pwm has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 45
+ Flip-Flops                                            : 45
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : project.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 248
+#      GND                         : 1
+#      INV                         : 11
+#      LUT1                        : 23
+#      LUT2                        : 13
+#      LUT3                        : 42
+#      LUT4                        : 28
+#      MUXCY                       : 78
+#      VCC                         : 1
+#      XORCY                       : 51
+# FlipFlops/Latches                : 45
+#      FDE                         : 4
+#      FDR                         : 23
+#      FDRE                        : 18
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 4
+#      IBUF                        : 3
+#      OBUF                        : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              44  out of  126800     0%  
+ Number of Slice LUTs:                  117  out of  63400     0%  
+    Number used as Logic:               117  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    117
+   Number with an unused Flip Flop:      73  out of    117    62%  
+   Number with an unused LUT:             0  out of    117     0%  
+   Number of fully used LUT-FF pairs:    44  out of    117    37%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                           5
+ Number of bonded IOBs:                   5  out of    210     2%  
+    IOB Flip Flops/Latches:               1
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 45    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 5.433ns (Maximum Frequency: 184.060MHz)
+   Minimum input arrival time before clock: 1.594ns
+   Maximum output required time after clock: 0.877ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.433ns (frequency: 184.060MHz)
+  Total number of paths / destination ports: 17079 / 59
+-------------------------------------------------------------------------
+Delay:               5.433ns (Levels of Logic = 18)
+  Source:            d_7 (FF)
+  Destination:       cnt_d_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: d_7 to cnt_d_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             10   0.478   0.458  d_7 (d_7)
+     INV:I->O              1   0.146   0.000  Msub_GND_1_o_d[31]_sub_7_OUT_lut<11>_INV_0 (Msub_GND_1_o_d[31]_sub_7_OUT_lut<11>)
+     MUXCY:S->O            1   0.472   0.000  Msub_GND_1_o_d[31]_sub_7_OUT_cy<11> (Msub_GND_1_o_d[31]_sub_7_OUT_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  Msub_GND_1_o_d[31]_sub_7_OUT_cy<12> (Msub_GND_1_o_d[31]_sub_7_OUT_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  Msub_GND_1_o_d[31]_sub_7_OUT_cy<13> (Msub_GND_1_o_d[31]_sub_7_OUT_cy<13>)
+     MUXCY:CI->O           1   0.029   0.000  Msub_GND_1_o_d[31]_sub_7_OUT_cy<14> (Msub_GND_1_o_d[31]_sub_7_OUT_cy<14>)
+     MUXCY:CI->O           1   0.029   0.000  Msub_GND_1_o_d[31]_sub_7_OUT_cy<15> (Msub_GND_1_o_d[31]_sub_7_OUT_cy<15>)
+     MUXCY:CI->O           1   0.029   0.000  Msub_GND_1_o_d[31]_sub_7_OUT_cy<16> (Msub_GND_1_o_d[31]_sub_7_OUT_cy<16>)
+     MUXCY:CI->O           0   0.029   0.000  Msub_GND_1_o_d[31]_sub_7_OUT_cy<17> (Msub_GND_1_o_d[31]_sub_7_OUT_cy<17>)
+     XORCY:CI->O           2   0.510   0.782  Msub_GND_1_o_d[31]_sub_7_OUT_xor<18> (GND_1_o_d[31]_sub_7_OUT<18>)
+     LUT4:I0->O            1   0.124   0.000  Mcompar_cnt_t[31]_GND_1_o_LessThan_8_o_lut<9> (Mcompar_cnt_t[31]_GND_1_o_LessThan_8_o_lut<9>)
+     MUXCY:S->O            1   0.472   0.000  Mcompar_cnt_t[31]_GND_1_o_LessThan_8_o_cy<9> (Mcompar_cnt_t[31]_GND_1_o_LessThan_8_o_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  Mcompar_cnt_t[31]_GND_1_o_LessThan_8_o_cy<10> (Mcompar_cnt_t[31]_GND_1_o_LessThan_8_o_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  Mcompar_cnt_t[31]_GND_1_o_LessThan_8_o_cy<11> (Mcompar_cnt_t[31]_GND_1_o_LessThan_8_o_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  Mcompar_cnt_t[31]_GND_1_o_LessThan_8_o_cy<12> (Mcompar_cnt_t[31]_GND_1_o_LessThan_8_o_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  Mcompar_cnt_t[31]_GND_1_o_LessThan_8_o_cy<13> (Mcompar_cnt_t[31]_GND_1_o_LessThan_8_o_cy<13>)
+     MUXCY:CI->O           1   0.029   0.000  Mcompar_cnt_t[31]_GND_1_o_LessThan_8_o_cy<14> (Mcompar_cnt_t[31]_GND_1_o_LessThan_8_o_cy<14>)
+     MUXCY:CI->O          23   0.334   0.561  Mcompar_cnt_t[31]_GND_1_o_LessThan_8_o_cy<15> (Mcompar_cnt_t[31]_GND_1_o_LessThan_8_o_cy<15>)
+     LUT2:I1->O           18   0.124   0.511  _n0047_inv1 (_n0047_inv)
+     FDRE:CE                   0.139          cnt_d_0
+    ----------------------------------------
+    Total                      5.433ns (3.121ns logic, 2.312ns route)
+                                       (57.4% logic, 42.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 56 / 49
+-------------------------------------------------------------------------
+Offset:              1.594ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       cnt_t_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to cnt_t_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.399  reset_IBUF (reset_IBUF)
+     INV:I->O             41   0.146   0.554  reset_inv1_INV_0 (reset_inv)
+     FDR:R                     0.494          cnt_t_0
+    ----------------------------------------
+    Total                      1.594ns (0.641ns logic, 0.953ns route)
+                                       (40.2% logic, 59.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.877ns (Levels of Logic = 1)
+  Source:            pwm_1 (FF)
+  Destination:       pwm (PAD)
+  Source Clock:      clk rising
+
+  Data Path: pwm_1 to pwm
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.478   0.399  pwm_1 (pwm_1)
+     OBUF:I->O                 0.000          pwm_OBUF (pwm)
+    ----------------------------------------
+    Total                      0.877ns (0.478ns logic, 0.399ns route)
+                                       (54.5% logic, 45.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    5.433|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.16 secs
+ 
+--> 
+
+
+Total memory usage is 502740 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   48 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

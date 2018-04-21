@@ -1,0 +1,23 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Apr 19 18:00:21 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "E3" LEVEL 1;
+COMP "in<0>" LOCATE = SITE "U9" LEVEL 1;
+COMP "in<1>" LOCATE = SITE "U8" LEVEL 1;
+COMP "pwm" LOCATE = SITE "B13" LEVEL 1;
+COMP "reset" LOCATE = SITE "C12" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "d_5" BEL "d_7" BEL "d_8" BEL "d_16" BEL "cnt_t_0"
+        BEL "cnt_t_1" BEL "cnt_t_2" BEL "cnt_t_3" BEL "cnt_t_4" BEL "cnt_t_5"
+        BEL "cnt_t_6" BEL "cnt_t_7" BEL "cnt_t_8" BEL "cnt_t_9" BEL "cnt_t_10"
+        BEL "cnt_t_11" BEL "cnt_t_12" BEL "cnt_t_13" BEL "cnt_t_14" BEL
+        "cnt_t_15" BEL "cnt_t_16" BEL "cnt_t_17" BEL "cnt_t_18" BEL "cnt_t_19"
+        BEL "cnt_t_20" BEL "cnt_d_0" BEL "cnt_d_1" BEL "cnt_d_2" BEL "cnt_d_3"
+        BEL "cnt_d_4" BEL "cnt_d_5" BEL "cnt_d_6" BEL "cnt_d_7" BEL "cnt_d_8"
+        BEL "cnt_d_9" BEL "cnt_d_10" BEL "cnt_d_11" BEL "cnt_d_12" BEL
+        "cnt_d_13" BEL "cnt_d_14" BEL "cnt_d_15" BEL "cnt_d_16" BEL "cnt_d_17"
+        BEL "pwm" BEL "clk_BUFGP/BUFG" BEL "pwm_1";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+
