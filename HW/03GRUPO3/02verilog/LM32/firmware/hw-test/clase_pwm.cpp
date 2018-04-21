@@ -3,7 +3,7 @@
 //#define T 20000
 
 
-void clase_pwm::pwm_setMov(int b, int com){
+void clase_pwm::setMov(int b, int com){
 
 uint8_t R=0;
 uint8_t W=1;

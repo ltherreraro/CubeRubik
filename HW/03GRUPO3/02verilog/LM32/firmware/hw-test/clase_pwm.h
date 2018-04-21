@@ -5,7 +5,7 @@
 
 class clase_pwm{
 	public:
-	void pwm_setMov (int b, int com);
+	void setMov (int b, int com);
 	private:
 	int b;
 	int com;
