@@ -17,13 +17,22 @@ crt0ram.o: crt0ram.S
 	$(LM32_CC) $(CFLAGS) -c crt0ram.S
 
 main.o: main.c
-	$(LM32_CC) $(CFLAGS) -c main.c
+	$(LM32_CCP) $(CFLAGS) -c main.c
 
 soc-hw.o: soc-hw.c
-	$(LM32_CC) $(CFLAGS) -c soc-hw.c
+	$(LM32_CC) $(CFLAGS) -c soc-hw.c 
 
-image: crt0ram.o main.o soc-hw.o 
-	$(LM32_LD) $(LDFLAGS) -Map image.map -N -o image crt0ram.o main.o soc-hw.o
+clase_pwm.o: clase_pwm.cpp
+	$(LM32_CCP) $(CFLAGS) -c clase_pwm.cpp 
+
+clase_timer.o: clase_timer.cpp
+	$(LM32_CCP) $(CFLAGS) -c clase_timer.cpp 
+
+clase_uart.o: clase_uart.cpp
+	$(LM32_CCP) $(CFLAGS) -c clase_uart.cpp 
+
+image: crt0ram.o main.o soc-hw.o clase_pwm.o clase_timer.o clase_uart.o
+	$(LM32_LD) $(LDFLAGS) -Map image.map -N -o image crt0ram.o main.o soc-hw.o clase_pwm.o clase_timer.o clase_uart.o
 
 image.lst: image
 	$(LM32_OBJDUMP) -h -S $< > $@

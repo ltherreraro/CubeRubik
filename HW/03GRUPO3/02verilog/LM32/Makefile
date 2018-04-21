@@ -48,15 +48,14 @@ SRC=                                      \
 	../rtl/wb_conbus/conbus_arb.v 	    \
 	../rtl/wb_pwm/pwm_top.v               \
     ../rtl/wb_pwm/wb_motores.v  \
-    ../rtl/wb_pwm/div_frec.v \
-    ../rtl/wb_pwm/pwm_servos0.v \
-    ../rtl/wb_pwm/pwm_servos1.v \
-    ../rtl/wb_pwm/pwm_servos2.v \
-    ../rtl/wb_pwm/pwm_servos3.v \
-    ../rtl/wb_pwm/pwm_servos4.v \
-    ../rtl/wb_pwm/pwm_servos5.v \
-    ../rtl/wb_pwm/pwm_servos6.v \
-    ../rtl/wb_pwm/pwm_servos7.v 
+    ../rtl/wb_pwm/pwm_servo0.v \
+    ../rtl/wb_pwm/pwm_servo1.v \
+    ../rtl/wb_pwm/pwm_servo2.v \
+    ../rtl/wb_pwm/pwm_servo3.v \
+    ../rtl/wb_pwm/pwm_servo4.v \
+    ../rtl/wb_pwm/pwm_servo5.v \
+    ../rtl/wb_pwm/pwm_servo6.v \
+    ../rtl/wb_pwm/pwm_servo7.v 
     
 #############################################################################
 # Synthesis constants
