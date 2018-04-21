@@ -1,0 +1,23 @@
+cutecom
+ 1331  groups 
+ 1332  ls /dev/ttyUSB1 
+ 1333  ls -la /dev/ttyUSB1 
+ 1334  sudo chmod 700  /dev/ttyUSB1 
+ 1335  ls -la /dev/ttyUSB1 
+ 1336  sudo chmod 666  /dev/ttyUSB1 
+ 1337  ls -la /dev/ttyUSB1 
+ 1338  groups
+ 1339  groups --help
+ 1340  groups add
+ 1341  man groups
+ 1342  man addgroup 
+ 1343  sudo adduser motor.pwm_sel(0, 'R', true);
+ 1344  motor.pwm_sel(1, 'L' , true);
+ 1345  man addgroup ekativa-project dialout
+ 1346  addgroup ekativa-project dialout
+ 1347  sudo adduser  ekativa-project dialout
+ 1348  ls -la /dev/ttyUSB1 
+ 1349  groups
+ 1350  sudo adduser  ekativa-project dialout
+ 1351  groups
+
