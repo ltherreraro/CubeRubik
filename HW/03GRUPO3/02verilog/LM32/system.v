@@ -31,7 +31,7 @@ module system
 	inout [7:0]       gpio0_io,
 	output		  pwm0,
 	output		  pwm1,
-	output	      pwm2,
+	output	      	  pwm2,
 	output		  pwm3,
 	output		  pwm4,
 	output		  pwm5,
