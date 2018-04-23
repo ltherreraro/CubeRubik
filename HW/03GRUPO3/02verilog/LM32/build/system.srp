@@ -167,9 +167,9 @@ Parsing module <pwm_servo7>.
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-WARNING:HDLCompiler:1016 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 207: Port m0_cti_i is not connected to this instance
-WARNING:HDLCompiler:1016 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 389: Port spi_cs is not connected to this instance
-WARNING:HDLCompiler:1016 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 412: Port arst_i is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 206: Port m0_cti_i is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 388: Port spi_cs is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 411: Port arst_i is not connected to this instance
 
 Elaborating module <system>.
 WARNING:HDLCompiler:1016 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/rtl/wb_pwm/wb_motores.v" Line 39: Port res is not connected to this instance
@@ -211,7 +211,7 @@ WARNING:HDLCompiler:552 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/rtl
 Elaborating module <conbus(s_addr_w=3,s0_addr=3'b0,s1_addr=3'b010,s2_addr=3'b011,s3_addr=3'b100,s4_addr=3'b101,s5_addr=3'b110)>.
 
 Elaborating module <conbus_arb>.
-WARNING:HDLCompiler:1127 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 288: Assignment to i2c0_sel ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 287: Assignment to i2c0_sel ignored, since the identifier is never used
 
 Elaborating module <lm32_cpu>.
 
@@ -239,15 +239,15 @@ Elaborating module <lm32_mc_arithmetic>.
 
 Elaborating module <lm32_interrupt>.
 WARNING:HDLCompiler:1127 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/rtl/lm32/lm32_cpu.v" Line 1138: Assignment to x_result_sel_logic_x ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 313: Assignment to lm32i_cti ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 314: Assignment to lm32i_lock ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 315: Assignment to lm32i_bte ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 327: Assignment to lm32d_cti ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 328: Assignment to lm32d_lock ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 329: Assignment to lm32d_bte ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 312: Assignment to lm32i_cti ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 313: Assignment to lm32i_lock ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 314: Assignment to lm32i_bte ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 326: Assignment to lm32d_cti ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 327: Assignment to lm32d_lock ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 328: Assignment to lm32d_bte ignored, since the identifier is never used
 
-Elaborating module <wb_bram(adr_width=12,mem_file_name="../firmware/hw-test1/image.ram")>.
-Reading initialization file \"../firmware/hw-test1/image.ram\".
+Elaborating module <wb_bram(adr_width=12,mem_file_name="../firmware/hw-test/image.ram")>.
+Reading initialization file \"../firmware/hw-test/image.ram\".
 
 Elaborating module <wb_uart(clk_freq=100000000,baud=115200)>.
 
@@ -271,27 +271,27 @@ Elaborating module <i2c_master_bit_ctrl>.
 WARNING:HDLCompiler:1308 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/rtl/wb_i2c/i2c_master_bit_ctrl.v" Line 360: Found full_case directive in module i2c_master_bit_ctrl. Use of full_case directives may cause differences between RTL and post-synthesis simulation
 
 Elaborating module <i2c_master_registers>.
-WARNING:HDLCompiler:189 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 416: Size mismatch in connection of port <wb_adr_i>. Formal port size is 3-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 417: Size mismatch in connection of port <wb_dat_i>. Formal port size is 8-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 418: Size mismatch in connection of port <wb_dat_o>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 415: Size mismatch in connection of port <wb_adr_i>. Formal port size is 3-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 416: Size mismatch in connection of port <wb_dat_i>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 417: Size mismatch in connection of port <wb_dat_o>. Formal port size is 8-bit while actual signal size is 32-bit.
 
 Elaborating module <wb_timer(clk_freq=100000000)>.
 
 Elaborating module <wb_gpio>.
-WARNING:HDLCompiler:1127 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 460: Assignment to gpio0_dat_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 464: Assignment to gpio0_ack ignored, since the identifier is never used
-WARNING:HDLCompiler:634 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 64: Net <gpio0_adr[31]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 84: Net <gpio0_dat_w[31]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 113: Net <gpio0_we> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 125: Net <gpio0_cyc> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 138: Net <gpio0_stb> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 157: Net <lm32i_rty> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 158: Net <lm32d_rty> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 160: Net <lm32i_err> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 161: Net <lm32d_err> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 178: Net <gpio0_intr> does not have a driver.
-WARNING:HDLCompiler:552 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 216: Input port m0_cti_i[2] is not connected on this instance
-WARNING:HDLCompiler:552 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 412: Input port arst_i is not connected on this instance
+WARNING:HDLCompiler:1127 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 459: Assignment to gpio0_dat_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 463: Assignment to gpio0_ack ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 63: Net <gpio0_adr[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 83: Net <gpio0_dat_w[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 112: Net <gpio0_we> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 124: Net <gpio0_cyc> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 137: Net <gpio0_stb> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 156: Net <lm32i_rty> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 157: Net <lm32d_rty> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 159: Net <lm32i_err> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 160: Net <lm32d_err> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 177: Net <gpio0_intr> does not have a driver.
+WARNING:HDLCompiler:552 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 215: Input port m0_cti_i[2] is not connected on this instance
+WARNING:HDLCompiler:552 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" Line 411: Input port arst_i is not connected on this instance
 WARNING:Xst:2972 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/rtl/lm32/lm32_cpu.v" line 483. All outputs of instance <simtrace> of block <lm32_simtrace> are unconnected in block <lm32_cpu>. Underlying logic will be removed.
 
 =========================================================================
@@ -300,29 +300,29 @@ WARNING:Xst:2972 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/rtl/lm32/l
 
 Synthesizing Unit <system>.
     Related source file is "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v".
-        bootram_file = "../firmware/hw-test1/image.ram"
+        bootram_file = "../firmware/hw-test/image.ram"
         clk_freq = 100000000
         uart_baud_rate = 115200
 WARNING:Xst:2898 - Port 'm0_cti_i', unconnected in block instance 'conbus0', is tied to GND.
 WARNING:Xst:2898 - Port 'm1_cti_i', unconnected in block instance 'conbus0', is tied to GND.
 WARNING:Xst:2898 - Port 'arst_i', unconnected in block instance 'i2c0', is tied to GND.
-INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 216: Output port <s0_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 216: Output port <s1_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 216: Output port <s2_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 216: Output port <s3_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 216: Output port <s4_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 216: Output port <s5_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 216: Output port <s5_sel_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 300: Output port <I_CTI_O> of the instance <lm0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 300: Output port <I_BTE_O> of the instance <lm0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 300: Output port <D_CTI_O> of the instance <lm0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 300: Output port <D_BTE_O> of the instance <lm0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 300: Output port <I_LOCK_O> of the instance <lm0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 300: Output port <D_LOCK_O> of the instance <lm0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 389: Output port <spi_cs> of the instance <spi0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 412: Output port <wb_inta_o> of the instance <i2c0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 454: Output port <wb_dat_o> of the instance <gpio0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 454: Output port <wb_ack_o> of the instance <gpio0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 215: Output port <s0_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 215: Output port <s1_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 215: Output port <s2_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 215: Output port <s3_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 215: Output port <s4_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 215: Output port <s5_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 215: Output port <s5_sel_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 299: Output port <I_CTI_O> of the instance <lm0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 299: Output port <I_BTE_O> of the instance <lm0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 299: Output port <D_CTI_O> of the instance <lm0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 299: Output port <D_BTE_O> of the instance <lm0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 299: Output port <I_LOCK_O> of the instance <lm0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 299: Output port <D_LOCK_O> of the instance <lm0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 388: Output port <spi_cs> of the instance <spi0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 411: Output port <wb_inta_o> of the instance <i2c0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 453: Output port <wb_dat_o> of the instance <gpio0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/system.v" line 453: Output port <wb_ack_o> of the instance <gpio0> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <gpio0_adr> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <gpio0_dat_w> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <gpio0_we> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -861,7 +861,7 @@ Unit <lm32_interrupt> synthesized.
 
 Synthesizing Unit <wb_bram>.
     Related source file is "/home/camila/CubeRubik/HW/03GRUPO3/02verilog/LM32/rtl/wb_bram/wb_bram.v".
-        mem_file_name = "../firmware/hw-test1/image.ram"
+        mem_file_name = "../firmware/hw-test/image.ram"
         adr_width = 12
 WARNING:Xst:647 - Input <wb_adr_i<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <wb_adr_i<31:12>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -2245,13 +2245,13 @@ clk            |    8.619|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 22.00 secs
-Total CPU time to Xst completion: 21.49 secs
+Total REAL time to Xst completion: 21.00 secs
+Total CPU time to Xst completion: 20.74 secs
  
 --> 
 
 
-Total memory usage is 525704 kilobytes
+Total memory usage is 526028 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  488 (   0 filtered)

@@ -8,7 +8,7 @@ Target Device  : xc7a100t
 Target Package : csg324
 Target Speed   : -1
 Mapper Version : artix7 -- $Revision: 1.55 $
-Mapped Date    : Sat Apr 21 11:24:46 2018
+Mapped Date    : Sat Apr 21 11:56:05 2018
 
 Mapping design into LUTs...
 WARNING:MapLib:701 - Signal gpio0_io<7> connected to top level port gpio0_io<7>
@@ -42,7 +42,7 @@ Total REAL time at the beginning of Placer: 23 secs
 Total CPU  time at the beginning of Placer: 23 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:42946982) REAL time: 26 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:42946982) REAL time: 25 secs 
 
 Phase 2.7  Design Feasibility Check
 Phase 2.7  Design Feasibility Check (Checksum:42946982) REAL time: 26 secs 
@@ -70,22 +70,22 @@ Phase 8.8  Global Placement
 ...................................................
 .........................................................................................................................................................
 .............................................................................................................................................................................
-Phase 8.8  Global Placement (Checksum:b17967fa) REAL time: 51 secs 
+Phase 8.8  Global Placement (Checksum:b17967fa) REAL time: 50 secs 
 
 Phase 9.5  Local Placement Optimization
-Phase 9.5  Local Placement Optimization (Checksum:b17967fa) REAL time: 51 secs 
+Phase 9.5  Local Placement Optimization (Checksum:b17967fa) REAL time: 50 secs 
 
 Phase 10.18  Placement Optimization
-Phase 10.18  Placement Optimization (Checksum:79b7759) REAL time: 58 secs 
+Phase 10.18  Placement Optimization (Checksum:79b7759) REAL time: 57 secs 
 
 Phase 11.5  Local Placement Optimization
-Phase 11.5  Local Placement Optimization (Checksum:79b7759) REAL time: 58 secs 
+Phase 11.5  Local Placement Optimization (Checksum:79b7759) REAL time: 57 secs 
 
 Phase 12.34  Placement Validation
-Phase 12.34  Placement Validation (Checksum:79b7759) REAL time: 58 secs 
+Phase 12.34  Placement Validation (Checksum:79b7759) REAL time: 57 secs 
 
-Total REAL time to Placer completion: 1 mins 
-Total CPU  time to Placer completion: 1 mins 
+Total REAL time to Placer completion: 59 secs 
+Total CPU  time to Placer completion: 59 secs 
 Running post-placement packing...
 Writing output files...
 
@@ -186,8 +186,8 @@ Specific Feature Utilization:
 Average Fanout of Non-Clock Nets:                3.57
 
 Peak Memory Usage:  1279 MB
-Total REAL time to MAP completion:  1 mins 3 secs 
-Total CPU time to MAP completion:   1 mins 3 secs 
+Total REAL time to MAP completion:  1 mins 2 secs 
+Total CPU time to MAP completion:   1 mins 2 secs 
 
 Mapping completed.
 See MAP report file "system.mrp" for details.
