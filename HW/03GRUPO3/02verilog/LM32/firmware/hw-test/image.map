@@ -1,0 +1,209 @@
+
+Se asignan símbolos comunes
+Símbolo común       tamaño            fichero
+
+isr_table           0x80              soc-hw.o
+tic_msec            0x4               soc-hw.o
+
+Configuración de la Memoria
+
+Nombre           Origen             Longitud           Atributos
+ram              0x0000000000000000 0x0000000000001000
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Guión del enlazador y mapa de memoria
+
+                0x0000000000000000                __DYNAMIC = 0x0
+                0x0000000000000000                _RAM_START = 0x0
+                0x0000000000001000                _RAM_SIZE = 0x1000
+                0x0000000000001000                _RAM_END = (_RAM_START + _RAM_SIZE)
+
+.text           0x0000000000000000      0xe4c
+                0x0000000000000000                _ftext = .
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000000000000      0x208 crt0ram.o
+                0x0000000000000000                _start
+                0x0000000000000140                irq_enable
+                0x000000000000014c                irq_disable
+                0x0000000000000158                irq_set_mask
+                0x0000000000000160                irq_get_mask
+                0x0000000000000168                jump
+                0x000000000000016c                halt
+                0x00000000000001f8                get_sp
+                0x0000000000000200                get_gp
+ .text          0x0000000000000208        0x0 main.o
+ .text.startup  0x0000000000000208      0x13c main.o
+                0x0000000000000208                main
+ .text          0x0000000000000344      0x348 soc-hw.o
+                0x0000000000000344                tic_isr
+                0x0000000000000378                isr_null
+                0x000000000000037c                gpio_config_dir
+                0x0000000000000394                gpio_write
+                0x00000000000003ac                gpio_read
+                0x00000000000003c4                irq_handler
+                0x0000000000000420                isr_init
+                0x000000000000044c                isr_register
+                0x0000000000000468                isr_unregister
+                0x0000000000000490                msleep
+                0x00000000000004cc                nsleep
+                0x0000000000000500                tic_init
+                0x0000000000000554                uart_init
+                0x0000000000000558                uart_getchar
+                0x0000000000000580                uart_putchar
+                0x00000000000005a8                uart_putstr
+                0x00000000000005e0                i2c_init
+                0x0000000000000608                i2c_write
+ .text          0x000000000000068c      0x6dc clase_pwm.o
+                0x000000000000068c                clase_pwm::setMov(char, char)
+                0x0000000000000bac                clase_pwm::Left(int, int, int)
+                0x0000000000000be8                clase_pwm::Center(int, int, int)
+                0x0000000000000c28                clase_pwm::Right(int, int, int)
+                0x0000000000000c68                clase_pwm::Leave(int, int, int)
+                0x0000000000000ca8                clase_pwm::Take(int, int, int)
+                0x0000000000000ce8                clase_pwm::pwm_read()
+                0x0000000000000d00                clase_pwm::pwm_rd(unsigned char)
+                0x0000000000000d1c                clase_pwm::pwm_addr(unsigned int)
+                0x0000000000000d34                clase_pwm::pwm_wr(unsigned char)
+                0x0000000000000d50                clase_pwm::pwm_din(unsigned int)
+ .text          0x0000000000000d68       0x34 clase_timer.o
+                0x0000000000000d68                clase_timer::nsleep(int)
+ .text          0x0000000000000d9c       0xb0 clase_uart.o
+                0x0000000000000d9c                clase_uart::uart_init()
+                0x0000000000000da0                clase_uart::uart_getint()
+                0x0000000000000dc4                clase_uart::uart_getchar()
+                0x0000000000000dec                clase_uart::uart_putchar(char)
+                0x0000000000000e14                clase_uart::uart_putstr(char*)
+                0x0000000000000e4c                _etext = .
+
+.rodata         0x0000000000000e4c       0x98
+                0x0000000000000e4c                . = ALIGN (0x4)
+                0x0000000000000e4c                _frodata = .
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.cst4   0x0000000000000e4c       0x58 soc-hw.o
+ .rodata.cst4   0x0000000000000ea4       0x2c clase_pwm.o
+ .rodata.cst4   0x0000000000000ed0        0x4 clase_timer.o
+ .rodata.cst4   0x0000000000000ed4       0x10 clase_uart.o
+ *(.rodata1)
+                0x0000000000000ee4                _erodata = .
+
+.data           0x0000000000000ee4       0x18
+                0x0000000000000ee4                . = ALIGN (0x4)
+                0x0000000000000ee4                _fdata = .
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000000000000ee4        0x0 crt0ram.o
+ .data          0x0000000000000ee4        0x0 main.o
+ .data          0x0000000000000ee4       0x18 soc-hw.o
+                0x0000000000000ee4                pwm
+                0x0000000000000ee8                i2c0
+                0x0000000000000eec                spi0
+                0x0000000000000ef0                gpio0
+                0x0000000000000ef4                timer0
+                0x0000000000000ef8                uart0
+ .data          0x0000000000000efc        0x0 clase_pwm.o
+ .data          0x0000000000000efc        0x0 clase_timer.o
+ .data          0x0000000000000efc        0x0 clase_uart.o
+ *(.data1)
+                0x0000000000000f00                _gp = ALIGN (0x10)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+                0x0000000000000efc                _edata = .
+
+.bss            0x0000000000000efc       0x84
+                0x0000000000000efc                . = ALIGN (0x4)
+                0x0000000000000efc                _fbss = .
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ *(.scommon)
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0000000000000efc        0x0 crt0ram.o
+ .bss           0x0000000000000efc        0x0 main.o
+ .bss           0x0000000000000efc        0x0 soc-hw.o
+ .bss           0x0000000000000efc        0x0 clase_pwm.o
+ .bss           0x0000000000000efc        0x0 clase_timer.o
+ .bss           0x0000000000000efc        0x0 clase_uart.o
+ *(COMMON)
+ COMMON         0x0000000000000efc       0x84 soc-hw.o
+                0x0000000000000efc                isr_table
+                0x0000000000000f7c                tic_msec
+                0x0000000000000f80                _ebss = .
+                0x0000000000000f80                _end = .
+                0x0000000000000ffc                PROVIDE (_fstack = ((ORIGIN (ram) + LENGTH (ram)) - 0x4))
+LOAD crt0ram.o
+LOAD main.o
+LOAD soc-hw.o
+LOAD clase_pwm.o
+LOAD clase_timer.o
+LOAD clase_uart.o
+OUTPUT(image elf32-lm32)
+
+.debug_frame    0x0000000000000000      0x2d0
+ .debug_frame   0x0000000000000000       0x3c main.o
+ .debug_frame   0x000000000000003c      0x148 soc-hw.o
+ .debug_frame   0x0000000000000184       0xc4 clase_pwm.o
+ .debug_frame   0x0000000000000248       0x24 clase_timer.o
+ .debug_frame   0x000000000000026c       0x64 clase_uart.o
+
+.debug_info     0x0000000000000000     0x38b9
+ .debug_info    0x0000000000000000      0x66f main.o
+ .debug_info    0x000000000000066f      0x5de soc-hw.o
+ .debug_info    0x0000000000000c4d     0x263c clase_pwm.o
+ .debug_info    0x0000000000003289      0x25e clase_timer.o
+ .debug_info    0x00000000000034e7      0x3d2 clase_uart.o
+
+.debug_abbrev   0x0000000000000000      0x8ee
+ .debug_abbrev  0x0000000000000000      0x1a4 main.o
+ .debug_abbrev  0x00000000000001a4      0x244 soc-hw.o
+ .debug_abbrev  0x00000000000003e8      0x236 clase_pwm.o
+ .debug_abbrev  0x000000000000061e      0x114 clase_timer.o
+ .debug_abbrev  0x0000000000000732      0x1bc clase_uart.o
+
+.debug_loc      0x0000000000000000     0x291e
+ .debug_loc     0x0000000000000000       0x60 main.o
+ .debug_loc     0x0000000000000060      0x15e soc-hw.o
+ .debug_loc     0x00000000000001be     0x2666 clase_pwm.o
+ .debug_loc     0x0000000000002824       0x55 clase_timer.o
+ .debug_loc     0x0000000000002879       0xa5 clase_uart.o
+
+.debug_aranges  0x0000000000000000       0xa0
+ .debug_aranges
+                0x0000000000000000       0x20 main.o
+ .debug_aranges
+                0x0000000000000020       0x20 soc-hw.o
+ .debug_aranges
+                0x0000000000000040       0x20 clase_pwm.o
+ .debug_aranges
+                0x0000000000000060       0x20 clase_timer.o
+ .debug_aranges
+                0x0000000000000080       0x20 clase_uart.o
+
+.debug_ranges   0x0000000000000000       0x48
+ .debug_ranges  0x0000000000000000       0x10 main.o
+ .debug_ranges  0x0000000000000010       0x18 soc-hw.o
+ .debug_ranges  0x0000000000000028       0x20 clase_pwm.o
+
+.debug_line     0x0000000000000000      0xeae
+ .debug_line    0x0000000000000000      0x139 main.o
+ .debug_line    0x0000000000000139      0x3f9 soc-hw.o
+ .debug_line    0x0000000000000532      0x7ce clase_pwm.o
+ .debug_line    0x0000000000000d00       0xa0 clase_timer.o
+ .debug_line    0x0000000000000da0      0x10e clase_uart.o
+
+.debug_str      0x0000000000000000      0x5ae
+ .debug_str     0x0000000000000000      0x3ad main.o
+                                        0x3f6 (tamaño antes de la relajación)
+ .debug_str     0x00000000000003ad      0x193 soc-hw.o
+                                        0x2c9 (tamaño antes de la relajación)
+ .debug_str     0x0000000000000540       0x29 clase_pwm.o
+                                        0x324 (tamaño antes de la relajación)
+ .debug_str     0x0000000000000569       0x36 clase_timer.o
+                                        0x1e0 (tamaño antes de la relajación)
+ .debug_str     0x000000000000059f        0xf clase_uart.o
+                                        0x294 (tamaño antes de la relajación)
+
+.comment        0x0000000000000000       0x11
+ .comment       0x0000000000000000       0x11 main.o
+                                         0x12 (tamaño antes de la relajación)
+ .comment       0x0000000000000011       0x12 soc-hw.o
+ .comment       0x0000000000000011       0x12 clase_pwm.o
+ .comment       0x0000000000000011       0x12 clase_timer.o
+ .comment       0x0000000000000011       0x12 clase_uart.o
