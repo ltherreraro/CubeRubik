@@ -75,7 +75,7 @@ void servo::c(uint32_t cm){
 		pwm0->t0=0;
 		pwm0->t4=T;
 		pwm0->d0=0;
-		pwm0->d4=RIGHT;
+		pwm0->d4=LEFT;
 		pwm0->en0=0x01;
 		pwm0->en4=0x01;
 		}
@@ -83,7 +83,7 @@ void servo::c(uint32_t cm){
 		pwm0->t0=0;
 		pwm0->t4=T;
 		pwm0->d0=0;
-		pwm0->d4=LEFT;
+		pwm0->d4=RIGHT;
 		pwm0->en0=0x01;
 		pwm0->en4=0x01;
 		}
@@ -117,7 +117,7 @@ void servo::c(uint32_t cm){
 		pwm0->t1=0;
 		pwm0->t5=T;
 		pwm0->d1=0;
-		pwm0->d5=RIGHT;
+		pwm0->d5=LEFT;
 		pwm0->en1=0x01;
 		pwm0->en5=0x01;
 		}
@@ -125,7 +125,7 @@ void servo::c(uint32_t cm){
 		pwm0->t1=0;
 		pwm0->t5=T;
 		pwm0->d1=0;
-		pwm0->d5=LEFT;
+		pwm0->d5=RIGHT;
 		pwm0->en1=0x01;
 		pwm0->en5=0x01;
 		}
@@ -159,7 +159,7 @@ void servo::c(uint32_t cm){
 		pwm0->t2=0;
 		pwm0->t6=T;
 		pwm0->d2=0;
-		pwm0->d6=RIGHT;
+		pwm0->d6=LEFT
 		pwm0->en2=0x01;
 		pwm0->en6=0x01;
 		}
@@ -167,7 +167,7 @@ void servo::c(uint32_t cm){
 		pwm0->t2=0;
 		pwm0->t6=T;
 		pwm0->d2=0;
-		pwm0->d6=LEFT;
+		pwm0->d6=RIGHT;;
 		pwm0->en2=0x01;
 		pwm0->en6=0x01;
 		}
