@@ -12,42 +12,7 @@ uint32_t e=b*12;
 uint32_t d=e+8;
 uint32_t t=e+4;
 
-
-for (int i=35000; i<200000; i=i+1000)
-{
-	if(c==0x15)
-	{
-		dind=i;
-		
-		uart_putchar(i);
-		nsleep(3000000);
-	}
-
-}
-
-
-
-if(c==0x11){
-dind=35000;
-}
-if(c==0x12){
-dind=120000;
-}
-if(c==0x10){
-dind=200000;
-}
-if(c==0x13){
-dind=180000;
-e=e+48;
-d=e+8;
-t=e+4;
-}
-if(c==0x14){
-dind=100000;
-e=e+48;
-d=e+8;
-t=e+4;
-}
+dind=c*1000;
 
 pwm_wr(Wr); pwm_rd(Rd);
 pwm_addr(t); pwm_din(dint);

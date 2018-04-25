@@ -31,9 +31,9 @@ int main()
 			motor.pwm_sel(motor.brazo(0x02), 0x13, true);//''
 			motor.pwm_sel(motor.brazo(0x03), 0x13, true);//''
 			motor.pwm_sel(motor.brazo(0x04), 0x13, true);//''
-			motor.pwm_sel(motor.brazo(0x01), 0x10, true);//Brazo 1 D
+			motor.pwm_sel(motor.brazo(0x01), 0x12, true);//Brazo 1 D
 			motor.pwm_sel(motor.brazo(0x02), 0x12, true);//Brazo 2 C
-			motor.pwm_sel(motor.brazo(0x03), 0x10, true);//Brazo 3 D
+			motor.pwm_sel(motor.brazo(0x03), 0x12, true);//Brazo 3 D
 			motor.pwm_sel(motor.brazo(0x04), 0x12, true);//Brazo 4 C
 		}				
 	}
@@ -47,9 +47,9 @@ int main()
 			motor.pwm_sel(motor.brazo(0x02), 0x14, true);//''
 			motor.pwm_sel(motor.brazo(0x03), 0x14, true);//''
 			motor.pwm_sel(motor.brazo(0x04), 0x14, true);//''
-			motor.pwm_sel(motor.brazo(0x01), 0x10, true);//brazo 1 D 
+			motor.pwm_sel(motor.brazo(0x01), 0x12, true);//brazo 1 D 
 			motor.pwm_sel(motor.brazo(0x02), 0x12, true);//brazo 2 C
-			motor.pwm_sel(motor.brazo(0x03), 0x10, true);//brazo 3 D
+			motor.pwm_sel(motor.brazo(0x03), 0x12, true);//brazo 3 D
 			motor.pwm_sel(motor.brazo(0x04), 0x12, true);//brazo 4 C
 		}			
 	}
@@ -67,7 +67,7 @@ int main()
 			motor.pwm_sel(motor.brazo(b), c, true);//mover
 		}
 	}
-
+	
    }
 
 

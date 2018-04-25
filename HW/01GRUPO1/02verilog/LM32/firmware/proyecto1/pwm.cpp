@@ -12,14 +12,15 @@ uint32_t e=b*12;
 uint32_t d=e+8;
 uint32_t t=e+4;
 
+
 if(c==0x11){
-dind=35000;
+dind=0x36*1000;
 }
 if(c==0x12){
-dind=120000;
+dind=0x83*1000;
 }
 if(c==0x10){
-dind=200000;
+dind=0xda*1000;
 }
 if(c==0x13){
 dind=180000;
