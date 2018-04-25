@@ -201,7 +201,7 @@ void servo::c(uint32_t cm){
 		pwm0->t3=0;
 		pwm0->t7=T;
 		pwm0->d3=0;
-		pwm0->d7=RIGHT;
+		pwm0->d7=LEFT;
 		pwm0->en3=0x01;
 		pwm0->en7=0x01;
 		}
@@ -209,7 +209,7 @@ void servo::c(uint32_t cm){
 		pwm0->t3=0;
 		pwm0->t7=T;
 		pwm0->d3=0;
-		pwm0->d7=LEFT;
+		pwm0->d7=RIGHT;
 		pwm0->en3=0x01;
 		pwm0->en7=0x01;
 		}
