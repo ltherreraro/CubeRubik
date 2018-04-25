@@ -3,8 +3,8 @@
 pwm_t   *pwm0 = (pwm_t *)  0x60000000;
 
 #define T 20000
-#define LEFT 800
-#define RIGHT 2200
+#define LEFT 1100
+#define RIGHT 2100
 #define CENTER 1500
 
 typedef unsigned int  uint32_t;    // 32 Bit
