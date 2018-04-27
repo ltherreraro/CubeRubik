@@ -19,14 +19,26 @@ servo::servo(){
 
 void servo::c(uint32_t cm){
 	if(cm==0xFF0000F0){
+		pwm0->t0=T;
+		pwm0->t1=T;
+		pwm0->t2=T;
+		pwm0->t3=T;
 		pwm0->t4=T;
 		pwm0->t5=T;
 		pwm0->t6=T;
 		pwm0->t7=T;
+		pwm0->d0=RIGHT;
+		pwm0->d1=RIGHT;
+		pwm0->d2=RIGHT;
+		pwm0->d3=RIGHT;
 		pwm0->d4=RIGHT;
 		pwm0->d5=RIGHT;
 		pwm0->d6=RIGHT;
 		pwm0->d7=RIGHT;
+		pwm0->en0=0x01;
+		pwm0->en1=0x01;
+		pwm0->en2=0x01;
+		pwm0->en3=0x01;
 		pwm0->en4=0x01;
 		pwm0->en5=0x01;
 		pwm0->en6=0x01;
