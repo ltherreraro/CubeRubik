@@ -1,4 +1,4 @@
-module wb_camara(clk, rst, xclk, href, vsync, pclk,/* sio_c, sio_d, pwdn, reset, strobe,*/ wb_adr_i, wb_dat_i, wb_we_i, wb_cyc_i, wb_stb_i,wb_sel_i, wb_dat_o, wb_ack_o);
+module wb_cam(clk, rst, xclk, href, vsync, pclk,/* sio_c, sio_d, pwdn, reset, strobe,*/ wb_adr_i, wb_dat_i, wb_we_i, wb_cyc_i, wb_stb_i,wb_sel_i, wb_dat_o, wb_ack_o);
 
 parameter wb_dat_width = 32;
 parameter wb_adr_width = 32; // 2^32 bytes addressable
@@ -41,7 +41,7 @@ wire  [7:0] 			dout;
 wire wb_rd = wb_stb_i & wb_cyc_i & ~wb_we_i; 
 wire wb_wr = wb_stb_i & wb_cyc_i &  wb_we_i;
 
-camara cm(.clk(clk), .reset(rst),.reset1(reset1),.href(href),.vsync(vsync), .din(din), .empty(empty), .full(full), .dout(dout), .rd(rd), .led(led), .pclk(pclk), .xvclk(xclk));
+camara cm(.clk(clk), .reset(rst),.href(href),.vsync(vsync), .din(din), .empty(empty), .full(full), .dout(dout), .rd(rd), .led(led), .pclk(pclk), .xvclk(xclk));
 
 always @(posedge clk)
 begin
