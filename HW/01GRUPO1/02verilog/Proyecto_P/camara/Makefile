@@ -1,4 +1,4 @@
-DESIGN          = wb_camara
+DESIGN          = camara
 PINS            = $(DESIGN).ucf
 DEVICE          = XC7A100T-1CSG324
 BGFLAGS         =  -g TdoPin:PULLNONE -g DonePin:PULLUP \
