@@ -35,12 +35,9 @@ NET "dout<6>"			LOC = "T9"  | IOSTANDARD = "LVCMOS33";	#Bank = 14, Pin name = IO
 NET "dout<7>"			LOC = "U11"	| IOSTANDARD = "LVCMOS33";	#Bank = 14, Pin name = IO_L19N_T3_A09_D25_VREF_14,	Sch name = JB10 
 
 ## Pmod Header JC
-NET "pclk"   	LOC = "K2"	| IOSTANDARD = "LVCMOS33";#Bank = 35, Pin name = IO_L23P_T3_35,		Sch name = JC1
-NET "pclk" CLOCK_DEDICATED_ROUTE = FALSE ;
+NET "pclk"			LOC = "K2"	| IOSTANDARD = "LVCMOS33";	#Bank = 35, Pin name = IO_L23P_T3_35,		Sch name = JC1
 NET "href"			LOC = "E7"	| IOSTANDARD = "LVCMOS33";	#Bank = 35, Pin name = IO_L6P_T0_35,		Sch name = JC2
 NET "vsync"			LOC = "J3"	| IOSTANDARD = "LVCMOS33";	#Bank = 35, Pin name = IO_L22P_T3_35,		Sch name = JC3
-#NET "rd"		LOC = "J4"	| IOSTANDARD = "LVCMOS33";	#Bank = 35, Pin name = IO_L21P_T3_DQS_35, Sch name = JC4
-NET "xvclk"			LOC = "K1"	| IOSTANDARD = "LVCMOS33";#Bank = 35, Pin name = IO_L23N_T3_35,	Sch name = JC7
+NET "wen"			LOC = "J4"	| IOSTANDARD = "LVCMOS33";	#Bank = 35, Pin name = IO_L21P_T3_DQS_35, 	Sch name = JC4
 
-NET "rd"			LOC = "P4"	| IOSTANDARD = "LVCMOS33";		#Bank = 34, Pin name = IO_L21P_T3_DQS_34, Sch name = SW0
 
