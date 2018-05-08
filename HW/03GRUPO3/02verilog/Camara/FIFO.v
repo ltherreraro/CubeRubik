@@ -1,30 +1,26 @@
 module FIFO
-  (parameter adr_width = 16, parameter dat_width = 10);
   (input  rst, Pclk, 
     input  rd, wr,
-    input  [dat_width-1:0] data_in,
-    output [dat_width-1:0] data_out, 
+    input  [9:0] data_in,
+    output [9:0] data_out, 
     output empty, 
     output full);
  
-  parameter depth = (1 << adr_width);
+    parameter depth = (1 << adr_width);
+    parameter adr_width = 16; 
 
-  reg [dat_width-1:0] array_reg [depth-1:0]; 
+  reg [9:0] array_reg [depth-1:0]; 
   reg [adr_width-1:0] w_ptr_reg, w_ptr_next;
   reg [adr_width-1:0] r_ptr_reg, r_ptr_next;
   reg full_reg, empty_reg, full_next, empty_next;
-  wire wr_en;
 
    assign data_out = array_reg[r_ptr_reg];
-   assign wr_en = wr & ~full_reg;
 
    assign full = full_reg;
    assign empty = empty_reg;
 
     always @(posedge Pclk) begin
-       if (wr_en)
-            array_reg[w_ptr_reg] <=data_in;
-       else if (rst) begin
+       if (rst) begin
             w_ptr_reg <= 0;
             r_ptr_reg <= 0;
             full_reg <= 1'b0;
@@ -36,8 +32,8 @@ module FIFO
             full_reg <= full_next;
             empty_reg <= empty_next;
        end
-       full_next = full_reg;
-	   empty_next = empty_reg;
+      full_next = full_reg;
+	  empty_next = empty_reg;
 	   case ({wr, rd})
 		 2'b01: // read
 		    if (~empty_reg) begin //not empty
@@ -48,6 +44,7 @@ module FIFO
 		    end
 		 2'b10: // write
 		    if (~full_reg) begin // not full
+               array_reg[w_ptr_reg] = data_in;
 		       w_ptr_next = w_ptr_reg + 1;
 		       empty_next = 1'b0;
 		       if (w_ptr_next==r_ptr_reg)

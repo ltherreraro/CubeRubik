@@ -52,17 +52,416 @@ RTL Output                         : yes
 =========================================================================
 Analyzing Verilog file "/home/camila/Documentos/proy.digII/Camara/camara.v" into library work
 Parsing module <camara>.
-WARNING:HDLCompiler:751 - "/home/camila/Documentos/proy.digII/Camara/camara.v" Line 17: Redeclaration of ansi port frame_done is not allowed
+WARNING:HDLCompiler:751 - "/home/camila/Documentos/proy.digII/Camara/camara.v" Line 18: Redeclaration of ansi port frame_done is not allowed
 Analyzing Verilog file "/home/camila/Documentos/proy.digII/Camara/FIFO.v" into library work
 Parsing module <FIFO>.
-ERROR:HDLCompiler:806 - "/home/camila/Documentos/proy.digII/Camara/FIFO.v" Line 2: Syntax error near "parameter".
-Verilog file /home/camila/Documentos/proy.digII/Camara/FIFO.v ignored due to errors
+Analyzing Verilog file "/home/camila/Documentos/proy.digII/Camara/div_frec.v" into library work
+Parsing module <div_frec>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <camara>.
+
+Elaborating module <div_frec>.
+
+Elaborating module <FIFO>.
+WARNING:HDLCompiler:413 - "/home/camila/Documentos/proy.digII/Camara/FIFO.v" Line 40: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/camila/Documentos/proy.digII/Camara/FIFO.v" Line 48: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/camila/Documentos/proy.digII/Camara/FIFO.v" Line 55: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/camila/Documentos/proy.digII/Camara/FIFO.v" Line 56: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:1127 - "/home/camila/Documentos/proy.digII/Camara/camara.v" Line 32: Assignment to full ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "/home/camila/Documentos/proy.digII/Camara/camara.v" Line 46: Result of 22-bit expression is truncated to fit in 21-bit target.
+WARNING:Xst:2972 - "/home/camila/Documentos/proy.digII/Camara/camara.v" line 32. All outputs of instance <fif> of block <FIFO> are unconnected in block <camara>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <camara>.
+    Related source file is "/home/camila/Documentos/proy.digII/Camara/camara.v".
+INFO:Xst:3210 - "/home/camila/Documentos/proy.digII/Camara/camara.v" line 32: Output port <data_out> of the instance <fif> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/camila/Documentos/proy.digII/Camara/camara.v" line 32: Output port <full> of the instance <fif> is unconnected or connected to loadless signal.
+    Found 21-bit register for signal <counter>.
+    Found 1-bit register for signal <frame_done>.
+    Found 21-bit adder for signal <counter[20]_GND_1_o_add_1_OUT> created at line 46.
+    Found 21-bit comparator greater for signal <counter[20]_GND_1_o_LessThan_3_o> created at line 47
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <camara> synthesized.
+
+Synthesizing Unit <div_frec>.
+    Related source file is "/home/camila/Documentos/proy.digII/Camara/div_frec.v".
+    Found 1-bit register for signal <Xclk>.
+    Found 32-bit register for signal <count>.
+    Found 32-bit adder for signal <count[31]_GND_2_o_add_2_OUT> created at line 27.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <div_frec> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 21-bit adder                                          : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 4
+ 1-bit register                                        : 2
+ 21-bit register                                       : 1
+ 32-bit register                                       : 1
+# Comparators                                          : 1
+ 21-bit comparator greater                             : 1
+# Multiplexers                                         : 1
+ 32-bit 2-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <camara>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <camara> synthesized (advanced).
+
+Synthesizing (advanced) Unit <div_frec>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <div_frec> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 21-bit up counter                                     : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 2
+ Flip-Flops                                            : 2
+# Comparators                                          : 1
+ 21-bit comparator greater                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <camara> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block camara, actual ratio is 0.
+FlipFlop div/Xclk has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop frame_done has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 57
+ Flip-Flops                                            : 57
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : project.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 186
+#      GND                         : 1
+#      INV                         : 5
+#      LUT1                        : 51
+#      LUT2                        : 4
+#      LUT3                        : 1
+#      LUT4                        : 1
+#      LUT5                        : 7
+#      LUT6                        : 6
+#      MUXCY                       : 56
+#      VCC                         : 1
+#      XORCY                       : 53
+# FlipFlops/Latches                : 57
+#      FDR                         : 35
+#      FDRE                        : 21
+#      FDS                         : 1
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 7
+#      IBUF                        : 3
+#      OBUF                        : 4
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              55  out of  126800     0%  
+ Number of Slice LUTs:                   75  out of  63400     0%  
+    Number used as Logic:                75  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     75
+   Number with an unused Flip Flop:      20  out of     75    26%  
+   Number with an unused LUT:             0  out of     75     0%  
+   Number of fully used LUT-FF pairs:    55  out of     75    73%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                          19
+ Number of bonded IOBs:                   9  out of    210     4%  
+    IOB Flip Flops/Latches:               2
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 34    |
+Pclk                               | BUFGP                  | 23    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 4.194ns (Maximum Frequency: 238.418MHz)
+   Minimum input arrival time before clock: 1.712ns
+   Maximum output required time after clock: 0.877ns
+   Maximum combinational path delay: 1.085ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.194ns (frequency: 238.418MHz)
+  Total number of paths / destination ports: 1618 / 65
+-------------------------------------------------------------------------
+Delay:               4.194ns (Levels of Logic = 3)
+  Source:            div/count_25 (FF)
+  Destination:       div/count_1 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: div/count_25 to div/count_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.478   0.945  div/count_25 (div/count_25)
+     LUT6:I0->O            1   0.124   0.919  div/count[31]_GND_2_o_equal_2_o<31>5 (div/count[31]_GND_2_o_equal_2_o<31>4)
+     LUT6:I1->O            3   0.124   0.435  div/count[31]_GND_2_o_equal_2_o<31>7 (div/count[31]_GND_2_o_equal_2_o)
+     LUT2:I1->O           31   0.124   0.551  div/count[31]_GND_2_o_equal_2_o_01 (div/count[31]_GND_2_o_equal_2_o_0)
+     FDR:R                     0.494          div/count_1
+    ----------------------------------------
+    Total                      4.194ns (1.344ns logic, 2.850ns route)
+                                       (32.0% logic, 68.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Pclk'
+  Clock period: 3.119ns (frequency: 320.616MHz)
+  Total number of paths / destination ports: 315 / 23
+-------------------------------------------------------------------------
+Delay:               3.119ns (Levels of Logic = 7)
+  Source:            counter_1 (FF)
+  Destination:       frame_done (FF)
+  Source Clock:      Pclk rising
+  Destination Clock: Pclk rising
+
+  Data Path: counter_1 to frame_done
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.478   0.933  counter_1 (counter_1)
+     LUT5:I0->O            1   0.124   0.000  Mcompar_counter[20]_GND_1_o_LessThan_3_o_lut<0> (Mcompar_counter[20]_GND_1_o_LessThan_3_o_lut<0>)
+     MUXCY:S->O            1   0.472   0.000  Mcompar_counter[20]_GND_1_o_LessThan_3_o_cy<0> (Mcompar_counter[20]_GND_1_o_LessThan_3_o_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  Mcompar_counter[20]_GND_1_o_LessThan_3_o_cy<1> (Mcompar_counter[20]_GND_1_o_LessThan_3_o_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  Mcompar_counter[20]_GND_1_o_LessThan_3_o_cy<2> (Mcompar_counter[20]_GND_1_o_LessThan_3_o_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  Mcompar_counter[20]_GND_1_o_LessThan_3_o_cy<3> (Mcompar_counter[20]_GND_1_o_LessThan_3_o_cy<3>)
+     MUXCY:CI->O           1   0.334   0.536  Mcompar_counter[20]_GND_1_o_LessThan_3_o_cy<4> (Mcompar_counter[20]_GND_1_o_LessThan_3_o_cy<4>)
+     LUT3:I1->O            2   0.124   0.000  frame_done_glue_set (frame_done_glue_set)
+     FDR:D                     0.030          frame_done
+    ----------------------------------------
+    Total                      3.119ns (1.650ns logic, 1.469ns route)
+                                       (52.9% logic, 47.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 34 / 34
+-------------------------------------------------------------------------
+Offset:              1.712ns (Levels of Logic = 2)
+  Source:            en_div (PAD)
+  Destination:       div/count_1 (FF)
+  Destination Clock: clk rising
+
+  Data Path: en_div to div/count_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.001   0.542  en_div_IBUF (en_div_IBUF)
+     LUT2:I0->O           31   0.124   0.551  div/count[31]_GND_2_o_equal_2_o_01 (div/count[31]_GND_2_o_equal_2_o_0)
+     FDR:R                     0.494          div/count_1
+    ----------------------------------------
+    Total                      1.712ns (0.619ns logic, 1.093ns route)
+                                       (36.1% logic, 63.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Pclk'
+  Total number of paths / destination ports: 46 / 46
+-------------------------------------------------------------------------
+Offset:              1.040ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       counter_0 (FF)
+  Destination Clock: Pclk rising
+
+  Data Path: rst to counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            24   0.001   0.545  rst_IBUF (reset_OBUF)
+     FDRE:R                    0.494          counter_0
+    ----------------------------------------
+    Total                      1.040ns (0.495ns logic, 0.545ns route)
+                                       (47.6% logic, 52.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.877ns (Levels of Logic = 1)
+  Source:            div/Xclk_1 (FF)
+  Destination:       Xclk (PAD)
+  Source Clock:      clk rising
+
+  Data Path: div/Xclk_1 to Xclk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.478   0.399  div/Xclk_1 (div/Xclk_1)
+     OBUF:I->O                 0.000          Xclk_OBUF (Xclk)
+    ----------------------------------------
+    Total                      0.877ns (0.478ns logic, 0.399ns route)
+                                       (54.5% logic, 45.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Pclk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.877ns (Levels of Logic = 1)
+  Source:            frame_done_1 (FF)
+  Destination:       frame_done (PAD)
+  Source Clock:      Pclk rising
+
+  Data Path: frame_done_1 to frame_done
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.478   0.399  frame_done_1 (frame_done_1)
+     OBUF:I->O                 0.000          frame_done_OBUF (frame_done)
+    ----------------------------------------
+    Total                      0.877ns (0.478ns logic, 0.399ns route)
+                                       (54.5% logic, 45.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               1.085ns (Levels of Logic = 3)
+  Source:            capture (PAD)
+  Destination:       PWDN (PAD)
+
+  Data Path: capture to PWDN
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            23   0.001   0.539  capture_IBUF (capture_IBUF)
+     INV:I->O              1   0.146   0.399  _n00341_INV_0 (PWDN_OBUF)
+     OBUF:I->O                 0.000          PWDN_OBUF (PWDN)
+    ----------------------------------------
+    Total                      1.085ns (0.147ns logic, 0.938ns route)
+                                       (13.5% logic, 86.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Pclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Pclk           |    3.119|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.194|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.78 secs
+ 
 --> 
 
 
-Total memory usage is 342824 kilobytes
+Total memory usage is 502648 kilobytes
 
-Number of errors   :    1 (   0 filtered)
-Number of warnings :    1 (   0 filtered)
-Number of infos    :    0 (   0 filtered)
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
 

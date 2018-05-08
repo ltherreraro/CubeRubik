@@ -2,42 +2,54 @@
 
 module camara_TB;
 
-
 reg clk=0;
 reg capture;
-reg Href;
+//reg data[7:0];
+reg Href; 
 reg Vsyn;
-reg Pclk;
-reg data[7:0];
-reg reset;
+wire Pclk; //////////////////////////////////lo cambie 
+reg [7:0]data;
+reg rst;
+reg en_div;
+wire reset;
+wire Xclk;
+wire PWDN;
+wire frame_done;
+wire data_out;
 
-reg counter[7:0] = 8'b0;
+parameter tck=6;
 
-
-camara cam(capture, clk, Href, Vsyn, Pclk, data[7:0],reset);
+camara uut(.capture(capture), .clk(clk), .Href(Href), .Vsyn(Vsyn), .data(data), .Pclk(Pclk), .rst(rst), .reset(reset), .Xclk(Xclk), .PWDN(PWDN), .frame_done(frame_done), .en_div(en_div));
 
 always #1 clk = ~clk;
 
 initial begin
-
+en_div=0;
+#200;
+en_div=1;
+rst=0; 
+#1000;
+rst=1;
+#2000;
+rst=0;
 capture=1;
-#2000
-
-
+Href=1;
+Vsyn=1;
+data= 8'b0;
+#3000;
+Href=0;
+Vsyn=0;
+data=8'b1;
+#3000;
+capture=0;
+#3000;
 end
 
-always @(posedge Xclk)begin
-    counter= counter+1;
-        if (counter<6)begin 
-            Pclk <= ~Pclk;
-            counter=0;
-        end
-end
 
 initial begin: TEST_CASE
      $dumpfile("camara_TB.vcd");
      $dumpvars(-1, uut);
-     #(200000) $finish;
+     #(20000) $finish;
    end
 
-endmodule //
+endmodule 

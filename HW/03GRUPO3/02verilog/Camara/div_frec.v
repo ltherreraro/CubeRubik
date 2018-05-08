@@ -1,14 +1,17 @@
-module div_frec(input clk_in, input reset, output reg Xclk);
+module div_frec(input clk, input en_div, output reg Xclk);
 
 reg [31:0] count;
+wire rst;
+
+assign rst = ~en_div;
 
 initial begin
 Xclk=0;
 end
 
-always @(posedge  clk_in)
+always @(posedge  clk)
 begin
-    if (reset)
+    if (rst)
     begin
         count<=1;
         Xclk<=0;
