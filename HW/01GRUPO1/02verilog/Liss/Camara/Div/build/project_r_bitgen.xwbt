@@ -1,0 +1,7 @@
+INFILE=/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/Liss/Camara/Div/build/project_r.ncd
+OUTFILE=/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/Liss/Camara/Div/build/project_r.bit
+FAMILY=Artix7
+PART=xc7a100t-1csg324
+WORKINGDIR=/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/Liss/Camara/Div/build
+LICENSE=WebPack
+USER_INFO=211378749_0_0_358

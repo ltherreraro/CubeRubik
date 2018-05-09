@@ -29,29 +29,7 @@ begin
 
 	
 end
-//condicion we 
-/*
-always@(*)
-begin
 
-	
-	if(habilitador==1)
-       	begin 
-		if(href==1)
-		begin
-			we<=1;
-		end
-		else
-		begin
-			we<=0;
-		end
-	end
-end
-
-*/
-
-
-//lectura rclk
 
 always @(posedge  clk)
 begin

@@ -1,11 +1,12 @@
-Release 14.7 ngdbuild P.20131013 (lin)
+Release 14.7 ngdbuild P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/ngdbuild -p
+Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -p
 XC7A100T-1CSG324 project.ngc -uc ../div_freq.ucf
 
 Reading NGO file
-"/home/daniel/CubeRubik/HW/01GRUPO1/02verilog/Div/build/project.ngc" ...
+"/home/lisseth/CubeRubik/HW/01GRUPO1/02verilog/Liss/Camara/Div/build/project.ngc
+" ...
 Gathering constraint information from source properties...
 Done.
 
@@ -27,10 +28,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 138356 kilobytes
+Total memory usage is 459148 kilobytes
 
 Writing NGD file "project.ngd" ...
-Total REAL time to NGDBUILD completion:  32 sec
-Total CPU time to NGDBUILD completion:   31 sec
+Total REAL time to NGDBUILD completion:  11 sec
+Total CPU time to NGDBUILD completion:   10 sec
 
 Writing NGDBUILD log file "project.bld"...

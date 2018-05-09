@@ -6,8 +6,9 @@ begin
 	begin
 		wen=1;
 	end
+	else wen=0;
 end
-always @(posedge  pclk)
+always @(posedge  clk)
 begin
 	if(href=1 && vsync=0)
 	begin
