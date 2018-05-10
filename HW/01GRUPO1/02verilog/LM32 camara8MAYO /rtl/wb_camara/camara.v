@@ -5,38 +5,50 @@ module camara #(parameter   fi     = 50000000, parameter   fs	= 50000000)
 initial count<= fi/fs;
 initial led<=0;
 reg [31:0] count;
-//reg habilitador=0;
+
+reg [1:0] count1=0;
+
 
 
 always@(*)
 begin
-		
-	if(takepicture==1)
+
+	if(reset)
 	begin
-	
-		if(vsync==0)
-		begin
-			we<=0;
-		
-		end
-		else
-		begin
-			we<=1;
-		end
-
-
+	count1<=0;
+	we<=1;
 	end
+	else 
+	begin	
+		if(takepicture==1)
+		begin
+			if (count1==0)
+			begin
+			count1<=1;
+				if(vsync==0)
+				begin
+					we<=0;
+				end
+				else
+				begin
+					we<=1;
+				end
+			end
 
+
+		end
 	
+	end
 end
+
 
 
 always @(posedge  clk)
 begin
 	if (reset==0) begin
-	led=1;
+	led=0;
 		if(leer==1)
-		begin
+		begin	
 		
 			if (count==0)
 			begin
@@ -55,27 +67,20 @@ begin
 		end
 		else
 		begin
+		
+		
 		rdclk<=0;
 		end
 	end
 	else begin
-	led=0;
-	count <= fi/fs;
-	rdclk <=0;
+	led=1;
+		count <= fi/fs;
+		rdclk <=0;
 	end	
 end
 
-
 always@(*)
 begin
-	if(leer)
-	begin
-		oe<=0;
-	end
-	else
-	begin
-		oe<=1;
-	end
 	if(resetwr)
 	begin
 		wrst<=1;
@@ -91,7 +96,15 @@ begin
 	else
 	begin
 		rrst<=0;
-	end	
+	end
+	if(leer)	
+	begin
+		oe<=0;
+	end
+	else
+	begin
+		oe<=1;
+	end
 end
 
 

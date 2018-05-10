@@ -30,6 +30,8 @@ NET "din<5>"			LOC = "C17"	| IOSTANDARD = "LVCMOS33";		#Bank = 15, Pin name = IO
 NET "din<6>"			LOC = "D18"	| IOSTANDARD = "LVCMOS33";		#Bank = 15, Pin name = IO_L21N_T3_A17_15,					Sch name = JA9
 NET "din<7>"			LOC = "E18"	| IOSTANDARD = "LVCMOS33";		#Bank = 15, Pin name = IO_L21P_T3_DQS_15,					Sch name = JA10
 
+
+ 
 # ==== UART ====
 NET "uart_txd"	LOC = "D4"	| IOSTANDARD = "LVCMOS33";		
 NET "uart_rxd"	LOC = "C4"	| IOSTANDARD = "LVCMOS33";
