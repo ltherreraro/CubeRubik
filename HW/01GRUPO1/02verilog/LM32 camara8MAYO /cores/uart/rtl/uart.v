@@ -18,7 +18,7 @@
 module uart #(
 	parameter csr_addr = 4'h0,
 	parameter clk_freq = 100000000,
-	parameter baud = 38400
+	parameter baud = 921600
 ) (
 	input sys_clk,
 	input sys_rst,

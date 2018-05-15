@@ -1,11 +1,14 @@
 Release 14.7 Drc P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Tue May  8 16:20:16 2018
+Tue May 15 15:03:06 2018
 
 drc -z system-routed.ncd
 
+WARNING:PhysDesignRules:372 - Gated clock. Clock net cam/cm/count1_0_G is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:367 - The signal <href_IBUF> is incomplete. The signal
    does not drive any load pins in the design.
-DRC detected 0 errors and 1 warnings.  Please see the previously displayed
+DRC detected 0 errors and 2 warnings.  Please see the previously displayed
 individual error or warning messages for more details.

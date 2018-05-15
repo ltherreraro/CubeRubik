@@ -9,9 +9,9 @@ module system
 //	parameter   bootram_file     = "../firmware/cain_loader/image.ram",
 //	parameter   bootram_file     = "../firmware/arch_examples/image.ram",
 //	parameter   bootram_file     = "../firmware/boot0-serial/image.ram",
-	parameter   bootram_file     = "../firmware/uartycamera/image.ram",
+	parameter   bootram_file     = "../firmware/hw-test/image.ram",
 	parameter   clk_freq         = 100000000,
-	parameter   uart_baud_rate   = 38400
+	parameter   uart_baud_rate   = 115200
 ) (
 	input             clk,
 	// Debug 
@@ -36,7 +36,10 @@ module system
 	input		  vsync, 
 	output 		  rdclk,
 	input [7:0]	  din, 
-	output	  	  led1
+	output	  	  led1,
+	output 		  oe,
+	output 		  wrst,
+	output 		  rrst
 );
 
 wire [7:0]       gpio0_io;
@@ -212,7 +215,10 @@ wb_cam cam (.clk(clk),
 		.rdclk(rdclk),
 		.we(we),	
 		.din(din),
-		.led(led1));
+		.led(led1),
+		.oe(oe),
+		.wrst(wrst),
+		.rrst(rrst));
 //pwm
 
 

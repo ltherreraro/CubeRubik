@@ -80,16 +80,16 @@ void pwm_din(uint32_t vd_in);
 
 typedef struct {
    volatile uint32_t dout;
-   volatile uint8_t takepicture;
-   volatile uint8_t leer;
-   volatile uint8_t resetwr;
-   volatile uint8_t resetrd;
+   volatile uint32_t takepicture;
+   volatile uint32_t leer;
+   volatile uint32_t resetwr;
+   volatile uint32_t resetrd;
    
    
      
 } camera_t;
-void tomarfoto(int a);
-uint32_t leerfoto(int b);
+void tomarfoto(uint32_t a);
+uint32_t leerfoto(uint32_t b);
 
 
 

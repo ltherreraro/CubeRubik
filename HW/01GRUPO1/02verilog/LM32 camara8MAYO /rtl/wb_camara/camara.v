@@ -1,4 +1,4 @@
-module camara #(parameter   fi     = 50000000, parameter   fs	= 50000000)
+module camara #(parameter   fi     = 50000000, parameter   fs	= 921600)
 (input clk, input [7:0] din, input reset, input takepicture,input leer,output reg led, input href, input resetrd, input resetwr,input vsync, output reg we, output reg rdclk,output  reg [7:0] dout, output reg oe, output reg wrst, output reg rrst);
 
 

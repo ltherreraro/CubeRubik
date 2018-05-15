@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue May 08 16:18:49 2018
+// Written by: Map P.20131013 on Tue May 15 15:01:37 2018
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -13,20 +13,23 @@ COMP "pwm6" LOCATE = SITE "G2" LEVEL 1;
 COMP "pwm7" LOCATE = SITE "F3" LEVEL 1;
 COMP "rst" LOCATE = SITE "U9" LEVEL 1;
 COMP "vsync" LOCATE = SITE "V11" LEVEL 1;
+COMP "oe" LOCATE = SITE "V15" LEVEL 1;
 COMP "we" LOCATE = SITE "G14" LEVEL 1;
 COMP "rdclk" LOCATE = SITE "K16" LEVEL 1;
 COMP "href" LOCATE = SITE "P15" LEVEL 1;
 COMP "uart_txd" LOCATE = SITE "D4" LEVEL 1;
-COMP "din<0>" LOCATE = SITE "B13" LEVEL 1;
-COMP "din<1>" LOCATE = SITE "F14" LEVEL 1;
+COMP "din<0>" LOCATE = SITE "E18" LEVEL 1;
+COMP "din<1>" LOCATE = SITE "E17" LEVEL 1;
 COMP "clk" LOCATE = SITE "E3" LEVEL 1;
-COMP "din<2>" LOCATE = SITE "D17" LEVEL 1;
-COMP "din<3>" LOCATE = SITE "E17" LEVEL 1;
-COMP "din<4>" LOCATE = SITE "G13" LEVEL 1;
-COMP "din<5>" LOCATE = SITE "C17" LEVEL 1;
-COMP "din<6>" LOCATE = SITE "D18" LEVEL 1;
-COMP "din<7>" LOCATE = SITE "E18" LEVEL 1;
+COMP "din<2>" LOCATE = SITE "D18" LEVEL 1;
+COMP "din<3>" LOCATE = SITE "D17" LEVEL 1;
+COMP "din<4>" LOCATE = SITE "C17" LEVEL 1;
+COMP "din<5>" LOCATE = SITE "F14" LEVEL 1;
+COMP "din<6>" LOCATE = SITE "G13" LEVEL 1;
+COMP "din<7>" LOCATE = SITE "B13" LEVEL 1;
 COMP "uart_rxd" LOCATE = SITE "C4" LEVEL 1;
+COMP "rrst" LOCATE = SITE "T9" LEVEL 1;
+COMP "wrst" LOCATE = SITE "R16" LEVEL 1;
 COMP "led" LOCATE = SITE "T8" LEVEL 1;
 COMP "led1" LOCATE = SITE "V9" LEVEL 1;
 PIN bram0/Mram_ram_pins<63> = BEL "bram0/Mram_ram" PINNAME CLKARDCLKU;
@@ -948,106 +951,104 @@ TIMEGRP sys_clk_pin = BEL "cam/wb_dat_o_0" BEL "cam/wb_dat_o_1" BEL
         "uart0/uart0/rx_bitcount_0" BEL "uart0/uart0/rx_bitcount_1" BEL
         "uart0/uart0/tx_bitcount_3" BEL "uart0/uart0/tx_bitcount_2" BEL
         "uart0/uart0/tx_bitcount_1" BEL "uart0/uart0/tx_bitcount_0" BEL
-        "uart0/uart0/enable16_counter_7" BEL "uart0/uart0/enable16_counter_6"
-        BEL "uart0/uart0/enable16_counter_5" BEL
-        "uart0/uart0/enable16_counter_3" BEL "uart0/uart0/enable16_counter_2"
-        BEL "uart0/uart0/enable16_counter_4" BEL
-        "uart0/uart0/enable16_counter_1" BEL "uart0/uart0/enable16_counter_0"
-        BEL "uart0/uart0/rx_data_7" BEL "uart0/uart0/rx_data_6" BEL
-        "uart0/uart0/rx_data_5" BEL "uart0/uart0/rx_data_4" BEL
-        "uart0/uart0/rx_data_3" BEL "uart0/uart0/rx_data_2" BEL
-        "uart0/uart0/rx_data_1" BEL "uart0/uart0/rx_data_0" BEL
-        "uart0/uart0/rxd_reg_7" BEL "uart0/uart0/rxd_reg_6" BEL
-        "uart0/uart0/rxd_reg_5" BEL "uart0/uart0/rxd_reg_4" BEL
-        "uart0/uart0/rxd_reg_3" BEL "uart0/uart0/rxd_reg_2" BEL
-        "uart0/uart0/rxd_reg_1" BEL "uart0/uart0/rxd_reg_0" BEL
-        "uart0/uart0/uart_rxd2" BEL "uart0/uart0/txd_reg_7" BEL
-        "uart0/uart0/txd_reg_6" BEL "uart0/uart0/txd_reg_5" BEL
-        "uart0/uart0/txd_reg_4" BEL "uart0/uart0/txd_reg_3" BEL
-        "uart0/uart0/txd_reg_2" BEL "uart0/uart0/txd_reg_1" BEL
-        "uart0/uart0/txd_reg_0" BEL "uart0/uart0/uart_rxd1" BEL
-        "i2c0/wb_dat_o_7" BEL "i2c0/wb_dat_o_6" BEL "i2c0/wb_dat_o_5" BEL
-        "i2c0/wb_dat_o_4" BEL "i2c0/wb_dat_o_3" BEL "i2c0/wb_dat_o_2" BEL
-        "i2c0/wb_dat_o_1" BEL "i2c0/wb_dat_o_0" BEL "timer0/wb_dat_o_31" BEL
-        "timer0/wb_dat_o_30" BEL "timer0/wb_dat_o_29" BEL "timer0/wb_dat_o_28"
-        BEL "timer0/wb_dat_o_27" BEL "timer0/wb_dat_o_26" BEL
-        "timer0/wb_dat_o_25" BEL "timer0/wb_dat_o_24" BEL "timer0/wb_dat_o_23"
-        BEL "timer0/wb_dat_o_22" BEL "timer0/wb_dat_o_21" BEL
-        "timer0/wb_dat_o_20" BEL "timer0/wb_dat_o_19" BEL "timer0/wb_dat_o_18"
-        BEL "timer0/wb_dat_o_17" BEL "timer0/wb_dat_o_16" BEL
-        "timer0/wb_dat_o_15" BEL "timer0/wb_dat_o_14" BEL "timer0/wb_dat_o_13"
-        BEL "timer0/wb_dat_o_12" BEL "timer0/wb_dat_o_11" BEL
-        "timer0/wb_dat_o_10" BEL "timer0/wb_dat_o_9" BEL "timer0/wb_dat_o_8"
-        BEL "timer0/wb_dat_o_7" BEL "timer0/wb_dat_o_6" BEL
-        "timer0/wb_dat_o_5" BEL "timer0/wb_dat_o_4" BEL "timer0/wb_dat_o_3"
-        BEL "timer0/wb_dat_o_2" BEL "timer0/wb_dat_o_1" BEL
-        "timer0/wb_dat_o_0" BEL "timer0/counter1_31" BEL "timer0/counter1_30"
-        BEL "timer0/counter1_29" BEL "timer0/counter1_28" BEL
-        "timer0/counter1_27" BEL "timer0/counter1_26" BEL "timer0/counter1_25"
-        BEL "timer0/counter1_24" BEL "timer0/counter1_23" BEL
-        "timer0/counter1_22" BEL "timer0/counter1_21" BEL "timer0/counter1_20"
-        BEL "timer0/counter1_19" BEL "timer0/counter1_18" BEL
-        "timer0/counter1_17" BEL "timer0/counter1_16" BEL "timer0/counter1_15"
-        BEL "timer0/counter1_14" BEL "timer0/counter1_13" BEL
-        "timer0/counter1_12" BEL "timer0/counter1_11" BEL "timer0/counter1_10"
-        BEL "timer0/counter1_9" BEL "timer0/counter1_8" BEL
-        "timer0/counter1_7" BEL "timer0/counter1_6" BEL "timer0/counter1_5"
-        BEL "timer0/counter1_4" BEL "timer0/counter1_3" BEL
-        "timer0/counter1_2" BEL "timer0/counter1_1" BEL "timer0/counter1_0"
-        BEL "timer0/counter0_31" BEL "timer0/counter0_30" BEL
-        "timer0/counter0_29" BEL "timer0/counter0_28" BEL "timer0/counter0_27"
-        BEL "timer0/counter0_26" BEL "timer0/counter0_25" BEL
-        "timer0/counter0_24" BEL "timer0/counter0_23" BEL "timer0/counter0_22"
-        BEL "timer0/counter0_21" BEL "timer0/counter0_20" BEL
-        "timer0/counter0_19" BEL "timer0/counter0_18" BEL "timer0/counter0_17"
-        BEL "timer0/counter0_16" BEL "timer0/counter0_15" BEL
-        "timer0/counter0_14" BEL "timer0/counter0_13" BEL "timer0/counter0_12"
-        BEL "timer0/counter0_11" BEL "timer0/counter0_10" BEL
-        "timer0/counter0_9" BEL "timer0/counter0_8" BEL "timer0/counter0_7"
-        BEL "timer0/counter0_6" BEL "timer0/counter0_5" BEL
-        "timer0/counter0_4" BEL "timer0/counter0_3" BEL "timer0/counter0_2"
-        BEL "timer0/counter0_1" BEL "timer0/counter0_0" BEL
-        "timer0/compare1_31" BEL "timer0/compare1_30" BEL "timer0/compare1_29"
-        BEL "timer0/compare1_28" BEL "timer0/compare1_27" BEL
-        "timer0/compare1_26" BEL "timer0/compare1_25" BEL "timer0/compare1_24"
-        BEL "timer0/compare1_23" BEL "timer0/compare1_22" BEL
-        "timer0/compare1_21" BEL "timer0/compare1_20" BEL "timer0/compare1_19"
-        BEL "timer0/compare1_18" BEL "timer0/compare1_17" BEL
-        "timer0/compare1_16" BEL "timer0/compare1_15" BEL "timer0/compare1_14"
-        BEL "timer0/compare1_13" BEL "timer0/compare1_12" BEL
-        "timer0/compare1_11" BEL "timer0/compare1_10" BEL "timer0/compare1_9"
-        BEL "timer0/compare1_8" BEL "timer0/compare1_7" BEL
-        "timer0/compare1_6" BEL "timer0/compare1_5" BEL "timer0/compare1_4"
-        BEL "timer0/compare1_3" BEL "timer0/compare1_2" BEL
-        "timer0/compare1_1" BEL "timer0/compare1_0" BEL "timer0/compare0_31"
-        BEL "timer0/compare0_30" BEL "timer0/compare0_29" BEL
-        "timer0/compare0_28" BEL "timer0/compare0_27" BEL "timer0/compare0_26"
-        BEL "timer0/compare0_25" BEL "timer0/compare0_24" BEL
-        "timer0/compare0_23" BEL "timer0/compare0_22" BEL "timer0/compare0_21"
-        BEL "timer0/compare0_20" BEL "timer0/compare0_19" BEL
-        "timer0/compare0_18" BEL "timer0/compare0_17" BEL "timer0/compare0_16"
-        BEL "timer0/compare0_15" BEL "timer0/compare0_14" BEL
-        "timer0/compare0_13" BEL "timer0/compare0_12" BEL "timer0/compare0_11"
-        BEL "timer0/compare0_10" BEL "timer0/compare0_9" BEL
-        "timer0/compare0_8" BEL "timer0/compare0_7" BEL "timer0/compare0_6"
-        BEL "timer0/compare0_5" BEL "timer0/compare0_4" BEL
-        "timer0/compare0_3" BEL "timer0/compare0_2" BEL "timer0/compare0_1"
-        BEL "timer0/compare0_0" BEL "cam/ack" BEL "pwm/ack" BEL "uart0/ack"
-        BEL "uart0/uart0/rx_count16_2" BEL "uart0/uart0/rx_count16_1" BEL
-        "uart0/uart0/rx_count16_0" BEL "uart0/uart0/tx_busy" BEL
-        "uart0/uart0/rx_avail" BEL "uart0/uart0/rx_busy" BEL "timer0/ack" BEL
-        "cam/cm/count_0" BEL "lm0/valid_x" BEL "lm0/interrupt/eie" BEL
-        "lm0/interrupt/ie" BEL "lm0/instruction_unit/i_cyc_o" BEL
-        "lm0/load_store_unit/stall_wb_load" BEL
-        "lm0/load_store_unit/wb_load_complete" BEL
+        "uart0/uart0/enable16_counter_5" BEL "uart0/uart0/enable16_counter_3"
+        BEL "uart0/uart0/enable16_counter_2" BEL
+        "uart0/uart0/enable16_counter_4" BEL "uart0/uart0/enable16_counter_1"
+        BEL "uart0/uart0/enable16_counter_0" BEL "uart0/uart0/rx_data_7" BEL
+        "uart0/uart0/rx_data_6" BEL "uart0/uart0/rx_data_5" BEL
+        "uart0/uart0/rx_data_4" BEL "uart0/uart0/rx_data_3" BEL
+        "uart0/uart0/rx_data_2" BEL "uart0/uart0/rx_data_1" BEL
+        "uart0/uart0/rx_data_0" BEL "uart0/uart0/rxd_reg_7" BEL
+        "uart0/uart0/rxd_reg_6" BEL "uart0/uart0/rxd_reg_5" BEL
+        "uart0/uart0/rxd_reg_4" BEL "uart0/uart0/rxd_reg_3" BEL
+        "uart0/uart0/rxd_reg_2" BEL "uart0/uart0/rxd_reg_1" BEL
+        "uart0/uart0/rxd_reg_0" BEL "uart0/uart0/uart_rxd2" BEL
+        "uart0/uart0/txd_reg_7" BEL "uart0/uart0/txd_reg_6" BEL
+        "uart0/uart0/txd_reg_5" BEL "uart0/uart0/txd_reg_4" BEL
+        "uart0/uart0/txd_reg_3" BEL "uart0/uart0/txd_reg_2" BEL
+        "uart0/uart0/txd_reg_1" BEL "uart0/uart0/txd_reg_0" BEL
+        "uart0/uart0/uart_rxd1" BEL "i2c0/wb_dat_o_7" BEL "i2c0/wb_dat_o_6"
+        BEL "i2c0/wb_dat_o_5" BEL "i2c0/wb_dat_o_4" BEL "i2c0/wb_dat_o_3" BEL
+        "i2c0/wb_dat_o_2" BEL "i2c0/wb_dat_o_1" BEL "i2c0/wb_dat_o_0" BEL
+        "timer0/wb_dat_o_31" BEL "timer0/wb_dat_o_30" BEL "timer0/wb_dat_o_29"
+        BEL "timer0/wb_dat_o_28" BEL "timer0/wb_dat_o_27" BEL
+        "timer0/wb_dat_o_26" BEL "timer0/wb_dat_o_25" BEL "timer0/wb_dat_o_24"
+        BEL "timer0/wb_dat_o_23" BEL "timer0/wb_dat_o_22" BEL
+        "timer0/wb_dat_o_21" BEL "timer0/wb_dat_o_20" BEL "timer0/wb_dat_o_19"
+        BEL "timer0/wb_dat_o_18" BEL "timer0/wb_dat_o_17" BEL
+        "timer0/wb_dat_o_16" BEL "timer0/wb_dat_o_15" BEL "timer0/wb_dat_o_14"
+        BEL "timer0/wb_dat_o_13" BEL "timer0/wb_dat_o_12" BEL
+        "timer0/wb_dat_o_11" BEL "timer0/wb_dat_o_10" BEL "timer0/wb_dat_o_9"
+        BEL "timer0/wb_dat_o_8" BEL "timer0/wb_dat_o_7" BEL
+        "timer0/wb_dat_o_6" BEL "timer0/wb_dat_o_5" BEL "timer0/wb_dat_o_4"
+        BEL "timer0/wb_dat_o_3" BEL "timer0/wb_dat_o_2" BEL
+        "timer0/wb_dat_o_1" BEL "timer0/wb_dat_o_0" BEL "timer0/counter1_31"
+        BEL "timer0/counter1_30" BEL "timer0/counter1_29" BEL
+        "timer0/counter1_28" BEL "timer0/counter1_27" BEL "timer0/counter1_26"
+        BEL "timer0/counter1_25" BEL "timer0/counter1_24" BEL
+        "timer0/counter1_23" BEL "timer0/counter1_22" BEL "timer0/counter1_21"
+        BEL "timer0/counter1_20" BEL "timer0/counter1_19" BEL
+        "timer0/counter1_18" BEL "timer0/counter1_17" BEL "timer0/counter1_16"
+        BEL "timer0/counter1_15" BEL "timer0/counter1_14" BEL
+        "timer0/counter1_13" BEL "timer0/counter1_12" BEL "timer0/counter1_11"
+        BEL "timer0/counter1_10" BEL "timer0/counter1_9" BEL
+        "timer0/counter1_8" BEL "timer0/counter1_7" BEL "timer0/counter1_6"
+        BEL "timer0/counter1_5" BEL "timer0/counter1_4" BEL
+        "timer0/counter1_3" BEL "timer0/counter1_2" BEL "timer0/counter1_1"
+        BEL "timer0/counter1_0" BEL "timer0/counter0_31" BEL
+        "timer0/counter0_30" BEL "timer0/counter0_29" BEL "timer0/counter0_28"
+        BEL "timer0/counter0_27" BEL "timer0/counter0_26" BEL
+        "timer0/counter0_25" BEL "timer0/counter0_24" BEL "timer0/counter0_23"
+        BEL "timer0/counter0_22" BEL "timer0/counter0_21" BEL
+        "timer0/counter0_20" BEL "timer0/counter0_19" BEL "timer0/counter0_18"
+        BEL "timer0/counter0_17" BEL "timer0/counter0_16" BEL
+        "timer0/counter0_15" BEL "timer0/counter0_14" BEL "timer0/counter0_13"
+        BEL "timer0/counter0_12" BEL "timer0/counter0_11" BEL
+        "timer0/counter0_10" BEL "timer0/counter0_9" BEL "timer0/counter0_8"
+        BEL "timer0/counter0_7" BEL "timer0/counter0_6" BEL
+        "timer0/counter0_5" BEL "timer0/counter0_4" BEL "timer0/counter0_3"
+        BEL "timer0/counter0_2" BEL "timer0/counter0_1" BEL
+        "timer0/counter0_0" BEL "timer0/compare1_31" BEL "timer0/compare1_30"
+        BEL "timer0/compare1_29" BEL "timer0/compare1_28" BEL
+        "timer0/compare1_27" BEL "timer0/compare1_26" BEL "timer0/compare1_25"
+        BEL "timer0/compare1_24" BEL "timer0/compare1_23" BEL
+        "timer0/compare1_22" BEL "timer0/compare1_21" BEL "timer0/compare1_20"
+        BEL "timer0/compare1_19" BEL "timer0/compare1_18" BEL
+        "timer0/compare1_17" BEL "timer0/compare1_16" BEL "timer0/compare1_15"
+        BEL "timer0/compare1_14" BEL "timer0/compare1_13" BEL
+        "timer0/compare1_12" BEL "timer0/compare1_11" BEL "timer0/compare1_10"
+        BEL "timer0/compare1_9" BEL "timer0/compare1_8" BEL
+        "timer0/compare1_7" BEL "timer0/compare1_6" BEL "timer0/compare1_5"
+        BEL "timer0/compare1_4" BEL "timer0/compare1_3" BEL
+        "timer0/compare1_2" BEL "timer0/compare1_1" BEL "timer0/compare1_0"
+        BEL "timer0/compare0_31" BEL "timer0/compare0_30" BEL
+        "timer0/compare0_29" BEL "timer0/compare0_28" BEL "timer0/compare0_27"
+        BEL "timer0/compare0_26" BEL "timer0/compare0_25" BEL
+        "timer0/compare0_24" BEL "timer0/compare0_23" BEL "timer0/compare0_22"
+        BEL "timer0/compare0_21" BEL "timer0/compare0_20" BEL
+        "timer0/compare0_19" BEL "timer0/compare0_18" BEL "timer0/compare0_17"
+        BEL "timer0/compare0_16" BEL "timer0/compare0_15" BEL
+        "timer0/compare0_14" BEL "timer0/compare0_13" BEL "timer0/compare0_12"
+        BEL "timer0/compare0_11" BEL "timer0/compare0_10" BEL
+        "timer0/compare0_9" BEL "timer0/compare0_8" BEL "timer0/compare0_7"
+        BEL "timer0/compare0_6" BEL "timer0/compare0_5" BEL
+        "timer0/compare0_4" BEL "timer0/compare0_3" BEL "timer0/compare0_2"
+        BEL "timer0/compare0_1" BEL "timer0/compare0_0" BEL "cam/ack" BEL
+        "pwm/ack" BEL "uart0/ack" BEL "uart0/uart0/rx_count16_2" BEL
+        "uart0/uart0/rx_count16_1" BEL "uart0/uart0/rx_count16_0" BEL
+        "uart0/uart0/tx_busy" BEL "uart0/uart0/rx_avail" BEL
+        "uart0/uart0/rx_busy" BEL "timer0/ack" BEL "cam/cm/count_0" BEL
+        "lm0/valid_x" BEL "lm0/interrupt/eie" BEL "lm0/interrupt/ie" BEL
+        "lm0/instruction_unit/i_cyc_o" BEL "lm0/load_store_unit/stall_wb_load"
+        BEL "lm0/load_store_unit/wb_load_complete" BEL
         "lm0/load_store_unit/d_stb_o" BEL "uart0/uart0/rx_error" BEL
         "timer0/en0" BEL "timer0/en1" BEL "timer0/trig1" BEL "timer0/trig0"
-        BEL "timer0/ar1" BEL "timer0/ar0" BEL "bram0/ack" BEL "cam/leer" BEL
-        "cam/takepicture" BEL "pwm/wr" BEL "pwm/rd" BEL "pwm/pwm_p/E0" BEL
-        "pwm/pwm_p/E7" BEL "pwm/pwm_p/E6" BEL "pwm/pwm_p/E4" BEL
-        "pwm/pwm_p/E3" BEL "pwm/pwm_p/E5" BEL "pwm/pwm_p/E1" BEL
-        "pwm/pwm_p/E2" BEL "uart0/rx_ack" BEL "uart0/tx_wr" BEL
-        "i2c0/wb_ack_o" BEL "timer0/irqen1" BEL "timer0/irqen0" BEL
+        BEL "timer0/ar1" BEL "timer0/ar0" BEL "bram0/ack" BEL "cam/resetrd"
+        BEL "cam/resetwr" BEL "cam/leer" BEL "cam/takepicture" BEL "pwm/wr"
+        BEL "pwm/rd" BEL "pwm/pwm_p/E0" BEL "pwm/pwm_p/E7" BEL "pwm/pwm_p/E6"
+        BEL "pwm/pwm_p/E4" BEL "pwm/pwm_p/E3" BEL "pwm/pwm_p/E5" BEL
+        "pwm/pwm_p/E1" BEL "pwm/pwm_p/E2" BEL "uart0/rx_ack" BEL "uart0/tx_wr"
+        BEL "i2c0/wb_ack_o" BEL "timer0/irqen1" BEL "timer0/irqen0" BEL
         "uart0/uart0/uart_txd" BEL "cam/cm/rdclk" BEL
         "uart0/uart0/rx_count16_3" BEL "pwm/pwm_p/pw/pwm7" BEL
         "pwm/pwm_p/pw/pwm5" BEL "pwm/pwm_p/pw/pwm4" BEL "pwm/pwm_p/pw/pwm6"
@@ -1106,70 +1107,71 @@ TIMEGRP sys_clk_pin = BEL "cam/wb_dat_o_0" BEL "cam/wb_dat_o_1" BEL
         "pwm/pwm_p/pw/pwm2_1" BEL "pwm/pwm_p/pw/pwm3_1" BEL
         "pwm/pwm_p/pw/pwm4_1" BEL "pwm/pwm_p/pw/pwm5_1" BEL
         "pwm/pwm_p/pw/pwm6_1" BEL "pwm/pwm_p/pw/pwm7_1" BEL "cam/cm/rdclk_1"
-        BEL "lm0/Mram_registers141/SP" BEL "lm0/Mram_registers141/DP" BEL
-        "lm0/Mram_registers140/SP" BEL "lm0/Mram_registers140/DP" BEL
-        "lm0/Mram_registers138/SP" BEL "lm0/Mram_registers138/DP" BEL
-        "lm0/Mram_registers137/SP" BEL "lm0/Mram_registers137/DP" BEL
-        "lm0/Mram_registers139/SP" BEL "lm0/Mram_registers139/DP" BEL
-        "lm0/Mram_registers135/SP" BEL "lm0/Mram_registers135/DP" BEL
-        "lm0/Mram_registers134/SP" BEL "lm0/Mram_registers134/DP" BEL
-        "lm0/Mram_registers136/SP" BEL "lm0/Mram_registers136/DP" BEL
-        "lm0/Mram_registers132/SP" BEL "lm0/Mram_registers132/DP" BEL
-        "lm0/Mram_registers131/SP" BEL "lm0/Mram_registers131/DP" BEL
-        "lm0/Mram_registers133/SP" BEL "lm0/Mram_registers133/DP" BEL
-        "lm0/Mram_registers130/SP" BEL "lm0/Mram_registers130/DP" BEL
-        "lm0/Mram_registers129/SP" BEL "lm0/Mram_registers129/DP" BEL
-        "lm0/Mram_registers127/SP" BEL "lm0/Mram_registers127/DP" BEL
-        "lm0/Mram_registers126/SP" BEL "lm0/Mram_registers126/DP" BEL
-        "lm0/Mram_registers128/SP" BEL "lm0/Mram_registers128/DP" BEL
-        "lm0/Mram_registers124/SP" BEL "lm0/Mram_registers124/DP" BEL
-        "lm0/Mram_registers123/SP" BEL "lm0/Mram_registers123/DP" BEL
-        "lm0/Mram_registers125/SP" BEL "lm0/Mram_registers125/DP" BEL
-        "lm0/Mram_registers121/SP" BEL "lm0/Mram_registers121/DP" BEL
-        "lm0/Mram_registers120/SP" BEL "lm0/Mram_registers120/DP" BEL
-        "lm0/Mram_registers122/SP" BEL "lm0/Mram_registers122/DP" BEL
-        "lm0/Mram_registers119/SP" BEL "lm0/Mram_registers119/DP" BEL
-        "lm0/Mram_registers118/SP" BEL "lm0/Mram_registers118/DP" BEL
-        "lm0/Mram_registers116/SP" BEL "lm0/Mram_registers116/DP" BEL
-        "lm0/Mram_registers115/SP" BEL "lm0/Mram_registers115/DP" BEL
-        "lm0/Mram_registers117/SP" BEL "lm0/Mram_registers117/DP" BEL
-        "lm0/Mram_registers113/SP" BEL "lm0/Mram_registers113/DP" BEL
-        "lm0/Mram_registers112/SP" BEL "lm0/Mram_registers112/DP" BEL
-        "lm0/Mram_registers114/SP" BEL "lm0/Mram_registers114/DP" BEL
-        "lm0/Mram_registers110/SP" BEL "lm0/Mram_registers110/DP" BEL
-        "lm0/Mram_registers33/SP" BEL "lm0/Mram_registers33/DP" BEL
-        "lm0/Mram_registers111/SP" BEL "lm0/Mram_registers111/DP" BEL
-        "lm0/Mram_registers31/SP" BEL "lm0/Mram_registers31/DP" BEL
-        "lm0/Mram_registers30/SP" BEL "lm0/Mram_registers30/DP" BEL
-        "lm0/Mram_registers32/SP" BEL "lm0/Mram_registers32/DP" BEL
-        "lm0/Mram_registers28/SP" BEL "lm0/Mram_registers28/DP" BEL
-        "lm0/Mram_registers27/SP" BEL "lm0/Mram_registers27/DP" BEL
-        "lm0/Mram_registers29/SP" BEL "lm0/Mram_registers29/DP" BEL
-        "lm0/Mram_registers25/SP" BEL "lm0/Mram_registers25/DP" BEL
-        "lm0/Mram_registers24/SP" BEL "lm0/Mram_registers24/DP" BEL
-        "lm0/Mram_registers26/SP" BEL "lm0/Mram_registers26/DP" BEL
-        "lm0/Mram_registers22/SP" BEL "lm0/Mram_registers22/DP" BEL
-        "lm0/Mram_registers21/SP" BEL "lm0/Mram_registers21/DP" BEL
-        "lm0/Mram_registers23/SP" BEL "lm0/Mram_registers23/DP" BEL
-        "lm0/Mram_registers20/SP" BEL "lm0/Mram_registers20/DP" BEL
-        "lm0/Mram_registers19/SP" BEL "lm0/Mram_registers19/DP" BEL
-        "lm0/Mram_registers17/SP" BEL "lm0/Mram_registers17/DP" BEL
-        "lm0/Mram_registers16/SP" BEL "lm0/Mram_registers16/DP" BEL
-        "lm0/Mram_registers18/SP" BEL "lm0/Mram_registers18/DP" BEL
-        "lm0/Mram_registers14/SP" BEL "lm0/Mram_registers14/DP" BEL
-        "lm0/Mram_registers13/SP" BEL "lm0/Mram_registers13/DP" BEL
-        "lm0/Mram_registers15/SP" BEL "lm0/Mram_registers15/DP" BEL
-        "lm0/Mram_registers11/SP" BEL "lm0/Mram_registers11/DP" BEL
-        "lm0/Mram_registers10/SP" BEL "lm0/Mram_registers10/DP" BEL
-        "lm0/Mram_registers12/SP" BEL "lm0/Mram_registers12/DP" BEL
-        "lm0/Mram_registers8/SP" BEL "lm0/Mram_registers8/DP" BEL
-        "lm0/Mram_registers7/SP" BEL "lm0/Mram_registers7/DP" BEL
-        "lm0/Mram_registers9/SP" BEL "lm0/Mram_registers9/DP" BEL
-        "lm0/Mram_registers5/SP" BEL "lm0/Mram_registers5/DP" BEL
-        "lm0/Mram_registers4/SP" BEL "lm0/Mram_registers4/DP" BEL
-        "lm0/Mram_registers6/SP" BEL "lm0/Mram_registers6/DP" BEL
-        "lm0/Mram_registers2/SP" BEL "lm0/Mram_registers2/DP" BEL
-        "lm0/Mram_registers3/SP" BEL "lm0/Mram_registers3/DP" PIN
-        "bram0/Mram_ram_pins<63>" PIN "bram0/Mram_ram_pins<62>";
+        BEL "cam/resetwr_1" BEL "cam/resetrd_1" BEL "lm0/Mram_registers141/SP"
+        BEL "lm0/Mram_registers141/DP" BEL "lm0/Mram_registers140/SP" BEL
+        "lm0/Mram_registers140/DP" BEL "lm0/Mram_registers138/SP" BEL
+        "lm0/Mram_registers138/DP" BEL "lm0/Mram_registers137/SP" BEL
+        "lm0/Mram_registers137/DP" BEL "lm0/Mram_registers139/SP" BEL
+        "lm0/Mram_registers139/DP" BEL "lm0/Mram_registers135/SP" BEL
+        "lm0/Mram_registers135/DP" BEL "lm0/Mram_registers134/SP" BEL
+        "lm0/Mram_registers134/DP" BEL "lm0/Mram_registers136/SP" BEL
+        "lm0/Mram_registers136/DP" BEL "lm0/Mram_registers132/SP" BEL
+        "lm0/Mram_registers132/DP" BEL "lm0/Mram_registers131/SP" BEL
+        "lm0/Mram_registers131/DP" BEL "lm0/Mram_registers133/SP" BEL
+        "lm0/Mram_registers133/DP" BEL "lm0/Mram_registers130/SP" BEL
+        "lm0/Mram_registers130/DP" BEL "lm0/Mram_registers129/SP" BEL
+        "lm0/Mram_registers129/DP" BEL "lm0/Mram_registers127/SP" BEL
+        "lm0/Mram_registers127/DP" BEL "lm0/Mram_registers126/SP" BEL
+        "lm0/Mram_registers126/DP" BEL "lm0/Mram_registers128/SP" BEL
+        "lm0/Mram_registers128/DP" BEL "lm0/Mram_registers124/SP" BEL
+        "lm0/Mram_registers124/DP" BEL "lm0/Mram_registers123/SP" BEL
+        "lm0/Mram_registers123/DP" BEL "lm0/Mram_registers125/SP" BEL
+        "lm0/Mram_registers125/DP" BEL "lm0/Mram_registers121/SP" BEL
+        "lm0/Mram_registers121/DP" BEL "lm0/Mram_registers120/SP" BEL
+        "lm0/Mram_registers120/DP" BEL "lm0/Mram_registers122/SP" BEL
+        "lm0/Mram_registers122/DP" BEL "lm0/Mram_registers119/SP" BEL
+        "lm0/Mram_registers119/DP" BEL "lm0/Mram_registers118/SP" BEL
+        "lm0/Mram_registers118/DP" BEL "lm0/Mram_registers116/SP" BEL
+        "lm0/Mram_registers116/DP" BEL "lm0/Mram_registers115/SP" BEL
+        "lm0/Mram_registers115/DP" BEL "lm0/Mram_registers117/SP" BEL
+        "lm0/Mram_registers117/DP" BEL "lm0/Mram_registers113/SP" BEL
+        "lm0/Mram_registers113/DP" BEL "lm0/Mram_registers112/SP" BEL
+        "lm0/Mram_registers112/DP" BEL "lm0/Mram_registers114/SP" BEL
+        "lm0/Mram_registers114/DP" BEL "lm0/Mram_registers110/SP" BEL
+        "lm0/Mram_registers110/DP" BEL "lm0/Mram_registers33/SP" BEL
+        "lm0/Mram_registers33/DP" BEL "lm0/Mram_registers111/SP" BEL
+        "lm0/Mram_registers111/DP" BEL "lm0/Mram_registers31/SP" BEL
+        "lm0/Mram_registers31/DP" BEL "lm0/Mram_registers30/SP" BEL
+        "lm0/Mram_registers30/DP" BEL "lm0/Mram_registers32/SP" BEL
+        "lm0/Mram_registers32/DP" BEL "lm0/Mram_registers28/SP" BEL
+        "lm0/Mram_registers28/DP" BEL "lm0/Mram_registers27/SP" BEL
+        "lm0/Mram_registers27/DP" BEL "lm0/Mram_registers29/SP" BEL
+        "lm0/Mram_registers29/DP" BEL "lm0/Mram_registers25/SP" BEL
+        "lm0/Mram_registers25/DP" BEL "lm0/Mram_registers24/SP" BEL
+        "lm0/Mram_registers24/DP" BEL "lm0/Mram_registers26/SP" BEL
+        "lm0/Mram_registers26/DP" BEL "lm0/Mram_registers22/SP" BEL
+        "lm0/Mram_registers22/DP" BEL "lm0/Mram_registers21/SP" BEL
+        "lm0/Mram_registers21/DP" BEL "lm0/Mram_registers23/SP" BEL
+        "lm0/Mram_registers23/DP" BEL "lm0/Mram_registers20/SP" BEL
+        "lm0/Mram_registers20/DP" BEL "lm0/Mram_registers19/SP" BEL
+        "lm0/Mram_registers19/DP" BEL "lm0/Mram_registers17/SP" BEL
+        "lm0/Mram_registers17/DP" BEL "lm0/Mram_registers16/SP" BEL
+        "lm0/Mram_registers16/DP" BEL "lm0/Mram_registers18/SP" BEL
+        "lm0/Mram_registers18/DP" BEL "lm0/Mram_registers14/SP" BEL
+        "lm0/Mram_registers14/DP" BEL "lm0/Mram_registers13/SP" BEL
+        "lm0/Mram_registers13/DP" BEL "lm0/Mram_registers15/SP" BEL
+        "lm0/Mram_registers15/DP" BEL "lm0/Mram_registers11/SP" BEL
+        "lm0/Mram_registers11/DP" BEL "lm0/Mram_registers10/SP" BEL
+        "lm0/Mram_registers10/DP" BEL "lm0/Mram_registers12/SP" BEL
+        "lm0/Mram_registers12/DP" BEL "lm0/Mram_registers8/SP" BEL
+        "lm0/Mram_registers8/DP" BEL "lm0/Mram_registers7/SP" BEL
+        "lm0/Mram_registers7/DP" BEL "lm0/Mram_registers9/SP" BEL
+        "lm0/Mram_registers9/DP" BEL "lm0/Mram_registers5/SP" BEL
+        "lm0/Mram_registers5/DP" BEL "lm0/Mram_registers4/SP" BEL
+        "lm0/Mram_registers4/DP" BEL "lm0/Mram_registers6/SP" BEL
+        "lm0/Mram_registers6/DP" BEL "lm0/Mram_registers2/SP" BEL
+        "lm0/Mram_registers2/DP" BEL "lm0/Mram_registers3/SP" BEL
+        "lm0/Mram_registers3/DP" PIN "bram0/Mram_ram_pins<63>" PIN
+        "bram0/Mram_ram_pins<62>";
 SCHEMATIC END;
 

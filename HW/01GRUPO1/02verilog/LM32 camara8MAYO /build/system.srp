@@ -50,164 +50,163 @@ RTL Output                         : yes
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" into library work
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" into library work
 Parsing module <system>.
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lac/lac.v" into library work
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lac/lac.v" into library work
 Parsing module <lac>.
-INFO:HDLCompiler:693 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lac/lac.v" Line 23. parameter declaration becomes local in lac with formal parameter declaration list
-INFO:HDLCompiler:693 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lac/lac.v" Line 24. parameter declaration becomes local in lac with formal parameter declaration list
-INFO:HDLCompiler:693 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lac/lac.v" Line 25. parameter declaration becomes local in lac with formal parameter declaration list
-INFO:HDLCompiler:693 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lac/lac.v" Line 86. parameter declaration becomes local in lac with formal parameter declaration list
-INFO:HDLCompiler:693 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lac/lac.v" Line 87. parameter declaration becomes local in lac with formal parameter declaration list
-INFO:HDLCompiler:693 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lac/lac.v" Line 88. parameter declaration becomes local in lac with formal parameter declaration list
-INFO:HDLCompiler:693 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lac/lac.v" Line 89. parameter declaration becomes local in lac with formal parameter declaration list
-INFO:HDLCompiler:693 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lac/lac.v" Line 90. parameter declaration becomes local in lac with formal parameter declaration list
-INFO:HDLCompiler:693 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lac/lac.v" Line 91. parameter declaration becomes local in lac with formal parameter declaration list
-INFO:HDLCompiler:693 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lac/lac.v" Line 92. parameter declaration becomes local in lac with formal parameter declaration list
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lac/uart.v" into library work
+INFO:HDLCompiler:693 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lac/lac.v" Line 23. parameter declaration becomes local in lac with formal parameter declaration list
+INFO:HDLCompiler:693 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lac/lac.v" Line 24. parameter declaration becomes local in lac with formal parameter declaration list
+INFO:HDLCompiler:693 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lac/lac.v" Line 25. parameter declaration becomes local in lac with formal parameter declaration list
+INFO:HDLCompiler:693 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lac/lac.v" Line 86. parameter declaration becomes local in lac with formal parameter declaration list
+INFO:HDLCompiler:693 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lac/lac.v" Line 87. parameter declaration becomes local in lac with formal parameter declaration list
+INFO:HDLCompiler:693 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lac/lac.v" Line 88. parameter declaration becomes local in lac with formal parameter declaration list
+INFO:HDLCompiler:693 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lac/lac.v" Line 89. parameter declaration becomes local in lac with formal parameter declaration list
+INFO:HDLCompiler:693 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lac/lac.v" Line 90. parameter declaration becomes local in lac with formal parameter declaration list
+INFO:HDLCompiler:693 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lac/lac.v" Line 91. parameter declaration becomes local in lac with formal parameter declaration list
+INFO:HDLCompiler:693 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lac/lac.v" Line 92. parameter declaration becomes local in lac with formal parameter declaration list
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lac/uart.v" into library work
 Parsing module <uart>.
-INFO:HDLCompiler:693 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lac/uart.v" Line 24. parameter declaration becomes local in uart with formal parameter declaration list
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lac/dp_ram.v" into library work
+INFO:HDLCompiler:693 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lac/uart.v" Line 24. parameter declaration becomes local in uart with formal parameter declaration list
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lac/dp_ram.v" into library work
 Parsing module <dp_ram>.
-INFO:HDLCompiler:693 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lac/dp_ram.v" Line 20. parameter declaration becomes local in dp_ram with formal parameter declaration list
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_cpu.v" into library work
-Parsing verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_include.v" included at line 24.
-Parsing verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system_conf.v" included at line 28.
+INFO:HDLCompiler:693 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lac/dp_ram.v" Line 20. parameter declaration becomes local in dp_ram with formal parameter declaration list
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_cpu.v" into library work
+Parsing verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_include.v" included at line 24.
+Parsing verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system_conf.v" included at line 28.
 Parsing module <lm32_cpu>.
-Parsing verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_functions.v" included at line 423.
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_instruction_unit.v" into library work
-Parsing verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_include.v" included at line 24.
+Parsing verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_functions.v" included at line 423.
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_instruction_unit.v" into library work
+Parsing verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_include.v" included at line 24.
 Parsing module <lm32_instruction_unit>.
-Parsing verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_functions.v" included at line 291.
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_decoder.v" into library work
-Parsing verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_include.v" included at line 24.
+Parsing verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_functions.v" included at line 291.
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_decoder.v" into library work
+Parsing verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_include.v" included at line 24.
 Parsing module <lm32_decoder>.
-Parsing verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_functions.v" included at line 298.
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_simtrace.v" into library work
-Parsing verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_include.v" included at line 10.
+Parsing verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_functions.v" included at line 298.
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_simtrace.v" into library work
+Parsing verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_include.v" included at line 10.
 Parsing module <lm32_simtrace>.
-Parsing verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_functions.v" included at line 63.
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_load_store_unit.v" into library work
-Parsing verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_include.v" included at line 24.
+Parsing verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_functions.v" included at line 63.
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_load_store_unit.v" into library work
+Parsing verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_include.v" included at line 24.
 Parsing module <lm32_load_store_unit>.
-Parsing verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_functions.v" included at line 208.
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_adder.v" into library work
-Parsing verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_include.v" included at line 24.
+Parsing verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_functions.v" included at line 208.
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_adder.v" into library work
+Parsing verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_include.v" included at line 24.
 Parsing module <lm32_adder>.
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_addsub.v" into library work
-Parsing verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_include.v" included at line 23.
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_addsub.v" into library work
+Parsing verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_include.v" included at line 23.
 Parsing module <lm32_addsub>.
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_logic_op.v" into library work
-Parsing verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_include.v" included at line 24.
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_logic_op.v" into library work
+Parsing verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_include.v" included at line 24.
 Parsing module <lm32_logic_op>.
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_shifter.v" into library work
-Parsing verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_include.v" included at line 24.
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_shifter.v" into library work
+Parsing verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_include.v" included at line 24.
 Parsing module <lm32_shifter>.
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_multiplier.v" into library work
-Parsing verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_include.v" included at line 24.
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_multiplier.v" into library work
+Parsing verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_include.v" included at line 24.
 Parsing module <lm32_multiplier>.
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_mc_arithmetic.v" into library work
-Parsing verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_include.v" included at line 24.
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_mc_arithmetic.v" into library work
+Parsing verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_include.v" included at line 24.
 Parsing module <lm32_mc_arithmetic>.
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_interrupt.v" into library work
-Parsing verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system_conf.v" included at line 24.
-Parsing verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_include.v" included at line 25.
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_interrupt.v" into library work
+Parsing verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system_conf.v" included at line 24.
+Parsing verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_include.v" included at line 25.
 Parsing module <lm32_interrupt>.
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_ram.v" into library work
-Parsing verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_include.v" included at line 23.
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_ram.v" into library work
+Parsing verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_include.v" included at line 23.
 Parsing module <lm32_ram>.
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_bram/wb_bram.v" into library work
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_bram/wb_bram.v" into library work
 Parsing module <wb_bram>.
-INFO:HDLCompiler:693 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_bram/wb_bram.v" Line 25. parameter declaration becomes local in wb_bram with formal parameter declaration list
-INFO:HDLCompiler:693 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_bram/wb_bram.v" Line 26. parameter declaration becomes local in wb_bram with formal parameter declaration list
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_uart/wb_uart.v" into library work
+INFO:HDLCompiler:693 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_bram/wb_bram.v" Line 25. parameter declaration becomes local in wb_bram with formal parameter declaration list
+INFO:HDLCompiler:693 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_bram/wb_bram.v" Line 26. parameter declaration becomes local in wb_bram with formal parameter declaration list
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_uart/wb_uart.v" into library work
 Parsing module <wb_uart>.
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_timer/wb_timer.v" into library work
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_timer/wb_timer.v" into library work
 Parsing module <wb_timer>.
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_gpio/wb_gpio.v" into library work
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_gpio/wb_gpio.v" into library work
 Parsing module <wb_gpio>.
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_spi/wb_spi.v" into library work
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_spi/wb_spi.v" into library work
 Parsing module <wb_spi>.
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_i2c/i2c_master_wb_top.v" into library work
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_i2c/i2c_master_wb_top.v" into library work
 Parsing module <i2c_master_wb_top>.
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_i2c/i2c_master_registers.v" into library work
-Parsing verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_i2c/timescale.v" included at line 51.
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_i2c/i2c_master_registers.v" into library work
+Parsing verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_i2c/timescale.v" included at line 51.
 Parsing module <i2c_master_registers>.
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_i2c/i2c_master_byte_ctrl.v" into library work
-Parsing verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_i2c/i2c_master_defines.v" included at line 63.
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_i2c/i2c_master_byte_ctrl.v" into library work
+Parsing verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_i2c/i2c_master_defines.v" included at line 63.
 Parsing module <i2c_master_byte_ctrl>.
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_i2c/i2c_master_bit_ctrl.v" into library work
-Parsing verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_i2c/i2c_master_defines.v" included at line 131.
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_i2c/i2c_master_bit_ctrl.v" into library work
+Parsing verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_i2c/i2c_master_defines.v" included at line 131.
 Parsing module <i2c_master_bit_ctrl>.
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_conbus/conbus.v" into library work
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_conbus/conbus.v" into library work
 Parsing module <conbus>.
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_conbus/conbus_arb.v" into library work
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_conbus/conbus_arb.v" into library work
 Parsing module <conbus_arb>.
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_pwm/periferico_pwm.v" into library work
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_pwm/periferico_pwm.v" into library work
 Parsing module <periferico_pwm>.
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_pwm/pwm.v" into library work
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_pwm/pwm.v" into library work
 Parsing module <pwm>.
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_pwm/wb_motores.v" into library work
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_pwm/wb_motores.v" into library work
 Parsing module <wb_motores>.
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_camara/camara.v" into library work
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_camara/camara.v" into library work
 Parsing module <camara>.
-Analyzing Verilog file "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_camara/wb_cam.v" into library work
+Analyzing Verilog file "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_camara/wb_cam.v" into library work
 Parsing module <wb_cam>.
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-WARNING:HDLCompiler:1016 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 200: Port oe is not connected to this instance
-WARNING:HDLCompiler:1016 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 238: Port m0_cti_i is not connected to this instance
-WARNING:HDLCompiler:1016 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 419: Port spi_cs is not connected to this instance
-WARNING:HDLCompiler:1016 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 442: Port arst_i is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 244: Port m0_cti_i is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 425: Port spi_cs is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 448: Port arst_i is not connected to this instance
 
 Elaborating module <system>.
 
 Elaborating module <wb_cam>.
 
 Elaborating module <camara>.
-WARNING:HDLCompiler:413 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_camara/camara.v" Line 5: Result of 2-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_camara/wb_cam.v" Line 78: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_camara/wb_cam.v" Line 79: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_camara/wb_cam.v" Line 80: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_camara/wb_cam.v" Line 81: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:189 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 207: Size mismatch in connection of port <wb_sel_i>. Formal port size is 1-bit while actual signal size is 4-bit.
+WARNING:HDLCompiler:413 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_camara/camara.v" Line 5: Result of 7-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_camara/wb_cam.v" Line 78: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_camara/wb_cam.v" Line 79: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_camara/wb_cam.v" Line 80: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_camara/wb_cam.v" Line 81: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:189 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 210: Size mismatch in connection of port <wb_sel_i>. Formal port size is 1-bit while actual signal size is 4-bit.
 
 Elaborating module <wb_motores>.
 
 Elaborating module <periferico_pwm>.
 
 Elaborating module <pwm>.
-WARNING:HDLCompiler:413 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_pwm/periferico_pwm.v" Line 28: Result of 2-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_pwm/periferico_pwm.v" Line 40: Result of 2-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_pwm/periferico_pwm.v" Line 52: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_pwm/periferico_pwm.v" Line 64: Result of 2-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_pwm/periferico_pwm.v" Line 76: Result of 2-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_pwm/periferico_pwm.v" Line 88: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_pwm/periferico_pwm.v" Line 100: Result of 2-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_pwm/periferico_pwm.v" Line 112: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_pwm/wb_motores.v" Line 65: Result of 32-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:413 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_pwm/wb_motores.v" Line 76: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_pwm/wb_motores.v" Line 77: Result of 32-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:413 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_pwm/wb_motores.v" Line 78: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_pwm/periferico_pwm.v" Line 28: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_pwm/periferico_pwm.v" Line 40: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_pwm/periferico_pwm.v" Line 52: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_pwm/periferico_pwm.v" Line 64: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_pwm/periferico_pwm.v" Line 76: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_pwm/periferico_pwm.v" Line 88: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_pwm/periferico_pwm.v" Line 100: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_pwm/periferico_pwm.v" Line 112: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_pwm/wb_motores.v" Line 65: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_pwm/wb_motores.v" Line 76: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_pwm/wb_motores.v" Line 77: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_pwm/wb_motores.v" Line 78: Result of 32-bit expression is truncated to fit in 1-bit target.
 
 Elaborating module <conbus(s_addr_w=3,s0_addr=3'b0,s1_addr=3'b010,s2_addr=3'b011,s3_addr=3'b100,s4_addr=3'b101,s5_addr=3'b110)>.
 
 Elaborating module <conbus_arb>.
-WARNING:HDLCompiler:1127 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 318: Assignment to i2c0_sel ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 324: Assignment to i2c0_sel ignored, since the identifier is never used
 
 Elaborating module <lm32_cpu>.
 
 Elaborating module <lm32_instruction_unit(associativity=1,sets=512,bytes_per_line=16,base_address=0,limit=0)>.
-"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_instruction_unit.v" Line 699. $display Instruction bus error. Address: 0
-WARNING:HDLCompiler:1127 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_cpu.v" Line 461: Assignment to pc_x ignored, since the identifier is never used
+"/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_instruction_unit.v" Line 699. $display Instruction bus error. Address: 0
+WARNING:HDLCompiler:1127 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_cpu.v" Line 461: Assignment to pc_x ignored, since the identifier is never used
 
 Elaborating module <lm32_simtrace>.
-WARNING:HDLCompiler:1499 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_simtrace.v" Line 20: Empty module <lm32_simtrace> remains a black box.
+WARNING:HDLCompiler:1499 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_simtrace.v" Line 20: Empty module <lm32_simtrace> remains a black box.
 
 Elaborating module <lm32_decoder>.
-WARNING:HDLCompiler:413 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_decoder.v" Line 559: Result of 32-bit expression is truncated to fit in 30-bit target.
+WARNING:HDLCompiler:413 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_decoder.v" Line 559: Result of 32-bit expression is truncated to fit in 30-bit target.
 
 Elaborating module <lm32_load_store_unit(associativity=1,sets=512,bytes_per_line=16,base_address=0,limit=0)>.
 
@@ -222,13 +221,13 @@ Elaborating module <lm32_multiplier>.
 Elaborating module <lm32_mc_arithmetic>.
 
 Elaborating module <lm32_interrupt>.
-WARNING:HDLCompiler:1127 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_cpu.v" Line 1138: Assignment to x_result_sel_logic_x ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 343: Assignment to lm32i_cti ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 344: Assignment to lm32i_lock ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 345: Assignment to lm32i_bte ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 357: Assignment to lm32d_cti ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 358: Assignment to lm32d_lock ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 359: Assignment to lm32d_bte ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_cpu.v" Line 1138: Assignment to x_result_sel_logic_x ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 349: Assignment to lm32i_cti ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 350: Assignment to lm32i_lock ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 351: Assignment to lm32i_bte ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 363: Assignment to lm32d_cti ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 364: Assignment to lm32d_lock ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 365: Assignment to lm32d_bte ignored, since the identifier is never used
 
 Elaborating module <wb_bram(adr_width=12,mem_file_name="../firmware/uartycamera/image.ram")>.
 Reading initialization file \"../firmware/uartycamera/image.ram\".
@@ -236,98 +235,95 @@ Reading initialization file \"../firmware/uartycamera/image.ram\".
 Elaborating module <wb_uart(clk_freq=100000000,baud=38400)>.
 
 Elaborating module <uart(freq_hz=100000000,baud=38400)>.
-WARNING:HDLCompiler:413 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lac/uart.v" Line 39: Result of 32-bit expression is truncated to fit in 16-bit target.
-WARNING:HDLCompiler:413 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lac/uart.v" Line 88: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lac/uart.v" Line 91: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lac/uart.v" Line 135: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lac/uart.v" Line 138: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lac/uart.v" Line 39: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lac/uart.v" Line 88: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lac/uart.v" Line 91: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lac/uart.v" Line 135: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lac/uart.v" Line 138: Result of 5-bit expression is truncated to fit in 4-bit target.
 
 Elaborating module <wb_spi>.
-WARNING:HDLCompiler:413 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_spi/wb_spi.v" Line 57: Result of 9-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:413 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_spi/wb_spi.v" Line 63: Result of 4-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:1127 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 425: Assignment to spi0_dat_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 430: Assignment to spi0_ack ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_spi/wb_spi.v" Line 57: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_spi/wb_spi.v" Line 63: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:1127 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 431: Assignment to spi0_dat_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 436: Assignment to spi0_ack ignored, since the identifier is never used
 
 Elaborating module <i2c_master_wb_top>.
 
 Elaborating module <i2c_master_byte_ctrl>.
-WARNING:HDLCompiler:1308 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_i2c/i2c_master_byte_ctrl.v" Line 228: Found full_case directive in module i2c_master_byte_ctrl. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:1308 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_i2c/i2c_master_byte_ctrl.v" Line 228: Found full_case directive in module i2c_master_byte_ctrl. Use of full_case directives may cause differences between RTL and post-synthesis simulation
 
 Elaborating module <i2c_master_bit_ctrl>.
-WARNING:HDLCompiler:1308 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_i2c/i2c_master_bit_ctrl.v" Line 360: Found full_case directive in module i2c_master_bit_ctrl. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:1308 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_i2c/i2c_master_bit_ctrl.v" Line 360: Found full_case directive in module i2c_master_bit_ctrl. Use of full_case directives may cause differences between RTL and post-synthesis simulation
 
 Elaborating module <i2c_master_registers>.
-WARNING:HDLCompiler:189 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 446: Size mismatch in connection of port <wb_adr_i>. Formal port size is 3-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 447: Size mismatch in connection of port <wb_dat_i>. Formal port size is 8-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 448: Size mismatch in connection of port <wb_dat_o>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 452: Size mismatch in connection of port <wb_adr_i>. Formal port size is 3-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 453: Size mismatch in connection of port <wb_dat_i>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 454: Size mismatch in connection of port <wb_dat_o>. Formal port size is 8-bit while actual signal size is 32-bit.
 
 Elaborating module <wb_timer(clk_freq=100000000)>.
 
 Elaborating module <wb_gpio>.
-WARNING:HDLCompiler:1127 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 490: Assignment to gpio0_dat_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 494: Assignment to gpio0_ack ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 506: Assignment to spi_mosi ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 508: Assignment to spi_clk ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 510: Assignment to i2c_sda ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 511: Assignment to i2c_scl ignored, since the identifier is never used
-WARNING:HDLCompiler:634 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 43: Net <spi_miso> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 67: Net <spi0_adr[31]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 70: Net <gpio0_adr[31]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 85: Net <spi0_dat_w[31]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 91: Net <gpio0_dat_w[31]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 106: Net <spi0_sel[3]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 119: Net <spi0_we> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 122: Net <gpio0_we> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 133: Net <spi0_cyc> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 136: Net <gpio0_cyc> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 146: Net <spi0_stb> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 149: Net <gpio0_stb> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 169: Net <lm32i_rty> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 170: Net <lm32d_rty> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 172: Net <lm32i_err> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 173: Net <lm32d_err> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 190: Net <gpio0_intr> does not have a driver.
-WARNING:HDLCompiler:552 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 246: Input port m0_cti_i[2] is not connected on this instance
-WARNING:HDLCompiler:552 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 442: Input port arst_i is not connected on this instance
-WARNING:Xst:2972 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_cpu.v" line 483. All outputs of instance <simtrace> of block <lm32_simtrace> are unconnected in block <lm32_cpu>. Underlying logic will be removed.
-WARNING:Xst:2972 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" line 419. All outputs of instance <spi0> of block <wb_spi> are unconnected in block <system>. Underlying logic will be removed.
+WARNING:HDLCompiler:1127 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 496: Assignment to gpio0_dat_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 500: Assignment to gpio0_ack ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 512: Assignment to spi_mosi ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 514: Assignment to spi_clk ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 516: Assignment to i2c_sda ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 517: Assignment to i2c_scl ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 46: Net <spi_miso> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 70: Net <spi0_adr[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 73: Net <gpio0_adr[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 88: Net <spi0_dat_w[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 94: Net <gpio0_dat_w[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 109: Net <spi0_sel[3]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 122: Net <spi0_we> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 125: Net <gpio0_we> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 136: Net <spi0_cyc> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 139: Net <gpio0_cyc> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 149: Net <spi0_stb> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 152: Net <gpio0_stb> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 172: Net <lm32i_rty> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 173: Net <lm32d_rty> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 175: Net <lm32i_err> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 176: Net <lm32d_err> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 193: Net <gpio0_intr> does not have a driver.
+WARNING:HDLCompiler:552 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 252: Input port m0_cti_i[2] is not connected on this instance
+WARNING:HDLCompiler:552 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" Line 448: Input port arst_i is not connected on this instance
+WARNING:Xst:2972 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_cpu.v" line 483. All outputs of instance <simtrace> of block <lm32_simtrace> are unconnected in block <lm32_cpu>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" line 425. All outputs of instance <spi0> of block <wb_spi> are unconnected in block <system>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <system>.
-    Related source file is "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v".
+    Related source file is "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v".
         bootram_file = "../firmware/uartycamera/image.ram"
         clk_freq = 100000000
         uart_baud_rate = 38400
 WARNING:Xst:2898 - Port 'm0_cti_i', unconnected in block instance 'conbus0', is tied to GND.
 WARNING:Xst:2898 - Port 'm1_cti_i', unconnected in block instance 'conbus0', is tied to GND.
 WARNING:Xst:2898 - Port 'arst_i', unconnected in block instance 'i2c0', is tied to GND.
-INFO:Xst:3210 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" line 200: Output port <oe> of the instance <cam> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" line 200: Output port <wrst> of the instance <cam> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" line 200: Output port <rrst> of the instance <cam> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" line 246: Output port <s0_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" line 246: Output port <s1_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" line 246: Output port <s2_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" line 246: Output port <s3_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" line 246: Output port <s4_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" line 246: Output port <s5_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" line 246: Output port <s5_sel_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" line 330: Output port <I_CTI_O> of the instance <lm0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" line 330: Output port <I_BTE_O> of the instance <lm0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" line 330: Output port <D_CTI_O> of the instance <lm0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" line 330: Output port <D_BTE_O> of the instance <lm0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" line 330: Output port <I_LOCK_O> of the instance <lm0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" line 330: Output port <D_LOCK_O> of the instance <lm0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" line 419: Output port <wb_dat_o> of the instance <spi0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" line 419: Output port <spi_cs> of the instance <spi0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" line 419: Output port <wb_ack_o> of the instance <spi0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" line 419: Output port <spi_sck> of the instance <spi0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" line 419: Output port <spi_mosi> of the instance <spi0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" line 442: Output port <wb_inta_o> of the instance <i2c0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" line 484: Output port <wb_dat_o> of the instance <gpio0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" line 484: Output port <wb_ack_o> of the instance <gpio0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" line 252: Output port <s0_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" line 252: Output port <s1_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" line 252: Output port <s2_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" line 252: Output port <s3_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" line 252: Output port <s4_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" line 252: Output port <s5_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" line 252: Output port <s5_sel_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" line 336: Output port <I_CTI_O> of the instance <lm0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" line 336: Output port <I_BTE_O> of the instance <lm0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" line 336: Output port <D_CTI_O> of the instance <lm0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" line 336: Output port <D_BTE_O> of the instance <lm0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" line 336: Output port <I_LOCK_O> of the instance <lm0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" line 336: Output port <D_LOCK_O> of the instance <lm0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" line 425: Output port <wb_dat_o> of the instance <spi0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" line 425: Output port <spi_cs> of the instance <spi0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" line 425: Output port <wb_ack_o> of the instance <spi0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" line 425: Output port <spi_sck> of the instance <spi0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" line 425: Output port <spi_mosi> of the instance <spi0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" line 448: Output port <wb_inta_o> of the instance <i2c0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" line 490: Output port <wb_dat_o> of the instance <gpio0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /system.v" line 490: Output port <wb_ack_o> of the instance <gpio0> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <spi0_adr> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <gpio0_adr> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <spi0_dat_w> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -350,7 +346,7 @@ WARNING:Xst:653 - Signal <gpio0_intr> is used but never assigned. This sourceles
 Unit <system> synthesized.
 
 Synthesizing Unit <wb_cam>.
-    Related source file is "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_camara/wb_cam.v".
+    Related source file is "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_camara/wb_cam.v".
         wb_dat_width = 32
         wb_adr_width = 32
 WARNING:Xst:647 - Input <wb_adr_i<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -398,25 +394,26 @@ WARNING:Xst:647 - Input <wb_sel_i> is never used. This port will be preserved an
 Unit <wb_cam> synthesized.
 
 Synthesizing Unit <camara>.
-    Related source file is "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_camara/camara.v".
+    Related source file is "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_camara/camara.v".
         fi = 50000000
-        fs = 50000000
+        fs = 921600
 WARNING:Xst:647 - Input <href> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 1-bit register for signal <led>.
     Found 1-bit register for signal <rdclk>.
     Found 32-bit register for signal <count>.
     Found 8-bit register for signal <dout>.
-    Found 32-bit subtractor for signal <count[31]_GND_3_o_sub_9_OUT> created at line 75.
+    Found 32-bit subtractor for signal <count[31]_GND_3_o_sub_16_OUT> created at line 81.
+WARNING:Xst:737 - Found 1-bit latch for signal <count1<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <we>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  42 D-type flip-flop(s).
-	inferred   1 Latch(s).
-	inferred   1 Multiplexer(s).
+	inferred   2 Latch(s).
+	inferred   3 Multiplexer(s).
 Unit <camara> synthesized.
 
 Synthesizing Unit <wb_motores>.
-    Related source file is "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_pwm/wb_motores.v".
+    Related source file is "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_pwm/wb_motores.v".
         wb_dat_width = 32
         wb_adr_width = 32
 WARNING:Xst:647 - Input <wb_adr_i<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -463,7 +460,7 @@ WARNING:Xst:647 - Input <wb_sel_i> is never used. This port will be preserved an
 Unit <wb_motores> synthesized.
 
 Synthesizing Unit <periferico_pwm>.
-    Related source file is "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_pwm/periferico_pwm.v".
+    Related source file is "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_pwm/periferico_pwm.v".
     Found 32-bit register for signal <T0>.
     Found 32-bit register for signal <D0>.
     Found 1-bit register for signal <E1>.
@@ -495,7 +492,7 @@ Synthesizing Unit <periferico_pwm>.
 Unit <periferico_pwm> synthesized.
 
 Synthesizing Unit <pwm>.
-    Related source file is "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_pwm/pwm.v".
+    Related source file is "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_pwm/pwm.v".
     Found 1-bit register for signal <pwm0>.
     Found 32-bit register for signal <countD>.
     Found 32-bit register for signal <countT1>.
@@ -519,21 +516,21 @@ Synthesizing Unit <pwm>.
     Found 1-bit register for signal <pwm7>.
     Found 32-bit register for signal <countD7>.
     Found 32-bit register for signal <countT>.
-    Found 32-bit adder for signal <countT[31]_GND_7_o_add_3_OUT> created at line 77.
-    Found 32-bit adder for signal <countD[31]_GND_7_o_add_7_OUT> created at line 88.
-    Found 32-bit adder for signal <countT1[31]_GND_7_o_add_14_OUT> created at line 110.
-    Found 32-bit adder for signal <countD1[31]_GND_7_o_add_18_OUT> created at line 121.
-    Found 32-bit adder for signal <countT2[31]_GND_7_o_add_25_OUT> created at line 143.
-    Found 32-bit adder for signal <countT3[31]_GND_7_o_add_36_OUT> created at line 176.
-    Found 32-bit adder for signal <countD3[31]_GND_7_o_add_40_OUT> created at line 187.
-    Found 32-bit adder for signal <countT4[31]_GND_7_o_add_47_OUT> created at line 209.
-    Found 32-bit adder for signal <countD4[31]_GND_7_o_add_51_OUT> created at line 220.
-    Found 32-bit adder for signal <countT5[31]_GND_7_o_add_58_OUT> created at line 242.
-    Found 32-bit adder for signal <countD5[31]_GND_7_o_add_62_OUT> created at line 253.
-    Found 32-bit adder for signal <countT6[31]_GND_7_o_add_69_OUT> created at line 275.
-    Found 32-bit adder for signal <countD6[31]_GND_7_o_add_73_OUT> created at line 286.
-    Found 32-bit adder for signal <countT7[31]_GND_7_o_add_80_OUT> created at line 308.
-    Found 32-bit adder for signal <countD7[31]_GND_7_o_add_84_OUT> created at line 319.
+    Found 32-bit adder for signal <countT[31]_GND_10_o_add_3_OUT> created at line 77.
+    Found 32-bit adder for signal <countD[31]_GND_10_o_add_7_OUT> created at line 88.
+    Found 32-bit adder for signal <countT1[31]_GND_10_o_add_14_OUT> created at line 110.
+    Found 32-bit adder for signal <countD1[31]_GND_10_o_add_18_OUT> created at line 121.
+    Found 32-bit adder for signal <countT2[31]_GND_10_o_add_25_OUT> created at line 143.
+    Found 32-bit adder for signal <countT3[31]_GND_10_o_add_36_OUT> created at line 176.
+    Found 32-bit adder for signal <countD3[31]_GND_10_o_add_40_OUT> created at line 187.
+    Found 32-bit adder for signal <countT4[31]_GND_10_o_add_47_OUT> created at line 209.
+    Found 32-bit adder for signal <countD4[31]_GND_10_o_add_51_OUT> created at line 220.
+    Found 32-bit adder for signal <countT5[31]_GND_10_o_add_58_OUT> created at line 242.
+    Found 32-bit adder for signal <countD5[31]_GND_10_o_add_62_OUT> created at line 253.
+    Found 32-bit adder for signal <countT6[31]_GND_10_o_add_69_OUT> created at line 275.
+    Found 32-bit adder for signal <countD6[31]_GND_10_o_add_73_OUT> created at line 286.
+    Found 32-bit adder for signal <countT7[31]_GND_10_o_add_80_OUT> created at line 308.
+    Found 32-bit adder for signal <countD7[31]_GND_10_o_add_84_OUT> created at line 319.
     Found 32-bit comparator equal for signal <countT[31]_T0[31]_equal_3_o> created at line 68
     Found 32-bit comparator equal for signal <countD[31]_D0[31]_equal_7_o> created at line 81
     Found 32-bit comparator equal for signal <countT1[31]_T1[31]_equal_14_o> created at line 101
@@ -557,7 +554,7 @@ Synthesizing Unit <pwm>.
 Unit <pwm> synthesized.
 
 Synthesizing Unit <conbus>.
-    Related source file is "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_conbus/conbus.v".
+    Related source file is "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_conbus/conbus.v".
         s_addr_w = 3
         s0_addr = 3'b000
         s1_addr = 3'b010
@@ -570,7 +567,7 @@ Synthesizing Unit <conbus>.
 Unit <conbus> synthesized.
 
 Synthesizing Unit <conbus_arb>.
-    Related source file is "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_conbus/conbus_arb.v".
+    Related source file is "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_conbus/conbus_arb.v".
         grant0 = 7'b0000001
         grant1 = 7'b0000010
         grant2 = 7'b0000100
@@ -597,7 +594,7 @@ Synthesizing Unit <conbus_arb>.
 Unit <conbus_arb> synthesized.
 
 Synthesizing Unit <lm32_cpu>.
-    Related source file is "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_cpu.v".
+    Related source file is "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_cpu.v".
         eba_reset = 32'b00000000000000000000000000000000
         icache_associativity = 1
         icache_sets = 512
@@ -612,8 +609,8 @@ Synthesizing Unit <lm32_cpu>.
         watchpoints = 4'b0000
         breakpoints = 4'b0000
         interrupts = 32
-INFO:Xst:3210 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_cpu.v" line 436: Output port <pc_x> of the instance <instruction_unit> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_cpu.v" line 495: Output port <x_result_sel_logic> of the instance <decoder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_cpu.v" line 436: Output port <pc_x> of the instance <instruction_unit> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_cpu.v" line 495: Output port <x_result_sel_logic> of the instance <decoder> is unconnected or connected to loadless signal.
     Found 32-bit register for signal <operand_0_x>.
     Found 32-bit register for signal <operand_1_x>.
     Found 32-bit register for signal <store_operand_x>.
@@ -691,7 +688,7 @@ INFO:Xst:3210 - "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/L
 Unit <lm32_cpu> synthesized.
 
 Synthesizing Unit <lm32_instruction_unit>.
-    Related source file is "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_instruction_unit.v".
+    Related source file is "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_instruction_unit.v".
         associativity = 1
         sets = 512
         bytes_per_line = 16
@@ -712,7 +709,7 @@ WARNING:Xst:647 - Input <i_rty_i> is never used. This port will be preserved and
     Found 1-bit register for signal <i_stb_o>.
     Found 1-bit register for signal <bus_error_f>.
     Found 1-bit register for signal <bus_error_d>.
-    Found 30-bit adder for signal <pc_f[31]_GND_11_o_add_1_OUT> created at line 397.
+    Found 30-bit adder for signal <pc_f[31]_GND_14_o_add_1_OUT> created at line 397.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred 248 D-type flip-flop(s).
@@ -720,13 +717,13 @@ WARNING:Xst:647 - Input <i_rty_i> is never used. This port will be preserved and
 Unit <lm32_instruction_unit> synthesized.
 
 Synthesizing Unit <lm32_decoder>.
-    Related source file is "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_decoder.v".
+    Related source file is "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_decoder.v".
     Summary:
 	inferred  19 Multiplexer(s).
 Unit <lm32_decoder> synthesized.
 
 Synthesizing Unit <lm32_load_store_unit>.
-    Related source file is "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_load_store_unit.v".
+    Related source file is "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_load_store_unit.v".
         associativity = 1
         sets = 512
         bytes_per_line = 16
@@ -760,14 +757,14 @@ WARNING:Xst:647 - Input <d_rty_i> is never used. This port will be preserved and
 Unit <lm32_load_store_unit> synthesized.
 
 Synthesizing Unit <lm32_adder>.
-    Related source file is "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_adder.v".
+    Related source file is "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_adder.v".
     Summary:
 	no macro.
 Unit <lm32_adder> synthesized.
 
 Synthesizing Unit <lm32_addsub>.
-    Related source file is "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_addsub.v".
-    Found 33-bit subtractor for signal <GND_21_o_GND_21_o_sub_3_OUT> created at line 63.
+    Related source file is "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_addsub.v".
+    Found 33-bit subtractor for signal <GND_24_o_GND_24_o_sub_3_OUT> created at line 63.
     Found 33-bit subtractor for signal <tmp_subResult> created at line 63.
     Found 33-bit adder for signal <n0025> created at line 62.
     Found 33-bit adder for signal <tmp_addResult> created at line 62.
@@ -777,7 +774,7 @@ Synthesizing Unit <lm32_addsub>.
 Unit <lm32_addsub> synthesized.
 
 Synthesizing Unit <lm32_logic_op>.
-    Related source file is "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_logic_op.v".
+    Related source file is "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_logic_op.v".
     Found 1-bit 4-to-1 multiplexer for signal <logic_result_x<0>> created at line 67.
     Found 1-bit 4-to-1 multiplexer for signal <logic_result_x<1>> created at line 67.
     Found 1-bit 4-to-1 multiplexer for signal <logic_result_x<2>> created at line 67.
@@ -815,7 +812,7 @@ Synthesizing Unit <lm32_logic_op>.
 Unit <lm32_logic_op> synthesized.
 
 Synthesizing Unit <lm32_multiplier>.
-    Related source file is "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_multiplier.v".
+    Related source file is "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_multiplier.v".
     Found 32-bit register for signal <multiplier>.
     Found 32-bit register for signal <product>.
     Found 32-bit register for signal <result>.
@@ -827,7 +824,7 @@ Synthesizing Unit <lm32_multiplier>.
 Unit <lm32_multiplier> synthesized.
 
 Synthesizing Unit <lm32_mc_arithmetic>.
-    Related source file is "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_mc_arithmetic.v".
+    Related source file is "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_mc_arithmetic.v".
     Found 32-bit register for signal <p>.
     Found 32-bit register for signal <a>.
     Found 32-bit register for signal <b>.
@@ -849,7 +846,7 @@ Synthesizing Unit <lm32_mc_arithmetic>.
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
     Found 33-bit subtractor for signal <t> created at line 130.
-    Found 6-bit subtractor for signal <cycles[5]_GND_25_o_sub_20_OUT> created at line 224.
+    Found 6-bit subtractor for signal <cycles[5]_GND_28_o_sub_20_OUT> created at line 224.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred 135 D-type flip-flop(s).
@@ -858,7 +855,7 @@ Synthesizing Unit <lm32_mc_arithmetic>.
 Unit <lm32_mc_arithmetic> synthesized.
 
 Synthesizing Unit <lm32_interrupt>.
-    Related source file is "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_interrupt.v".
+    Related source file is "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lm32/lm32_interrupt.v".
         interrupts = 32
     Found 32-bit register for signal <im>.
     Found 32-bit register for signal <ip>.
@@ -871,7 +868,7 @@ Synthesizing Unit <lm32_interrupt>.
 Unit <lm32_interrupt> synthesized.
 
 Synthesizing Unit <wb_bram>.
-    Related source file is "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_bram/wb_bram.v".
+    Related source file is "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_bram/wb_bram.v".
         mem_file_name = "../firmware/uartycamera/image.ram"
         adr_width = 12
 WARNING:Xst:647 - Input <wb_adr_i<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -887,7 +884,7 @@ WARNING:Xst:647 - Input <rst_i> is never used. This port will be preserved and l
 Unit <wb_bram> synthesized.
 
 Synthesizing Unit <wb_uart>.
-    Related source file is "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_uart/wb_uart.v".
+    Related source file is "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_uart/wb_uart.v".
         clk_freq = 100000000
         baud = 38400
 WARNING:Xst:647 - Input <wb_adr_i<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -905,37 +902,37 @@ WARNING:Xst:647 - Input <wb_dat_i<31:8>> is never used. This port will be preser
     Found 1-bit register for signal <tx_wr>.
     Found 1-bit register for signal <rx_ack>.
     Found 1-bit register for signal <ack>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<10><2:2>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<30><10:10>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<12><30:30>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<28><12:12>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<9><28:28>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<21><9:9>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<24><21:21>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<20><24:24>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<27><20:20>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<11><27:27>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<18><11:11>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<29><18:18>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<31><29:29>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<26><31:31>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<22><26:26>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<19><22:22>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<17><19:19>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<13><17:17>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<8><13:13>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<25><8:8>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<24><2:2>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<31><24:24>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<30><31:31>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<29><30:30>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<28><29:29>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<27><28:28>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<26><27:27>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<25><26:26>> (without init value) have a constant value of 0 in block <wb_uart>.
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<23><25:25>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<16><23:23>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<22><23:23>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<21><22:22>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<20><21:21>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<19><20:20>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<18><19:19>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<17><18:18>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<16><17:17>> (without init value) have a constant value of 0 in block <wb_uart>.
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<15><16:16>> (without init value) have a constant value of 0 in block <wb_uart>.
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<14><15:15>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<13><14:14>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<12><13:13>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<11><12:12>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<10><11:11>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<9><10:10>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<8><9:9>> (without init value) have a constant value of 0 in block <wb_uart>.
     Summary:
 	inferred  11 D-type flip-flop(s).
 	inferred   1 Multiplexer(s).
 Unit <wb_uart> synthesized.
 
 Synthesizing Unit <uart>.
-    Related source file is "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lac/uart.v".
+    Related source file is "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/lac/uart.v".
         freq_hz = 100000000
         baud = 38400
     Found 1-bit register for signal <uart_rxd1>.
@@ -953,11 +950,11 @@ Synthesizing Unit <uart>.
     Found 4-bit register for signal <tx_bitcount>.
     Found 4-bit register for signal <tx_count16>.
     Found 16-bit register for signal <enable16_counter>.
-    Found 4-bit adder for signal <rx_count16[3]_GND_29_o_add_11_OUT> created at line 88.
-    Found 4-bit adder for signal <rx_bitcount[3]_GND_29_o_add_13_OUT> created at line 91.
-    Found 4-bit adder for signal <tx_count16[3]_GND_29_o_add_41_OUT> created at line 135.
-    Found 4-bit adder for signal <tx_bitcount[3]_GND_29_o_add_43_OUT> created at line 138.
-    Found 16-bit subtractor for signal <GND_29_o_GND_29_o_sub_3_OUT<15:0>> created at line 39.
+    Found 4-bit adder for signal <rx_count16[3]_GND_32_o_add_11_OUT> created at line 88.
+    Found 4-bit adder for signal <rx_bitcount[3]_GND_32_o_add_13_OUT> created at line 91.
+    Found 4-bit adder for signal <tx_count16[3]_GND_32_o_add_41_OUT> created at line 135.
+    Found 4-bit adder for signal <tx_bitcount[3]_GND_32_o_add_43_OUT> created at line 138.
+    Found 16-bit subtractor for signal <GND_32_o_GND_32_o_sub_3_OUT<15:0>> created at line 39.
     Summary:
 	inferred   5 Adder/Subtractor(s).
 	inferred  63 D-type flip-flop(s).
@@ -965,12 +962,12 @@ Synthesizing Unit <uart>.
 Unit <uart> synthesized.
 
 Synthesizing Unit <i2c_master_wb_top>.
-    Related source file is "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_i2c/i2c_master_wb_top.v".
+    Related source file is "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_i2c/i2c_master_wb_top.v".
         ARST_LVL = 1'b0
     Found 8-bit register for signal <wb_dat_o>.
     Found 1-bit register for signal <wb_inta_o>.
     Found 1-bit register for signal <wb_ack_o>.
-    Found 8-bit 8-to-1 multiplexer for signal <wb_adr_i[2]_GND_31_o_wide_mux_2_OUT> created at line 175.
+    Found 8-bit 8-to-1 multiplexer for signal <wb_adr_i[2]_GND_34_o_wide_mux_2_OUT> created at line 175.
     Found 1-bit tristate buffer for signal <scl> created at line 272
     Found 1-bit tristate buffer for signal <sda> created at line 273
     Summary:
@@ -980,7 +977,7 @@ Synthesizing Unit <i2c_master_wb_top>.
 Unit <i2c_master_wb_top> synthesized.
 
 Synthesizing Unit <i2c_master_byte_ctrl>.
-    Related source file is "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_i2c/i2c_master_byte_ctrl.v".
+    Related source file is "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_i2c/i2c_master_byte_ctrl.v".
         ST_IDLE = 5'b00000
         ST_START = 5'b00001
         ST_READ = 5'b00010
@@ -1010,7 +1007,7 @@ WARNING:Xst:647 - Input <clk_cnt> is never used. This port will be preserved and
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 3-bit subtractor for signal <dcnt[2]_GND_32_o_sub_6_OUT> created at line 190.
+    Found 3-bit subtractor for signal <dcnt[2]_GND_35_o_sub_6_OUT> created at line 190.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  20 D-type flip-flop(s).
@@ -1019,7 +1016,7 @@ WARNING:Xst:647 - Input <clk_cnt> is never used. This port will be preserved and
 Unit <i2c_master_byte_ctrl> synthesized.
 
 Synthesizing Unit <i2c_master_bit_ctrl>.
-    Related source file is "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_i2c/i2c_master_bit_ctrl.v".
+    Related source file is "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_i2c/i2c_master_bit_ctrl.v".
         idle = 17'b00000000000000000
         start_a = 17'b00000000000000001
         start_b = 17'b00000000000000010
@@ -1069,7 +1066,7 @@ Synthesizing Unit <i2c_master_bit_ctrl>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 16-bit subtractor for signal <cnt[15]_GND_33_o_sub_3_OUT> created at line 223.
+    Found 16-bit subtractor for signal <cnt[15]_GND_36_o_sub_3_OUT> created at line 223.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  32 D-type flip-flop(s).
@@ -1078,7 +1075,7 @@ Synthesizing Unit <i2c_master_bit_ctrl>.
 Unit <i2c_master_bit_ctrl> synthesized.
 
 Synthesizing Unit <i2c_master_registers>.
-    Related source file is "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_i2c/i2c_master_registers.v".
+    Related source file is "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_i2c/i2c_master_registers.v".
     Found 16-bit register for signal <prer>.
     Found 8-bit register for signal <ctr>.
     Found 8-bit register for signal <txr>.
@@ -1100,7 +1097,7 @@ Synthesizing Unit <i2c_master_registers>.
 Unit <i2c_master_registers> synthesized.
 
 Synthesizing Unit <wb_timer>.
-    Related source file is "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_timer/wb_timer.v".
+    Related source file is "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_timer/wb_timer.v".
         clk_freq = 100000000
 WARNING:Xst:647 - Input <wb_adr_i<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <wb_sel_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1118,8 +1115,8 @@ WARNING:Xst:647 - Input <wb_sel_i> is never used. This port will be preserved an
     Found 1-bit register for signal <irqen0>.
     Found 1-bit register for signal <irqen1>.
     Found 1-bit register for signal <ack>.
-    Found 32-bit adder for signal <counter0[31]_GND_63_o_add_6_OUT> created at line 92.
-    Found 32-bit adder for signal <counter1[31]_GND_63_o_add_9_OUT> created at line 98.
+    Found 32-bit adder for signal <counter0[31]_GND_66_o_add_6_OUT> created at line 92.
+    Found 32-bit adder for signal <counter1[31]_GND_66_o_add_9_OUT> created at line 98.
     Found 32-bit 7-to-1 multiplexer for signal <_n0180> created at line 109.
     Found 32-bit comparator equal for signal <match0> created at line 64
     Found 32-bit comparator equal for signal <match1> created at line 65
@@ -1131,7 +1128,7 @@ WARNING:Xst:647 - Input <wb_sel_i> is never used. This port will be preserved an
 Unit <wb_timer> synthesized.
 
 Synthesizing Unit <wb_gpio>.
-    Related source file is "/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_gpio/wb_gpio.v".
+    Related source file is "/home/ekativa-project/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara8MAYO /rtl/wb_gpio/wb_gpio.v".
         gpio_io_width = 8
         gpio_dir_reset_val = 0
         gpio_o_reset_val = 0
@@ -1186,14 +1183,14 @@ Macro Statistics
  5-bit register                                        : 3
  6-bit register                                        : 1
  8-bit register                                        : 11
-# Latches                                              : 1
- 1-bit latch                                           : 1
+# Latches                                              : 2
+ 1-bit latch                                           : 2
 # Comparators                                          : 26
  1-bit comparator equal                                : 1
  32-bit comparator equal                               : 19
  5-bit comparator equal                                : 6
-# Multiplexers                                         : 231
- 1-bit 2-to-1 multiplexer                              : 92
+# Multiplexers                                         : 233
+ 1-bit 2-to-1 multiplexer                              : 94
  1-bit 4-to-1 multiplexer                              : 32
  1-bit 8-to-1 multiplexer                              : 1
  16-bit 2-to-1 multiplexer                             : 5
@@ -1250,23 +1247,23 @@ WARNING:Xst:1710 - FF/Latch <wb_dat_o_30> (without init value) has a constant va
 WARNING:Xst:1710 - FF/Latch <wb_dat_o_29> (without init value) has a constant value of 0 in block <cam>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <wb_dat_o_27> (without init value) has a constant value of 0 in block <cam>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <wb_dat_o_26> (without init value) has a constant value of 0 in block <cam>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <wb_dat_o_23> (without init value) has a constant value of 0 in block <cam>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <wb_dat_o_25> (without init value) has a constant value of 0 in block <cam>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <wb_dat_o_24> (without init value) has a constant value of 0 in block <cam>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <wb_dat_o_23> (without init value) has a constant value of 0 in block <cam>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <wb_dat_o_22> (without init value) has a constant value of 0 in block <cam>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <wb_dat_o_19> (without init value) has a constant value of 0 in block <cam>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <wb_dat_o_21> (without init value) has a constant value of 0 in block <cam>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <wb_dat_o_20> (without init value) has a constant value of 0 in block <cam>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <wb_dat_o_18> (without init value) has a constant value of 0 in block <cam>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <wb_dat_o_20> (without init value) has a constant value of 0 in block <cam>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <wb_dat_o_19> (without init value) has a constant value of 0 in block <cam>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <wb_dat_o_17> (without init value) has a constant value of 0 in block <cam>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <wb_dat_o_16> (without init value) has a constant value of 0 in block <cam>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <wb_dat_o_15> (without init value) has a constant value of 0 in block <cam>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <wb_dat_o_14> (without init value) has a constant value of 0 in block <cam>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <wb_dat_o_13> (without init value) has a constant value of 0 in block <cam>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <wb_dat_o_10> (without init value) has a constant value of 0 in block <cam>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <wb_dat_o_12> (without init value) has a constant value of 0 in block <cam>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <wb_dat_o_11> (without init value) has a constant value of 0 in block <cam>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <wb_dat_o_9> (without init value) has a constant value of 0 in block <cam>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <wb_dat_o_11> (without init value) has a constant value of 0 in block <cam>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <wb_dat_o_10> (without init value) has a constant value of 0 in block <cam>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <wb_dat_o_8> (without init value) has a constant value of 0 in block <cam>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <wb_dat_o_31> (without init value) has a constant value of 0 in block <cam>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <wb_dat_o_29> (without init value) has a constant value of 0 in block <pwm>. This FF/Latch will be trimmed during the optimization process.
@@ -1446,8 +1443,8 @@ Macro Statistics
  1-bit comparator equal                                : 1
  32-bit comparator equal                               : 19
  5-bit comparator equal                                : 6
-# Multiplexers                                         : 451
- 1-bit 2-to-1 multiplexer                              : 323
+# Multiplexers                                         : 453
+ 1-bit 2-to-1 multiplexer                              : 325
  1-bit 4-to-1 multiplexer                              : 32
  1-bit 8-to-1 multiplexer                              : 1
  16-bit 2-to-1 multiplexer                             : 4
@@ -1596,6 +1593,25 @@ WARNING:Xst:1710 - FF/Latch <conbus_arb/state_FSM_FFd1> (without init value) has
 WARNING:Xst:1710 - FF/Latch <conbus_arb/state_FSM_FFd2> (without init value) has a constant value of 0 in block <conbus>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <i_adr_o_0> (without init value) has a constant value of 0 in block <lm32_instruction_unit>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_adr_o_1> (without init value) has a constant value of 0 in block <lm32_instruction_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:3001 - This design contains one or more registers or latches with an active
+   asynchronous set and asynchronous reset. While this circuit can be built,
+   it creates a sub-optimal implementation in terms of area, power and
+   performance. For a more optimal implementation Xilinx highly recommends
+   one of the following:
+
+          1) Remove either the set or reset from all registers and latches if
+             not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Artix7 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    count1_0 in unit <camara>
+
 WARNING:Xst:2042 - Unit i2c_master_wb_top: 2 internal tristates are replaced by logic (pull-up yes): scl, sda.
 WARNING:Xst:2042 - Unit wb_gpio: 8 internal tristates are replaced by logic (pull-up yes): gpio_io<0>, gpio_io<1>, gpio_io<2>, gpio_io<3>, gpio_io<4>, gpio_io<5>, gpio_io<6>, gpio_io<7>.
 
@@ -1704,8 +1720,6 @@ Optimizing unit <wb_timer> ...
 
 Optimizing unit <wb_gpio> ...
 WARNING:Xst:1710 - FF/Latch <lm0/bus_error_x> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <cam/resetrd> of sequential type is unconnected in block <system>.
-WARNING:Xst:2677 - Node <cam/resetwr> of sequential type is unconnected in block <system>.
 WARNING:Xst:2677 - Node <pwm/pwm_p/d_out_31> of sequential type is unconnected in block <system>.
 WARNING:Xst:2677 - Node <pwm/pwm_p/d_out_30> of sequential type is unconnected in block <system>.
 WARNING:Xst:2677 - Node <pwm/pwm_p/d_out_29> of sequential type is unconnected in block <system>.
@@ -1802,17 +1816,15 @@ WARNING:Xst:2677 - Node <lm0/load_store_unit/d_adr_o_15> of sequential type is u
 WARNING:Xst:2677 - Node <lm0/load_store_unit/d_adr_o_14> of sequential type is unconnected in block <system>.
 WARNING:Xst:2677 - Node <lm0/load_store_unit/d_adr_o_13> of sequential type is unconnected in block <system>.
 WARNING:Xst:2677 - Node <lm0/load_store_unit/d_adr_o_12> of sequential type is unconnected in block <system>.
-WARNING:Xst:1710 - FF/Latch <cam/cm/count_11> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <cam/cm/count_14> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cam/cm/count_13> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cam/cm/count_12> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cam/cm/count_11> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cam/cm/count_10> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cam/cm/count_9> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cam/cm/count_8> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cam/cm/count_7> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cam/cm/count_6> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cam/cm/count_5> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cam/cm/count_4> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cam/cm/count_3> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cam/cm/count_2> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cam/cm/count_1> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cam/cm/count_8> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart0/uart0/enable16_counter_14> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart0/uart0/enable16_counter_13> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart0/uart0/enable16_counter_15> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
@@ -1835,12 +1847,9 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cam/cm/count_21> (w
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cam/cm/count_20> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cam/cm/count_19> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cam/cm/count_18> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cam/cm/count_17> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cam/cm/count_16> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cam/cm/count_15> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cam/cm/count_14> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cam/cm/count_13> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cam/cm/count_12> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cam/cm/count_17> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <lm0/multiplier/muliplicand_10> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/operand_0_x_10> 
 INFO:Xst:2261 - The FF/Latch <lm0/multiplier/muliplicand_11> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/operand_0_x_11> 
 INFO:Xst:2261 - The FF/Latch <lm0/multiplier/muliplicand_12> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/operand_0_x_12> 
@@ -1914,9 +1923,10 @@ Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 0) on block system, actual ratio is 6.
 Forward register balancing over carry chain lm0/Mcompar_cmp_zero_cy<0>
-INFO:Xst:2261 - The FF/Latch <lm0/x_bypass_enable_x> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/m_bypass_enable_x_BRB0> 
-INFO:Xst:2261 - The FF/Latch <lm0/load_m> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/w_result_sel_load_m_BRB0> 
 INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/size_m_1> in Unit <system> is equivalent to the following 16 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_15_BRB0> <lm0/load_store_unit/store_data_m_14_BRB0> <lm0/load_store_unit/store_data_m_13_BRB0> <lm0/load_store_unit/store_data_m_12_BRB0> <lm0/load_store_unit/store_data_m_11_BRB0> <lm0/load_store_unit/store_data_m_10_BRB0> <lm0/load_store_unit/store_data_m_9_BRB0> <lm0/load_store_unit/store_data_m_8_BRB0> <lm0/load_store_unit/store_data_m_31_BRB0> <lm0/load_store_unit/store_data_m_30_BRB0> <lm0/load_store_unit/store_data_m_29_BRB0> <lm0/load_store_unit/store_data_m_28_BRB0> <lm0/load_store_unit/store_data_m_27_BRB0> <lm0/load_store_unit/store_data_m_26_BRB0> <lm0/load_store_unit/store_data_m_25_BRB0> <lm0/load_store_unit/store_data_m_24_BRB0> 
+INFO:Xst:2261 - The FF/Latch <lm0/x_bypass_enable_x> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/m_bypass_enable_x_BRB0> 
+INFO:Xst:2261 - The FF/Latch <lm0/m_result_sel_compare_x> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/m_bypass_enable_x_BRB1> 
+INFO:Xst:2261 - The FF/Latch <lm0/load_m> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/w_result_sel_load_m_BRB0> 
 INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_0> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_8_BRB2> <lm0/load_store_unit/store_data_m_16_BRB0> <lm0/load_store_unit/store_data_m_24_BRB4> 
 INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_1> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_9_BRB2> <lm0/load_store_unit/store_data_m_17_BRB0> <lm0/load_store_unit/store_data_m_25_BRB4> 
 INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_2> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_10_BRB2> <lm0/load_store_unit/store_data_m_18_BRB0> <lm0/load_store_unit/store_data_m_26_BRB4> 
@@ -1925,7 +1935,6 @@ INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_4> in Unit <syste
 INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_5> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_13_BRB2> <lm0/load_store_unit/store_data_m_21_BRB0> <lm0/load_store_unit/store_data_m_29_BRB4> 
 INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_6> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_14_BRB2> <lm0/load_store_unit/store_data_m_22_BRB0> <lm0/load_store_unit/store_data_m_30_BRB4> 
 INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_7> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_15_BRB2> <lm0/load_store_unit/store_data_m_23_BRB0> <lm0/load_store_unit/store_data_m_31_BRB4> 
-INFO:Xst:2261 - The FF/Latch <lm0/m_result_sel_compare_x> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/m_bypass_enable_x_BRB1> 
 
 Pipelining and Register Balancing Report ...
 
@@ -1977,6 +1986,8 @@ FlipFlop pwm/pwm_p/pw/pwm5 has been replicated 1 time(s) to handle iob=true attr
 FlipFlop pwm/pwm_p/pw/pwm6 has been replicated 1 time(s) to handle iob=true attribute.
 FlipFlop pwm/pwm_p/pw/pwm7 has been replicated 1 time(s) to handle iob=true attribute.
 FlipFlop cam/cm/rdclk has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop cam/resetwr has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop cam/resetrd has been replicated 1 time(s) to handle iob=true attribute.
 
 Final Macro Processing ...
 
@@ -1984,8 +1995,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 2387
- Flip-Flops                                            : 2387
+# Registers                                            : 2396
+ Flip-Flops                                            : 2396
 
 =========================================================================
 
@@ -2008,21 +2019,21 @@ Top Level Output File Name         : system.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 4078
+# BELS                             : 4106
 #      GND                         : 1
-#      INV                         : 45
+#      INV                         : 52
 #      LUT1                        : 567
-#      LUT2                        : 203
-#      LUT3                        : 228
+#      LUT2                        : 208
+#      LUT3                        : 231
 #      LUT4                        : 231
 #      LUT5                        : 323
-#      LUT6                        : 818
-#      MUXCY                       : 929
+#      LUT6                        : 821
+#      MUXCY                       : 934
 #      MUXF7                       : 5
 #      VCC                         : 1
-#      XORCY                       : 727
-# FlipFlops/Latches                : 2388
-#      FD                          : 44
+#      XORCY                       : 732
+# FlipFlops/Latches                : 2398
+#      FD                          : 48
 #      FD_1                        : 8
 #      FDC                         : 161
 #      FDCE                        : 764
@@ -2031,18 +2042,19 @@ Primitive and Black Box Usage:
 #      FDP                         : 6
 #      FDPE                        : 52
 #      FDR                         : 279
-#      FDRE                        : 352
-#      FDS                         : 4
-#      FDSE                        : 65
+#      FDRE                        : 354
+#      FDS                         : 3
+#      FDSE                        : 69
 #      LD                          : 1
+#      LDP                         : 1
 # RAMS                             : 65
 #      RAM32X1D                    : 64
 #      RAMB36E1                    : 1
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 24
+# IO Buffers                       : 27
 #      IBUF                        : 11
-#      OBUF                        : 13
+#      OBUF                        : 16
 # DSPs                             : 3
 #      DSP48E1                     : 3
 
@@ -2053,23 +2065,23 @@ Selected Device : 7a100tcsg324-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            2367  out of  126800     1%  
- Number of Slice LUTs:                 2543  out of  63400     4%  
-    Number used as Logic:              2415  out of  63400     3%  
+ Number of Slice Registers:            2375  out of  126800     1%  
+ Number of Slice LUTs:                 2561  out of  63400     4%  
+    Number used as Logic:              2433  out of  63400     3%  
     Number used as Memory:              128  out of  19000     0%  
        Number used as RAM:              128
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   3164
-   Number with an unused Flip Flop:     797  out of   3164    25%  
-   Number with an unused LUT:           621  out of   3164    19%  
-   Number of fully used LUT-FF pairs:  1746  out of   3164    55%  
-   Number of unique control sets:        81
+ Number of LUT Flip Flop pairs used:   3179
+   Number with an unused Flip Flop:     804  out of   3179    25%  
+   Number with an unused LUT:           618  out of   3179    19%  
+   Number of fully used LUT-FF pairs:  1757  out of   3179    55%  
+   Number of unique control sets:        84
 
 IO Utilization: 
- Number of IOs:                          26
- Number of bonded IOBs:                  25  out of    210    11%  
-    IOB Flip Flops/Latches:              21
+ Number of IOs:                          29
+ Number of bonded IOBs:                  28  out of    210    13%  
+    IOB Flip Flops/Latches:              23
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:                1  out of    135     0%  
@@ -2095,12 +2107,16 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)  | Load  |
------------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 2452  |
-cam/takepicture                    | NONE(cam/cm/we)        | 1     |
------------------------------------+------------------------+-------+
+--------------------------------------+-------------------------+-------+
+Clock Signal                          | Clock buffer(FF name)   | Load  |
+--------------------------------------+-------------------------+-------+
+clk                                   | BUFGP                   | 2461  |
+cam/cm/count1_0                       | NONE(cam/cm/we)         | 1     |
+cam/cm/count1_0_G(cam/cm/count1_0_G:O)| NONE(*)(cam/cm/count1_0)| 1     |
+--------------------------------------+-------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
@@ -2112,8 +2128,8 @@ Timing Summary:
 Speed Grade: -1
 
    Minimum period: 8.619ns (Maximum Frequency: 116.023MHz)
-   Minimum input arrival time before clock: 3.320ns
-   Maximum output required time after clock: 1.428ns
+   Minimum input arrival time before clock: 3.321ns
+   Maximum output required time after clock: 1.488ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -2123,7 +2139,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 8.619ns (frequency: 116.023MHz)
-  Total number of paths / destination ports: 1376325 / 5611
+  Total number of paths / destination ports: 1376601 / 5628
 -------------------------------------------------------------------------
 Delay:               8.619ns (Levels of Logic = 3)
   Source:            lm0/multiplier/multiplier_1 (FF)
@@ -2145,10 +2161,33 @@ Delay:               8.619ns (Levels of Logic = 3)
                                        (90.2% logic, 9.8% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 1420 / 1418
+Timing constraint: Default period analysis for Clock 'cam/cm/count1_0_G'
+  Clock period: 2.156ns (frequency: 463.822MHz)
+  Total number of paths / destination ports: 2 / 1
 -------------------------------------------------------------------------
-Offset:              3.320ns (Levels of Logic = 4)
+Delay:               2.156ns (Levels of Logic = 2)
+  Source:            cam/cm/count1_0 (LATCH)
+  Destination:       cam/cm/count1_0 (LATCH)
+  Source Clock:      cam/cm/count1_0_G falling
+  Destination Clock: cam/cm/count1_0_G falling
+
+  Data Path: cam/cm/count1_0 to cam/cm/count1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               3   0.625   0.550  cam/cm/count1_0 (cam/cm/count1_0)
+     LUT3:I1->O            2   0.124   0.722  cam/cm/reset_PWR_3_o_AND_5_o1 (cam/cm/reset_PWR_3_o_AND_5_o)
+     LUT3:I0->O            1   0.124   0.000  cam/cm/count1_0_D (cam/cm/count1_0_D)
+     LD:D                      0.011          cam/cm/count1_0
+    ----------------------------------------
+    Total                      2.156ns (0.884ns logic, 1.272ns route)
+                                       (41.0% logic, 59.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1429 / 1427
+-------------------------------------------------------------------------
+Offset:              3.321ns (Levels of Logic = 4)
   Source:            rst (PAD)
   Destination:       pwm/d_in_31 (FF)
   Destination Clock: clk rising
@@ -2157,68 +2196,90 @@ Offset:              3.320ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           133   0.001   0.891  rst_IBUF (rst_IBUF)
+     IBUF:I->O           135   0.001   0.891  rst_IBUF (rst_IBUF)
      LUT3:I0->O            2   0.124   0.427  cam/_n0159_inv1_SW0 (N6)
      LUT6:I5->O            4   0.124   0.939  pwm/_n0174_inv1 (pwm/_n0174_inv1)
      LUT6:I1->O           32   0.124   0.552  pwm/_n0204_inv1 (pwm/_n0204_inv)
      FDE:CE                    0.139          pwm/d_in_0
     ----------------------------------------
-    Total                      3.320ns (0.512ns logic, 2.808ns route)
+    Total                      3.321ns (0.512ns logic, 2.809ns route)
                                        (15.4% logic, 84.6% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'cam/takepicture'
-  Total number of paths / destination ports: 1 / 1
+Timing constraint: Default OFFSET IN BEFORE for Clock 'cam/cm/count1_0'
+  Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
-Offset:              0.411ns (Levels of Logic = 1)
-  Source:            vsync (PAD)
+Offset:              1.892ns (Levels of Logic = 2)
+  Source:            rst (PAD)
   Destination:       cam/cm/we (LATCH)
-  Destination Clock: cam/takepicture falling
+  Destination Clock: cam/cm/count1_0 rising
 
-  Data Path: vsync to cam/cm/we
+  Data Path: rst to cam/cm/we
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   0.001   0.399  vsync_IBUF (vsync_IBUF)
-     LD:D                      0.011          cam/cm/we
+     IBUF:I->O           135   0.001   0.574  rst_IBUF (rst_IBUF)
+     INV:I->O           1023   0.146   0.677  rst_INV_68_o1_INV_0 (rst_INV_68_o)
+     LDP:PRE                   0.494          cam/cm/we
     ----------------------------------------
-    Total                      0.411ns (0.012ns logic, 0.399ns route)
-                                       (2.9% logic, 97.1% route)
+    Total                      1.892ns (0.641ns logic, 1.251ns route)
+                                       (33.9% logic, 66.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'cam/cm/count1_0_G'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.873ns (Levels of Logic = 3)
+  Source:            rst (PAD)
+  Destination:       cam/cm/count1_0 (LATCH)
+  Destination Clock: cam/cm/count1_0_G falling
+
+  Data Path: rst to cam/cm/count1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           135   0.001   0.891  rst_IBUF (rst_IBUF)
+     LUT3:I0->O            2   0.124   0.722  cam/cm/reset_PWR_3_o_AND_5_o1 (cam/cm/reset_PWR_3_o_AND_5_o)
+     LUT3:I0->O            1   0.124   0.000  cam/cm/count1_0_D (cam/cm/count1_0_D)
+     LD:D                      0.011          cam/cm/count1_0
+    ----------------------------------------
+    Total                      1.873ns (0.260ns logic, 1.613ns route)
+                                       (13.9% logic, 86.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 12 / 12
+  Total number of paths / destination ports: 15 / 15
 -------------------------------------------------------------------------
-Offset:              1.428ns (Levels of Logic = 2)
-  Source:            uart0/uart0/uart_txd (FF)
-  Destination:       led (PAD)
+Offset:              1.488ns (Levels of Logic = 2)
+  Source:            cam/leer (FF)
+  Destination:       oe (PAD)
   Source Clock:      clk rising
 
-  Data Path: uart0/uart0/uart_txd to led
+  Data Path: cam/leer to oe
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               2   0.478   0.405  uart0/uart0/uart_txd (uart0/uart0/uart_txd)
-     INV:I->O              1   0.146   0.399  led1_INV_0 (led_OBUF)
-     OBUF:I->O                 0.000          led_OBUF (led)
+     FD:C->Q              11   0.478   0.465  cam/leer (cam/leer)
+     INV:I->O              1   0.146   0.399  cam/cm/leer_inv1_INV_0 (oe_OBUF)
+     OBUF:I->O                 0.000          oe_OBUF (oe)
     ----------------------------------------
-    Total                      1.428ns (0.624ns logic, 0.804ns route)
-                                       (43.7% logic, 56.3% route)
+    Total                      1.488ns (0.624ns logic, 0.864ns route)
+                                       (41.9% logic, 58.1% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'cam/takepicture'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'cam/cm/count1_0'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Offset:              1.024ns (Levels of Logic = 1)
   Source:            cam/cm/we (LATCH)
   Destination:       we (PAD)
-  Source Clock:      cam/takepicture falling
+  Source Clock:      cam/cm/count1_0 rising
 
   Data Path: cam/cm/we to we
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q               1   0.625   0.399  cam/cm/we (cam/cm/we)
+     LDP:G->Q              1   0.625   0.399  cam/cm/we (cam/cm/we)
      OBUF:I->O                 0.000          we_OBUF (we)
     ----------------------------------------
     Total                      1.024ns (0.625ns logic, 0.399ns route)
@@ -2228,6 +2289,15 @@ Offset:              1.024ns (Levels of Logic = 1)
 
 Cross Clock Domains Report:
 --------------------------
+
+Clock to Setup on destination clock cam/cm/count1_0_G
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+cam/cm/count1_0_G|         |         |    2.156|         |
+clk              |         |         |    1.886|         |
+-----------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk
 ---------------+---------+---------+---------+---------+
@@ -2240,15 +2310,15 @@ clk            |    8.619|    3.521|    3.096|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 39.00 secs
-Total CPU time to Xst completion: 39.27 secs
+Total REAL time to Xst completion: 46.00 secs
+Total CPU time to Xst completion: 45.61 secs
  
 --> 
 
 
-Total memory usage is 526588 kilobytes
+Total memory usage is 526428 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  523 (   0 filtered)
-Number of infos    :  113 (   0 filtered)
+Number of warnings :  517 (   0 filtered)
+Number of infos    :  110 (   0 filtered)
 

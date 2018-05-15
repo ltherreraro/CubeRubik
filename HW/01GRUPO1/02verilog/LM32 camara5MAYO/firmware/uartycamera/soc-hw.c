@@ -28,13 +28,13 @@ pwm -> d_in = vd_in;
 
 //camera
 
-void tomarfoto(){
+void tomarfoto(int a){
 camera0->resetwr=1;
-camera0->takepicture=1;
+camera0->takepicture=a;
 }
 
-uint32_t leerfoto(){
-camera0->leer=1;
+uint32_t leerfoto(int b){
+camera0->leer=b;
 camera0->resetrd=1;
 return camera0->dout;
 }

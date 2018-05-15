@@ -1,30 +1,37 @@
-#include "soc-hw.h"
+//#include "soc-hw.h"
+#include "camera.h"
+#include "timer.h"
 #include "pwm.h"
+#include "uart.h"
 
+int main()
+{	
+int on=1;
+int off=0;
 
-int main(){
+	camera cam;
+	timer tiempo;
 
-pwm motor;
-motor.pwm_sel(0, 'R');
-motor.pwm_sel(1, 'L' );
-nsleep(30000);
-//motor.nsleep(3000000);
-/*motor.pwm_sel(0, 'C');
-motor.pwm_sel(1, 'C');
-motor.nsleep(3000000);
-motor.pwm_sel(0, 'R');
-motor.pwm_sel(1, 'L' );
-motor.nsleep(3000000);
-motor.pwm_sel(0, 'C');
-motor.pwm_sel(1, 'C');
-motor.nsleep(3000000);
-motor.pwm_sel(0, 'R');
-motor.pwm_sel(1, 'L' );
-motor.nsleep(3000000);
-motor.pwm_sel(0, 'C');
-motor.pwm_sel(1, 'C');
-motor.nsleep(3000000);
-*/
+	cam.cam_tomar(on);
+	tiempo.nsleep(3000000);
+	cam.cam_tomar(off);
+	tiempo.nsleep(3000000);
+	cam.cam_tomar(on);
+	tiempo.nsleep(3000000);
+	cam.cam_tomar(off);
+	tiempo.nsleep(3000000);
+	cam.cam_ver(on);
+	tiempo.nsleep(3000000);
+	cam.cam_ver(off);
+	tiempo.nsleep(3000000);
+	cam.cam_ver(on);
+	tiempo.nsleep(3000000);
+	cam.cam_ver(off);
+	tiempo.nsleep(3000000);
+	
+
+			
+		
 
 }
 

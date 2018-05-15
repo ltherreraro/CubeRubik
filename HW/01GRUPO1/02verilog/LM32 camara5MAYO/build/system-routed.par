@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-ekativaproject-Lenovo-Yoga-500-14IBD::  Tue May 08 16:18:55 2018
+ekativaproject-Lenovo-Yoga-500-14IBD::  Tue May 15 15:01:43 2018
 
 par -ol high -w system.ncd system-routed.ncd 
 
@@ -26,16 +26,16 @@ Device speed data version:  "PRODUCTION 1.10 2013-10-13".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                 2,251 out of 126,800    1%
+  Number of Slice Registers:                 2,252 out of 126,800    1%
     Number used as Flip Flops:               2,250
-    Number used as Latches:                      0
+    Number used as Latches:                      1
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                1
-  Number of Slice LUTs:                      2,304 out of  63,400    3%
-    Number used as logic:                    2,035 out of  63,400    3%
-      Number using O6 output only:           1,258
+  Number of Slice LUTs:                      2,306 out of  63,400    3%
+    Number used as logic:                    2,038 out of  63,400    3%
+      Number using O6 output only:           1,262
       Number using O5 output only:             547
-      Number using O5 and O6:                  230
+      Number using O5 and O6:                  229
       Number used as ROM:                        0
     Number used as Memory:                      68 out of  19,000    1%
       Number used as Dual Port RAM:             68
@@ -44,17 +44,17 @@ Slice Logic Utilization:
         Number using O5 and O6:                 60
       Number used as Single Port RAM:            0
       Number used as Shift Register:             0
-    Number used exclusively as route-thrus:    201
-      Number with same-slice register load:    182
+    Number used exclusively as route-thrus:    200
+      Number with same-slice register load:    181
       Number with same-slice carry load:        19
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   845 out of  15,850    5%
-  Number of LUT Flip Flop pairs used:        2,791
-    Number with an unused Flip Flop:           790 out of   2,791   28%
-    Number with an unused LUT:                 487 out of   2,791   17%
-    Number of fully used LUT-FF pairs:       1,514 out of   2,791   54%
+  Number of occupied Slices:                   835 out of  15,850    5%
+  Number of LUT Flip Flop pairs used:        2,785
+    Number with an unused Flip Flop:           783 out of   2,785   28%
+    Number with an unused LUT:                 479 out of   2,785   17%
+    Number of fully used LUT-FF pairs:       1,523 out of   2,785   54%
     Number of slice register sites lost
       to control set restrictions:               0 out of 126,800    0%
 
@@ -67,9 +67,9 @@ Slice Logic Distribution:
   over-mapped for a non-BRAM resource or if placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        26 out of     210   12%
-    Number of LOCed IOBs:                       26 out of      26  100%
-    IOB Flip Flops:                             20
+  Number of bonded IOBs:                        29 out of     210   13%
+    Number of LOCed IOBs:                       29 out of      29  100%
+    IOB Flip Flops:                             22
     IOB Latches:                                 1
 
 Specific Feature Utilization:
@@ -81,13 +81,13 @@ Specific Feature Utilization:
     Number used as BUFGs:                        1
     Number used as BUFGCTRLs:                    0
   Number of IDELAYE2/IDELAYE2_FINEDELAYs:        0 out of     300    0%
-  Number of ILOGICE2/ILOGICE3/ISERDESE2s:       11 out of     300    3%
-    Number used as ILOGICE2s:                   11
+  Number of ILOGICE2/ILOGICE3/ISERDESE2s:       10 out of     300    3%
+    Number used as ILOGICE2s:                   10
   Number used as  ILOGICE3s:                     0
     Number used as ISERDESE2s:                   0
   Number of ODELAYE2/ODELAYE2_FINEDELAYs:        0
-  Number of OLOGICE2/OLOGICE3/OSERDESE2s:       11 out of     300    3%
-    Number used as OLOGICE2s:                   11
+  Number of OLOGICE2/OLOGICE3/OSERDESE2s:       15 out of     300    5%
+    Number used as OLOGICE2s:                   15
     Number used as OLOGICE3s:                    0
     Number used as OSERDESE2s:                   0
   Number of PHASER_IN/PHASER_IN_PHYs:            0 out of      24    0%
@@ -124,27 +124,27 @@ WARNING:Par:288 - The signal href_IBUF has no load.  PAR will not attempt to rou
 Starting Router
 
 
-Phase  1  : 13280 unrouted;      REAL time: 34 secs 
+Phase  1  : 13320 unrouted;      REAL time: 34 secs 
 
-Phase  2  : 11049 unrouted;      REAL time: 35 secs 
+Phase  2  : 11068 unrouted;      REAL time: 35 secs 
 
-Phase  3  : 3994 unrouted;      REAL time: 41 secs 
+Phase  3  : 4042 unrouted;      REAL time: 43 secs 
 
-Phase  4  : 3994 unrouted; (Par is working to improve performance)     REAL time: 47 secs 
+Phase  4  : 4042 unrouted; (Par is working to improve performance)     REAL time: 50 secs 
 
 Updating file: system-routed.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 56 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 58 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 56 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 58 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 56 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 58 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 56 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 58 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 58 secs 
-Total REAL time to Router completion: 58 secs 
-Total CPU time to Router completion: 1 mins 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 2 secs 
+Total REAL time to Router completion: 1 mins 2 secs 
+Total CPU time to Router completion: 1 mins 4 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -164,8 +164,11 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|    11.035ns|     N/A|           0
-  _BUFGP                                    | HOLD        |     0.006ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|    11.244ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     0.008ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net cam | SETUP       |         N/A|     1.970ns|     N/A|           0
+  /cm/count1_0_G                            | HOLD        |     0.444ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -183,8 +186,8 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 1 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 1 mins 2 secs 
-Total CPU time to PAR completion: 1 mins 3 secs 
+Total REAL time to PAR completion: 1 mins 3 secs 
+Total CPU time to PAR completion: 1 mins 5 secs 
 
 Peak Memory Usage:  1132 MB
 

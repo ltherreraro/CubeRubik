@@ -20,6 +20,9 @@ To see the details of these <arg fmt="%s" index="4">info</arg> messages, please 
 <msg type="info" file="LIT" num="244" delta="new" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
 </msg>
 
+<msg type="warning" file="Pack" num="2912" delta="new" >The LUT-1 inverter &quot;<arg fmt="%s" index="1">rst_INV_68_o1_INV_0</arg>&quot; failed to join the &quot;<arg fmt="%s" index="2">OLOGICE2</arg>&quot; comp matched to output buffer &quot;<arg fmt="%s" index="3">led1_OBUF</arg>&quot;.  This may result in suboptimal timing.  <arg fmt="%z" index="4">The LUT-1 inverter rst_INV_68_o1_INV_0 drives multiple loads.</arg>
+</msg>
+
 <msg type="info" file="Pack" num="1716" delta="new" >Initializing temperature to <arg fmt="%0.3f" index="1">85.000</arg> Celsius. (default - Range: <arg fmt="%0.3f" index="2">0.000</arg> to <arg fmt="%0.3f" index="3">85.000</arg> Celsius)
 </msg>
 
@@ -30,6 +33,9 @@ To see the details of these <arg fmt="%s" index="4">info</arg> messages, please 
 </msg>
 
 <msg type="info" file="Pack" num="1650" delta="new" >Map created a placed design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">cam/cm/count1_0_G</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
 </msg>
 
 <msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">href_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.

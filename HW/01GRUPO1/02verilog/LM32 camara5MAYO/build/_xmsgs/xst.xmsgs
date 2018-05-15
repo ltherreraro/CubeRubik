@@ -5,226 +5,223 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 200: Port <arg fmt="%s" index="1">oe</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 244: Port <arg fmt="%s" index="1">m0_cti_i</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 238: Port <arg fmt="%s" index="1">m0_cti_i</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 425: Port <arg fmt="%s" index="1">spi_cs</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 419: Port <arg fmt="%s" index="1">spi_cs</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 448: Port <arg fmt="%s" index="1">arst_i</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 442: Port <arg fmt="%s" index="1">arst_i</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/wb_camara/camara.v" Line 5: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_camara/camara.v" Line 5: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/wb_camara/wb_cam.v" Line 78: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_camara/wb_cam.v" Line 78: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/wb_camara/wb_cam.v" Line 79: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_camara/wb_cam.v" Line 79: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/wb_camara/wb_cam.v" Line 80: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_camara/wb_cam.v" Line 80: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/wb_camara/wb_cam.v" Line 81: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_camara/wb_cam.v" Line 81: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 210: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">wb_sel_i</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">4</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 207: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">wb_sel_i</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">4</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/wb_pwm/periferico_pwm.v" Line 28: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_pwm/periferico_pwm.v" Line 28: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/wb_pwm/periferico_pwm.v" Line 40: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_pwm/periferico_pwm.v" Line 40: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/wb_pwm/periferico_pwm.v" Line 52: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_pwm/periferico_pwm.v" Line 52: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/wb_pwm/periferico_pwm.v" Line 64: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_pwm/periferico_pwm.v" Line 64: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/wb_pwm/periferico_pwm.v" Line 76: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_pwm/periferico_pwm.v" Line 76: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/wb_pwm/periferico_pwm.v" Line 88: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_pwm/periferico_pwm.v" Line 88: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/wb_pwm/periferico_pwm.v" Line 100: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_pwm/periferico_pwm.v" Line 100: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/wb_pwm/periferico_pwm.v" Line 112: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_pwm/periferico_pwm.v" Line 112: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/wb_pwm/wb_motores.v" Line 65: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_pwm/wb_motores.v" Line 65: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/wb_pwm/wb_motores.v" Line 76: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_pwm/wb_motores.v" Line 76: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/wb_pwm/wb_motores.v" Line 77: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_pwm/wb_motores.v" Line 77: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/wb_pwm/wb_motores.v" Line 78: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_pwm/wb_motores.v" Line 78: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 324: Assignment to <arg fmt="%s" index="1">i2c0_sel</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 318: Assignment to <arg fmt="%s" index="1">i2c0_sel</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/lm32/lm32_cpu.v" Line 461: Assignment to <arg fmt="%s" index="1">pc_x</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_cpu.v" Line 461: Assignment to <arg fmt="%s" index="1">pc_x</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/lm32/lm32_simtrace.v" Line 20: Empty module &lt;<arg fmt="%s" index="1">lm32_simtrace</arg>&gt; remains a black box.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_simtrace.v" Line 20: Empty module &lt;<arg fmt="%s" index="1">lm32_simtrace</arg>&gt; remains a black box.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/lm32/lm32_decoder.v" Line 559: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">30</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_decoder.v" Line 559: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">30</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/lm32/lm32_cpu.v" Line 1138: Assignment to <arg fmt="%s" index="1">x_result_sel_logic_x</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_cpu.v" Line 1138: Assignment to <arg fmt="%s" index="1">x_result_sel_logic_x</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 349: Assignment to <arg fmt="%s" index="1">lm32i_cti</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 343: Assignment to <arg fmt="%s" index="1">lm32i_cti</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 350: Assignment to <arg fmt="%s" index="1">lm32i_lock</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 344: Assignment to <arg fmt="%s" index="1">lm32i_lock</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 351: Assignment to <arg fmt="%s" index="1">lm32i_bte</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 345: Assignment to <arg fmt="%s" index="1">lm32i_bte</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 363: Assignment to <arg fmt="%s" index="1">lm32d_cti</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 357: Assignment to <arg fmt="%s" index="1">lm32d_cti</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 364: Assignment to <arg fmt="%s" index="1">lm32d_lock</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 358: Assignment to <arg fmt="%s" index="1">lm32d_lock</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 365: Assignment to <arg fmt="%s" index="1">lm32d_bte</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 359: Assignment to <arg fmt="%s" index="1">lm32d_bte</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/lac/uart.v" Line 39: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lac/uart.v" Line 39: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/lac/uart.v" Line 88: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lac/uart.v" Line 88: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/lac/uart.v" Line 91: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lac/uart.v" Line 91: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/lac/uart.v" Line 135: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lac/uart.v" Line 135: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/lac/uart.v" Line 138: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lac/uart.v" Line 138: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/wb_spi/wb_spi.v" Line 57: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_spi/wb_spi.v" Line 57: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/wb_spi/wb_spi.v" Line 63: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_spi/wb_spi.v" Line 63: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 431: Assignment to <arg fmt="%s" index="1">spi0_dat_r</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 425: Assignment to <arg fmt="%s" index="1">spi0_dat_r</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 436: Assignment to <arg fmt="%s" index="1">spi0_ack</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 430: Assignment to <arg fmt="%s" index="1">spi0_ack</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1308" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/wb_i2c/i2c_master_byte_ctrl.v" Line 228: Found full_case directive in module <arg fmt="%s" index="1">i2c_master_byte_ctrl</arg>. Use of full_case directives may cause differences between RTL and post-synthesis simulation
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1308" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_i2c/i2c_master_byte_ctrl.v" Line 228: Found full_case directive in module <arg fmt="%s" index="1">i2c_master_byte_ctrl</arg>. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+<msg type="warning" file="HDLCompiler" num="1308" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/wb_i2c/i2c_master_bit_ctrl.v" Line 360: Found full_case directive in module <arg fmt="%s" index="1">i2c_master_bit_ctrl</arg>. Use of full_case directives may cause differences between RTL and post-synthesis simulation
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1308" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/wb_i2c/i2c_master_bit_ctrl.v" Line 360: Found full_case directive in module <arg fmt="%s" index="1">i2c_master_bit_ctrl</arg>. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 452: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">wb_adr_i</arg>&gt;. Formal port size is <arg fmt="%d" index="2">3</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 446: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">wb_adr_i</arg>&gt;. Formal port size is <arg fmt="%d" index="2">3</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 453: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">wb_dat_i</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 447: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">wb_dat_i</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 454: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">wb_dat_o</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 448: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">wb_dat_o</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 496: Assignment to <arg fmt="%s" index="1">gpio0_dat_r</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 490: Assignment to <arg fmt="%s" index="1">gpio0_dat_r</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 500: Assignment to <arg fmt="%s" index="1">gpio0_ack</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 494: Assignment to <arg fmt="%s" index="1">gpio0_ack</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 512: Assignment to <arg fmt="%s" index="1">spi_mosi</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 506: Assignment to <arg fmt="%s" index="1">spi_mosi</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 514: Assignment to <arg fmt="%s" index="1">spi_clk</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 508: Assignment to <arg fmt="%s" index="1">spi_clk</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 516: Assignment to <arg fmt="%s" index="1">i2c_sda</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 510: Assignment to <arg fmt="%s" index="1">i2c_sda</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 517: Assignment to <arg fmt="%s" index="1">i2c_scl</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 511: Assignment to <arg fmt="%s" index="1">i2c_scl</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 46: Net &lt;<arg fmt="%s" index="1">spi_miso</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 43: Net &lt;<arg fmt="%s" index="1">spi_miso</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 70: Net &lt;<arg fmt="%s" index="1">spi0_adr[31]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 67: Net &lt;<arg fmt="%s" index="1">spi0_adr[31]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 73: Net &lt;<arg fmt="%s" index="1">gpio0_adr[31]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 70: Net &lt;<arg fmt="%s" index="1">gpio0_adr[31]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 88: Net &lt;<arg fmt="%s" index="1">spi0_dat_w[31]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 85: Net &lt;<arg fmt="%s" index="1">spi0_dat_w[31]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 94: Net &lt;<arg fmt="%s" index="1">gpio0_dat_w[31]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 91: Net &lt;<arg fmt="%s" index="1">gpio0_dat_w[31]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 109: Net &lt;<arg fmt="%s" index="1">spi0_sel[3]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 106: Net &lt;<arg fmt="%s" index="1">spi0_sel[3]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 122: Net &lt;<arg fmt="%s" index="1">spi0_we</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 119: Net &lt;<arg fmt="%s" index="1">spi0_we</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 125: Net &lt;<arg fmt="%s" index="1">gpio0_we</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 122: Net &lt;<arg fmt="%s" index="1">gpio0_we</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 136: Net &lt;<arg fmt="%s" index="1">spi0_cyc</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 133: Net &lt;<arg fmt="%s" index="1">spi0_cyc</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 139: Net &lt;<arg fmt="%s" index="1">gpio0_cyc</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 136: Net &lt;<arg fmt="%s" index="1">gpio0_cyc</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 149: Net &lt;<arg fmt="%s" index="1">spi0_stb</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 146: Net &lt;<arg fmt="%s" index="1">spi0_stb</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 152: Net &lt;<arg fmt="%s" index="1">gpio0_stb</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 149: Net &lt;<arg fmt="%s" index="1">gpio0_stb</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 172: Net &lt;<arg fmt="%s" index="1">lm32i_rty</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 169: Net &lt;<arg fmt="%s" index="1">lm32i_rty</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 173: Net &lt;<arg fmt="%s" index="1">lm32d_rty</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 170: Net &lt;<arg fmt="%s" index="1">lm32d_rty</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 175: Net &lt;<arg fmt="%s" index="1">lm32i_err</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 172: Net &lt;<arg fmt="%s" index="1">lm32i_err</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 176: Net &lt;<arg fmt="%s" index="1">lm32d_err</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 173: Net &lt;<arg fmt="%s" index="1">lm32d_err</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 193: Net &lt;<arg fmt="%s" index="1">gpio0_intr</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 190: Net &lt;<arg fmt="%s" index="1">gpio0_intr</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="552" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 252: Input port <arg fmt="%s" index="1">m0_cti_i[2]</arg> is not connected on this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="552" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 246: Input port <arg fmt="%s" index="1">m0_cti_i[2]</arg> is not connected on this instance
+<msg type="warning" file="HDLCompiler" num="552" delta="new" >"/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v" Line 448: Input port <arg fmt="%s" index="1">arst_i</arg> is not connected on this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="552" delta="new" >"/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v" Line 442: Input port <arg fmt="%s" index="1">arst_i</arg> is not connected on this instance
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/lm32/lm32_cpu.v</arg>&quot; line <arg fmt="%d" index="2">483</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">simtrace</arg>&gt; of block &lt;<arg fmt="%s" index="4">lm32_simtrace</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">lm32_cpu</arg>&gt;. Underlying logic will be removed.
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_cpu.v</arg>&quot; line <arg fmt="%d" index="2">483</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">simtrace</arg>&gt; of block &lt;<arg fmt="%s" index="4">lm32_simtrace</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">lm32_cpu</arg>&gt;. Underlying logic will be removed.
-</msg>
-
-<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v</arg>&quot; line <arg fmt="%d" index="2">419</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">spi0</arg>&gt; of block &lt;<arg fmt="%s" index="4">wb_spi</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">system</arg>&gt;. Underlying logic will be removed.
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v</arg>&quot; line <arg fmt="%d" index="2">425</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">spi0</arg>&gt; of block &lt;<arg fmt="%s" index="4">wb_spi</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">system</arg>&gt;. Underlying logic will be removed.
 </msg>
 
 <msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">m0_cti_i</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">conbus0</arg>&apos;, is tied to GND.
@@ -236,76 +233,67 @@
 <msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">arst_i</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">i2c0</arg>&apos;, is tied to GND.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v</arg>&quot; line <arg fmt="%s" index="2">200</arg>: Output port &lt;<arg fmt="%s" index="3">oe</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cam</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v</arg>&quot; line <arg fmt="%s" index="2">252</arg>: Output port &lt;<arg fmt="%s" index="3">s0_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v</arg>&quot; line <arg fmt="%s" index="2">200</arg>: Output port &lt;<arg fmt="%s" index="3">wrst</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cam</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v</arg>&quot; line <arg fmt="%s" index="2">252</arg>: Output port &lt;<arg fmt="%s" index="3">s1_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v</arg>&quot; line <arg fmt="%s" index="2">200</arg>: Output port &lt;<arg fmt="%s" index="3">rrst</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cam</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v</arg>&quot; line <arg fmt="%s" index="2">252</arg>: Output port &lt;<arg fmt="%s" index="3">s2_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v</arg>&quot; line <arg fmt="%s" index="2">246</arg>: Output port &lt;<arg fmt="%s" index="3">s0_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v</arg>&quot; line <arg fmt="%s" index="2">252</arg>: Output port &lt;<arg fmt="%s" index="3">s3_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v</arg>&quot; line <arg fmt="%s" index="2">246</arg>: Output port &lt;<arg fmt="%s" index="3">s1_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v</arg>&quot; line <arg fmt="%s" index="2">252</arg>: Output port &lt;<arg fmt="%s" index="3">s4_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v</arg>&quot; line <arg fmt="%s" index="2">246</arg>: Output port &lt;<arg fmt="%s" index="3">s2_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v</arg>&quot; line <arg fmt="%s" index="2">252</arg>: Output port &lt;<arg fmt="%s" index="3">s5_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v</arg>&quot; line <arg fmt="%s" index="2">246</arg>: Output port &lt;<arg fmt="%s" index="3">s3_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v</arg>&quot; line <arg fmt="%s" index="2">252</arg>: Output port &lt;<arg fmt="%s" index="3">s5_sel_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v</arg>&quot; line <arg fmt="%s" index="2">246</arg>: Output port &lt;<arg fmt="%s" index="3">s4_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v</arg>&quot; line <arg fmt="%s" index="2">336</arg>: Output port &lt;<arg fmt="%s" index="3">I_CTI_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v</arg>&quot; line <arg fmt="%s" index="2">246</arg>: Output port &lt;<arg fmt="%s" index="3">s5_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v</arg>&quot; line <arg fmt="%s" index="2">336</arg>: Output port &lt;<arg fmt="%s" index="3">I_BTE_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v</arg>&quot; line <arg fmt="%s" index="2">246</arg>: Output port &lt;<arg fmt="%s" index="3">s5_sel_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v</arg>&quot; line <arg fmt="%s" index="2">336</arg>: Output port &lt;<arg fmt="%s" index="3">D_CTI_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v</arg>&quot; line <arg fmt="%s" index="2">330</arg>: Output port &lt;<arg fmt="%s" index="3">I_CTI_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v</arg>&quot; line <arg fmt="%s" index="2">336</arg>: Output port &lt;<arg fmt="%s" index="3">D_BTE_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v</arg>&quot; line <arg fmt="%s" index="2">330</arg>: Output port &lt;<arg fmt="%s" index="3">I_BTE_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v</arg>&quot; line <arg fmt="%s" index="2">336</arg>: Output port &lt;<arg fmt="%s" index="3">I_LOCK_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v</arg>&quot; line <arg fmt="%s" index="2">330</arg>: Output port &lt;<arg fmt="%s" index="3">D_CTI_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v</arg>&quot; line <arg fmt="%s" index="2">336</arg>: Output port &lt;<arg fmt="%s" index="3">D_LOCK_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v</arg>&quot; line <arg fmt="%s" index="2">330</arg>: Output port &lt;<arg fmt="%s" index="3">D_BTE_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v</arg>&quot; line <arg fmt="%s" index="2">425</arg>: Output port &lt;<arg fmt="%s" index="3">wb_dat_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">spi0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v</arg>&quot; line <arg fmt="%s" index="2">330</arg>: Output port &lt;<arg fmt="%s" index="3">I_LOCK_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v</arg>&quot; line <arg fmt="%s" index="2">425</arg>: Output port &lt;<arg fmt="%s" index="3">spi_cs</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">spi0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v</arg>&quot; line <arg fmt="%s" index="2">330</arg>: Output port &lt;<arg fmt="%s" index="3">D_LOCK_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v</arg>&quot; line <arg fmt="%s" index="2">425</arg>: Output port &lt;<arg fmt="%s" index="3">wb_ack_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">spi0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v</arg>&quot; line <arg fmt="%s" index="2">419</arg>: Output port &lt;<arg fmt="%s" index="3">wb_dat_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">spi0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v</arg>&quot; line <arg fmt="%s" index="2">425</arg>: Output port &lt;<arg fmt="%s" index="3">spi_sck</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">spi0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v</arg>&quot; line <arg fmt="%s" index="2">419</arg>: Output port &lt;<arg fmt="%s" index="3">spi_cs</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">spi0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v</arg>&quot; line <arg fmt="%s" index="2">425</arg>: Output port &lt;<arg fmt="%s" index="3">spi_mosi</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">spi0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v</arg>&quot; line <arg fmt="%s" index="2">419</arg>: Output port &lt;<arg fmt="%s" index="3">wb_ack_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">spi0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v</arg>&quot; line <arg fmt="%s" index="2">448</arg>: Output port &lt;<arg fmt="%s" index="3">wb_inta_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">i2c0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v</arg>&quot; line <arg fmt="%s" index="2">419</arg>: Output port &lt;<arg fmt="%s" index="3">spi_sck</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">spi0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v</arg>&quot; line <arg fmt="%s" index="2">490</arg>: Output port &lt;<arg fmt="%s" index="3">wb_dat_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gpio0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v</arg>&quot; line <arg fmt="%s" index="2">419</arg>: Output port &lt;<arg fmt="%s" index="3">spi_mosi</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">spi0</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v</arg>&quot; line <arg fmt="%s" index="2">442</arg>: Output port &lt;<arg fmt="%s" index="3">wb_inta_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">i2c0</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v</arg>&quot; line <arg fmt="%s" index="2">484</arg>: Output port &lt;<arg fmt="%s" index="3">wb_dat_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gpio0</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/system.v</arg>&quot; line <arg fmt="%s" index="2">484</arg>: Output port &lt;<arg fmt="%s" index="3">wb_ack_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gpio0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Pictures/LM32 camara8MAYOc/system.v</arg>&quot; line <arg fmt="%s" index="2">490</arg>: Output port &lt;<arg fmt="%s" index="3">wb_ack_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gpio0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">spi0_adr</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
@@ -371,6 +359,9 @@
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">href</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">count1&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
 <msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">we</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
@@ -380,10 +371,10 @@
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wb_sel_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_cpu.v</arg>&quot; line <arg fmt="%s" index="2">436</arg>: Output port &lt;<arg fmt="%s" index="3">pc_x</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">instruction_unit</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/lm32/lm32_cpu.v</arg>&quot; line <arg fmt="%s" index="2">436</arg>: Output port &lt;<arg fmt="%s" index="3">pc_x</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">instruction_unit</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara5MAYO/rtl/lm32/lm32_cpu.v</arg>&quot; line <arg fmt="%s" index="2">495</arg>: Output port &lt;<arg fmt="%s" index="3">x_result_sel_logic</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">decoder</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ekativa-project/Pictures/LM32 camara8MAYOc/rtl/lm32/lm32_cpu.v</arg>&quot; line <arg fmt="%s" index="2">495</arg>: Output port &lt;<arg fmt="%s" index="3">x_result_sel_logic</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">decoder</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">valid_f</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -431,76 +422,76 @@
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wb_dat_i&lt;31:8&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;10&gt;</arg>&lt;<arg fmt="%d" index="2">2</arg>:<arg fmt="%d" index="3">2</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;24&gt;</arg>&lt;<arg fmt="%d" index="2">2</arg>:<arg fmt="%d" index="3">2</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;30&gt;</arg>&lt;<arg fmt="%d" index="2">10</arg>:<arg fmt="%d" index="3">10</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;31&gt;</arg>&lt;<arg fmt="%d" index="2">24</arg>:<arg fmt="%d" index="3">24</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;12&gt;</arg>&lt;<arg fmt="%d" index="2">30</arg>:<arg fmt="%d" index="3">30</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;30&gt;</arg>&lt;<arg fmt="%d" index="2">31</arg>:<arg fmt="%d" index="3">31</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;28&gt;</arg>&lt;<arg fmt="%d" index="2">12</arg>:<arg fmt="%d" index="3">12</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;29&gt;</arg>&lt;<arg fmt="%d" index="2">30</arg>:<arg fmt="%d" index="3">30</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;9&gt;</arg>&lt;<arg fmt="%d" index="2">28</arg>:<arg fmt="%d" index="3">28</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;28&gt;</arg>&lt;<arg fmt="%d" index="2">29</arg>:<arg fmt="%d" index="3">29</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;21&gt;</arg>&lt;<arg fmt="%d" index="2">9</arg>:<arg fmt="%d" index="3">9</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;27&gt;</arg>&lt;<arg fmt="%d" index="2">28</arg>:<arg fmt="%d" index="3">28</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;24&gt;</arg>&lt;<arg fmt="%d" index="2">21</arg>:<arg fmt="%d" index="3">21</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;26&gt;</arg>&lt;<arg fmt="%d" index="2">27</arg>:<arg fmt="%d" index="3">27</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;20&gt;</arg>&lt;<arg fmt="%d" index="2">24</arg>:<arg fmt="%d" index="3">24</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;27&gt;</arg>&lt;<arg fmt="%d" index="2">20</arg>:<arg fmt="%d" index="3">20</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;11&gt;</arg>&lt;<arg fmt="%d" index="2">27</arg>:<arg fmt="%d" index="3">27</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;18&gt;</arg>&lt;<arg fmt="%d" index="2">11</arg>:<arg fmt="%d" index="3">11</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;29&gt;</arg>&lt;<arg fmt="%d" index="2">18</arg>:<arg fmt="%d" index="3">18</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;31&gt;</arg>&lt;<arg fmt="%d" index="2">29</arg>:<arg fmt="%d" index="3">29</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;26&gt;</arg>&lt;<arg fmt="%d" index="2">31</arg>:<arg fmt="%d" index="3">31</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;22&gt;</arg>&lt;<arg fmt="%d" index="2">26</arg>:<arg fmt="%d" index="3">26</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;19&gt;</arg>&lt;<arg fmt="%d" index="2">22</arg>:<arg fmt="%d" index="3">22</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;17&gt;</arg>&lt;<arg fmt="%d" index="2">19</arg>:<arg fmt="%d" index="3">19</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;13&gt;</arg>&lt;<arg fmt="%d" index="2">17</arg>:<arg fmt="%d" index="3">17</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;8&gt;</arg>&lt;<arg fmt="%d" index="2">13</arg>:<arg fmt="%d" index="3">13</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;25&gt;</arg>&lt;<arg fmt="%d" index="2">8</arg>:<arg fmt="%d" index="3">8</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;25&gt;</arg>&lt;<arg fmt="%d" index="2">26</arg>:<arg fmt="%d" index="3">26</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;23&gt;</arg>&lt;<arg fmt="%d" index="2">25</arg>:<arg fmt="%d" index="3">25</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;16&gt;</arg>&lt;<arg fmt="%d" index="2">23</arg>:<arg fmt="%d" index="3">23</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;22&gt;</arg>&lt;<arg fmt="%d" index="2">23</arg>:<arg fmt="%d" index="3">23</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;21&gt;</arg>&lt;<arg fmt="%d" index="2">22</arg>:<arg fmt="%d" index="3">22</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;20&gt;</arg>&lt;<arg fmt="%d" index="2">21</arg>:<arg fmt="%d" index="3">21</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;19&gt;</arg>&lt;<arg fmt="%d" index="2">20</arg>:<arg fmt="%d" index="3">20</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;18&gt;</arg>&lt;<arg fmt="%d" index="2">19</arg>:<arg fmt="%d" index="3">19</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;17&gt;</arg>&lt;<arg fmt="%d" index="2">18</arg>:<arg fmt="%d" index="3">18</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;16&gt;</arg>&lt;<arg fmt="%d" index="2">17</arg>:<arg fmt="%d" index="3">17</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;15&gt;</arg>&lt;<arg fmt="%d" index="2">16</arg>:<arg fmt="%d" index="3">16</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;14&gt;</arg>&lt;<arg fmt="%d" index="2">15</arg>:<arg fmt="%d" index="3">15</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;13&gt;</arg>&lt;<arg fmt="%d" index="2">14</arg>:<arg fmt="%d" index="3">14</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;12&gt;</arg>&lt;<arg fmt="%d" index="2">13</arg>:<arg fmt="%d" index="3">13</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;11&gt;</arg>&lt;<arg fmt="%d" index="2">12</arg>:<arg fmt="%d" index="3">12</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;10&gt;</arg>&lt;<arg fmt="%d" index="2">11</arg>:<arg fmt="%d" index="3">11</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;9&gt;</arg>&lt;<arg fmt="%d" index="2">10</arg>:<arg fmt="%d" index="3">10</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;8&gt;</arg>&lt;<arg fmt="%d" index="2">9</arg>:<arg fmt="%d" index="3">9</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk_cnt</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -615,28 +606,28 @@ It will be removed from the design.
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">wb_dat_o_26</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cam</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">wb_dat_o_23</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cam</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">wb_dat_o_25</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cam</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">wb_dat_o_24</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cam</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">wb_dat_o_23</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cam</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">wb_dat_o_22</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cam</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">wb_dat_o_19</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cam</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">wb_dat_o_21</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cam</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">wb_dat_o_18</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cam</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">wb_dat_o_20</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cam</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">wb_dat_o_18</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cam</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">wb_dat_o_19</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cam</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">wb_dat_o_17</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cam</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -654,16 +645,16 @@ It will be removed from the design.
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">wb_dat_o_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cam</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">wb_dat_o_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cam</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">wb_dat_o_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cam</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">wb_dat_o_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cam</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">wb_dat_o_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cam</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">wb_dat_o_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cam</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">wb_dat_o_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cam</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">wb_dat_o_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cam</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">wb_dat_o_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cam</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -1067,6 +1058,21 @@ It will be removed from the design.
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">i_adr_o_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lm32_instruction_unit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
+<msg type="warning" file="Xst" num="3001" delta="new" >This design contains one or more registers or latches with an active
+asynchronous set and asynchronous reset. While this circuit can be built,
+it creates a sub-optimal implementation in terms of area, power and
+performance. For a more optimal implementation Xilinx highly recommends
+one of the following:
+
+       1) Remove either the set or reset from all registers and latches if
+          not needed for required functionality
+       2) Modify the code in order to produce a synchronous set
+          and/or reset (both is preferred)
+       3) Use the -async_to_sync option to transform the asynchronous
+          set/reset to synchronous operation
+          (timing simulation highly recommended when using this option)
+</msg>
+
 <msg type="warning" file="Xst" num="2042" delta="new" >Unit <arg fmt="%s" index="1">i2c_master_wb_top</arg>: <arg fmt="%d" index="2">2</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
 
 <msg type="warning" file="Xst" num="2042" delta="new" >Unit <arg fmt="%s" index="1">wb_gpio</arg>: <arg fmt="%d" index="2">8</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
@@ -1255,12 +1261,6 @@ It will be removed from the design.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">lm0/bus_error_x</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">cam/resetrd</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">system</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">cam/resetwr</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">system</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm/pwm_p/d_out_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">system</arg>&gt;.
@@ -1551,22 +1551,19 @@ It will be removed from the design.
 <msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">lm0/load_store_unit/d_adr_o_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">system</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">cam/cm/count_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">cam/cm/count_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">cam/cm/count_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">cam/cm/count_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">cam/cm/count_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">cam/cm/count_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">cam/cm/count_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">cam/cm/count_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">cam/cm/count_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -1605,7 +1602,13 @@ It will be removed from the design.
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">uart0/uart0/enable16_counter_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">uart0/uart0/enable16_counter_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">uart0/uart0/enable16_counter_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">uart0/uart0/enable16_counter_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">cam/cm/count_31</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -1650,13 +1653,13 @@ It will be removed from the design.
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">cam/cm/count_18</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">cam/cm/count_17</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">cam/cm/count_16</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">cam/cm/count_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">cam/cm/count_17</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">cam/cm/count_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -1666,6 +1669,9 @@ It will be removed from the design.
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">cam/cm/count_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">cam/cm/count_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">lm0/multiplier/muliplicand_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;lm0/operand_0_x_10&gt; </arg>
@@ -1872,13 +1878,16 @@ It will be removed from the design.
 <msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">lm0/multiplier/multiplier_29</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;lm0/operand_1_x_29&gt; </arg>
 </msg>
 
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">lm0/load_store_unit/size_m_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">16 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;lm0/load_store_unit/store_data_m_15_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_14_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_13_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_12_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_11_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_10_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_9_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_8_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_31_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_30_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_29_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_28_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_27_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_26_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_25_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_24_BRB0&gt; </arg>
+</msg>
+
 <msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">lm0/x_bypass_enable_x</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;lm0/m_bypass_enable_x_BRB0&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">lm0/load_m</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;lm0/w_result_sel_load_m_BRB0&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">lm0/m_result_sel_compare_x</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;lm0/m_bypass_enable_x_BRB1&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">lm0/load_store_unit/size_m_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">16 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;lm0/load_store_unit/store_data_m_15_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_14_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_13_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_12_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_11_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_10_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_9_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_8_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_31_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_30_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_29_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_28_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_27_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_26_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_25_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_24_BRB0&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">lm0/load_m</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;lm0/w_result_sel_load_m_BRB0&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">lm0/load_store_unit/store_data_m_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;lm0/load_store_unit/store_data_m_8_BRB2&gt; &lt;lm0/load_store_unit/store_data_m_16_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_24_BRB4&gt; </arg>
@@ -1903,9 +1912,6 @@ It will be removed from the design.
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">lm0/load_store_unit/store_data_m_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;lm0/load_store_unit/store_data_m_15_BRB2&gt; &lt;lm0/load_store_unit/store_data_m_23_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_31_BRB4&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">lm0/m_result_sel_compare_x</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;lm0/m_bypass_enable_x_BRB1&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.

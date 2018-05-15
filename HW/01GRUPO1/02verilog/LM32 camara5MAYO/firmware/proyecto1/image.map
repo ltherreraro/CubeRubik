@@ -1,11 +1,11 @@
 
-Configuración de la Memoria
+Memory Configuration
 
-Nombre           Origen             Longitud           Atributos
+Name             Origin             Length             Attributes
 ram              0x0000000000000000 0x0000000000001000
 *default*        0x0000000000000000 0xffffffffffffffff
 
-Guión del enlazador y mapa de memoria
+Linker script and memory map
 
                 0x0000000000000000                __DYNAMIC = 0x0
                 0x0000000000000000                _RAM_START = 0x0
@@ -170,21 +170,21 @@ OUTPUT(image elf32-lm32)
  .debug_line    0x00000000000006b7       0x94 timer.o
  .debug_line    0x000000000000074b      0x102 uart.o
 
-.debug_str      0x0000000000000000      0x571
- .debug_str     0x0000000000000000      0x1b0 main.o
-                                        0x1f5 (tamaño antes de la relajación)
- .debug_str     0x00000000000001b0      0x2be soc-hw.o
-                                        0x4ac (tamaño antes de la relajación)
- .debug_str     0x000000000000046e       0x4e pwm.o
-                                        0x25b (tamaño antes de la relajación)
- .debug_str     0x00000000000004bc       0x23 timer.o
-                                        0x1ee (tamaño antes de la relajación)
- .debug_str     0x00000000000004df       0x92 uart.o
-                                        0x286 (tamaño antes de la relajación)
+.debug_str      0x0000000000000000      0x568
+ .debug_str     0x0000000000000000      0x1a7 main.o
+                                        0x1ec (size before relaxing)
+ .debug_str     0x00000000000001a7      0x2be soc-hw.o
+                                        0x4a3 (size before relaxing)
+ .debug_str     0x0000000000000465       0x4e pwm.o
+                                        0x252 (size before relaxing)
+ .debug_str     0x00000000000004b3       0x23 timer.o
+                                        0x1e5 (size before relaxing)
+ .debug_str     0x00000000000004d6       0x92 uart.o
+                                        0x27d (size before relaxing)
 
 .comment        0x0000000000000000       0x11
  .comment       0x0000000000000000       0x11 main.o
-                                         0x12 (tamaño antes de la relajación)
+                                         0x12 (size before relaxing)
  .comment       0x0000000000000011       0x12 soc-hw.o
  .comment       0x0000000000000011       0x12 pwm.o
  .comment       0x0000000000000011       0x12 timer.o
