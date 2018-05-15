@@ -8,8 +8,6 @@ reg [31:0] count;
 
 reg [1:0] count1=0;
 
-
-
 always@(*)
 begin
 
@@ -21,6 +19,7 @@ begin
 	else 
 	begin	
 		if(takepicture==1)
+
 		begin
 			if (count1==0)
 			begin
@@ -37,11 +36,28 @@ begin
 
 
 		end
+		else
+		begin
+			count1<=0;
+		end
+		begin
+			if (count1==0)
+			begin
+			count1<=1;
+				if(vsync==0)
+				begin
+					we<=0;
+				end
+				else
+				begin
+					we<=1;
+				end
+			end
+
+		end
 	
 	end
 end
-
-
 
 always @(posedge  clk)
 begin

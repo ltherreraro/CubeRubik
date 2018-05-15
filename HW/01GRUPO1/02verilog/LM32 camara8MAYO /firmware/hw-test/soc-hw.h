@@ -1,5 +1,3 @@
-
-
 #ifndef SPIKEHW_H
 #define SPIKEHW_H
 
@@ -65,9 +63,28 @@ void pwm_rd(uint8_t vrd);
 void pwm_addr(uint32_t vaddr);
 void pwm_wr(uint8_t vwr);
 void pwm_din(uint32_t vd_in);
+/***************************************************************************
+ * camara
+ */
+#define RD     0x04    // 
+#define ADDR     0x08   // 
+#define WR  0x0c    // 
+#define D_IN   0x10    // 
 
+typedef struct {
+   volatile uint32_t d_out;
+   volatile uint8_t takepicture;
+   volatile uint32_t leer;
+   volatile uint8_t resetwr;
+   volatile uint32_t resetrd;
+  
+} cam_t;
 
-//void pwm_wr (int pwm_sel, int T, int D );
+uint32_t cam_read();
+void cam_takepicture (uint8_t vtakepicture);
+void cam_leer(uint32_t vleer);
+void cam_resetwr  (uint8_t vresetwr);
+void cam_resetrd(uint32_t vresetrd);
 
 /****************************************************************************
  * Timer
@@ -174,8 +191,6 @@ extern uart_t   *uart0;
 extern gpio_t   *gpio0; 
 extern uint32_t *sram0; 
 extern pwm_t    *pwm; 
+extern cam_t    *cam; 
 
 #endif // SPIKEHW_H
-
-
-

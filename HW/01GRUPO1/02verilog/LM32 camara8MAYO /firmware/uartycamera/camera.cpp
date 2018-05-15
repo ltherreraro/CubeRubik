@@ -2,13 +2,14 @@
 #include "soc-hw.h"
 
 
-void camera::tomar()
+void camera::tomar(int take)
 {
-tomarfoto();
+tomarfoto(take);
 };
 
 
-char32_t camera::leer()
+char32_t camera::leer(int lee)
 {
-leerfoto();
+char32_t c=leerfoto(lee);
+return c;
 }; 

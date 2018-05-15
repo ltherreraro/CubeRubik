@@ -36,7 +36,10 @@ module system
 	input		  vsync, 
 	output 		  rdclk,
 	input [7:0]	  din, 
-	output	  	  led1
+	output	  	  led1,
+	output 		  oe,
+	output 		  wrst,
+	output 		  rrst
 );
 
 wire [7:0]       gpio0_io;
@@ -212,7 +215,10 @@ wb_cam cam (.clk(clk),
 		.rdclk(rdclk),
 		.we(we),	
 		.din(din),
-		.led(led1));
+		.led(led1),
+		.oe(oe),
+		.wrst(wrst),
+		.rrst(rrst));
 //pwm
 
 

@@ -3,10 +3,11 @@
 
 class camera{
 	public:
-	void tomar();
-	char32_t leer();
+	void tomar(int take);
+	char32_t leer(int lee);
 	private:
-	char take;	
+	int take;
+	int lee;	
 };
 
 

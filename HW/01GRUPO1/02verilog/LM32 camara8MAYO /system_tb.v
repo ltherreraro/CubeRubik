@@ -24,10 +24,6 @@ wire       led;
 //----------------------------------------------------------------------------
 reg         uart_rxd;
 wire         uart_txd;
-
-reg         href;
-reg	    vsync;
-reg [5:0]   din;
 //----------------------------------------------------------------------------
 // Device Under Test 
 //----------------------------------------------------------------------------
@@ -41,77 +37,13 @@ system #(
 	.led(          led    ),
 	// Uart
 	.uart_rxd(  uart_rxd  ),
-	.uart_txd(  uart_txd  ),
-	.gpio0_io(gpio0_io), 
-	.href(href), 
-	.vsync(vsync), 
-	.din(din)
+	.uart_txd(  uart_txd  )
 );
 
 /* Clocking device */
 initial         clk <= 0;
 always #(tck/2) clk <= ~clk;
 
-initial begin
-
-
-#40;
-#10;
-href=1;
-vsync=0;
-din=7;
-#20;
-din=9;
-#3
-din=5;
-
-
-
-end
-initial
-begin
-#200;
-uart_rxd<=1'b0;
-#200;
-uart_rxd<=1'b0;
-#200;
-uart_rxd<=1'b0;
-#200;
-uart_rxd<=1'b0;
-
-#tck;
-uart_rxd<=1'b0;
-#tck;
-uart_rxd<=1'b0;
-#tck;
-#tck;
-uart_rxd<=1'b0;
-
-#tck;
-uart_rxd<=1'b0;
-#tck;
-uart_rxd<=1'b1;
-#tck;
-uart_rxd<=1'b0;
-#800;
-uart_rxd<=1'b1;
-#800;
-uart_rxd<=1'b1;
-#800;
-uart_rxd<=1'b1;
-#800;
-uart_rxd<=1'b1;
-#800;
-uart_rxd<=1'b0;
-#800;
-uart_rxd<=1'b0;
-#800;
-uart_rxd<=1'b0;
-#800;
-uart_rxd<=1'b0;
-#6000;
-uart_rxd<=1'b1;
-end
 
 /* Simulation setup */
 initial begin

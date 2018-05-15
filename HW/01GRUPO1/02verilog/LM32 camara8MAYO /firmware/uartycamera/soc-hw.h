@@ -88,8 +88,8 @@ typedef struct {
    
      
 } camera_t;
-void tomarfoto();
-uint32_t leerfoto();
+void tomarfoto(int a);
+uint32_t leerfoto(int b);
 
 
 

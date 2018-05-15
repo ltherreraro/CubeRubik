@@ -3,12 +3,33 @@
 uart_t  *uart0  = (uart_t *)   0x20000000;
 timer_t *timer0 = (timer_t *)  0x30000000;
 gpio_t  *gpio0  = (gpio_t *)   0x70000000;
-spi_t   *spi0   = (spi_t *)    0x50000000;
+cam_t    *cam   = (cam_t *)      0x50000000;
 i2c_t   *i2c0   = (i2c_t *)    0x60000000;
 pwm_t  *pwm	= (pwm_t *)    0x40000000;
 
 isr_ptr_t isr_table[32];
-//pwm
+/***************************************************************************
+ * PWM
+ */
+uint32_t cam_read(){	//escribe en el pin
+	return cam -> d_out;
+}
+void cam_takepicture (uint8_t vtakepicture ){
+cam -> takepicture  = vtakepicture;
+}
+void cam_leer(uint32_t vleer){
+cam -> leer = vleer;
+}
+void cam_resetwr  (uint8_t vresetwr){
+cam -> resetwr   = vresetwr;
+}
+void cam_resetrd(uint32_t vresetrd){
+cam -> resetrd = vresetrd;
+}
+/***************************************************************************
+ * CAMARA
+ */
+
 uint32_t pwm_read(){	//escribe en el pin
 	return pwm -> d_out;
 }
@@ -24,32 +45,6 @@ pwm -> wr = vwr;
 void pwm_din(uint32_t vd_in){
 pwm -> d_in = vd_in;
 }
-
-
-/*
-void pwm_wr (int pwm_sel, int T, int D ){
-	if (pwm_sel==0) {
-		pwm -> addr = 0x00;
-		pwm -> wr = 1;
-		pwm -> rd = 0;
-		pwm -> d_in = 1;
-		msleep(5);
-		pwm -> addr = 0x04;
-		pwm -> wr = 1;
-		pwm -> rd = 0;
-		pwm -> d_in = T;
-		msleep(5);
-		pwm -> addr = 0x08;
-		pwm -> wr = 1;
-		pwm -> rd = 0;
-		pwm -> d_in = D;
-		}
-	else{
-		pwm -> rd = 1;}
-		
-}
-*/
-
 
 /***************************************************************************
  * GPIO

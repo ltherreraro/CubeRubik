@@ -43,4 +43,8 @@ NET "led1"			LOC = "V9"	| IOSTANDARD = "LVCMOS33";#Bank = 34, Pin name =IO_L21N_
 NET "we"			LOC = "G14"	| IOSTANDARD = "LVCMOS33";#Bank = 15, Pin name = IO_L15N_T2_DQS_ADV_B_15,Sch name = JB1
 NET "href"			LOC = "P15"	| IOSTANDARD = "LVCMOS33";#Bank = 14, Pin name = IO_L13P_T2_MRCC_14,			Sch name = JB2
 NET "vsync"			LOC = "V11"	| IOSTANDARD = "LVCMOS33";#Bank = 14, Pin name = IO_L21N_T3_DQS_A06_D22_14,	Sch name = JB3
+NET "oe"			LOC = "V15"	| IOSTANDARD = "LVCMOS33";		#Bank = CONFIG, Pin name = IO_L16P_T2_CSI_B_14,				Sch name = JB4
 NET "rdclk"			LOC = "K16"	| IOSTANDARD = "LVCMOS33";#Bank = 15, Pin name =IO_25_15,Sch name = JB7
+NET "wrst"			LOC = "R16"	| IOSTANDARD = "LVCMOS33";		#Bank = CONFIG, Pin name = IO_L15P_T2_DQS_RWR_B_14,			Sch name = JB8
+NET "rrst"			LOC = "T9"  | IOSTANDARD = "LVCMOS33";		#Bank = 14, Pin name = IO_L24P_T3_A01_D17_14,				Sch name = JB9
+

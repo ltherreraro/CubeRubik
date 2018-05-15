@@ -90,7 +90,7 @@ _divzero_handler:
 	nop
 	nop
 	nop
-/*
+
 _interrupt_handler:
 	sw      (sp+0), ra
 	calli   _save_all
@@ -100,7 +100,7 @@ _interrupt_handler:
 	ori     r1, r1, 0xffff
 	wcsr	IP, r1 
 	bi      _restore_all_and_eret
-*/
+
 _scall_handler:
 	nop
 	nop

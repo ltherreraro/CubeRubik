@@ -1,30 +1,32 @@
 #include "soc-hw.h"
-#include "pwm.h"
-
 
 int main(){
 
-pwm motor;
-motor.pwm_sel(0, 'R');
-motor.pwm_sel(1, 'L' );
-nsleep(30000);
-//motor.nsleep(3000000);
-/*motor.pwm_sel(0, 'C');
-motor.pwm_sel(1, 'C');
-motor.nsleep(3000000);
-motor.pwm_sel(0, 'R');
-motor.pwm_sel(1, 'L' );
-motor.nsleep(3000000);
-motor.pwm_sel(0, 'C');
-motor.pwm_sel(1, 'C');
-motor.nsleep(3000000);
-motor.pwm_sel(0, 'R');
-motor.pwm_sel(1, 'L' );
-motor.nsleep(3000000);
-motor.pwm_sel(0, 'C');
-motor.pwm_sel(1, 'C');
-motor.nsleep(3000000);
-*/
+uint8_t rdOn=1;
+uint8_t rdOff=0;
+uint8_t wrOn=1;
+uint8_t wrOff=0;
+uint8_t resetOn=1;
+uint8_t resetOff=0;
+
+
+ 
+cam_takepicture(wrOn);
+nsleep(3000000); 
+cam_takepicture(wrOff);
+nsleep(3000000); 
+cam_leer(rdOn);
+nsleep(3000000);
+cam_leer(rdOff);
+nsleep(3000000);
+cam_resetwr (resetOn);
+nsleep(3000000);
+cam_resetwr (resetOff);
+nsleep(3000000);
+cam_resetrd(resetOn);
+nsleep(3000000);
+cam_resetrd(resetOff);
+
 
 }
 
