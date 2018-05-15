@@ -9,7 +9,7 @@ pwm_t  *pwm	= (pwm_t *)    0x40000000;
 
 isr_ptr_t isr_table[32];
 /***************************************************************************
- * PWM
+ * camara
  */
 uint32_t cam_read(){	//escribe en el pin
 	return cam -> d_out;
@@ -27,7 +27,7 @@ void cam_resetrd(uint32_t vresetrd){
 cam -> resetrd = vresetrd;
 }
 /***************************************************************************
- * CAMARA
+ * pw,
  */
 
 uint32_t pwm_read(){	//escribe en el pin

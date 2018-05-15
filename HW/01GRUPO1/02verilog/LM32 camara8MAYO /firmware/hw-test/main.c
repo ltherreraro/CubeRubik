@@ -2,12 +2,12 @@
 
 int main(){
 
-uint8_t rdOn=1;
-uint8_t rdOff=0;
-uint8_t wrOn=1;
-uint8_t wrOff=0;
-uint8_t resetOn=1;
-uint8_t resetOff=0;
+uint32_t rdOn=1;
+uint32_t rdOff=0;
+uint32_t wrOn=1;
+uint32_t wrOff=0;
+uint32_t resetOn=1;
+uint32_t resetOff=0;
 
 
  
