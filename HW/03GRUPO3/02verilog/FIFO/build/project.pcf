@@ -1,0 +1,171 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed May 09 08:06:59 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "rd" LOCATE = SITE "U8" LEVEL 1;
+COMP "Pclk" LOCATE = SITE "E3" LEVEL 1;
+COMP "wr" LOCATE = SITE "R7" LEVEL 1;
+COMP "empty" LOCATE = SITE "R2" LEVEL 1;
+COMP "data_out<0>" LOCATE = SITE "T8" LEVEL 1;
+COMP "data_out<1>" LOCATE = SITE "V9" LEVEL 1;
+COMP "data_out<2>" LOCATE = SITE "R8" LEVEL 1;
+COMP "data_out<3>" LOCATE = SITE "T6" LEVEL 1;
+COMP "data_out<4>" LOCATE = SITE "T5" LEVEL 1;
+COMP "data_in<0>" LOCATE = SITE "R6" LEVEL 1;
+COMP "data_out<5>" LOCATE = SITE "T4" LEVEL 1;
+COMP "data_in<1>" LOCATE = SITE "R5" LEVEL 1;
+COMP "data_out<6>" LOCATE = SITE "U7" LEVEL 1;
+COMP "data_in<2>" LOCATE = SITE "V7" LEVEL 1;
+COMP "data_out<7>" LOCATE = SITE "U6" LEVEL 1;
+COMP "data_in<3>" LOCATE = SITE "V6" LEVEL 1;
+COMP "data_in<4>" LOCATE = SITE "V5" LEVEL 1;
+COMP "data_in<5>" LOCATE = SITE "U4" LEVEL 1;
+COMP "data_in<6>" LOCATE = SITE "V2" LEVEL 1;
+COMP "data_in<7>" LOCATE = SITE "U2" LEVEL 1;
+COMP "full" LOCATE = SITE "P2" LEVEL 1;
+COMP "rst" LOCATE = SITE "U9" LEVEL 1;
+PIN Mram_array_reg1_pins<65> = BEL "Mram_array_reg1" PINNAME CLKARDCLKU;
+PIN Mram_array_reg1_pins<64> = BEL "Mram_array_reg1" PINNAME CLKARDCLKL;
+PIN Mram_array_reg1_pins<67> = BEL "Mram_array_reg1" PINNAME CLKBWRCLKU;
+PIN Mram_array_reg1_pins<66> = BEL "Mram_array_reg1" PINNAME CLKBWRCLKL;
+PIN Mram_array_reg10_pins<65> = BEL "Mram_array_reg10" PINNAME CLKARDCLKU;
+PIN Mram_array_reg10_pins<64> = BEL "Mram_array_reg10" PINNAME CLKARDCLKL;
+PIN Mram_array_reg10_pins<67> = BEL "Mram_array_reg10" PINNAME CLKBWRCLKU;
+PIN Mram_array_reg10_pins<66> = BEL "Mram_array_reg10" PINNAME CLKBWRCLKL;
+PIN Mram_array_reg101_pins<65> = BEL "Mram_array_reg101" PINNAME CLKARDCLKU;
+PIN Mram_array_reg101_pins<64> = BEL "Mram_array_reg101" PINNAME CLKARDCLKL;
+PIN Mram_array_reg101_pins<67> = BEL "Mram_array_reg101" PINNAME CLKBWRCLKU;
+PIN Mram_array_reg101_pins<66> = BEL "Mram_array_reg101" PINNAME CLKBWRCLKL;
+PIN Mram_array_reg11_pins<65> = BEL "Mram_array_reg11" PINNAME CLKARDCLKU;
+PIN Mram_array_reg11_pins<64> = BEL "Mram_array_reg11" PINNAME CLKARDCLKL;
+PIN Mram_array_reg11_pins<67> = BEL "Mram_array_reg11" PINNAME CLKBWRCLKU;
+PIN Mram_array_reg11_pins<66> = BEL "Mram_array_reg11" PINNAME CLKBWRCLKL;
+PIN Mram_array_reg2_pins<65> = BEL "Mram_array_reg2" PINNAME CLKARDCLKU;
+PIN Mram_array_reg2_pins<64> = BEL "Mram_array_reg2" PINNAME CLKARDCLKL;
+PIN Mram_array_reg2_pins<67> = BEL "Mram_array_reg2" PINNAME CLKBWRCLKU;
+PIN Mram_array_reg2_pins<66> = BEL "Mram_array_reg2" PINNAME CLKBWRCLKL;
+PIN Mram_array_reg21_pins<65> = BEL "Mram_array_reg21" PINNAME CLKARDCLKU;
+PIN Mram_array_reg21_pins<64> = BEL "Mram_array_reg21" PINNAME CLKARDCLKL;
+PIN Mram_array_reg21_pins<67> = BEL "Mram_array_reg21" PINNAME CLKBWRCLKU;
+PIN Mram_array_reg21_pins<66> = BEL "Mram_array_reg21" PINNAME CLKBWRCLKL;
+PIN Mram_array_reg3_pins<65> = BEL "Mram_array_reg3" PINNAME CLKARDCLKU;
+PIN Mram_array_reg3_pins<64> = BEL "Mram_array_reg3" PINNAME CLKARDCLKL;
+PIN Mram_array_reg3_pins<67> = BEL "Mram_array_reg3" PINNAME CLKBWRCLKU;
+PIN Mram_array_reg3_pins<66> = BEL "Mram_array_reg3" PINNAME CLKBWRCLKL;
+PIN Mram_array_reg31_pins<65> = BEL "Mram_array_reg31" PINNAME CLKARDCLKU;
+PIN Mram_array_reg31_pins<64> = BEL "Mram_array_reg31" PINNAME CLKARDCLKL;
+PIN Mram_array_reg31_pins<67> = BEL "Mram_array_reg31" PINNAME CLKBWRCLKU;
+PIN Mram_array_reg31_pins<66> = BEL "Mram_array_reg31" PINNAME CLKBWRCLKL;
+PIN Mram_array_reg4_pins<65> = BEL "Mram_array_reg4" PINNAME CLKARDCLKU;
+PIN Mram_array_reg4_pins<64> = BEL "Mram_array_reg4" PINNAME CLKARDCLKL;
+PIN Mram_array_reg4_pins<67> = BEL "Mram_array_reg4" PINNAME CLKBWRCLKU;
+PIN Mram_array_reg4_pins<66> = BEL "Mram_array_reg4" PINNAME CLKBWRCLKL;
+PIN Mram_array_reg41_pins<65> = BEL "Mram_array_reg41" PINNAME CLKARDCLKU;
+PIN Mram_array_reg41_pins<64> = BEL "Mram_array_reg41" PINNAME CLKARDCLKL;
+PIN Mram_array_reg41_pins<67> = BEL "Mram_array_reg41" PINNAME CLKBWRCLKU;
+PIN Mram_array_reg41_pins<66> = BEL "Mram_array_reg41" PINNAME CLKBWRCLKL;
+PIN Mram_array_reg5_pins<65> = BEL "Mram_array_reg5" PINNAME CLKARDCLKU;
+PIN Mram_array_reg5_pins<64> = BEL "Mram_array_reg5" PINNAME CLKARDCLKL;
+PIN Mram_array_reg5_pins<67> = BEL "Mram_array_reg5" PINNAME CLKBWRCLKU;
+PIN Mram_array_reg5_pins<66> = BEL "Mram_array_reg5" PINNAME CLKBWRCLKL;
+PIN Mram_array_reg51_pins<65> = BEL "Mram_array_reg51" PINNAME CLKARDCLKU;
+PIN Mram_array_reg51_pins<64> = BEL "Mram_array_reg51" PINNAME CLKARDCLKL;
+PIN Mram_array_reg51_pins<67> = BEL "Mram_array_reg51" PINNAME CLKBWRCLKU;
+PIN Mram_array_reg51_pins<66> = BEL "Mram_array_reg51" PINNAME CLKBWRCLKL;
+PIN Mram_array_reg6_pins<65> = BEL "Mram_array_reg6" PINNAME CLKARDCLKU;
+PIN Mram_array_reg6_pins<64> = BEL "Mram_array_reg6" PINNAME CLKARDCLKL;
+PIN Mram_array_reg6_pins<67> = BEL "Mram_array_reg6" PINNAME CLKBWRCLKU;
+PIN Mram_array_reg6_pins<66> = BEL "Mram_array_reg6" PINNAME CLKBWRCLKL;
+PIN Mram_array_reg61_pins<65> = BEL "Mram_array_reg61" PINNAME CLKARDCLKU;
+PIN Mram_array_reg61_pins<64> = BEL "Mram_array_reg61" PINNAME CLKARDCLKL;
+PIN Mram_array_reg61_pins<67> = BEL "Mram_array_reg61" PINNAME CLKBWRCLKU;
+PIN Mram_array_reg61_pins<66> = BEL "Mram_array_reg61" PINNAME CLKBWRCLKL;
+PIN Mram_array_reg7_pins<65> = BEL "Mram_array_reg7" PINNAME CLKARDCLKU;
+PIN Mram_array_reg7_pins<64> = BEL "Mram_array_reg7" PINNAME CLKARDCLKL;
+PIN Mram_array_reg7_pins<67> = BEL "Mram_array_reg7" PINNAME CLKBWRCLKU;
+PIN Mram_array_reg7_pins<66> = BEL "Mram_array_reg7" PINNAME CLKBWRCLKL;
+PIN Mram_array_reg71_pins<65> = BEL "Mram_array_reg71" PINNAME CLKARDCLKU;
+PIN Mram_array_reg71_pins<64> = BEL "Mram_array_reg71" PINNAME CLKARDCLKL;
+PIN Mram_array_reg71_pins<67> = BEL "Mram_array_reg71" PINNAME CLKBWRCLKU;
+PIN Mram_array_reg71_pins<66> = BEL "Mram_array_reg71" PINNAME CLKBWRCLKL;
+PIN Mram_array_reg8_pins<65> = BEL "Mram_array_reg8" PINNAME CLKARDCLKU;
+PIN Mram_array_reg8_pins<64> = BEL "Mram_array_reg8" PINNAME CLKARDCLKL;
+PIN Mram_array_reg8_pins<67> = BEL "Mram_array_reg8" PINNAME CLKBWRCLKU;
+PIN Mram_array_reg8_pins<66> = BEL "Mram_array_reg8" PINNAME CLKBWRCLKL;
+PIN Mram_array_reg81_pins<65> = BEL "Mram_array_reg81" PINNAME CLKARDCLKU;
+PIN Mram_array_reg81_pins<64> = BEL "Mram_array_reg81" PINNAME CLKARDCLKL;
+PIN Mram_array_reg81_pins<67> = BEL "Mram_array_reg81" PINNAME CLKBWRCLKU;
+PIN Mram_array_reg81_pins<66> = BEL "Mram_array_reg81" PINNAME CLKBWRCLKL;
+PIN Mram_array_reg9_pins<65> = BEL "Mram_array_reg9" PINNAME CLKARDCLKU;
+PIN Mram_array_reg9_pins<64> = BEL "Mram_array_reg9" PINNAME CLKARDCLKL;
+PIN Mram_array_reg9_pins<67> = BEL "Mram_array_reg9" PINNAME CLKBWRCLKU;
+PIN Mram_array_reg9_pins<66> = BEL "Mram_array_reg9" PINNAME CLKBWRCLKL;
+PIN Mram_array_reg91_pins<65> = BEL "Mram_array_reg91" PINNAME CLKARDCLKU;
+PIN Mram_array_reg91_pins<64> = BEL "Mram_array_reg91" PINNAME CLKARDCLKL;
+PIN Mram_array_reg91_pins<67> = BEL "Mram_array_reg91" PINNAME CLKBWRCLKU;
+PIN Mram_array_reg91_pins<66> = BEL "Mram_array_reg91" PINNAME CLKBWRCLKL;
+TIMEGRP sys_clk_pin = BEL "w_ptr_reg_0" BEL "w_ptr_reg_1" BEL "w_ptr_reg_2"
+        BEL "w_ptr_reg_3" BEL "w_ptr_reg_4" BEL "w_ptr_reg_5" BEL
+        "w_ptr_reg_6" BEL "w_ptr_reg_7" BEL "w_ptr_reg_8" BEL "w_ptr_reg_9"
+        BEL "w_ptr_reg_10" BEL "w_ptr_reg_11" BEL "w_ptr_reg_12" BEL
+        "w_ptr_reg_13" BEL "w_ptr_reg_14" BEL "w_ptr_reg_15" BEL
+        "r_ptr_next_0" BEL "r_ptr_next_1" BEL "r_ptr_next_2" BEL
+        "r_ptr_next_3" BEL "r_ptr_next_4" BEL "r_ptr_next_5" BEL
+        "r_ptr_next_6" BEL "r_ptr_next_7" BEL "r_ptr_next_8" BEL
+        "r_ptr_next_9" BEL "r_ptr_next_10" BEL "r_ptr_next_11" BEL
+        "r_ptr_next_12" BEL "r_ptr_next_13" BEL "r_ptr_next_14" BEL
+        "r_ptr_next_15" BEL "r_ptr_reg_0" BEL "r_ptr_reg_1" BEL "r_ptr_reg_2"
+        BEL "r_ptr_reg_3" BEL "r_ptr_reg_4" BEL "r_ptr_reg_5" BEL
+        "r_ptr_reg_6" BEL "r_ptr_reg_7" BEL "r_ptr_reg_8" BEL "r_ptr_reg_9"
+        BEL "r_ptr_reg_10" BEL "r_ptr_reg_11" BEL "r_ptr_reg_12" BEL
+        "r_ptr_reg_13" BEL "r_ptr_reg_14" BEL "r_ptr_reg_15" BEL
+        "w_ptr_next_0" BEL "w_ptr_next_1" BEL "w_ptr_next_2" BEL
+        "w_ptr_next_3" BEL "w_ptr_next_4" BEL "w_ptr_next_5" BEL
+        "w_ptr_next_6" BEL "w_ptr_next_7" BEL "w_ptr_next_8" BEL
+        "w_ptr_next_9" BEL "w_ptr_next_10" BEL "w_ptr_next_11" BEL
+        "w_ptr_next_12" BEL "w_ptr_next_13" BEL "w_ptr_next_14" BEL
+        "w_ptr_next_15" BEL "empty_next" BEL "empty_reg" BEL "full_next" BEL
+        "full_reg" BEL "Pclk_BUFGP/BUFG" BEL "empty_reg_1" BEL "full_reg_1"
+        PIN "Mram_array_reg1_pins<65>" PIN "Mram_array_reg1_pins<64>" PIN
+        "Mram_array_reg1_pins<67>" PIN "Mram_array_reg1_pins<66>" PIN
+        "Mram_array_reg10_pins<65>" PIN "Mram_array_reg10_pins<64>" PIN
+        "Mram_array_reg10_pins<67>" PIN "Mram_array_reg10_pins<66>" PIN
+        "Mram_array_reg101_pins<65>" PIN "Mram_array_reg101_pins<64>" PIN
+        "Mram_array_reg101_pins<67>" PIN "Mram_array_reg101_pins<66>" PIN
+        "Mram_array_reg11_pins<65>" PIN "Mram_array_reg11_pins<64>" PIN
+        "Mram_array_reg11_pins<67>" PIN "Mram_array_reg11_pins<66>" PIN
+        "Mram_array_reg2_pins<65>" PIN "Mram_array_reg2_pins<64>" PIN
+        "Mram_array_reg2_pins<67>" PIN "Mram_array_reg2_pins<66>" PIN
+        "Mram_array_reg21_pins<65>" PIN "Mram_array_reg21_pins<64>" PIN
+        "Mram_array_reg21_pins<67>" PIN "Mram_array_reg21_pins<66>" PIN
+        "Mram_array_reg3_pins<65>" PIN "Mram_array_reg3_pins<64>" PIN
+        "Mram_array_reg3_pins<67>" PIN "Mram_array_reg3_pins<66>" PIN
+        "Mram_array_reg31_pins<65>" PIN "Mram_array_reg31_pins<64>" PIN
+        "Mram_array_reg31_pins<67>" PIN "Mram_array_reg31_pins<66>" PIN
+        "Mram_array_reg4_pins<65>" PIN "Mram_array_reg4_pins<64>" PIN
+        "Mram_array_reg4_pins<67>" PIN "Mram_array_reg4_pins<66>" PIN
+        "Mram_array_reg41_pins<65>" PIN "Mram_array_reg41_pins<64>" PIN
+        "Mram_array_reg41_pins<67>" PIN "Mram_array_reg41_pins<66>" PIN
+        "Mram_array_reg5_pins<65>" PIN "Mram_array_reg5_pins<64>" PIN
+        "Mram_array_reg5_pins<67>" PIN "Mram_array_reg5_pins<66>" PIN
+        "Mram_array_reg51_pins<65>" PIN "Mram_array_reg51_pins<64>" PIN
+        "Mram_array_reg51_pins<67>" PIN "Mram_array_reg51_pins<66>" PIN
+        "Mram_array_reg6_pins<65>" PIN "Mram_array_reg6_pins<64>" PIN
+        "Mram_array_reg6_pins<67>" PIN "Mram_array_reg6_pins<66>" PIN
+        "Mram_array_reg61_pins<65>" PIN "Mram_array_reg61_pins<64>" PIN
+        "Mram_array_reg61_pins<67>" PIN "Mram_array_reg61_pins<66>" PIN
+        "Mram_array_reg7_pins<65>" PIN "Mram_array_reg7_pins<64>" PIN
+        "Mram_array_reg7_pins<67>" PIN "Mram_array_reg7_pins<66>" PIN
+        "Mram_array_reg71_pins<65>" PIN "Mram_array_reg71_pins<64>" PIN
+        "Mram_array_reg71_pins<67>" PIN "Mram_array_reg71_pins<66>" PIN
+        "Mram_array_reg8_pins<65>" PIN "Mram_array_reg8_pins<64>" PIN
+        "Mram_array_reg8_pins<67>" PIN "Mram_array_reg8_pins<66>" PIN
+        "Mram_array_reg81_pins<65>" PIN "Mram_array_reg81_pins<64>" PIN
+        "Mram_array_reg81_pins<67>" PIN "Mram_array_reg81_pins<66>" PIN
+        "Mram_array_reg9_pins<65>" PIN "Mram_array_reg9_pins<64>" PIN
+        "Mram_array_reg9_pins<67>" PIN "Mram_array_reg9_pins<66>" PIN
+        "Mram_array_reg91_pins<65>" PIN "Mram_array_reg91_pins<64>" PIN
+        "Mram_array_reg91_pins<67>" PIN "Mram_array_reg91_pins<66>";
+SCHEMATIC END;
+

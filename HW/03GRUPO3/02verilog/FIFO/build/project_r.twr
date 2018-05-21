@@ -1,0 +1,92 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -v 25 project_r.ncd
+project.pcf
+
+Design file:              project_r.ncd
+Physical constraint file: project.pcf
+Device,package,speed:     xc7a100t,csg324,C,-1 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report, limited to 25 items per constraint
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock Pclk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+data_in<0>  |    0.346(R)|      FAST  |    2.501(R)|      SLOW  |Pclk_BUFGP        |   0.000|
+data_in<1>  |    0.248(R)|      FAST  |    2.680(R)|      SLOW  |Pclk_BUFGP        |   0.000|
+data_in<2>  |    0.195(R)|      FAST  |    2.745(R)|      SLOW  |Pclk_BUFGP        |   0.000|
+data_in<3>  |    0.054(R)|      FAST  |    2.767(R)|      SLOW  |Pclk_BUFGP        |   0.000|
+data_in<4>  |   -0.174(R)|      FAST  |    3.289(R)|      SLOW  |Pclk_BUFGP        |   0.000|
+data_in<5>  |    0.503(R)|      FAST  |    2.454(R)|      SLOW  |Pclk_BUFGP        |   0.000|
+data_in<6>  |    0.069(R)|      FAST  |    2.986(R)|      SLOW  |Pclk_BUFGP        |   0.000|
+data_in<7>  |    0.257(R)|      FAST  |    2.483(R)|      SLOW  |Pclk_BUFGP        |   0.000|
+data_in<8>  |   -0.266(R)|      FAST  |    3.949(R)|      SLOW  |Pclk_BUFGP        |   0.000|
+data_in<9>  |    0.432(R)|      FAST  |    2.813(R)|      SLOW  |Pclk_BUFGP        |   0.000|
+rd          |    3.531(R)|      SLOW  |    1.795(R)|      SLOW  |Pclk_BUFGP        |   0.000|
+rst         |    4.117(R)|      SLOW  |    2.682(R)|      SLOW  |Pclk_BUFGP        |   0.000|
+wr          |    2.785(R)|      SLOW  |    1.823(R)|      SLOW  |Pclk_BUFGP        |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock Pclk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+data_out<0> |        16.170(R)|      SLOW  |         4.607(R)|      FAST  |Pclk_BUFGP        |   0.000|
+data_out<1> |        15.170(R)|      SLOW  |         4.331(R)|      FAST  |Pclk_BUFGP        |   0.000|
+data_out<2> |        15.540(R)|      SLOW  |         4.436(R)|      FAST  |Pclk_BUFGP        |   0.000|
+data_out<3> |        15.667(R)|      SLOW  |         4.511(R)|      FAST  |Pclk_BUFGP        |   0.000|
+data_out<4> |        14.464(R)|      SLOW  |         3.987(R)|      FAST  |Pclk_BUFGP        |   0.000|
+data_out<5> |        14.933(R)|      SLOW  |         4.218(R)|      FAST  |Pclk_BUFGP        |   0.000|
+data_out<6> |        15.812(R)|      SLOW  |         4.560(R)|      FAST  |Pclk_BUFGP        |   0.000|
+data_out<7> |        15.990(R)|      SLOW  |         4.690(R)|      FAST  |Pclk_BUFGP        |   0.000|
+data_out<8> |        13.604(R)|      SLOW  |         3.923(R)|      FAST  |Pclk_BUFGP        |   0.000|
+data_out<9> |        14.714(R)|      SLOW  |         4.375(R)|      FAST  |Pclk_BUFGP        |   0.000|
+empty       |         9.329(R)|      SLOW  |         2.922(R)|      FAST  |Pclk_BUFGP        |   0.000|
+full        |         9.332(R)|      SLOW  |         2.925(R)|      FAST  |Pclk_BUFGP        |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock Pclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Pclk           |    4.801|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Wed May  9 08:07:34 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 771 MB
+
+
+

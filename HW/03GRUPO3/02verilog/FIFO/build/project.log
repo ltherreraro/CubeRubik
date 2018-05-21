@@ -1,0 +1,436 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "project.src"
+Input Format                       : mixed
+
+---- Target Parameters
+Target Device                      : XC7A100T-1CSG324
+Output File Name                   : "project.ngc"
+Output Format                      : NGC
+
+---- Source Options
+Top Module Name                    : FIFO
+
+---- General Options
+Optimization Goal                  : Area
+Optimization Effort                : 1
+RTL Output                         : yes
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/camila/Documentos/proy.digII/FIFO/FIFO.v" into library work
+Parsing module <FIFO>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <FIFO>.
+WARNING:HDLCompiler:413 - "/home/camila/Documentos/proy.digII/FIFO/FIFO.v" Line 42: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/camila/Documentos/proy.digII/FIFO/FIFO.v" Line 50: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/camila/Documentos/proy.digII/FIFO/FIFO.v" Line 57: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/camila/Documentos/proy.digII/FIFO/FIFO.v" Line 58: Result of 17-bit expression is truncated to fit in 16-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <FIFO>.
+    Related source file is "/home/camila/Documentos/proy.digII/FIFO/FIFO.v".
+        depth = 65536
+        adr_width = 16
+    Found 65536x10-bit dual-port RAM <Mram_array_reg> for signal <array_reg>.
+    Found 16-bit register for signal <r_ptr_reg>.
+    Found 1-bit register for signal <full>.
+    Found 1-bit register for signal <empty>.
+    Found 16-bit register for signal <w_ptr_next>.
+    Found 16-bit register for signal <r_ptr_next>.
+    Found 1-bit register for signal <full_next>.
+    Found 1-bit register for signal <empty_next>.
+    Found 16-bit register for signal <w_ptr_reg>.
+    Found 16-bit adder for signal <w_ptr_reg[15]_GND_1_o_add_13_OUT> created at line 57.
+    Found 16-bit adder for signal <r_ptr_reg[15]_GND_1_o_add_14_OUT> created at line 58.
+    Found 16-bit 3-to-1 multiplexer for signal <wr_w_ptr_reg[15]_wide_mux_15_OUT> created at line 39.
+    Found 16-bit 4-to-1 multiplexer for signal <wr_r_ptr_reg[15]_wide_mux_16_OUT> created at line 39.
+    Found 1-bit 4-to-1 multiplexer for signal <wr_empty_reg_Mux_18_o> created at line 39.
+    Found 1-bit 4-to-1 multiplexer for signal <wr_full_reg_Mux_19_o> created at line 39.
+    Found 16-bit comparator equal for signal <r_ptr_next[15]_w_ptr_reg[15]_equal_8_o> created at line 44
+    Found 16-bit comparator equal for signal <w_ptr_next[15]_r_ptr_reg[15]_equal_12_o> created at line 52
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  68 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  15 Multiplexer(s).
+Unit <FIFO> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 65536x10-bit dual-port RAM                            : 1
+# Adders/Subtractors                                   : 2
+ 16-bit adder                                          : 2
+# Registers                                            : 8
+ 1-bit register                                        : 4
+ 16-bit register                                       : 4
+# Comparators                                          : 2
+ 16-bit comparator equal                               : 2
+# Multiplexers                                         : 15
+ 1-bit 2-to-1 multiplexer                              : 7
+ 1-bit 4-to-1 multiplexer                              : 2
+ 16-bit 2-to-1 multiplexer                             : 4
+ 16-bit 3-to-1 multiplexer                             : 1
+ 16-bit 4-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <FIFO>.
+INFO:Xst:3226 - The RAM <Mram_array_reg> will be implemented as a BLOCK RAM, absorbing the following register(s): <r_ptr_reg>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 65536-word x 10-bit                 |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <Pclk>          | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <w_ptr_reg>     |          |
+    |     diA            | connected to signal <data_in>       |          |
+    -----------------------------------------------------------------------
+    | optimization       | area                                |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 65536-word x 10-bit                 |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <Pclk>          | rise     |
+    |     addrB          | connected to signal <r_ptr_next[15]_GND_1_o_mux_5_OUT> |          |
+    |     doB            | connected to signal <data_out>      |          |
+    -----------------------------------------------------------------------
+    | optimization       | area                                |          |
+    -----------------------------------------------------------------------
+Unit <FIFO> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 65536x10-bit dual-port block RAM                      : 1
+# Adders/Subtractors                                   : 2
+ 16-bit adder                                          : 2
+# Registers                                            : 68
+ Flip-Flops                                            : 68
+# Comparators                                          : 2
+ 16-bit comparator equal                               : 2
+# Multiplexers                                         : 15
+ 1-bit 2-to-1 multiplexer                              : 7
+ 1-bit 4-to-1 multiplexer                              : 2
+ 16-bit 2-to-1 multiplexer                             : 4
+ 16-bit 3-to-1 multiplexer                             : 1
+ 16-bit 4-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <FIFO> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block FIFO, actual ratio is 0.
+FlipFlop empty_reg has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop full_reg has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 70
+ Flip-Flops                                            : 70
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : project.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 193
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 30
+#      LUT2                        : 36
+#      LUT3                        : 1
+#      LUT4                        : 2
+#      LUT6                        : 42
+#      MUXCY                       : 46
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 70
+#      FD                          : 66
+#      FDR                         : 2
+#      FDS                         : 2
+# RAMS                             : 20
+#      RAMB36E1                    : 20
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 25
+#      IBUF                        : 13
+#      OBUF                        : 12
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              68  out of  126800     0%  
+ Number of Slice LUTs:                  113  out of  63400     0%  
+    Number used as Logic:               113  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    117
+   Number with an unused Flip Flop:      49  out of    117    41%  
+   Number with an unused LUT:             4  out of    117     3%  
+   Number of fully used LUT-FF pairs:    64  out of    117    54%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          26
+ Number of bonded IOBs:                  26  out of    210    12%  
+    IOB Flip Flops/Latches:               2
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               20  out of    135    14%  
+    Number using Block RAM only:         20
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Pclk                               | BUFGP                  | 90    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+N11(Mram_array_reg21:CASCADEOUTA)  | NONE(Mram_array_reg2)  | 1     |
+N13(Mram_array_reg21:CASCADEOUTB)  | NONE(Mram_array_reg2)  | 1     |
+N15(Mram_array_reg41:CASCADEOUTA)  | NONE(Mram_array_reg4)  | 1     |
+N17(Mram_array_reg41:CASCADEOUTB)  | NONE(Mram_array_reg4)  | 1     |
+N19(Mram_array_reg51:CASCADEOUTA)  | NONE(Mram_array_reg5)  | 1     |
+N21(Mram_array_reg51:CASCADEOUTB)  | NONE(Mram_array_reg5)  | 1     |
+N23(Mram_array_reg61:CASCADEOUTA)  | NONE(Mram_array_reg6)  | 1     |
+N25(Mram_array_reg61:CASCADEOUTB)  | NONE(Mram_array_reg6)  | 1     |
+N27(Mram_array_reg71:CASCADEOUTA)  | NONE(Mram_array_reg7)  | 1     |
+N29(Mram_array_reg71:CASCADEOUTB)  | NONE(Mram_array_reg7)  | 1     |
+N3(Mram_array_reg31:CASCADEOUTA)   | NONE(Mram_array_reg3)  | 1     |
+N31(Mram_array_reg101:CASCADEOUTA) | NONE(Mram_array_reg10) | 1     |
+N33(Mram_array_reg101:CASCADEOUTB) | NONE(Mram_array_reg10) | 1     |
+N35(Mram_array_reg81:CASCADEOUTA)  | NONE(Mram_array_reg8)  | 1     |
+N37(Mram_array_reg81:CASCADEOUTB)  | NONE(Mram_array_reg8)  | 1     |
+N39(Mram_array_reg91:CASCADEOUTA)  | NONE(Mram_array_reg9)  | 1     |
+N41(Mram_array_reg91:CASCADEOUTB)  | NONE(Mram_array_reg9)  | 1     |
+N5(Mram_array_reg31:CASCADEOUTB)   | NONE(Mram_array_reg3)  | 1     |
+N7(Mram_array_reg11:CASCADEOUTA)   | NONE(Mram_array_reg1)  | 1     |
+N9(Mram_array_reg11:CASCADEOUTB)   | NONE(Mram_array_reg1)  | 1     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 3.126ns (Maximum Frequency: 319.949MHz)
+   Minimum input arrival time before clock: 1.893ns
+   Maximum output required time after clock: 0.877ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Pclk'
+  Clock period: 3.126ns (frequency: 319.949MHz)
+  Total number of paths / destination ports: 440 / 70
+-------------------------------------------------------------------------
+Delay:               3.126ns (Levels of Logic = 18)
+  Source:            w_ptr_reg_0 (FF)
+  Destination:       w_ptr_next_15 (FF)
+  Source Clock:      Pclk rising
+  Destination Clock: Pclk rising
+
+  Data Path: w_ptr_reg_0 to w_ptr_next_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              22   0.478   0.535  w_ptr_reg_0 (w_ptr_reg_0)
+     INV:I->O              1   0.146   0.000  Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_lut<0>_INV_0 (Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_lut<0>)
+     MUXCY:S->O            1   0.472   0.000  Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_cy<0> (Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_cy<1> (Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_cy<2> (Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_cy<3> (Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_cy<4> (Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_cy<5> (Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_cy<6> (Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_cy<7> (Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_cy<8> (Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_cy<9> (Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_cy<10> (Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_cy<11> (Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_cy<12> (Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_cy<13> (Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_cy<13>)
+     MUXCY:CI->O           0   0.029   0.000  Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_cy<14> (Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_cy<14>)
+     XORCY:CI->O           1   0.510   0.421  Madd_w_ptr_reg[15]_GND_1_o_add_13_OUT_xor<15> (w_ptr_reg[15]_GND_1_o_add_13_OUT<15>)
+     LUT6:I5->O            1   0.124   0.000  Mmux_wr_w_ptr_reg[15]_wide_mux_15_OUT71 (wr_w_ptr_reg[15]_wide_mux_15_OUT<15>)
+     FD:D                      0.030          w_ptr_next_15
+    ----------------------------------------
+    Total                      3.126ns (2.170ns logic, 0.956ns route)
+                                       (69.4% logic, 30.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Pclk'
+  Total number of paths / destination ports: 160 / 90
+-------------------------------------------------------------------------
+Offset:              1.893ns (Levels of Logic = 3)
+  Source:            rd (PAD)
+  Destination:       empty_next (FF)
+  Destination Clock: Pclk rising
+
+  Data Path: rd to empty_next
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            37   0.001   0.930  rd_IBUF (rd_IBUF)
+     LUT4:I0->O            1   0.124   0.000  Mmux_wr_empty_reg_Mux_18_o11_lut1 (Mmux_wr_empty_reg_Mux_18_o11_lut1)
+     MUXCY:S->O            1   0.808   0.000  Mmux_wr_empty_reg_Mux_18_o11_cy1 (wr_empty_reg_Mux_18_o)
+     FD:D                      0.030          empty_next
+    ----------------------------------------
+    Total                      1.893ns (0.963ns logic, 0.930ns route)
+                                       (50.9% logic, 49.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Pclk'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              0.877ns (Levels of Logic = 1)
+  Source:            empty_reg_1 (FF)
+  Destination:       empty (PAD)
+  Source Clock:      Pclk rising
+
+  Data Path: empty_reg_1 to empty
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              1   0.478   0.399  empty_reg_1 (empty_reg_1)
+     OBUF:I->O                 0.000          empty_OBUF (empty)
+    ----------------------------------------
+    Total                      0.877ns (0.478ns logic, 0.399ns route)
+                                       (54.5% logic, 45.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Pclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Pclk           |    3.126|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.21 secs
+ 
+--> 
+
+
+Total memory usage is 506768 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
