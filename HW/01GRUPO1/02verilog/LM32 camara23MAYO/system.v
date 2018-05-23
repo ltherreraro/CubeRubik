@@ -9,6 +9,7 @@ module system
 //	parameter   bootram_file     = "../firmware/cain_loader/image.ram",
 //	parameter   bootram_file     = "../firmware/arch_examples/image.ram",
 //	parameter   bootram_file     = "../firmware/boot0-serial/image.ram",
+//	parameter   bootram_file     = "../firmware/uartcam/image.ram",
 	parameter   bootram_file     = "../firmware/uartcam/image.ram",
 	parameter   clk_freq         = 100000000,
 	parameter   uart_baud_rate   = 115200

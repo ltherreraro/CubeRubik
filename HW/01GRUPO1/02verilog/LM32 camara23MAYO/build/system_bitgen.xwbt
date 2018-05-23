@@ -1,7 +1,7 @@
-INFILE=/home/ekativa-project/Desktop/LM32 camara16MAYO/build/system-routed.ncd
-OUTFILE=/home/ekativa-project/Desktop/LM32 camara16MAYO/build/system.bit
+INFILE=/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara23MAYO/build/system-routed.ncd
+OUTFILE=/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara23MAYO/build/system.bit
 FAMILY=Artix7
 PART=xc7a100t-1csg324
-WORKINGDIR=/home/ekativa-project/Desktop/LM32 camara16MAYO/build
+WORKINGDIR=/home/ekativa-project/Desktop/CubeRubik/HW/01GRUPO1/02verilog/LM32 camara23MAYO/build
 LICENSE=WebPack
 USER_INFO=211344048_0_0_038

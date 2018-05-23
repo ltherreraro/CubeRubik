@@ -77,19 +77,19 @@ always@(*)
 begin
 	if(resetwr)
 	begin
-		wrst<=1;
+		wrst<=0;
 	end
 	else
 	begin
-		wrst<=0;
+		wrst<=1;
 	end
 	if(resetrd)
 	begin
-		rrst<=1;
+		rrst<=0;
 	end
 	else
 	begin
-		rrst<=0;
+		rrst<=1;
 	end
 	if(leer1)	
 	begin

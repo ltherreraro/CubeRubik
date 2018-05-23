@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-ekativaproject-Lenovo-Yoga-500-14IBD::  Tue May 22 14:57:35 2018
+ekativaproject-Lenovo-Yoga-500-14IBD::  Wed May 23 13:29:36 2018
 
 par -ol high -w system.ncd system-routed.ncd 
 
@@ -31,7 +31,7 @@ Slice Logic Utilization:
     Number used as Latches:                      2
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                1
-  Number of Slice LUTs:                      2,324 out of  63,400    3%
+  Number of Slice LUTs:                      2,350 out of  63,400    3%
     Number used as logic:                    2,054 out of  63,400    3%
       Number using O6 output only:           1,267
       Number using O5 output only:             548
@@ -44,17 +44,17 @@ Slice Logic Utilization:
         Number using O5 and O6:                 60
       Number used as Single Port RAM:            0
       Number used as Shift Register:             0
-    Number used exclusively as route-thrus:    202
-      Number with same-slice register load:    184
+    Number used exclusively as route-thrus:    228
+      Number with same-slice register load:    210
       Number with same-slice carry load:        18
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   843 out of  15,850    5%
-  Number of LUT Flip Flop pairs used:        2,778
-    Number with an unused Flip Flop:           769 out of   2,778   27%
-    Number with an unused LUT:                 454 out of   2,778   16%
-    Number of fully used LUT-FF pairs:       1,555 out of   2,778   55%
+  Number of occupied Slices:                   838 out of  15,850    5%
+  Number of LUT Flip Flop pairs used:        2,794
+    Number with an unused Flip Flop:           817 out of   2,794   29%
+    Number with an unused LUT:                 444 out of   2,794   15%
+    Number of fully used LUT-FF pairs:       1,533 out of   2,794   54%
     Number of slice register sites lost
       to control set restrictions:               0 out of 126,800    0%
 
@@ -69,7 +69,7 @@ Slice Logic Distribution:
 IO Utilization:
   Number of bonded IOBs:                        29 out of     210   13%
     Number of LOCed IOBs:                       29 out of      29  100%
-    IOB Flip Flops:                             14
+    IOB Flip Flops:                             12
     IOB Latches:                                 9
 
 Specific Feature Utilization:
@@ -117,34 +117,34 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 35 secs 
-Finished initial Timing Analysis.  REAL time: 35 secs 
+Starting initial Timing Analysis.  REAL time: 30 secs 
+Finished initial Timing Analysis.  REAL time: 30 secs 
 
 WARNING:Par:288 - The signal href_IBUF has no load.  PAR will not attempt to route this signal.
 Starting Router
 
 
-Phase  1  : 13399 unrouted;      REAL time: 38 secs 
+Phase  1  : 13359 unrouted;      REAL time: 32 secs 
 
-Phase  2  : 11123 unrouted;      REAL time: 40 secs 
+Phase  2  : 11115 unrouted;      REAL time: 33 secs 
 
-Phase  3  : 4000 unrouted;      REAL time: 47 secs 
+Phase  3  : 4188 unrouted;      REAL time: 40 secs 
 
-Phase  4  : 4000 unrouted; (Par is working to improve performance)     REAL time: 55 secs 
+Phase  4  : 4188 unrouted; (Par is working to improve performance)     REAL time: 46 secs 
 
 Updating file: system-routed.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 4 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 52 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 4 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 52 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 4 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 52 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 4 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 52 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 9 secs 
-Total REAL time to Router completion: 1 mins 9 secs 
-Total CPU time to Router completion: 1 mins 10 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 55 secs 
+Total REAL time to Router completion: 55 secs 
+Total CPU time to Router completion: 56 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -164,8 +164,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|    10.834ns|     N/A|           0
-  _BUFGP                                    | HOLD        |     0.054ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|    10.980ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     0.006ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -183,8 +183,8 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 1 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 1 mins 10 secs 
-Total CPU time to PAR completion: 1 mins 12 secs 
+Total REAL time to PAR completion: 58 secs 
+Total CPU time to PAR completion: 59 secs 
 
 Peak Memory Usage:  1132 MB
 
