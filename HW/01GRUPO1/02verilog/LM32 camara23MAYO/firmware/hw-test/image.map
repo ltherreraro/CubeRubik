@@ -1,0 +1,218 @@
+
+Configuración de la Memoria
+
+Nombre           Origen             Longitud           Atributos
+ram              0x0000000000000000 0x0000000000001000
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Guión del enlazador y mapa de memoria
+
+                0x0000000000000000                __DYNAMIC = 0x0
+                0x0000000000000000                _RAM_START = 0x0
+                0x0000000000001000                _RAM_SIZE = 0x1000
+                0x0000000000001000                _RAM_END = (_RAM_START + _RAM_SIZE)
+
+.text           0x0000000000000000      0x9ac
+                0x0000000000000000                _ftext = .
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000000000000      0x1e8 crt0ram.o
+                0x0000000000000000                _start
+                0x0000000000000120                irq_enable
+                0x000000000000012c                irq_disable
+                0x0000000000000138                irq_set_mask
+                0x0000000000000140                irq_get_mask
+                0x0000000000000148                jump
+                0x000000000000014c                halt
+                0x00000000000001d8                get_sp
+                0x00000000000001e0                get_gp
+ .text          0x00000000000001e8        0x0 main.o
+ .text.startup  0x00000000000001e8       0xe8 main.o
+                0x00000000000001e8                main
+ .text          0x00000000000002d0      0x444 soc-hw.o
+                0x00000000000002d0                tic_isr()
+                0x0000000000000304                isr_null()
+                0x0000000000000308                cam_read()
+                0x0000000000000320                cam_takepicture(unsigned char)
+                0x000000000000033c                cam_leer(unsigned int)
+                0x0000000000000354                cam_resetwr(unsigned char)
+                0x0000000000000370                cam_resetrd(unsigned int)
+                0x0000000000000388                pwm_read()
+                0x00000000000003a0                pwm_rd(unsigned char)
+                0x00000000000003bc                pwm_addr(unsigned int)
+                0x00000000000003d4                pwm_wr(unsigned char)
+                0x00000000000003f0                pwm_din(unsigned int)
+                0x0000000000000408                gpio_config_dir(unsigned int)
+                0x0000000000000420                gpio_write(unsigned int)
+                0x0000000000000438                gpio_read()
+                0x0000000000000450                irq_handler(unsigned int)
+                0x00000000000004ac                isr_init()
+                0x00000000000004d8                isr_register(int, void (*)())
+                0x00000000000004f4                isr_unregister(int)
+                0x000000000000051c                msleep(unsigned int)
+                0x0000000000000554                nsleep(unsigned int)
+                0x0000000000000588                tic_init()
+                0x00000000000005dc                uart_init()
+                0x00000000000005e0                uart_getchar()
+                0x0000000000000608                uart_putchar(char)
+                0x0000000000000630                uart_putstr(char*)
+                0x0000000000000668                i2c_init()
+                0x0000000000000690                i2c_write(char, char, char)
+ .text          0x0000000000000714      0x130 pwm.o
+                0x0000000000000714                pwm::pwm_sel(int, char, bool)
+                0x0000000000000810                pwm::brazo(char)
+ .text          0x0000000000000844       0x34 timer.o
+                0x0000000000000844                timer::nsleep(int)
+ .text          0x0000000000000878       0xb0 uart.o
+                0x0000000000000878                uart::uart_init()
+                0x000000000000087c                uart::uart_getchar()
+                0x00000000000008a4                uart::uart_putchar(char)
+                0x00000000000008cc                uart::uart_putstr(char*)
+                0x0000000000000904                uart::uart_getint()
+ .text          0x0000000000000928       0x84 camera.o
+                0x0000000000000928                camera::cam_tomar(int)
+                0x0000000000000944                camera::cam_ver(int)
+                0x0000000000000960                camera::cam_dato()
+                0x000000000000097c                camera::cam_rst(int, int)
+                0x00000000000009ac                _etext = .
+
+.rodata         0x00000000000009ac       0x94
+                0x00000000000009ac                . = ALIGN (0x4)
+                0x00000000000009ac                _frodata = .
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.cst4   0x00000000000009ac       0x80 soc-hw.o
+ .rodata.cst4   0x0000000000000a2c        0x4 timer.o
+ .rodata.cst4   0x0000000000000a30       0x10 uart.o
+ *(.rodata1)
+                0x0000000000000a40                _erodata = .
+
+.data           0x0000000000000a40       0x18
+                0x0000000000000a40                . = ALIGN (0x4)
+                0x0000000000000a40                _fdata = .
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000000000000a40        0x0 crt0ram.o
+ .data          0x0000000000000a40        0x0 main.o
+ .data          0x0000000000000a40       0x18 soc-hw.o
+                0x0000000000000a40                pwm
+                0x0000000000000a44                i2c0
+                0x0000000000000a48                cam
+                0x0000000000000a4c                gpio0
+                0x0000000000000a50                timer0
+                0x0000000000000a54                uart0
+ .data          0x0000000000000a58        0x0 pwm.o
+ .data          0x0000000000000a58        0x0 timer.o
+ .data          0x0000000000000a58        0x0 uart.o
+ .data          0x0000000000000a58        0x0 camera.o
+ *(.data1)
+                0x0000000000000a60                _gp = ALIGN (0x10)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+                0x0000000000000a58                _edata = .
+
+.bss            0x0000000000000a58       0x84
+                0x0000000000000a58                . = ALIGN (0x4)
+                0x0000000000000a58                _fbss = .
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ *(.scommon)
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0000000000000a58        0x0 crt0ram.o
+ .bss           0x0000000000000a58        0x0 main.o
+ .bss           0x0000000000000a58       0x84 soc-hw.o
+                0x0000000000000a58                tic_msec
+                0x0000000000000a5c                isr_table
+ .bss           0x0000000000000adc        0x0 pwm.o
+ .bss           0x0000000000000adc        0x0 timer.o
+ .bss           0x0000000000000adc        0x0 uart.o
+ .bss           0x0000000000000adc        0x0 camera.o
+ *(COMMON)
+                0x0000000000000adc                _ebss = .
+                0x0000000000000adc                _end = .
+                0x0000000000000ffc                PROVIDE (_fstack = ((ORIGIN (ram) + LENGTH (ram)) - 0x4))
+LOAD crt0ram.o
+LOAD main.o
+LOAD soc-hw.o
+LOAD pwm.o
+LOAD timer.o
+LOAD uart.o
+LOAD camera.o
+OUTPUT(image elf32-lm32)
+
+.debug_frame    0x0000000000000000      0x384
+ .debug_frame   0x0000000000000000       0x34 main.o
+ .debug_frame   0x0000000000000034      0x1e8 soc-hw.o
+ .debug_frame   0x000000000000021c       0x4c pwm.o
+ .debug_frame   0x0000000000000268       0x24 timer.o
+ .debug_frame   0x000000000000028c       0x64 uart.o
+ .debug_frame   0x00000000000002f0       0x94 camera.o
+
+.debug_info     0x0000000000000000     0x1b12
+ .debug_info    0x0000000000000000      0x32d main.o
+ .debug_info    0x000000000000032d      0x7bc soc-hw.o
+ .debug_info    0x0000000000000ae9      0x49d pwm.o
+ .debug_info    0x0000000000000f86      0x2c3 timer.o
+ .debug_info    0x0000000000001249      0x436 uart.o
+ .debug_info    0x000000000000167f      0x493 camera.o
+
+.debug_abbrev   0x0000000000000000      0x96a
+ .debug_abbrev  0x0000000000000000      0x11e main.o
+ .debug_abbrev  0x000000000000011e      0x23a soc-hw.o
+ .debug_abbrev  0x0000000000000358      0x1a2 pwm.o
+ .debug_abbrev  0x00000000000004fa      0x114 timer.o
+ .debug_abbrev  0x000000000000060e      0x1d4 uart.o
+ .debug_abbrev  0x00000000000007e2      0x188 camera.o
+
+.debug_aranges  0x0000000000000000       0xc0
+ .debug_aranges
+                0x0000000000000000       0x20 main.o
+ .debug_aranges
+                0x0000000000000020       0x20 soc-hw.o
+ .debug_aranges
+                0x0000000000000040       0x20 pwm.o
+ .debug_aranges
+                0x0000000000000060       0x20 timer.o
+ .debug_aranges
+                0x0000000000000080       0x20 uart.o
+ .debug_aranges
+                0x00000000000000a0       0x20 camera.o
+
+.debug_ranges   0x0000000000000000       0x28
+ .debug_ranges  0x0000000000000000       0x10 main.o
+ .debug_ranges  0x0000000000000010       0x18 soc-hw.o
+
+.debug_line     0x0000000000000000      0x976
+ .debug_line    0x0000000000000000       0xe9 main.o
+ .debug_line    0x00000000000000e9      0x4d5 soc-hw.o
+ .debug_line    0x00000000000005be      0x15c pwm.o
+ .debug_line    0x000000000000071a       0x94 timer.o
+ .debug_line    0x00000000000007ae      0x102 uart.o
+ .debug_line    0x00000000000008b0       0xc6 camera.o
+
+.debug_str      0x0000000000000000      0x686
+ .debug_str     0x0000000000000000      0x1ae main.o
+                                        0x1cc (tamaño antes de la relajación)
+ .debug_str     0x00000000000001ae      0x3e8 soc-hw.o
+                                        0x544 (tamaño antes de la relajación)
+ .debug_str     0x0000000000000596       0x49 pwm.o
+                                        0x26b (tamaño antes de la relajación)
+ .debug_str     0x00000000000005df        0xa timer.o
+                                        0x1fe (tamaño antes de la relajación)
+ .debug_str     0x00000000000005e9       0x92 uart.o
+                                        0x296 (tamaño antes de la relajación)
+ .debug_str     0x000000000000067b        0xb camera.o
+                                        0x301 (tamaño antes de la relajación)
+
+.comment        0x0000000000000000       0x11
+ .comment       0x0000000000000000       0x11 main.o
+                                         0x12 (tamaño antes de la relajación)
+ .comment       0x0000000000000011       0x12 soc-hw.o
+ .comment       0x0000000000000011       0x12 pwm.o
+ .comment       0x0000000000000011       0x12 timer.o
+ .comment       0x0000000000000011       0x12 uart.o
+ .comment       0x0000000000000011       0x12 camera.o
+
+.debug_loc      0x0000000000000000      0x518
+ .debug_loc     0x0000000000000000      0x15e soc-hw.o
+ .debug_loc     0x000000000000015e      0x1ad pwm.o
+ .debug_loc     0x000000000000030b       0x55 timer.o
+ .debug_loc     0x0000000000000360       0xa5 uart.o
+ .debug_loc     0x0000000000000405      0x113 camera.o
