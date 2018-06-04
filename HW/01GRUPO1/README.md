@@ -56,6 +56,10 @@ Servo Motores
 
 ![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/memoriaServo.PNG)
 
+Cámara
+![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/mapa%20de%20memoria%20camara.JPG)
+
+
 ## Diagramas de bloques
 PWM
 
