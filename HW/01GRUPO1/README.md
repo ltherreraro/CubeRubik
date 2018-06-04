@@ -63,7 +63,7 @@ PWM
 
 Cámara
 
-![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/Funcionalcamara.png)
+![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/diagrama%20bloques%20camara%20fifo.png)
 
 SD
 
