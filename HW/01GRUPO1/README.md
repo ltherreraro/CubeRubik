@@ -54,7 +54,7 @@ Micro SD
 
 Servo Motores
 
-![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/memoriaServo.PNG)
+![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/MEMORIASERVO.png)
 
 Cámara
 ![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/mapa%20de%20memoria%20camara.JPG)
