@@ -68,6 +68,13 @@ Cámara
 SD
 
 ![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/bloquesd.JPG)
+## Wishbones:
+PWM
+![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/wishbone%20de%20motores.jpg)
+Cámara
+![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/wishbone%20de%20camara.jpg)
+
+
 
 ## Cronograma De Trabajo
 ![](https://github.com/ltherreraro/CubeRubik/blob/master/HW/01GRUPO1/03document/cronograma.JPG)
