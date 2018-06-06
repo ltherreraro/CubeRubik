@@ -1,3 +1,0 @@
-verilog work ../camara.v
-verilog work ../FIFO.v
-verilog work ../div_frec.v
