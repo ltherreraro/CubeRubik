@@ -43,6 +43,10 @@ module FIFO
     		    begin
     		       w_ptr <= w_ptr + 1;
     		       r_ptr <= r_ptr + 1;
+              data_out<= array_reg[r_ptr];
+              array_reg[w_ptr] <= data_in;
+    		       w_ptr <= w_ptr + 1;
+              
     		    end
     	   endcase
         end
