@@ -1,7 +1,7 @@
-INFILE=/home/lisseth/Escritorio/LM32 camara23MAYOno negado/build/system-routed.ncd
-OUTFILE=/home/lisseth/Escritorio/LM32 camara23MAYOno negado/build/system.bit
+INFILE=/home/ekativa-project/Videos/LM32 camara23MAYOno negado/build/system-routed.ncd
+OUTFILE=/home/ekativa-project/Videos/LM32 camara23MAYOno negado/build/system.bit
 FAMILY=Artix7
 PART=xc7a100t-1csg324
-WORKINGDIR=/home/lisseth/Escritorio/LM32 camara23MAYOno negado/build
+WORKINGDIR=/home/ekativa-project/Videos/LM32 camara23MAYOno negado/build
 LICENSE=WebPack
-USER_INFO=211378749_0_0_358
+USER_INFO=211344048_0_0_038
