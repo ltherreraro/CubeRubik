@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLCompiler" num="1660" delta="new" >"/home/camila/Documentos/proy.digII/PWM_Top/pwm_top.v" Line 62: Procedural assignment to a non-register <arg fmt="%s" index="1">wr</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="new" >"/home/camila/Documentos/proy.digII/PWM_Top/pwm_top.v" Line 62: Procedural assignment to a non-register <arg fmt="%s" index="1">wr</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="new" >"/home/camila/Documentos/proy.digII/PWM_Top/pwm_top.v" Line 63: Procedural assignment to a non-register <arg fmt="%s" index="1">rd</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="new" >"/home/camila/Documentos/proy.digII/PWM_Top/pwm_top.v" Line 63: Procedural assignment to a non-register <arg fmt="%s" index="1">rd</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="new" >"/home/camila/Documentos/proy.digII/PWM_Top/pwm_top.v" Line 64: Procedural assignment to a non-register <arg fmt="%s" index="1">data_in</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="new" >"/home/camila/Documentos/proy.digII/PWM_Top/pwm_top.v" Line 64: Procedural assignment to a non-register <arg fmt="%s" index="1">data_in</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="new" >"/home/camila/Documentos/proy.digII/PWM_Top/pwm_top.v" Line 65: Procedural assignment to a non-register <arg fmt="%s" index="1">addr</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="new" >"/home/camila/Documentos/proy.digII/PWM_Top/pwm_top.v" Line 65: Procedural assignment to a non-register <arg fmt="%s" index="1">addr</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="598" delta="new" >"/home/camila/Documentos/proy.digII/PWM_Top/pwm_top.v" Line 3: Module &lt;<arg fmt="%s" index="1">pwm_top</arg>&gt; ignored due to previous errors.
+</msg>
+
+</messages>
+
