@@ -276,11 +276,53 @@ Donde:
 
 En este se sigue la lógica de un multiplexor. Según las entradas wr y rd se lee o se escribe la característica que se desea. Además para poder leer y escribir dichos valores se almacenan en registros todo lo ingresado, para así leerlos cuando se necesite.
 
+_FIFO_
+
+Este módulo cumple la función de tener una pila de datos en el cual el primer dato en escribirse es el primer dato en leerse, la longitud y el tamaño se pueden definir como parámetro, lo que nosotros utilizamos para el archivo JPEG fué de  longitud de 8 bits y un  tamaño de pila de 128.
+
+El módulo tiene los siguientes parámetros, entradas y salidas:
+
+`parameter DATO_WIDTH;`
+
+`parameter FIFO_LENGTH;`
+
+`module (wclk, datin, rclk, rst, dataout, full, empty, dato);`
+
+`	input wclk;`
+
+`	input rclk;`
+
+`	input rst;`
+
+`	input [DATO_WIDTH-1:0] datin;`
+
+`	output reg full;`
+
+`	output reg empty;`
+
+`	output reg dato;`
+
+` 	output reg [DATO_WIDTH-1:0] datout;`
+
+Donde:
+* `wclk`: Es el reloj de escritura, se activa cuando se desea escribir un dato en la pila de datos.
+* `rclk`: Es el reloj de lectura, se activa cuando se desea leer un dato de la pila de datos.
+* `rst`: Permite reiniciar la FIFO, todos los registros de salida se vuelven 0 excepto por empty que se pone en 1.
+* `datin`: El dato de entrada que se escribe en la pila.
+* `full`: Su valor es 0, cuando la pila está llena su valor es 1 y no permite escribir más en la pila.
+* `empty`: Su valor es 1 cuando la pila no tiene datos, 0 cuando existe al menos un dato en la pila.
+* `dato`: Su valor es 1 si existe al menos un valor en la pila, indica si hay datos en la pila.
+* `datout`: El dato de salida que se lee de la pila.
+
+<img width="410" alt="screenshot 2018-06-08 at 07 47 22" src="https://user-images.githubusercontent.com/24497588/41158920-498dcb90-6af0-11e8-8541-9237e1f06b57.png">
+
 _Wishbone_
 
 Para el wishbone del PWM se utilizó la misma lógica que maneja el módulo UART con el que ya cuenta el LM32. Como pwm.v cuenta con lectura y escritura, según el procesador nos pida(wb_rd) o de(wb_wr) información habilitamos estas entradas wr y rd. Para la caracteristica a modificar utilizamos wb_adr_i en adrs. Y por último si es lectura o escritura, damos el valor de dout a wb_dat_o, o a din el valor de wb_dat_i.
 
 ![pwm_wb](https://user-images.githubusercontent.com/24497588/38167426-66b5700a-34fa-11e8-8b88-114bf9d94f08.jpeg)
+
+Puesto que recibe dos señales de reloj, una para la escritura y otra para la lectura, se puede tanto escribir como leer simultáneamente. 
 
 ## 4. Software
 
