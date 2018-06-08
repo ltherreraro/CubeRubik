@@ -55,6 +55,8 @@ Conectar los cables de la señal de los servos desde la PCB a la tarjeta Nexys4D
 
 ` GND -----> Pmod JXADC_5 o Pmod JXADC_7`
 
+<img width="299" alt="screenshot 2018-06-08 at 06 51 34" src="https://user-images.githubusercontent.com/24497588/41156668-84550f20-6ae8-11e8-9544-8c71a575056d.png">
+
 Ahora, conectar la cámara correctamente:
 
 ` VCC -----> VCC (CAMERA_IN PCB)`
@@ -68,6 +70,8 @@ Ahora, conectar la cámara correctamente:
 ` TX (CAMERA_OUT PCB) -----> Pmod JD_1`
 
 ` RX (CAMERA_OUT PCB) -----> Pmod JD_2`
+
+<img width="277" alt="screenshot 2018-06-08 at 06 51 47" src="https://user-images.githubusercontent.com/24497588/41156669-847134d4-6ae8-11e8-9174-45d0e43514b4.png">
 
 Ahora, es indispensable programar la FPGA con el procesador LM32 que se ha descargado. Para ello, se abrirá una Terminal en la carpeta del proyecto RubikBot mediante el siguiente comando:
 
@@ -93,16 +97,16 @@ En la Terminal aparecerá el mensaje `“​Esperando Bot...”`​ Es necesario
 
 Posteriormente se selecciona alguna de las siguientes funciones del código en Python, según lo que se desee hacer:
 
-* `Init`: ​Lleva los brazos hacia adelante para agarrar el cubo.
-* `Home`:​ Lleva los brazos hacia atrás.
-* `Mover`: ​Como se indica en la figura dependiendo la cara que se quiera mover se escribe en la consola la dirección del movimiento. Ejemplo: ​mover Ra​, mueve la cara “R” hacia la derecha y ​mover R’ mueve la cara “R” hacia la izquierda.
+* `init`: ​Lleva los brazos hacia adelante para agarrar el cubo.
+* `home`:​ Lleva los brazos hacia atrás.
+* `mover`: ​Como se indica en la figura dependiendo la cara que se quiera mover se escribe en la consola la dirección del movimiento. Ejemplo: ​mover Ra​, mueve la cara “R” hacia la derecha y ​mover R’ mueve la cara “R” hacia la izquierda.
 
 <img width="292" alt="screenshot 2018-06-07 at 22 38 44" src="https://user-images.githubusercontent.com/24497588/41137923-a26da5a2-6aa3-11e8-8410-b9296c141435.png">
 
-* `Calibrar`: Permite realizar ajustes en el ciclo útil de los servos, lo cual permite realizar una calibración en caso de ser necesario la sintaxis es: `calibrar dir (derecha, izquierda...) del brazo #(1,2,3,4) a valor(3 a 46).`
-* `Ver cubo`: ​Toma la foto de cada cara del cubo para determinar el estado inicial del cubo.
-* `Crear algoritmo`:​ Genera el algoritmo para solucionar el cubo. 
-* `Solucionar cubo`: ​Ejecuta el algoritmo generado.
+* `calibra`: Permite realizar ajustes en el ciclo útil de los servos, lo cual permite realizar una calibración en caso de ser necesario la sintaxis es: `calibrar dir (derecha, izquierda...) del brazo #(1,2,3,4) a valor(3 a 46).`
+* `ver cubo`: ​Toma la foto de cada cara del cubo para determinar el estado inicial del cubo.
+* `crear algoritmo`:​ Genera el algoritmo para solucionar el cubo(depués de haber ejecutado "ver cubo"). 
+* `resolver cubo`: ​Ejecuta el algoritmo generado(después de haber ejecutado "crear algoritmo").
 
 ## 2. Especificaciones Técnicas
 
@@ -126,10 +130,6 @@ La técnica Pulse Width Modulation consiste en variar el ancho de pulso de una s
 
 ![pwm](https://user-images.githubusercontent.com/24497588/38167427-66d6b648-34fa-11e8-9618-018032b4c44d.jpeg)
 
-_Diagrama (Wishbone):_
-
-![pwm_wb](https://user-images.githubusercontent.com/24497588/38167426-66b5700a-34fa-11e8-8b88-114bf9d94f08.jpeg)
-
 ### Mapa de Memoria
 
 <img width="375" alt="screenshot 2018-06-07 at 22 44 21" src="https://user-images.githubusercontent.com/24497588/41138061-6b42eafa-6aa4-11e8-8aec-4e1585b22745.png">
@@ -140,7 +140,102 @@ Se usaron 8 servos, para los cuales se puede asignar el valor de su ciclo útil,
 
 #### 2.1.2) Brazos
 
-Se implementó unos brazos los cuales se basan en el uso de dos servos para mover el brazo hacia adelante, atrás, y rotar una cara del cubo hacia la izquierda o derecha, para que llevara a cabo una instrucción sin que se colisionara con otro brazo se emplea un tiempo de 1 ms entre instrucción excepto en el caso de requerir cambiar la cara del cubo en dicho caso no había tiempo de retardo para que se ejecutarán las instrucciones al tiempo. Se implementan cuatro brazos, en la clase arm se definen las siguientes funciones:
+Se implementó unos brazos los cuales se basan en el uso de dos servos para mover el brazo hacia adelante, atrás, y rotar una cara del cubo hacia la izquierda o derecha, para que llevara a cabo una instrucción sin que se colisionara con otro brazo se emplea un tiempo de 1 ms entre instrucción excepto en el caso de requerir cambiar la cara del cubo en dicho caso no había tiempo de retardo para que se ejecutarán las instrucciones al tiempo. Se implementan cuatro brazos.
+
+#### 2.1.3) Hardware:
+
+La implementación del pwm en verilog se hizo con dos modulos: counter.v y pwm.v
+
+El módulo counter.v es el que se encarga de la generación de un pwm. Este se instancia 8 veces en pwm.v para así tener 8 señales independientes.
+
+_counter.v_
+
+Este módulo tiene las siguientes entradas y salidas:
+
+ `module counter(clk,period,duty,state,en);` 
+	
+	`input clk;`
+
+	`input en;`
+
+	`input [7:0] period;`
+
+	`input [7:0] duty;`
+
+	`output reg state;`
+ 
+Donde: 
+
+* `clk` es la entrada de del reloj que se esté usando.
+* `en` es la que habilita el funcionamiento de la salida de la salida state.
+* `period` es el periodo al que se desea trabajar el pwm.
+* `duty` es el ciclo útil al que se desea trabajar el pwm.
+* `state` es la salida del pwm, las cual solo cambia al estar habilitada la entrada `en`.
+
+En este módulo lo que se hace es contar los ciclos de reloj que son necesarios para 1us. Para luego implementarlo en la lógica del mismo. Teniendo los valores de periodo y ciclo útil, lo que se hace es poner en alto la salida state durante el tiempo del ciclo útil y mantenerlo abajo en lo que sería el periodo menos el ciclo útil.
+
+_pwm.v_
+
+Este módulo cumple la función de instanciar 8 modulos counter y de actuar como multiplexor para los valores de cada uno de estos módulos. Con este se puede ingresar los valores para las características de cada uno de los PWM, además de leer los valores actuales de las mismas. Este módulo tiene las siguientes entradas y salidas:
+
+`module pwm(clk,rst,rd,wr,din,adrs,dout,pwmo);`
+	
+	`input clk;`
+
+	`input rst;`
+
+	`input rd;`
+
+	`input wr;`
+
+	`input [7:0] din;`
+
+	`input [6:0] adrs;`
+
+	`output reg [7:0] dout;`
+
+	`output [7:0] pwmo;`
+
+Donde:
+* `clk` es la entrada de reloj.
+* `rst` es la entrada para poner en cero todos los valores de los pwm.
+* `rd` es la entrada con la que indicamos si queremos leer los valores de las señales.
+* `wr` es la entrada con la que indicamos si queremos escribir los valores de las señales.
+* `din` es el valor que queremos ingresar a la característica seleccionada con `adrs`.
+* `adrs` es la entrada con la que se indica la característica y el PWM a modificar o leer según wr o rd. La siguiente tabla indica los valores para cada característica.
+* `dout` es la salida por la cual obtenemos el valor que queremos leer al habilitar `wr`.
+* `pwmo` es la salida de los PWM siendo pwm[0] la primera señal y pwm[7] la última.
+
+<img width="300" alt="screenshot 2018-06-08 at 06 37 40" src="https://user-images.githubusercontent.com/24497588/41156217-8ceeaad0-6ae6-11e8-9423-2e82f13b691a.png">
+
+En este se sigue la lógica de un multiplexor. Según las entradas wr y rd se lee o se escribe la característica que se desea. Además para poder leer y escribir dichos valores se almacenan en registros todo lo ingresado, para así leerlos cuando se necesite.
+
+_Wishbone_
+
+Para el wishbone del PWM se utilizó la misma lógica que maneja el módulo UART con el que ya cuenta el LM32. Como pwm.v cuenta con lectura y escritura, según el procesador nos pida(wb_rd) o de(wb_wr) información habilitamos estas entradas wr y rd. Para la caracteristica a modificar utilizamos wb_adr_i en adrs. Y por último si es lectura o escritura, damos el valor de dout a wb_dat_o, o a din el valor de wb_dat_i.
+
+![pwm_wb](https://user-images.githubusercontent.com/24497588/38167426-66b5700a-34fa-11e8-8b88-114bf9d94f08.jpeg)
+
+#### 2.1.4) Software
+
+Para la implementación en software del PWM se crearon 3 clases en C++. Estas son: face, que hereda de arm, arm que hereda de pwm y pwm. 
+
+_pwm_
+
+En esta clase es donde se crean los registros que va a utilizar el wishbone del PWM, como en0, period0, duty0, en1, period1… El mapa de memoria completo se muestra en la siguiente tabla. Donde se tienen todos los registros como solo lectura, ya que no se llegó a implementar por completo la lectura de estos.
+
+<img width="230" alt="screenshot 2018-06-08 at 06 40 59" src="https://user-images.githubusercontent.com/24497588/41156319-04054c14-6ae7-11e8-8d86-c07d5d9068f6.png">
+
+Esta clase cuenta con cuatro funciones implementadas:
+
+* `pause()`: es un derivado del módulo timer, la cual crea una espera de 1 segundo.
+* `pwm_en(int sel,uint32_t val)`: asigna un valor(val) al habilitador de la señal(sel) de PWM.
+* `pwm_period(int sel,uint32_t val)`: asigna un valor(val) al periodo de la señal(sel) de PWM.
+* `pwm_duty(int sel,uint32_t val)`: asigna un valor(val) al ciclo útil de la señal(sel) de PWM.
+
+_arm_
+
+Esta clase hereda de la clase pwm. Esta se encarga de generar movimientos completos para los brazos. Como lo puede ser girar la “mano” a la derecha, desplazarla hacia atrás, poner la mano en medio y desplazarla de nuevo hacia adelante, o un simple movimiento de brazo a la derecha. Además de contar con una función para calibrar cada uno de estos movimientos.
 
 * `init():` ​Lleva los servos de a la posición inicial de agarre del cubo, es decir envía todos los brazos hacia atrás uno por uno, a continuación las manos se ubican en la posición central, y luego los envía hacia adelante uno por uno.
 
@@ -168,6 +263,14 @@ Se implementó unos brazos los cuales se basan en el uso de dos servos para move
 
 <img width="263" alt="screenshot 2018-06-07 at 22 50 03" src="https://user-images.githubusercontent.com/24497588/41138200-3909af14-6aa5-11e8-82fa-29183e14945b.png">
 
+_face_
+
+Esta clase que hereda de la clase arm, cumple con la función de generar movimientos útiles con los 4 brazos para el reconocimiento de los colores o la resolución del cubo. Como girarlo con respecto al eje Y, X o Z.
+
+`Face1(arm a, arm b, arm c, arm d, uint32_t x)`
+
+* `Face1():` Este pone el cubo en la posición correcta para tomar las fotos. Va por paso que se ingresan en x, siendo el paso 1 la posición inicial(no hace nada) y el 7 el último paso.
+
 ### 2.2 Módulo de Cámara:
 
 ![lsy201 picture](https://user-images.githubusercontent.com/24497588/36355300-125b8d52-14af-11e8-905d-5bcbfc8026aa.jpg)
@@ -186,8 +289,7 @@ _Diagrama (Wishbone):_
 
 ![fifo_wb](https://user-images.githubusercontent.com/24497588/38204511-d72bd4a4-3668-11e8-9d24-5219edef2c93.jpeg)
 
-_FIFO:_
-![fifo](https://user-images.githubusercontent.com/24497588/38167425-669fcca0-34fa-11e8-8e62-26dce5439efc.jpeg)
+![whatsapp image 2018-06-08 at 00 36 00](https://user-images.githubusercontent.com/24497588/41156885-5c523b0a-6ae9-11e8-8139-8ad58dbe0cf0.jpeg)
 
 _Mapa de memoria:_
 
